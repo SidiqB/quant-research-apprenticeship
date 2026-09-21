@@ -7,10 +7,14 @@ Manual gate passed on 21 September 2026: package installed, 25 tests passed, lin
 experiment reproduced, three-page PDF rendered and visually verified, initial commit pushed to main,
 and remote validation workflow completed successfully.
 
-Activation status: pending saved-local-project registration in the desktop app. No active research schedule
-has been created yet. The available project listing contains no saved local research project. Adding this
-checkout as a local project allows the scheduling tool to attach both jobs to its returned project identifier.
-This is a setup dependency, not a personal-review gate. Record activation here after both schedules are saved.
+Activation status: active as of 21 September 2026. Both schedules are attached to the saved local
+quant-research-apprenticeship project and execute directly in this main checkout.
+
+- Daily quantitative research: daily-quantitative-research, every day at 08:00.
+- Weekly quantitative research synthesis: weekly-quantitative-research-synthesis, Sundays at 16:00.
+
+The machine's local timezone is Europe/London. Preserve that timezone for the requested wall-clock schedule.
+First unattended execution has not yet been observed; activation does not prove a future run or push succeeded.
 
 Keep the local machine and app running. Offline or switched-off execution is not promised. Europe/London
 must remain the schedule timezone across the October daylight-saving change. Check the first actual scheduled

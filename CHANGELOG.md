@@ -8,3 +8,4 @@
 - Researched 49 current employer postings and prioritised a dated research backlog through 31 December.
 - Refined role keyword coding to distinguish software testing from financial backtesting and options from optional wording.
 - Verified initial GitHub validation and documented daily/weekly schedule prompts and activation dependency.
+- Activated daily 08:00 and Sunday 16:00 research schedules against the saved local main checkout.

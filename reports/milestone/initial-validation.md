@@ -38,7 +38,7 @@ Initial commit 34b1bec was pushed successfully to the standalone private reposit
 [Remote validation run](https://github.com/SidiqB/quant-research-apprenticeship/actions/runs/35644851432)
 completed successfully. Its configured Python matrix covers 3.11, 3.12 and 3.13.
 Automatic approval review required private publication; public visibility was not enabled.
-Daily/weekly scheduling is prepared in configs/automation and awaits local-project registration.
+Daily/weekly scheduling was activated after local-project registration; see configs/automation for details.
 
 A subsequent evidence review tightened software-testing keyword matches to avoid counting financial
 backtesting as software testing, and tightened options matches to avoid optional-wording matches.
