@@ -6,6 +6,9 @@ On a missed day, continue the oldest eligible dependency; do not backdate or rus
 All tasks require evidence, a learning note/PDF, relevant checks and an updated status.
 Sunday morning tasks collect evidence; the 16:00 synthesis consolidates that evidence without duplicate work.
 
+From 23 September, Wednesday runs select the next eligible step from [the C++ learning backlog](CPP_LEARNING_PLAN.md).
+This replaces that day's research slot; deferred Q-items keep their order for non-C++ days. Weekly reviews revise target dates.
+
 | ID | Planned date | Theme | Question / bounded task | Acceptance evidence | Status |
 |---|---|---|---|---|---|
 | Q001 | 2026-09-21 | Shared foundations | Point-in-time availability and revision selection | Reject future information; reproduce the six-decision counterexample | Done |

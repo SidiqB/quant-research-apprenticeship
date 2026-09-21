@@ -8,7 +8,8 @@ latest notes, issues (if accessible) and previous validation. Do not absorb unre
 Use `mkdir .git/research-run.lock` as an atomic lock, record the process/session in it, and remove it on exit.
 A stale lock requires checking that its owner is no longer active before removal.
 3. Fetch origin and fast-forward main only when clean. Stop on divergence; never force-push or rewrite history.
-4. Select the oldest feasible bounded dependency from BACKLOG.md. State the question, hypothesis,
+4. Read CPP_LEARNING_PLAN.md as well as BACKLOG.md. On Wednesdays from 23 September, select the next
+C++ learning step for this daily slot; on other days select the oldest feasible bounded dependency from BACKLOG.md. State the question, hypothesis,
 data source/period, metrics and evaluation protocol before implementation. Inspect relevant primary research
 or official documentation and cite it. Record why the task follows from previous results.
 5. Implement one complete improvement with input validation, tests and reproducible commands. Clearly label

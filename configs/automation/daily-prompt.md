@@ -17,3 +17,5 @@ direction decision is needed, document the question and continue only independen
 Provide a concise daily briefing with changed files, tests, commit/push status, key lesson and required input.
 Keep project naming and documentation free of unwanted branding. After 31 December, stop new research work
 and request the next programme scope. This requires the computer, desktop app and repository to be available.
+
+On Wednesdays from 23 September 2026, use the daily slot for the next eligible step in CPP_LEARNING_PLAN.md. Start very simply and build finance-focused C++ projects gradually. On other days resume the research backlog; preserve deferred tasks.

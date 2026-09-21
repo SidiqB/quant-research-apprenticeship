@@ -3,7 +3,7 @@
 This is a research programme with acceptance gates, not a promise that three production platforms
 will be finished in 102 days. Daily tasks are in BACKLOG.md. Re-plan each Sunday from actual evidence.
 The role study prioritises Python, validation, statistics, data integrity and communication, then
-execution and derivatives depth. Advanced modelling and C++ remain conditional.
+execution and derivatives depth. Advanced modelling remains conditional. A gradual finance-focused C++ learning track is now scheduled.
 
 | Phase | Target dates | Deliverables | Gate |
 |---|---|---|---|
@@ -33,7 +33,9 @@ Derivatives: option chains need quote-time alignment and licence review. Smiles/
 checks. Local volatility and Heston are optional extensions beyond a validated baseline; calibration quality and
 identifiability determine whether implementation is justified within 2026.
 
-C++: only a measured hot path with a tested Python reference qualifies. If none exists, publish the profiling result.
+C++ learning: follow [CPP_LEARNING_PLAN.md](CPP_LEARNING_PLAN.md), starting with a simple savings calculator.
+Wednesday research slots advance this track from 23 September. Production acceleration still requires a
+measured hot path and a tested reference; educational projects do not require a speedup justification.
 
 ## Scheduling and recovery
 
