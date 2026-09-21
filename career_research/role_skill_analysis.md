@@ -23,17 +23,17 @@ than mandatory requirements. Read the methodology before using these figures.
 | Topic | Postings mentioning it |
 |---|---:|
 | Python | 37 |
-| communication | 29 |
 | statistics | 29 |
-| testing | 18 |
+| communication | 29 |
 | algorithms | 15 |
 | production systems | 14 |
 | C++ | 13 |
 | machine learning | 13 |
 | SQL | 8 |
-| version control | 5 |
 | R | 6 |
+| version control | 5 |
 | KDB/q | 5 |
+| object orientation | 4 |
 
 ## Evidence and roadmap decisions
 

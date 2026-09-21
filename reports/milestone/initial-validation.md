@@ -31,3 +31,15 @@ remote status must be checked after push before claiming those additional versio
 
 Current empirical limitation: all market-related values are explicitly synthetic. There is no tested alpha,
 market-calibrated execution result, live order placement or real option-chain study.
+
+## Publication and remote verification
+
+Initial commit 34b1bec was pushed successfully to the standalone private repository's default branch, main.
+[Remote validation run](https://github.com/SidiqB/quant-research-apprenticeship/actions/runs/35644851432)
+completed successfully. Its configured Python matrix covers 3.11, 3.12 and 3.13.
+Automatic approval review required private publication; public visibility was not enabled.
+Daily/weekly scheduling is prepared in configs/automation and awaits local-project registration.
+
+A subsequent evidence review tightened software-testing keyword matches to avoid counting financial
+backtesting as software testing, and tightened options matches to avoid optional-wording matches.
+Counts were recomputed from the corrected role matrix; no model-performance result changed.
