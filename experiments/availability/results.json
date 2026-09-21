@@ -1,0 +1,40 @@
+{
+  "data_kind": "synthetic",
+  "observation_period": "2026-01-01/2026-01-06",
+  "question": "Does joining on observation date leak future revisions?",
+  "decisions": [
+    {
+      "decision": "2026-01-01T00:00:00+00:00",
+      "naive_final_value": 60.0,
+      "available_value": null
+    },
+    {
+      "decision": "2026-01-02T00:00:00+00:00",
+      "naive_final_value": 60.0,
+      "available_value": null
+    },
+    {
+      "decision": "2026-01-03T00:00:00+00:00",
+      "naive_final_value": 60.0,
+      "available_value": 100.0
+    },
+    {
+      "decision": "2026-01-04T00:00:00+00:00",
+      "naive_final_value": 60.0,
+      "available_value": 100.0
+    },
+    {
+      "decision": "2026-01-05T00:00:00+00:00",
+      "naive_final_value": 60.0,
+      "available_value": 60.0
+    },
+    {
+      "decision": "2026-01-06T00:00:00+00:00",
+      "naive_final_value": 60.0,
+      "available_value": 60.0
+    }
+  ],
+  "mismatched_decisions": 4,
+  "total_decisions": 6,
+  "interpretation": "Engineering counterexample only; no trading performance claim."
+}

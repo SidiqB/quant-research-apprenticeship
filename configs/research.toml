@@ -1,0 +1,13 @@
+[programme]
+start = "2026-09-21"
+end = "2026-12-31"
+timezone = "Europe/London"
+daily_time = "08:00"
+weekly_day = "Sunday"
+weekly_time = "16:00"
+
+[standards]
+default_review_status = "Not yet reviewed"
+synthetic_data_must_be_labelled = true
+allow_empty_commits = false
+allow_force_push = false
