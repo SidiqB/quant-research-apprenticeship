@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-09-22
+
+- Implemented a chronological holdout with closed-interval label purging, explicit audit indices,
+  UTC timestamp normalization and validation of windows, IDs and ordering.
+- Added 24 tests, including endpoint equality, empty training, daylight-saving folds, independent
+  overlap checks and deterministic experiment reproduction; 49 total tests pass.
+- Added a synthetic variable-horizon experiment: chronology and a one-row gap both retain two
+  overlapping labels; interval purging removes both and preserves two safe training samples.
+- Wrote the teaching note and verified five-page PDF; added a dated note target and experiment command.
+- Recorded the existing availability selector's named-zone fold defect as Q005a before ingestion;
+  UTC-normalized inputs remain the documented workaround. No empirical performance claim is made.
+- Completed Q002, made Q003 ready, and preserved Wednesday's C001 learning slot and personal review status.
+
 ## 2026-09-21
 
 - Established standalone Python package, research charter, data policy and continuous-integration checks.

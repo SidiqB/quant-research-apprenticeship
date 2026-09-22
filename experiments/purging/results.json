@@ -1,0 +1,94 @@
+{
+  "data_kind": "synthetic",
+  "information_period": "2026-01-01/2026-01-10",
+  "question": "Can chronological decisions still leak forward-label information?",
+  "hypothesis": "Interval purging removes touching/crossing training labels; ordering alone does not.",
+  "evaluation_protocol": "Fixed past-only holdout; predeclared variable horizons; no model fitting.",
+  "label_interval_convention": "closed; touching evaluation start is purged",
+  "evaluation_window": {
+    "start_inclusive": "2026-01-05T00:00:00+00:00",
+    "end_exclusive": "2026-01-08T00:00:00+00:00"
+  },
+  "rows": [
+    {
+      "sample_id": "A",
+      "decision_at": "2026-01-01T00:00:00+00:00",
+      "label_end": "2026-01-03T00:00:00+00:00"
+    },
+    {
+      "sample_id": "B",
+      "decision_at": "2026-01-02T00:00:00+00:00",
+      "label_end": "2026-01-05T00:00:00+00:00"
+    },
+    {
+      "sample_id": "C",
+      "decision_at": "2026-01-03T00:00:00+00:00",
+      "label_end": "2026-01-07T00:00:00+00:00"
+    },
+    {
+      "sample_id": "D",
+      "decision_at": "2026-01-04T00:00:00+00:00",
+      "label_end": "2026-01-04T00:00:00+00:00"
+    },
+    {
+      "sample_id": "E",
+      "decision_at": "2026-01-05T00:00:00+00:00",
+      "label_end": "2026-01-06T00:00:00+00:00"
+    },
+    {
+      "sample_id": "F",
+      "decision_at": "2026-01-06T00:00:00+00:00",
+      "label_end": "2026-01-08T00:00:00+00:00"
+    },
+    {
+      "sample_id": "G",
+      "decision_at": "2026-01-07T00:00:00+00:00",
+      "label_end": "2026-01-10T00:00:00+00:00"
+    },
+    {
+      "sample_id": "H",
+      "decision_at": "2026-01-08T00:00:00+00:00",
+      "label_end": "2026-01-09T00:00:00+00:00"
+    }
+  ],
+  "decision_only": {
+    "sample_ids": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "retained_count": 4,
+    "overlap_count": 2
+  },
+  "one_row_gap": {
+    "sample_ids": [
+      "A",
+      "B",
+      "C"
+    ],
+    "retained_count": 3,
+    "overlap_count": 2
+  },
+  "interval_purging": {
+    "sample_ids": [
+      "A",
+      "D"
+    ],
+    "retained_count": 2,
+    "overlap_count": 0
+  },
+  "purged_ids": [
+    "B",
+    "C"
+  ],
+  "evaluation_ids": [
+    "E",
+    "F",
+    "G"
+  ],
+  "excluded_ids": [
+    "H"
+  ],
+  "interpretation": "Engineering counterexample only; no empirical leakage rate or alpha claim."
+}

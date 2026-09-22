@@ -12,9 +12,10 @@ This replaces that day's research slot; deferred Q-items keep their order for no
 | ID | Planned date | Theme | Question / bounded task | Acceptance evidence | Status |
 |---|---|---|---|---|---|
 | Q001 | 2026-09-21 | Shared foundations | Point-in-time availability and revision selection | Reject future information; reproduce the six-decision counterexample | Done |
-| Q002 | 2026-09-22 | Shared foundations | Purge overlapping forward labels in chronological splits | Test touching endpoints, overlapping horizons and empty training sets | Ready |
-| Q003 | 2026-09-23 | Shared foundations | Version experiment manifests and checksums | Reject missing data kind, source hash, question or evaluation protocol | Planned |
+| Q002 | 2026-09-22 | Shared foundations | Purge overlapping forward labels in chronological splits | Test touching endpoints, overlapping horizons and empty training sets | Done |
+| Q003 | 2026-09-23 | Shared foundations | Version experiment manifests and checksums | Reject missing data kind, source hash, question or evaluation protocol | Ready |
 | Q004 | 2026-09-24 | Shared foundations | Specify investable universe and data access | Compare licensed sources; document delistings, vintages and unresolved access | Planned |
+| Q005a | Before Q005 | Shared foundations | Normalize existing availability comparisons across timezone folds | Reproduce a later London fold leaking into the earlier decision; test UTC chronology, latency and staleness | Ready |
 | Q005 | 2026-09-25 | Shared foundations | Validate timestamped observation ingestion | Reject duplicates, missing identifiers and inconsistent timestamp zones | Planned |
 | Q006 | 2026-09-26 | Shared foundations | Implement market calendar and decision-time contract | Test holidays and non-trading timestamps against a documented calendar | Planned |
 | Q007 | 2026-09-27 | Shared foundations | Review foundation failures and evidence | Weekly synthesis and prioritised corrective backlog | Planned |
@@ -113,3 +114,16 @@ This replaces that day's research slot; deferred Q-items keep their order for no
 | Q100 | 2026-12-29 | Year-end consolidation | Write year-end synthesis and open questions | Discuss strongest results and invalidated hypotheses | Planned |
 | Q101 | 2026-12-30 | Year-end consolidation | Draft 2027 research proposals | Prioritise questions using evidence and data feasibility | Planned |
 | Q102 | 2026-12-31 | Year-end consolidation | Publish reproducible year-end release | Validate all release commands and tag only verified work | Planned |
+
+## Evidence from 22 September
+
+Q002 passed: 49 total tests, including 24 new cases; the synthetic interval purge retains A,D and
+removes B,C, reducing two overlapping labels to zero. See experiments/purging and the daily note.
+Next scheduled work is C001 on Wednesday 23 September; Q003 remains the next non-C++ research task.
+
+Q005a is a newly observed Q001 limitation, not a completed fix: Python comparisons with identical
+named-zone objects ignore fold. A synthetic Observation published at Europe/London 2026-10-25
+01:30 fold=1 was incorrectly selected at decision 01:30 fold=0 (one hour earlier in UTC).
+The new Q002 splitter normalizes to UTC and passes this boundary; the old availability selector
+still needs a focused regression and fix before general timestamp ingestion. Until then, use
+UTC-normalized timestamps for Q001. Preserve the existing latency and staleness contracts.

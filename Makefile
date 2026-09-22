@@ -1,5 +1,6 @@
 PYTHON ?= .venv/bin/python
-.PHONY: check test lint types experiment note
+NOTE_DATE ?= 2026-09-22
+.PHONY: check test lint types experiment purging-experiment note
 check: test lint types
 
 test:
@@ -11,5 +12,8 @@ types:
 	$(PYTHON) -m mypy
 experiment:
 	$(PYTHON) scripts/availability_experiment.py
+purging-experiment:
+	$(PYTHON) scripts/purging_experiment.py
+
 note:
-	$(PYTHON) scripts/render_note.py research_log/2026-09-21.md reports/daily/2026-09-21-learning-note.pdf
+	$(PYTHON) scripts/render_note.py research_log/$(NOTE_DATE).md reports/daily/$(NOTE_DATE)-learning-note.pdf
