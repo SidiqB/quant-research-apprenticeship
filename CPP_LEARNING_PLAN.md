@@ -18,8 +18,8 @@ Do not skip prerequisites to reach a more impressive title. Later projects may r
 
 | ID | Project / step | Concepts | Evidence required | Status |
 |---|---|---|---|---|
-| C001 | Savings growth: fixed-input example | Compile/run, variables, doubles, output | Calculate one year of growth and compare with hand arithmetic | Ready |
-| C002 | Savings growth: reusable function | Functions, parameters, return values | Zero rate, zero years, invalid inputs; explain compounding convention | Planned |
+| C001 | Savings growth: fixed-input example | Compile/run, variables, doubles, output | Calculate one year of growth and compare with hand arithmetic | Done |
+| C002 | Savings growth: reusable function | Functions, parameters, return values | Zero rate, zero years, invalid inputs; explain compounding convention | Ready |
 | C003 | Savings growth: command-line inputs | Parsing, branches, errors | Reject malformed input; clear units and reproducible examples | Planned |
 | C004 | Return calculator: a small price series | Vectors, loops, indexing | Hand-check simple returns; reject zero/nonpositive prices under stated scope | Planned |
 | C005 | Return calculator: summary statistics | Mean, sample variance, functions | Compare known small samples; handle fewer than two observations | Planned |
@@ -38,6 +38,15 @@ Each step gets a beginner explanation of the new C++ syntax, financial definitio
 build/test commands, limitations and short understanding questions. Use synthetic fixtures explicitly.
 Use the simplest supported compiler setup first; introduce build tooling and abstractions only as needed.
 Track completion separately from Sidiq's personal review or independent reproduction.
+
+## Evidence from 23 September
+
+C001 is implemented in cpp/projects/savings_growth. The compiled fixed-input example produces
+50.00 units of interest and a 1050.00-unit closing balance from 1000.00 at 5% for one year.
+The hand-authored output comparison is part of make check; 49 existing Python tests also pass.
+Two runs reproduced the output, and a temporary 500% rate mutation was rejected by the comparison.
+The four-page teaching PDF was checked for text completeness and visually inspected on every page.
+Sidiq review status remains Not yet reviewed. C002 is ready for Wednesday 30 September.
 
 ## Separate project request
 

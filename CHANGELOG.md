@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-09-23
+
+- Completed C001 with a small fixed-input C++ savings example: 1000 units at 5% for one year gives
+  50 units of interest and 1050 units closing wealth, under explicitly synthetic assumptions.
+- Added warning-clean C++17 build/run targets and a hand-authored output comparison to make check;
+  49 existing Python tests still pass. A separate wrong-rate diagnostic failed the comparison as intended.
+- Wrote the beginner teaching note, verified its four-page PDF text and layout, and recorded validation.
+- Marked C002 ready for the next Wednesday slot; preserved Q003 as the next non-C++ task and Q005a as open.
+  Personal review remains Not yet reviewed. No empirical return or performance-speedup claim is made.
+
 ## 2026-09-22
 
 - Implemented a chronological holdout with closed-interval label purging, explicit audit indices,

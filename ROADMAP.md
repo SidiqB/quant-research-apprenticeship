@@ -18,7 +18,8 @@ execution and derivatives depth. Advanced modelling remains conditional. A gradu
 Phase 0 underway. Q001 implements availability/revision selection and a synthetic leakage counterexample.
 Q002 now implements past-only label-interval purging with explicit boundary and empty-set behavior.
 Its synthetic experiment removes two overlapping training labels and retains two safe labels; 49 tests pass.
-C001 is next in the Wednesday slot; Q003 manifests follow on the next non-C++ day. A named-zone fold
+C001 now provides a compiled one-year savings example with a hand-calculated output check and teaching note.
+Q003 manifests is next on Thursday; C002 is ready for the next Wednesday slot. A named-zone fold
 comparison defect in the existing availability selector is recorded as Q005a before ingestion.
 No empirical alpha result, live order-book calibration or options-market result exists yet.
 

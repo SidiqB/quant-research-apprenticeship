@@ -1,0 +1,5 @@
+Synthetic savings example: one year
+Opening balance (units): 1000.00
+Annual rate (percent): 5.00
+Interest (units): 50.00
+Closing balance (units): 1050.00

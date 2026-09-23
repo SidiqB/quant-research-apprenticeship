@@ -9,6 +9,7 @@ The emphasis is on reproducible experiments, correct information timing and expl
 |---|---|---|
 | 2026-09-21 | Point-in-time observation and revision selection | Tested implementation; deterministic leakage counterexample |
 | 2026-09-22 | Chronological holdout with forward-label purging | 49 tests; two synthetic overlaps removed; five-page teaching note |
+| 2026-09-23 | First C++ savings calculation | Hand-calculated output test; 50.00 interest and 1050.00 closing balance; four-page teaching note |
 | 2026-09-21 | Employer role mapping and research programme | 49 deduplicated postings across eight firms; roadmap through December |
 
 The experiments use synthetic data to demonstrate information-timing errors. They report no alpha.
@@ -18,7 +19,7 @@ its named-zone regression is recorded in BACKLOG.md as Q005a. The new purging sp
 
 ## Reproduce
 
-Python 3.11+ and Git are required.
+Python 3.11+, Git, Make, and a C++17-capable Clang or GCC compiler are required for the full checks.
 
 ```sh
 python3 -m venv .venv
@@ -26,6 +27,7 @@ python3 -m venv .venv
 make check
 make experiment
 make purging-experiment
+make cpp-savings
 make note
 ```
 
@@ -40,8 +42,9 @@ See `requirements-lock.txt` for the initial tested environment. The core package
 - [Role-skill evidence](career_research/role_skill_analysis.md)
 - [First experiment](experiments/availability/README.md)
 - [Label-purging experiment](experiments/purging/README.md)
-- [Latest learning note](research_log/2026-09-22.md) and [PDF](reports/daily/2026-09-22-learning-note.pdf)
-- [Daily validation evidence](reports/milestone/2026-09-22-validation.md)
+- [First C++ savings example](cpp/projects/savings_growth/README.md) and [C++ learning plan](CPP_LEARNING_PLAN.md)
+- [Latest learning note](research_log/2026-09-23.md) and [PDF](reports/daily/2026-09-23-learning-note.pdf)
+- [Daily validation evidence](reports/milestone/2026-09-23-validation.md)
 - [Daily operating procedure](OPERATIONS.md)
 
 Future milestones cover investable universes, signal validation, execution accounting and hedging experiments.

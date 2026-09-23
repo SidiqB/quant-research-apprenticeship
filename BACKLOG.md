@@ -127,3 +127,11 @@ named-zone objects ignore fold. A synthetic Observation published at Europe/Lond
 The new Q002 splitter normalizes to UTC and passes this boundary; the old availability selector
 still needs a focused regression and fix before general timestamp ingestion. Until then, use
 UTC-normalized timestamps for Q001. Preserve the existing latency and staleness contracts.
+
+## Evidence from 23 September
+
+Wednesday's C001 slot is complete: fixed-input C++ savings arithmetic matches the hand-calculated
+50.00-unit interest and 1050.00-unit closing balance. make check includes the C++ output test and
+all 49 existing Python tests pass. See cpp/projects/savings_growth and the verified four-page daily note.
+Q003 remains the oldest ready non-C++ task for Thursday 24 September; original target dates above
+are preserved for weekly replanning. C002 is ready for Wednesday 30 September. Q005a remains open.
