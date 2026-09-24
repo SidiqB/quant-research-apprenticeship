@@ -19,7 +19,8 @@ Phase 0 underway. Q001 implements availability/revision selection and a syntheti
 Q002 now implements past-only label-interval purging with explicit boundary and empty-set behavior.
 Its synthetic experiment removes two overlapping training labels and retains two safe labels; 49 tests pass.
 C001 now provides a compiled one-year savings example with a hand-calculated output check and teaching note.
-Q003 manifests is next on Thursday; C002 is ready for the next Wednesday slot. A named-zone fold
+Q003 now provides versioned manifests and SHA-256 provenance checks; 94 tests pass.
+Q004 universe and data access is next; C002 is ready for the next Wednesday slot. A named-zone fold
 comparison defect in the existing availability selector is recorded as Q005a before ingestion.
 No empirical alpha result, live order-book calibration or options-market result exists yet.
 

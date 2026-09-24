@@ -1,0 +1,27 @@
+{
+  "data_kind": "synthetic",
+  "evaluation_protocol": "Fixed past-only holdout [2026-01-05,2026-01-08) UTC; closed labels; no fitting. Compare chronology, one-row gap and interval purging. Expected overlaps: 2,2,0; retained purged-training IDs: A,D. Sources pin archived output, fixture generator, splitter implementation and declared dependency lock; this is retrospective provenance recorded on 2026-09-24, not preregistration.",
+  "experiment_id": "q002-purging-archived-v1",
+  "hypothesis": "Interval purging removes touching/crossing training labels; ordering alone does not.",
+  "information_period": "2026-01-01/2026-01-10; invented label timestamps, not market observations.",
+  "question": "Can chronological decisions still leak forward-label information?",
+  "schema_version": 1,
+  "sources": [
+    {
+      "path": "experiments/purging/results.json",
+      "sha256": "e62bda36db02b23a0aabba6d0d20edc368643407e99b306dd09caa28e8138a6d"
+    },
+    {
+      "path": "scripts/purging_experiment.py",
+      "sha256": "902868366af4e3f6098e59b648bfe824cf5d9582fb1b6db30129f9ec4b14b2d9"
+    },
+    {
+      "path": "src/quant_research/validation/purging.py",
+      "sha256": "4f0a1acfd2ae05b46ea2d2f6b3d5fe9565b1c4c8fa5314a5ab107ebd289e2a20"
+    },
+    {
+      "path": "requirements-lock.txt",
+      "sha256": "767df194abce2c07fbb9d0ed82e495c76db73bfc617bcf5d595742be667330fa"
+    }
+  ]
+}

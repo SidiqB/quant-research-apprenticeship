@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-09-24
+
+- Completed Q003 with strict schema v1 manifests, stable serialization and SHA-256 file verification.
+- Added a retrospective synthetic Q002 provenance record and reproducible audit: four sources matched,
+  four missing-field cases rejected and a one-byte change detected. Q002 replay still matches its archive.
+- Added 45 tests; all 94 tests, code-quality checks and the C++ output check pass.
+- Wrote the four-page teaching note, verified complete extracted text and visually inspected every page.
+- Marked Q004 ready; retained Q005a as open and C002 for Wednesday. Personal review remains Not yet reviewed.
+
 ## 2026-09-23
 
 - Completed C001 with a small fixed-input C++ savings example: 1000 units at 5% for one year gives

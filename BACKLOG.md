@@ -13,8 +13,8 @@ This replaces that day's research slot; deferred Q-items keep their order for no
 |---|---|---|---|---|---|
 | Q001 | 2026-09-21 | Shared foundations | Point-in-time availability and revision selection | Reject future information; reproduce the six-decision counterexample | Done |
 | Q002 | 2026-09-22 | Shared foundations | Purge overlapping forward labels in chronological splits | Test touching endpoints, overlapping horizons and empty training sets | Done |
-| Q003 | 2026-09-23 | Shared foundations | Version experiment manifests and checksums | Reject missing data kind, source hash, question or evaluation protocol | Ready |
-| Q004 | 2026-09-24 | Shared foundations | Specify investable universe and data access | Compare licensed sources; document delistings, vintages and unresolved access | Planned |
+| Q003 | 2026-09-23 | Shared foundations | Version experiment manifests and checksums | Reject missing data kind, source hash, question or evaluation protocol | Done |
+| Q004 | 2026-09-24 | Shared foundations | Specify investable universe and data access | Compare licensed sources; document delistings, vintages and unresolved access | Ready |
 | Q005a | Before Q005 | Shared foundations | Normalize existing availability comparisons across timezone folds | Reproduce a later London fold leaking into the earlier decision; test UTC chronology, latency and staleness | Ready |
 | Q005 | 2026-09-25 | Shared foundations | Validate timestamped observation ingestion | Reject duplicates, missing identifiers and inconsistent timestamp zones | Planned |
 | Q006 | 2026-09-26 | Shared foundations | Implement market calendar and decision-time contract | Test holidays and non-trading timestamps against a documented calendar | Planned |
@@ -135,3 +135,12 @@ Wednesday's C001 slot is complete: fixed-input C++ savings arithmetic matches th
 all 49 existing Python tests pass. See cpp/projects/savings_growth and the verified four-page daily note.
 Q003 remains the oldest ready non-C++ task for Thursday 24 September; original target dates above
 are preserved for weekly replanning. C002 is ready for Wednesday 30 September. Q005a remains open.
+
+## Evidence from 24 September
+
+Q003 is complete: schema v1 validates metadata, rejects duplicate JSON keys and verifies exact SHA-256
+source bytes. The synthetic provenance audit verifies four pinned Q002 files, rejects four missing-field
+cases and detects an appended byte. Q002 replay matches its archived output; 94 tests pass, including
+45 new cases. The four-page teaching PDF has exact source-text agreement and passed visual inspection.
+Q004 is next; Q005a remains open before ingestion and C002 stays in the next Wednesday slot.
+No empirical result or preregistration claim is made. Sidiq review remains Not yet reviewed.

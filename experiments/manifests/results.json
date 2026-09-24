@@ -1,0 +1,12 @@
+{
+  "data_kind": "synthetic",
+  "verified_source_count": 4,
+  "missing_metadata_rejected": [
+    "data_kind",
+    "question",
+    "evaluation_protocol",
+    "source_hash"
+  ],
+  "one_byte_change_rejected": true,
+  "interpretation": "Byte integrity and metadata checks only; no empirical or authenticity claim."
+}
