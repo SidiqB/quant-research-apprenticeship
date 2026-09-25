@@ -1,0 +1,72 @@
+# Dated human evidence assessment, not market data or vendor certification.
+as_of = "2026-09-25"
+
+[[sources]]
+source_id = "crsp-us-stock"
+
+[sources.requirements.licence_entitlement]
+status = "unknown"
+reference = "data/universe-and-access.md#crsp: no project entitlement established"
+
+[sources.requirements.local_access]
+status = "unknown"
+reference = "data/universe-and-access.md#crsp: no licensed sample downloaded or tested"
+
+[sources.requirements.historical_identity]
+status = "documented"
+reference = "https://indexes.morningstar.com/research-data-products/crsp-us-stock-databases"
+
+[sources.requirements.inactive_coverage]
+status = "documented"
+reference = "https://indexes.morningstar.com/research-data-products/crsp-us-stock-databases"
+
+[sources.requirements.corporate_actions]
+status = "documented"
+reference = "https://indexes.morningstar.com/research-data-products/crsp-us-stock-databases"
+
+[sources.requirements.terminal_events]
+status = "documented"
+reference = "https://www.crsp.org/crsp_pdf/crsp-us-stock-indexes-databases-data-descriptions-guide-crspaccess/"
+
+[sources.requirements.availability_vintages]
+status = "unknown"
+reference = "data/universe-and-access.md#crsp: historical release/receipt evidence not verified"
+
+[sources.requirements.permitted_outputs]
+status = "unknown"
+reference = "data/universe-and-access.md#crsp: applicable storage and output permissions not established"
+
+[[sources]]
+source_id = "norgate-us-platinum"
+
+[sources.requirements.licence_entitlement]
+status = "unknown"
+reference = "data/universe-and-access.md#norgate: no project subscription established"
+
+[sources.requirements.local_access]
+status = "unknown"
+reference = "https://norgatedata.com/: Windows database; no compatible local setup verified"
+
+[sources.requirements.historical_identity]
+status = "unknown"
+reference = "data/universe-and-access.md#norgate: historical security-type and identity mapping untested"
+
+[sources.requirements.inactive_coverage]
+status = "documented"
+reference = "https://norgatedata.com/data-content-tables.php"
+
+[sources.requirements.corporate_actions]
+status = "documented"
+reference = "https://norgatedata.com/data-package-faq.php"
+
+[sources.requirements.terminal_events]
+status = "unknown"
+reference = "data/universe-and-access.md#norgate: final proceeds and missing-event handling untested"
+
+[sources.requirements.availability_vintages]
+status = "failed"
+reference = "https://norgatedata.com/data-package-faq.php: historical corrections have no versioning mechanism"
+
+[sources.requirements.permitted_outputs]
+status = "unknown"
+reference = "https://norgatedata.com/subscribe/eula.php: project use, retention and permitted output plan unverified"

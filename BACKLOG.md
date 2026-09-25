@@ -14,7 +14,8 @@ This replaces that day's research slot; deferred Q-items keep their order for no
 | Q001 | 2026-09-21 | Shared foundations | Point-in-time availability and revision selection | Reject future information; reproduce the six-decision counterexample | Done |
 | Q002 | 2026-09-22 | Shared foundations | Purge overlapping forward labels in chronological splits | Test touching endpoints, overlapping horizons and empty training sets | Done |
 | Q003 | 2026-09-23 | Shared foundations | Version experiment manifests and checksums | Reject missing data kind, source hash, question or evaluation protocol | Done |
-| Q004 | 2026-09-24 | Shared foundations | Specify investable universe and data access | Compare licensed sources; document delistings, vintages and unresolved access | Ready |
+| Q004 | 2026-09-24 | Shared foundations | Specify investable universe and data access | Compare licensed sources; document delistings, vintages and unresolved access | Done |
+| Q004a | Before empirical research | Alpha data access | Establish lawful source entitlement and audit a licensed sample against Q004 | Resolve all eight evidence gates or record an approved narrower research claim; no acquisition without entitlement/budget | Blocked: access unestablished |
 | Q005a | Before Q005 | Shared foundations | Normalize existing availability comparisons across timezone folds | Reproduce a later London fold leaking into the earlier decision; test UTC chronology, latency and staleness | Ready |
 | Q005 | 2026-09-25 | Shared foundations | Validate timestamped observation ingestion | Reject duplicates, missing identifiers and inconsistent timestamp zones | Planned |
 | Q006 | 2026-09-26 | Shared foundations | Implement market calendar and decision-time contract | Test holidays and non-trading timestamps against a documented calendar | Planned |

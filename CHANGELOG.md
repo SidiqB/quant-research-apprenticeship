@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-09-25
+
+- Completed Q004: provisional US common-stock universe, CRSP/Norgate primary-source comparison,
+  explicit delisting, revision, platform, retention and access limitations. No market data acquired.
+- Added a dated evidence registry and eight-gate declaration checker: two real candidates remain
+  unverified; all 24 synthetic single-gate downgrades block admission.
+- Demonstrated survivor selection with an invented three-holding example: -30% full population,
+  +5% survivors only; no empirical estimate or alpha claim.
+- Added 50 meaningful test cases; 144 tests and all quality/C++ checks pass. No dependency added.
+- Wrote and verified a five-page teaching PDF, including complete text and every-page visual checks.
+- Added Q004a for lawful sample access; Q005a is next, C002 stays on Wednesday, and personal review
+  remains Not yet reviewed.
+
 ## 2026-09-24
 
 - Completed Q003 with strict schema v1 manifests, stable serialization and SHA-256 file verification.

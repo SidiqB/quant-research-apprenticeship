@@ -20,8 +20,10 @@ Q002 now implements past-only label-interval purging with explicit boundary and 
 Its synthetic experiment removes two overlapping training labels and retains two safe labels; 49 tests pass.
 C001 now provides a compiled one-year savings example with a hand-calculated output check and teaching note.
 Q003 now provides versioned manifests and SHA-256 provenance checks; 94 tests pass.
-Q004 universe and data access is next; C002 is ready for the next Wednesday slot. A named-zone fold
-comparison defect in the existing availability selector is recorded as Q005a before ingestion.
+Q004 now specifies a provisional US common-stock universe and compares CRSP/Norgate access evidence.
+Its eight-gate declaration checker and synthetic selection example pass 50 new tests (144 total).
+Neither real source is admitted; Q004a tracks entitlement and sample audit before empirical research.
+Q005a is next: fix the named-zone fold comparison defect before ingestion. C002 remains ready for Wednesday.
 No empirical alpha result, live order-book calibration or options-market result exists yet.
 
 ## Long-term scope and conditional extensions

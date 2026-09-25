@@ -1,8 +1,8 @@
 PYTHON ?= .venv/bin/python
 CXX = c++
 CXXFLAGS ?= -std=c++17 -Wall -Wextra -Wpedantic -Werror
-NOTE_DATE ?= 2026-09-24
-.PHONY: check test lint types experiment purging-experiment manifest-experiment cpp-savings cpp-check note
+NOTE_DATE ?= 2026-09-25
+.PHONY: check test lint types experiment purging-experiment manifest-experiment access-experiment cpp-savings cpp-check note
 check: test lint types cpp-check
 
 test:
@@ -19,6 +19,9 @@ purging-experiment:
 
 manifest-experiment:
 	$(PYTHON) scripts/manifest_experiment.py
+
+access-experiment:
+	$(PYTHON) scripts/access_experiment.py
 
 build/cpp/savings_growth/savings: cpp/projects/savings_growth/main.cpp Makefile
 	mkdir -p build/cpp/savings_growth

@@ -1,0 +1,44 @@
+{
+  "assessment_as_of": "2026-09-25",
+  "candidate_assessments": [
+    {
+      "source_id": "crsp-us-stock",
+      "blockers": [
+        "licence_entitlement",
+        "local_access",
+        "historical_identity",
+        "inactive_coverage",
+        "corporate_actions",
+        "terminal_events",
+        "availability_vintages",
+        "permitted_outputs"
+      ],
+      "ready": false
+    },
+    {
+      "source_id": "norgate-us-platinum",
+      "blockers": [
+        "licence_entitlement",
+        "local_access",
+        "historical_identity",
+        "inactive_coverage",
+        "corporate_actions",
+        "terminal_events",
+        "availability_vintages",
+        "permitted_outputs"
+      ],
+      "ready": false
+    }
+  ],
+  "synthetic_gate_checks": {
+    "complete_passes": true,
+    "downgrades_blocked": 24
+  },
+  "synthetic_survivorship_example": {
+    "period": "one invented holding period",
+    "full_population_return": -0.3,
+    "survivors_only_return": 0.05,
+    "difference_percentage_points": 35.0
+  },
+  "interpretation": "Candidate entries are human documentation assessments, not market data. Gate controls and returns are synthetic. No entitlement or empirical alpha is inferred."
+}
