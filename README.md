@@ -12,12 +12,13 @@ The emphasis is on reproducible experiments, correct information timing and expl
 | 2026-09-23 | First C++ savings calculation | Hand-calculated output test; 50.00 interest and 1050.00 closing balance; four-page teaching note |
 | 2026-09-24 | Versioned experiment manifests and source checksums | 94 tests; four source hashes verified; changed-byte rejection; four-page teaching note |
 | 2026-09-25 | Universe contract and data-source admission | 144 tests; 24 downgrade controls; two sources remain unverified; five-page teaching note |
+| 2026-09-26 | UTC availability across clock changes | 167 tests; 10,800 oracle comparisons; future-fold leak fixed; four-page teaching note |
 | 2026-09-21 | Employer role mapping and research programme | 49 deduplicated postings across eight firms; roadmap through December |
 
 The experiments use synthetic data to demonstrate information-timing errors. They report no alpha.
 The three laboratories are under development; shared availability selection and label purging are implemented.
-The availability selector currently requires UTC-normalized inputs for safe daylight-saving fold comparisons;
-its named-zone regression is recorded in BACKLOG.md as Q005a. The new purging splitter normalizes to UTC.
+Availability observations and decisions now normalize to UTC, repairing the daylight-saving fold leak.
+The purging splitter also uses UTC. Ingestion must still resolve ambiguous and invalid local timestamps.
 
 ## Reproduce
 
@@ -31,6 +32,7 @@ make experiment
 make purging-experiment
 make manifest-experiment
 make access-experiment
+make fold-experiment
 make cpp-savings
 make note
 ```
@@ -49,8 +51,9 @@ See `requirements-lock.txt` for the initial tested environment. The core package
 - [Manifest provenance audit](experiments/manifests/README.md)
 - [Universe and access contract](data/universe-and-access.md) and [admission experiment](experiments/data_access/README.md)
 - [First C++ savings example](cpp/projects/savings_growth/README.md) and [C++ learning plan](CPP_LEARNING_PLAN.md)
-- [Latest learning note](research_log/2026-09-25.md) and [PDF](reports/daily/2026-09-25-learning-note.pdf)
-- [Daily validation evidence](reports/milestone/2026-09-25-validation.md)
+- [Clock-change availability experiment](experiments/timezones/README.md)
+- [Latest learning note](research_log/2026-09-26.md) and [PDF](reports/daily/2026-09-26-learning-note.pdf)
+- [Daily validation evidence](reports/milestone/2026-09-26-validation.md)
 - [Daily operating procedure](OPERATIONS.md)
 
 Future milestones cover investable universes, signal validation, execution accounting and hedging experiments.

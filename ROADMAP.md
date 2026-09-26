@@ -23,7 +23,9 @@ Q003 now provides versioned manifests and SHA-256 provenance checks; 94 tests pa
 Q004 now specifies a provisional US common-stock universe and compares CRSP/Norgate access evidence.
 Its eight-gate declaration checker and synthetic selection example pass 50 new tests (144 total).
 Neither real source is admitted; Q004a tracks entitlement and sample audit before empirical research.
-Q005a is next: fix the named-zone fold comparison defect before ingestion. C002 remains ready for Wednesday.
+Q005a now normalizes availability timestamps to UTC: the future-fold leak is fixed, and 167 tests pass.
+Its 10,800 integer-oracle comparisons cover London/New York spring and autumn transitions.
+Q005 ingestion is next, including explicit invalid-local-time policy. C002 remains ready for Wednesday.
 No empirical alpha result, live order-book calibration or options-market result exists yet.
 
 ## Long-term scope and conditional extensions

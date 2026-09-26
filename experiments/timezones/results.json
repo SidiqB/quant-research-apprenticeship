@@ -1,0 +1,18 @@
+{
+  "data_kind": "synthetic",
+  "question": "Can a repeated local clock time admit a future publication?",
+  "protocol": "Fixed instants; old raw predicate versus UTC-normalized selector.",
+  "zone": "Europe/London",
+  "early_local": "2026-10-25T01:30:00+01:00",
+  "late_local": "2026-10-25T01:30:00+00:00",
+  "early_utc": "2026-10-25T00:30:00+00:00",
+  "late_utc": "2026-10-25T01:30:00+00:00",
+  "wall_clock_minutes": 0.0,
+  "elapsed_minutes": 60.0,
+  "legacy_future_publication_selected": true,
+  "corrected_future_publication_selected": false,
+  "latency_60_minutes_accepted": true,
+  "max_age_59_minutes_accepted": false,
+  "latest_revision_value": 2,
+  "interpretation": "Engineering counterexample only; no empirical trading result."
+}

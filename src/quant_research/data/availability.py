@@ -1,19 +1,21 @@
 """Reference point-in-time selection with explicit publication and revision times.
 
-All timestamps must be timezone-aware. A record is usable only after its
+All timestamps must be timezone-aware and are normalized to UTC. A record is usable only after its
 availability time, including a caller-specified processing latency. Equality
 is permitted: callers needing strictly earlier information must use latency.
 """
 
 from collections.abc import Iterable
 from dataclasses import dataclass
-from datetime import datetime, timedelta
+from datetime import UTC, datetime, timedelta
 from math import isfinite
 
 
-def _aware(value: datetime) -> None:
+def _utc(value: datetime) -> datetime:
     if not isinstance(value, datetime) or value.tzinfo is None or value.utcoffset() is None:
         raise ValueError("timestamps must be timezone-aware datetimes")
+    # Same-zone datetime comparisons/subtraction ignore fold and offset changes.
+    return value.astimezone(UTC)
 
 
 @dataclass(frozen=True)
@@ -23,6 +25,9 @@ class Observation:
     observed_at identifies the economic observation; available_at is the first
     instant this version could have been used. A revision keeps observed_at
     unchanged and has a later available_at. Values must be finite.
+    Stored timestamps are UTC instants; original zone labels are not retained.
+    Callers must resolve ambiguous local times and reject nonexistent local times
+    upstream. Normalization is not validation of a source's clock or zone choice.
     """
 
     asset: str
@@ -34,12 +39,13 @@ class Observation:
     def __post_init__(self) -> None:
         if not self.asset.strip() or not self.feature.strip():
             raise ValueError("asset and feature must be nonempty")
-        _aware(self.observed_at)
-        _aware(self.available_at)
-        if self.available_at < self.observed_at:
+        observed, available = _utc(self.observed_at), _utc(self.available_at)
+        if available < observed:
             raise ValueError("availability cannot precede observation")
         if not isfinite(self.value):
             raise ValueError("value must be finite")
+        object.__setattr__(self, "observed_at", observed)
+        object.__setattr__(self, "available_at", available)
 
 
 def snapshot(
@@ -54,9 +60,11 @@ def snapshot(
     Reject duplicate (asset, feature, observed_at, available_at) versions even
     if identical, because ambiguous ingestion must be resolved upstream.
     Staleness is measured from observed_at; a revision does not refresh age.
+    Latency and age are elapsed UTC durations, not local wall-clock durations.
+    The selected original Observation objects are returned with UTC timestamps.
     Missing or stale keys are omitted, never imputed. Complexity is O(n).
     """
-    _aware(decision_at)
+    decision_at = _utc(decision_at)
     if latency < timedelta(0) or (max_age is not None and max_age < timedelta(0)):
         raise ValueError("latency and max_age must be nonnegative")
     selected: dict[tuple[str, str], Observation] = {}

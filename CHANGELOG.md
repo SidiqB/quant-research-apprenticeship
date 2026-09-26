@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-09-26
+
+- Completed Q005a: canonical UTC observation storage and decision conversion fix future-fold leakage,
+  revision ordering, duplicate identity and elapsed latency/staleness across clock transitions.
+- Reproduced 16 regression failures before the fix; added 23 passing cases, including 10,800 independent
+  integer-oracle comparisons. Full suite: 167 tests; lint, format, types, C++ and dependencies pass.
+- Added a deterministic synthetic fold experiment with explicit local/UTC offsets. Original Q001/Q003
+  results remain unchanged; no market data or trading-performance claim.
+- Wrote and verified a four-page teaching PDF: complete extracted text and every-page visual inspection.
+- Marked Q005 ingestion ready, including ambiguous/nonexistent local-time policy. Documented the change
+  to stored timestamp representation. Personal review remains Not yet reviewed.
+
 ## 2026-09-25
 
 - Completed Q004: provisional US common-stock universe, CRSP/Norgate primary-source comparison,

@@ -16,8 +16,8 @@ This replaces that day's research slot; deferred Q-items keep their order for no
 | Q003 | 2026-09-23 | Shared foundations | Version experiment manifests and checksums | Reject missing data kind, source hash, question or evaluation protocol | Done |
 | Q004 | 2026-09-24 | Shared foundations | Specify investable universe and data access | Compare licensed sources; document delistings, vintages and unresolved access | Done |
 | Q004a | Before empirical research | Alpha data access | Establish lawful source entitlement and audit a licensed sample against Q004 | Resolve all eight evidence gates or record an approved narrower research claim; no acquisition without entitlement/budget | Blocked: access unestablished |
-| Q005a | Before Q005 | Shared foundations | Normalize existing availability comparisons across timezone folds | Reproduce a later London fold leaking into the earlier decision; test UTC chronology, latency and staleness | Ready |
-| Q005 | 2026-09-25 | Shared foundations | Validate timestamped observation ingestion | Reject duplicates, missing identifiers and inconsistent timestamp zones | Planned |
+| Q005a | Before Q005 | Shared foundations | Normalize existing availability comparisons across timezone folds | Reproduce a later London fold leaking into the earlier decision; test UTC chronology, latency and staleness | Done |
+| Q005 | 2026-09-25 | Shared foundations | Validate timestamped observation ingestion | Reject duplicates, missing identifiers and inconsistent timestamp zones; define ambiguous/nonexistent local-time policy | Ready |
 | Q006 | 2026-09-26 | Shared foundations | Implement market calendar and decision-time contract | Test holidays and non-trading timestamps against a documented calendar | Planned |
 | Q007 | 2026-09-27 | Shared foundations | Review foundation failures and evidence | Weekly synthesis and prioritised corrective backlog | Planned |
 | Q008 | 2026-09-28 | Alpha data and baseline | Build a corporate-action return fixture | Hand-check split and dividend total-return examples | Planned |
@@ -145,3 +145,18 @@ cases and detects an appended byte. Q002 replay matches its archived output; 94 
 45 new cases. The four-page teaching PDF has exact source-text agreement and passed visual inspection.
 Q004 is next; Q005a remains open before ingestion and C002 stays in the next Wednesday slot.
 No empirical result or preregistration claim is made. Sidiq review remains Not yet reviewed.
+
+## Evidence from 26 September
+
+Q005a resolves the 22 September fold defect: Observation stores UTC timestamps and snapshot converts
+its decision before comparison. The synthetic later London 01:30 publication is now rejected at the
+earlier 01:30 decision. Sixty elapsed minutes meet latency equality; a 59-minute age limit excludes it.
+Sixteen pre-fix regression failures are resolved. All 167 tests pass, including 23 new cases and
+10,800 integer-oracle comparisons spanning London/New York spring and autumn transitions.
+The new experiment repeats exactly; original Q001 and Q003 artifacts are unchanged. The four-page
+teaching PDF passed exact text and every-page visual checks. Personal review remains Not yet reviewed.
+
+Q005 is ready: formalize ingestion, including source identity, duplicate handling and explicit ambiguous/
+nonexistent local-time policy. UTC normalization does not choose an unknown source fold or reject all
+invalid local clock labels. Q004a remains blocked on lawful access/sample evidence; independent work
+continues. C002 remains Wednesday 30 September. Original target dates await weekly replanning.
