@@ -46,7 +46,9 @@ tick data and execution costs. Reserve a dedicated simulator phase; use accounti
 4. Options trading and risk postings support Greeks, volatility and scenario analysis. Pricing benchmarks and parity
 checks precede hedging studies. Senior risk work cannot be replicated by merely computing a risk metric.
 5. C++ and low-latency engineering appear in technology roles, but Python also spans research and risk.
-Introduce C++ only after profiling demonstrates a bottleneck and a Python reference is validated.
+For production acceleration, introduce C++ only after profiling demonstrates a bottleneck and a Python
+reference is validated. Sidiq's separately authorised beginner finance C++ learning track uses Wednesday slots
+without a speedup requirement; C001 is complete and C002 is next (clarified 27 September).
 
 ## Personal fit and gaps
 

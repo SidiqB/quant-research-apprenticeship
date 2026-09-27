@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-09-27 weekly synthesis
+
+- Completed Q007 from seven daily notes, ten baseline commits and archived experiments; no morning
+  implementation repeated. Rechecked 257 Python tests, code quality, C++ output and exact experiment replays.
+- Wrote the weekly report and verified PDF with negative results, measured evidence, employer connections,
+  revision exercises, limitations and input questions; no measured coverage percentage or personal review inferred.
+- Split Q006 calendar policy/implementation, Q009 membership/terminal events and Q004a permission/sample audit;
+  recorded Q005b upstream provenance integration. Replanned next week around Wednesday C++ and data blockers.
+- Clarified educational C++ versus profiling-gated production optimisation in the role analysis.
+
 ## 2026-09-27
 
 - Completed Q005: strict whole-batch observation ingestion with exact fields, validated identifiers,
