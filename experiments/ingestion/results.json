@@ -1,0 +1,30 @@
+{
+  "data_kind": "synthetic",
+  "question": "Can strict source-zone ingestion reject malformed clocks without guessing?",
+  "protocol": "Hand-calculated UTC instants; two valid fold versions and eight invalid batches.",
+  "source_zone": "Europe/London",
+  "accepted_versions": 2,
+  "availability_utc": [
+    "2026-10-25T00:30:00+00:00",
+    "2026-10-25T01:30:00+00:00"
+  ],
+  "decision_utc": [
+    "2026-10-25T00:30:00+00:00",
+    "2026-10-25T01:30:00+00:00"
+  ],
+  "decision_values": [
+    1.0,
+    2.0
+  ],
+  "rejected_controls": {
+    "duplicate_version": true,
+    "missing_identifier": true,
+    "ambiguous_without_offset": true,
+    "gap_pre_transition_offset": true,
+    "gap_post_transition_offset": true,
+    "inconsistent_zone": true,
+    "nonfinite_value": true,
+    "reversed_instants": true
+  },
+  "interpretation": "Structural validation only; no source authentication or empirical claim."
+}

@@ -25,7 +25,9 @@ Its eight-gate declaration checker and synthetic selection example pass 50 new t
 Neither real source is admitted; Q004a tracks entitlement and sample audit before empirical research.
 Q005a now normalizes availability timestamps to UTC: the future-fold leak is fixed, and 167 tests pass.
 Its 10,800 integer-oracle comparisons cover London/New York spring and autumn transitions.
-Q005 ingestion is next, including explicit invalid-local-time policy. C002 remains ready for Wednesday.
+Q005 now validates complete observation batches, including explicit-offset folds and gap rejection.
+All 257 tests pass; eight invalid experiment controls are rejected and two valid revisions remain usable.
+Q006 calendar/decision-time contracts are next; Q007 is the Sunday synthesis. C002 stays ready for Wednesday.
 No empirical alpha result, live order-book calibration or options-market result exists yet.
 
 ## Long-term scope and conditional extensions

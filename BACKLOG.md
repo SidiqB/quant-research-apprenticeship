@@ -17,8 +17,8 @@ This replaces that day's research slot; deferred Q-items keep their order for no
 | Q004 | 2026-09-24 | Shared foundations | Specify investable universe and data access | Compare licensed sources; document delistings, vintages and unresolved access | Done |
 | Q004a | Before empirical research | Alpha data access | Establish lawful source entitlement and audit a licensed sample against Q004 | Resolve all eight evidence gates or record an approved narrower research claim; no acquisition without entitlement/budget | Blocked: access unestablished |
 | Q005a | Before Q005 | Shared foundations | Normalize existing availability comparisons across timezone folds | Reproduce a later London fold leaking into the earlier decision; test UTC chronology, latency and staleness | Done |
-| Q005 | 2026-09-25 | Shared foundations | Validate timestamped observation ingestion | Reject duplicates, missing identifiers and inconsistent timestamp zones; define ambiguous/nonexistent local-time policy | Ready |
-| Q006 | 2026-09-26 | Shared foundations | Implement market calendar and decision-time contract | Test holidays and non-trading timestamps against a documented calendar | Planned |
+| Q005 | 2026-09-25 | Shared foundations | Validate timestamped observation ingestion | Reject duplicates, missing identifiers and inconsistent timestamp zones; define ambiguous/nonexistent local-time policy | Done |
+| Q006 | 2026-09-26 | Shared foundations | Implement market calendar and decision-time contract | Test holidays and non-trading timestamps against a documented calendar | Ready |
 | Q007 | 2026-09-27 | Shared foundations | Review foundation failures and evidence | Weekly synthesis and prioritised corrective backlog | Planned |
 | Q008 | 2026-09-28 | Alpha data and baseline | Build a corporate-action return fixture | Hand-check split and dividend total-return examples | Planned |
 | Q009 | 2026-09-29 | Alpha data and baseline | Model membership intervals and delistings | Test entries, exits and inactive securities without present-day filtering | Planned |
@@ -160,3 +160,19 @@ Q005 is ready: formalize ingestion, including source identity, duplicate handlin
 nonexistent local-time policy. UTC normalization does not choose an unknown source fold or reject all
 invalid local clock labels. Q004a remains blocked on lawful access/sample evidence; independent work
 continues. C002 remains Wednesday 30 September. Original target dates await weekly replanning.
+
+## Evidence from 27 September
+
+Q005 is complete: the strict batch adapter validates schema, identifiers, finite scalars, explicit-offset
+source timestamps, UTC ordering and duplicate version keys. A UTC round trip against the declared source
+zone rejects nonexistent local labels and inconsistent offsets; no ambiguous local time is guessed.
+Two valid London fold revisions select values 1 then 2; all eight invalid diagnostic batches are rejected.
+Ninety new tests bring the total to 257, including hand-calculated London/New York/Lord Howe instants,
+30-minute clock changes, 24 valid input permutations and two byte-identical experiment replays.
+The four-page PDF passed full source-text comparison and every-page visual checks. No runtime dependency
+or empirical claim was added. Personal review remains Not yet reviewed.
+
+Q006 is ready. Q007 is reserved for the Sunday 16:00 synthesis, including calendar replanning from actual
+progress. Q004a still needs lawful source access and a sample audit. C002 remains Wednesday 30 September.
+The adapter is in-memory and duplicate checks are batch-local; source metadata/provenance retention,
+calendar policy and any eventual vendor file adapter remain explicit upstream/integration responsibilities.

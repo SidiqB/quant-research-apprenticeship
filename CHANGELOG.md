@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-09-27
+
+- Completed Q005: strict whole-batch observation ingestion with exact fields, validated identifiers,
+  finite values, explicit timestamp offsets, declared-zone round trips and UTC duplicate detection.
+- Defined fold/gap policy: accept either valid explicit fold offset; reject missing offsets, nonexistent
+  labels and inconsistent zones. Preserve valid revisions; return no partial batch on validation failure.
+- Added 90 cases; all 257 tests, lint, format, strict types, C++ output and dependency checks pass.
+  Synthetic diagnostic accepts two versions and rejects eight invalid batches; exact replay verified.
+- Wrote and verified a four-page teaching PDF: complete extracted text and every-page visual inspection.
+- Marked Q006 ready and retained Q007 for Sunday synthesis. Personal review remains Not yet reviewed;
+  no new runtime dependency, market data, publication-authenticity proof or empirical alpha claim.
+
 ## 2026-09-26
 
 - Completed Q005a: canonical UTC observation storage and decision conversion fix future-fold leakage,
