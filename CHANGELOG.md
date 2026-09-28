@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-09-28
+
+- Completed Q006a: documented bounded NYSE calendar/source provenance, 09:00 New York decisions,
+  prior-session availability requirements and separate core-time/execution policies.
+- Added a 33-date prospective fixture and reproducible audit: 22 sessions, 20 in November, one early
+  close; explicit UTC instants span the autumn clock change. No realised trading or fill claim.
+- Added 35 tests, including six rejected corruptions and exact two-run replay; 292 total tests and
+  all quality, C++ build/output and dependency checks pass. No package API or dependency change.
+- Wrote and verified the four-page teaching PDF by full-text comparison and every-page visual inspection.
+- Q006b is ready; Q006 remains incomplete until lookup/decision validation passes. Personal review
+  remains Not yet reviewed. No empirical data access or source-version completeness is claimed.
+
 ## 2026-09-27 weekly synthesis
 
 - Completed Q007 from seven daily notes, ten baseline commits and archived experiments; no morning

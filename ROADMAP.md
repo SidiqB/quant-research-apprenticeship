@@ -27,8 +27,9 @@ Q005a now normalizes availability timestamps to UTC: the future-fold leak is fix
 Its 10,800 integer-oracle comparisons cover London/New York spring and autumn transitions.
 Q005 now validates complete observation batches, including explicit-offset folds and gap rejection.
 All 257 tests pass; eight invalid experiment controls are rejected and two valid revisions remain usable.
-Q007's first weekly synthesis is complete. Q006 is split into Q006a calendar/decision policy on September 28
-and Q006b implementation on September 29; C002 stays ready for Wednesday September 30.
+Q007's first weekly synthesis is complete. Q006a now specifies the calendar/decision contract with a
+33-date prospective NYSE fixture; all 292 tests pass, including six corrupted-fixture controls.
+Q006b implementation is ready for September 29; C002 stays ready for Wednesday September 30.
 Q008 corporate actions moves to October 1, Q009 membership/terminal-event children to October 2/3,
 and Q010 lagged features to October 4. Q014 is the separate October 4 afternoon review.
 Q004a1 permissions and Q004a2 licensed sample audit remain blocked. Q005b provenance/batch integration

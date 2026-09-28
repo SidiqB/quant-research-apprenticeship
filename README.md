@@ -15,6 +15,7 @@ The emphasis is on reproducible experiments, correct information timing and expl
 | 2026-09-26 | UTC availability across clock changes | 167 tests; 10,800 oracle comparisons; future-fold leak fixed; four-page teaching note |
 | 2026-09-27 | Strict source-zone observation ingestion | 257 tests; eight invalid batches rejected; explicit fold/gap policy; four-page teaching note |
 | 2026-09-27 | First weekly synthesis and backlog replan | Replayed evidence; calendar/access tasks split; verified weekly PDF |
+| 2026-09-28 | Bounded calendar and pre-open decision contract | 292 tests; 33 explicit dates; six rejected corruptions; four-page teaching note |
 | 2026-09-21 | Employer role mapping and research programme | 49 deduplicated postings across eight firms; roadmap through December |
 
 The experiments use synthetic data to demonstrate information-timing errors. They report no alpha.
@@ -37,6 +38,7 @@ make manifest-experiment
 make access-experiment
 make fold-experiment
 make ingestion-experiment
+make calendar-audit
 make cpp-savings
 make note
 ```
@@ -57,8 +59,9 @@ See `requirements-lock.txt` for the initial tested environment. The core package
 - [First C++ savings example](cpp/projects/savings_growth/README.md) and [C++ learning plan](CPP_LEARNING_PLAN.md)
 - [Clock-change availability experiment](experiments/timezones/README.md)
 - [Strict ingestion experiment](experiments/ingestion/README.md)
-- [Latest learning note](research_log/2026-09-27.md) and [PDF](reports/daily/2026-09-27-learning-note.pdf)
-- [Daily validation evidence](reports/milestone/2026-09-27-validation.md)
+- [Calendar/decision contract](data/calendar-and-decisions.md) and [bounded fixture audit](experiments/calendar/README.md)
+- [Latest learning note](research_log/2026-09-28.md) and [PDF](reports/daily/2026-09-28-learning-note.pdf)
+- [Daily validation evidence](reports/milestone/2026-09-28-validation.md)
 - [Weekly synthesis](reports/weekly/2026-09-27-synthesis.md), [PDF](reports/weekly/2026-09-27-synthesis.pdf) and [validation](reports/weekly/2026-09-27-validation.md)
 - [Daily operating procedure](OPERATIONS.md)
 

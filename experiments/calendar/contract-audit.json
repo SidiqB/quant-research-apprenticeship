@@ -1,0 +1,217 @@
+{
+  "calendar_dates": 33,
+  "data_kind": "scheduled_calendar_fixture_with_synthetic_decision_cases",
+  "fixture_id": "nyse-2026-autumn-v1",
+  "fixture_sha256": "6a6dcda36695b0ff0fe33f8eabf31c6478dec0a781b3e5a4f11d88414f271082",
+  "interpretation": "Fixture consistency only. Q006b must implement public lookup/decision validation. Scheduled sessions and synthetic decisions do not establish trading or fills.",
+  "november_sessions": 20,
+  "protocol": "Audit every date and UTC instant; cross-check the official November count.",
+  "question": "Can a pre-open decision remain valid under a bounded exchange schedule?",
+  "sessions": [
+    {
+      "core_close_utc": "2026-10-29T20:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-10-29T13:30:00+00:00",
+      "date": "2026-10-29",
+      "decision_utc": "2026-10-29T13:00:00+00:00",
+      "previous_session": null,
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-10-30T20:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-10-30T13:30:00+00:00",
+      "date": "2026-10-30",
+      "decision_utc": "2026-10-30T13:00:00+00:00",
+      "previous_session": "2026-10-29",
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-11-02T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-02T14:30:00+00:00",
+      "date": "2026-11-02",
+      "decision_utc": "2026-11-02T14:00:00+00:00",
+      "previous_session": "2026-10-30",
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-11-03T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-03T14:30:00+00:00",
+      "date": "2026-11-03",
+      "decision_utc": "2026-11-03T14:00:00+00:00",
+      "previous_session": "2026-11-02",
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-11-04T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-04T14:30:00+00:00",
+      "date": "2026-11-04",
+      "decision_utc": "2026-11-04T14:00:00+00:00",
+      "previous_session": "2026-11-03",
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-11-05T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-05T14:30:00+00:00",
+      "date": "2026-11-05",
+      "decision_utc": "2026-11-05T14:00:00+00:00",
+      "previous_session": "2026-11-04",
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-11-06T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-06T14:30:00+00:00",
+      "date": "2026-11-06",
+      "decision_utc": "2026-11-06T14:00:00+00:00",
+      "previous_session": "2026-11-05",
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-11-09T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-09T14:30:00+00:00",
+      "date": "2026-11-09",
+      "decision_utc": "2026-11-09T14:00:00+00:00",
+      "previous_session": "2026-11-06",
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-11-10T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-10T14:30:00+00:00",
+      "date": "2026-11-10",
+      "decision_utc": "2026-11-10T14:00:00+00:00",
+      "previous_session": "2026-11-09",
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-11-11T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-11T14:30:00+00:00",
+      "date": "2026-11-11",
+      "decision_utc": "2026-11-11T14:00:00+00:00",
+      "previous_session": "2026-11-10",
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-11-12T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-12T14:30:00+00:00",
+      "date": "2026-11-12",
+      "decision_utc": "2026-11-12T14:00:00+00:00",
+      "previous_session": "2026-11-11",
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-11-13T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-13T14:30:00+00:00",
+      "date": "2026-11-13",
+      "decision_utc": "2026-11-13T14:00:00+00:00",
+      "previous_session": "2026-11-12",
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-11-16T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-16T14:30:00+00:00",
+      "date": "2026-11-16",
+      "decision_utc": "2026-11-16T14:00:00+00:00",
+      "previous_session": "2026-11-13",
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-11-17T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-17T14:30:00+00:00",
+      "date": "2026-11-17",
+      "decision_utc": "2026-11-17T14:00:00+00:00",
+      "previous_session": "2026-11-16",
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-11-18T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-18T14:30:00+00:00",
+      "date": "2026-11-18",
+      "decision_utc": "2026-11-18T14:00:00+00:00",
+      "previous_session": "2026-11-17",
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-11-19T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-19T14:30:00+00:00",
+      "date": "2026-11-19",
+      "decision_utc": "2026-11-19T14:00:00+00:00",
+      "previous_session": "2026-11-18",
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-11-20T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-20T14:30:00+00:00",
+      "date": "2026-11-20",
+      "decision_utc": "2026-11-20T14:00:00+00:00",
+      "previous_session": "2026-11-19",
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-11-23T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-23T14:30:00+00:00",
+      "date": "2026-11-23",
+      "decision_utc": "2026-11-23T14:00:00+00:00",
+      "previous_session": "2026-11-20",
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-11-24T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-24T14:30:00+00:00",
+      "date": "2026-11-24",
+      "decision_utc": "2026-11-24T14:00:00+00:00",
+      "previous_session": "2026-11-23",
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-11-25T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-25T14:30:00+00:00",
+      "date": "2026-11-25",
+      "decision_utc": "2026-11-25T14:00:00+00:00",
+      "previous_session": "2026-11-24",
+      "status": "regular"
+    },
+    {
+      "core_close_utc": "2026-11-27T18:00:00+00:00",
+      "core_minutes": 210,
+      "core_open_utc": "2026-11-27T14:30:00+00:00",
+      "date": "2026-11-27",
+      "decision_utc": "2026-11-27T14:00:00+00:00",
+      "previous_session": "2026-11-25",
+      "status": "early_close"
+    },
+    {
+      "core_close_utc": "2026-11-30T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-30T14:30:00+00:00",
+      "date": "2026-11-30",
+      "decision_utc": "2026-11-30T14:00:00+00:00",
+      "previous_session": "2026-11-27",
+      "status": "regular"
+    }
+  ],
+  "status_counts": {
+    "early_close": 1,
+    "holiday": 1,
+    "regular": 21,
+    "weekend": 10
+  },
+  "weekday_only_november_count": 21
+}
