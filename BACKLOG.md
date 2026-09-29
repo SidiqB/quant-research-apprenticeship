@@ -22,11 +22,11 @@ prerequisites and Wednesday C++ precedence. Reassess them at Q014 without compre
 | Q004a2 | After Q004a1; before empirical research | Alpha data access | Audit a lawfully accessible bounded sample against all eight Q004 gates | Historical IDs, inactive names, actions, terminal events and vintages verified or explicit narrower claim agreed | Blocked: Q004a1 and sample |
 | Q005a | 2026-09-26 | Shared foundations | Normalize existing availability comparisons across timezone folds | Reproduce a later London fold leaking into the earlier decision; test UTC chronology, latency and staleness | Done |
 | Q005 | 2026-09-27 | Shared foundations | Validate timestamped observation ingestion | Reject duplicates, missing identifiers and inconsistent timestamp zones; define ambiguous/nonexistent local-time policy | Done |
-| Q006 | 2026-09-28/29 | Shared foundations | Parent: market calendar and decision-time contract; split into Q006a/Q006b | Test holidays and non-trading timestamps against a documented calendar | Split: Q006a done; Q006b pending |
+| Q006 | 2026-09-28/29 | Shared foundations | Parent: market calendar and decision-time contract; split into Q006a/Q006b | Test holidays and non-trading timestamps against a documented calendar | Done |
 | Q006a | 2026-09-28 | Shared foundations | After Q005: document calendar source/version, bounded session fixture and provisional 09:00 New York decision policy | Cite official calendar; specify holiday/early-close rules, prior-session inputs and decision versus execution times | Done |
-| Q006b | 2026-09-29 | Shared foundations | After Q006a: implement bounded session lookup and decision validation | Test holiday/weekend rejection, early closes, exact boundaries, out-of-range dates and UTC conversion; preserve valid pre-open decisions | Ready |
+| Q006b | 2026-09-29 | Shared foundations | After Q006a: implement bounded session lookup and decision validation | Test holiday/weekend rejection, early closes, exact boundaries, out-of-range dates and UTC conversion; preserve valid pre-open decisions | Done |
 | Q007 | 2026-09-27 16:00 | Shared foundations | Review foundation failures and evidence | Weekly synthesis and prioritised corrective backlog | Done |
-| Q008 | 2026-10-01 | Alpha data and baseline | After Q006b: build a synthetic corporate-action return fixture | Hand-check split and dividend total-return examples | Planned |
+| Q008 | 2026-10-01 | Alpha data and baseline | After Q006b: build a synthetic corporate-action return fixture | Hand-check split and dividend total-return examples | Ready |
 | Q009 | 2026-10-02/03 | Alpha data and baseline | After Q008: parent membership and terminal-event work; split into Q009a/Q009b | Test entries, exits and inactive securities without present-day filtering | Split: children pending |
 | Q009a | 2026-10-02 | Alpha data and baseline | After Q008: model historical membership intervals using synthetic identities | Test inclusive/exclusive entry-exit boundaries and inactive securities; no present-day list filter | Planned |
 | Q009b | 2026-10-03 | Alpha data and baseline | After Q009a: separate terminal-event evidence from membership exit | Hand-check known proceeds; missing proceeds remain unresolved; exit cannot erase holdings or imply zero recovery | Planned |
@@ -231,3 +231,17 @@ The audit is not a public decision validator. Closed-market publication timestam
 ingestion inputs; calendar policy must not conflate them with daily-feature session eligibility.
 C002 stays September 30; no other target dates move. Q004a still needs lawful access/sample evidence.
 Personal review remains Not yet reviewed. No input is needed for the next independent engineering task.
+
+## Evidence from 29 September
+
+Q006b and Q006 are complete within their bounded scope. The checksum-pinned loader, session lookup,
+exact 09:00 decision validator, separate half-open core predicate and complete prior-session windows
+pass 71 new tests (363 total). The synthetic diagnostic accepts 22 pre-open decisions, passes 132
+core-boundary checks and rejects nine invalid decisions. November 25 lacks a full 20-session history;
+November 27 and 30 have exactly complete requested windows. Two subprocess replays match archived bytes.
+Unknown coverage never becomes a closed day or partial window. Generic holiday publication remains valid.
+
+Full checks pass and the four-page PDF has exact text agreement and every-page visual verification.
+C002 is next on Wednesday September 30; Q008 is Ready for October 1. No target dates moved. Q004a remains
+blocked on lawful access/sample evidence and Q005b remains the integration prerequisite before empirical
+work. No new data, dependency or alpha claim. Personal review remains Not yet reviewed.

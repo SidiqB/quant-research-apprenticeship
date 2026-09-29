@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-09-29
+
+- Completed Q006b and bounded Q006: immutable session lookup, exact pre-open decision validation,
+  separate core-time predicate and complete prior-session windows with explicit unknown-history errors.
+- Pinned the existing reviewed fixture bytes and checked installed timezone rules; no general calendar
+  parser, actual fill or empirical market result claimed. Original fixture/results remain unchanged.
+- Added 71 tests (363 total): hand UTC/history examples, all closures, exact boundaries, invalid inputs,
+  fixture/rule mismatch controls, holiday ingestion independence and two exact subprocess replays.
+- Diagnostic accepts 22 decisions, passes 132 core boundaries and rejects nine invalid decisions.
+  All quality, C++ and dependency checks pass; no new dependency.
+- Wrote and verified the four-page teaching PDF by full-text and every-page visual checks.
+  C002 is next September 30; Q008 is Ready October 1. Personal review remains Not yet reviewed.
+
 ## 2026-09-28
 
 - Completed Q006a: documented bounded NYSE calendar/source provenance, 09:00 New York decisions,

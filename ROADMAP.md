@@ -29,11 +29,13 @@ Q005 now validates complete observation batches, including explicit-offset folds
 All 257 tests pass; eight invalid experiment controls are rejected and two valid revisions remain usable.
 Q007's first weekly synthesis is complete. Q006a now specifies the calendar/decision contract with a
 33-date prospective NYSE fixture; all 292 tests pass, including six corrupted-fixture controls.
-Q006b implementation is ready for September 29; C002 stays ready for Wednesday September 30.
+Q006b now implements bounded lookup, decision/core validation and complete prior-session history.
+All 363 tests pass; 22 valid decisions and 132 boundary checks pass, with nine rejected controls.
+Q006 is complete within its bounded scope; C002 stays ready for Wednesday September 30.
 Q008 corporate actions moves to October 1, Q009 membership/terminal-event children to October 2/3,
 and Q010 lagged features to October 4. Q014 is the separate October 4 afternoon review.
 Q004a1 permissions and Q004a2 licensed sample audit remain blocked. Q005b provenance/batch integration
-follows Q013 before empirical use. Phase 0's calendar gate remains incomplete; Phase 1 starts with
+follows Q013 before empirical use. Phase 0's bounded calendar gate is complete; Phase 1 starts with
 synthetic mechanics only. Original later-phase windows are conditional and will be revisited at Q014.
 No empirical alpha result, live order-book calibration or options-market result exists yet.
 

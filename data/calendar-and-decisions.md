@@ -105,5 +105,16 @@ This is a prospective scheduled-calendar teaching fixture, not realised evidence
 Emergency closures, instrument halts, historical revisions and the desired 2010-2025 empirical period
 are not covered. Two October warm-up dates do not promise 20 prior sessions at every decision. The
 bounded audit establishes internal consistency and selected official facts, not full calendar accuracy.
-Q006b is next; Q006 remains incomplete until its implementation passes. Q004a access/sample evidence and
+Q006b passed on September 29; Q006 is complete within this bounded scope. Q004a access/sample evidence and
 Q005b provenance integration still gate empirical research. No user decision is needed for Q006b.
+
+## Implementation evidence - 29 September
+
+The bounded [package API](../src/quant_research/data/calendar.py) and
+[diagnostic](../experiments/calendar/decision-validation.json) implement this contract. The loader
+accepts only the exact reviewed v1 fixture bytes and verifies its UTC instants against installed rules.
+Known closures return no session; unknown dates/history raise CalendarCoverageError. Complete history
+windows exclude their session anchor and preserve ascending order. No partial history is returned.
+All 22 decisions, 132 core-boundary checks and nine invalid diagnostic controls pass; the full suite
+has 363 tests. See the [usage and limits](../experiments/calendar/README.md) and
+[teaching note](../research_log/2026-09-29.md). The original fixture/source edition remains unchanged.

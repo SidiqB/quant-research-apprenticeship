@@ -1,0 +1,64 @@
+{
+  "core_boundary_checks_passed": 132,
+  "core_only_rule_incorrectly_rejected_decisions": 22,
+  "data_kind": "scheduled_calendar_fixture_with_synthetic_decision_cases",
+  "examples": [
+    {
+      "core_close_utc": "2026-10-30T20:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-10-30T13:30:00+00:00",
+      "day": "2026-10-30",
+      "decision_utc": "2026-10-30T13:00:00+00:00",
+      "previous_session": "2026-10-29"
+    },
+    {
+      "core_close_utc": "2026-11-02T21:00:00+00:00",
+      "core_minutes": 390,
+      "core_open_utc": "2026-11-02T14:30:00+00:00",
+      "day": "2026-11-02",
+      "decision_utc": "2026-11-02T14:00:00+00:00",
+      "previous_session": "2026-10-30"
+    },
+    {
+      "core_close_utc": "2026-11-27T18:00:00+00:00",
+      "core_minutes": 210,
+      "core_open_utc": "2026-11-27T14:30:00+00:00",
+      "day": "2026-11-27",
+      "decision_utc": "2026-11-27T14:00:00+00:00",
+      "previous_session": "2026-11-25"
+    }
+  ],
+  "fixture_sha256": "6a6dcda36695b0ff0fe33f8eabf31c6478dec0a781b3e5a4f11d88414f271082",
+  "interpretation": "Scheduling correctness only; no prices, fills, realised sessions or alpha.",
+  "invalid_decisions_rejected": {
+    "after_coverage": "date outside verified calendar coverage",
+    "before_coverage": "date outside verified calendar coverage",
+    "core_open_is_not_decision": "decision must be exactly 09:00:00 New York",
+    "holiday": "decision date is a known closed day",
+    "naive": "timestamp must be an aware datetime",
+    "one_microsecond_early": "decision must be exactly 09:00:00 New York",
+    "one_microsecond_late": "decision must be exactly 09:00:00 New York",
+    "weekend": "decision date is a known closed day",
+    "wrong_fixed_utc_hour": "decision must be exactly 09:00:00 New York"
+  },
+  "protocol": "Check all sessions and microsecond core boundaries; reject nine invalid decisions.",
+  "question": "Can bounded decision validation preserve pre-open decisions and fail on unknowns?",
+  "twenty_session_history": {
+    "2026-11-25": {
+      "status": "insufficient_history"
+    },
+    "2026-11-27": {
+      "count": 20,
+      "first": "2026-10-29",
+      "last": "2026-11-25",
+      "status": "complete"
+    },
+    "2026-11-30": {
+      "count": 20,
+      "first": "2026-10-30",
+      "last": "2026-11-27",
+      "status": "complete"
+    }
+  },
+  "valid_preopen_decisions": 22
+}

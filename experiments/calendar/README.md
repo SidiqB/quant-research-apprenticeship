@@ -40,3 +40,42 @@ The JSON's explicit calendar facts are not synthetic prices or proof of future r
 Halts, emergency changes, auction fills, other venues and the empirical 2010-2025 study remain unmodelled.
 Timezone metadata records the consulted database; portability checks compare relevant instants rather than
 requiring a host's TZif byte hash to match. A rule mismatch needs investigation and versioned correction.
+
+## Q006b implementation - 29 September
+
+The fixture and Q006a results above are preserved. The new package API in
+[calendar.py](../../src/quant_research/data/calendar.py) loads exactly this reviewed fixture version,
+checks its SHA-256 and verifies its explicit instants against installed New York rules. It exposes
+immutable session values and distinguishes known closure from unknown coverage. This intentionally
+bounded loader is not a generic calendar parser; even a formatting-only fixture change is rejected.
+
+```python
+from datetime import date, datetime
+from pathlib import Path
+from quant_research.data.calendar import NyseAutumn2026Calendar
+
+calendar = NyseAutumn2026Calendar(Path("experiments/calendar/nyse-2026-autumn-v1.json"))
+session = calendar.validate_decision(datetime.fromisoformat("2026-11-27T14:00:00+00:00"))
+assert not calendar.is_core_time(session.decision_at)
+assert calendar.session_on(date(2026, 11, 26)) is None
+assert len(calendar.previous_sessions(session.day, 20)) == 20
+```
+
+session_on requires a New York date, rejecting datetime arguments. validate_decision accepts equivalent
+aware instants only at the exact 09:00 local policy time. is_core_time uses the half-open core interval.
+Both timestamp APIs identify the date in New York after UTC normalization. Outside coverage raises
+CalendarCoverageError, never False/None. previous_sessions requires a covered session anchor and positive
+integer count, excludes the anchor and returns exactly that many sessions in ascending order. Insufficient
+history raises; the first session's valid decision does not imply any usable prior-session history.
+
+Reproduce with make calendar-experiment, or run scripts/calendar_experiment.py with --output PATH.
+[The result](decision-validation.json) accepts all 22 decisions, passes 132 microsecond core-boundary
+checks and rejects nine invalid decisions. A core-only decision rule incorrectly rejects all 22.
+November 25 has only 19 prior sessions; November 27 and 30 have complete 20-session windows. The
+[71 new tests](../../tests/test_calendar.py) also check all 11 closed dates, a hand-listed history
+window, input types, timezone equivalence, local/UTC date boundaries, immutable outputs, fixture/rule
+mismatch rejection and two byte-identical subprocess replays. All 363 project tests pass.
+
+The API validates scheduling only. It cannot establish observation completeness, receipt times,
+source-clock validity or fills. Generic ingestion remains independent of exchange hours; a holiday
+publication still passes. Actual data access, broader calendars and provenance integration remain pending.
