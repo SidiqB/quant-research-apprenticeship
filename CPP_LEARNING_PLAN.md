@@ -19,8 +19,8 @@ Do not skip prerequisites to reach a more impressive title. Later projects may r
 | ID | Project / step | Concepts | Evidence required | Status |
 |---|---|---|---|---|
 | C001 | Savings growth: fixed-input example | Compile/run, variables, doubles, output | Calculate one year of growth and compare with hand arithmetic | Done |
-| C002 | Savings growth: reusable function | Functions, parameters, return values | Zero rate, zero years, invalid inputs; explain compounding convention | Ready |
-| C003 | Savings growth: command-line inputs | Parsing, branches, errors | Reject malformed input; clear units and reproducible examples | Planned |
+| C002 | Savings growth: reusable function | Functions, parameters, return values | Zero rate, zero years, invalid inputs; explain compounding convention | Done |
+| C003 | Savings growth: command-line inputs | Parsing, branches, errors | Reject malformed input; clear units and reproducible examples | Ready |
 | C004 | Return calculator: a small price series | Vectors, loops, indexing | Hand-check simple returns; reject zero/nonpositive prices under stated scope | Planned |
 | C005 | Return calculator: summary statistics | Mean, sample variance, functions | Compare known small samples; handle fewer than two observations | Planned |
 | C006 | Cash-flow present value | Structs, vectors, discounting | Hand-check a zero-coupon example; state rate and period conventions | Planned |
@@ -53,3 +53,13 @@ Sidiq review status remains Not yet reviewed. C002 is ready for Wednesday 30 Sep
 Sidiq also requested a separate finance-related project linked to an earlier remembered project.
 Its exact identity is awaiting clarification; do not substitute the quantum/wormhole project or alter that
 project's independent-learning arrangement without confirmation of the intended scope.
+
+## Evidence from 30 September
+
+C002 is complete: a reusable annual-compounding function validates finite nonnegative principal/rate
+and whole nonnegative years, preserves zero cases and rejects numeric overflow. Sixty-six C++ checks
+pass; the hand-authored output fixture preserves C001 and adds 1102.50 at two years and 1157.625 at
+three years. Two replays match; a simple-interest mutation fails. All 363 Python tests and full checks
+pass. The four-page teaching PDF passes full-text and every-page visual checks. Intermediate-factor
+overflow and implicit integer conversion limitations are explicit; no general exact-money claim.
+C003 is Ready for October 7. Sidiq review remains Not yet reviewed.

@@ -245,3 +245,14 @@ Full checks pass and the four-page PDF has exact text agreement and every-page v
 C002 is next on Wednesday September 30; Q008 is Ready for October 1. No target dates moved. Q004a remains
 blocked on lawful access/sample evidence and Q005b remains the integration prerequisite before empirical
 work. No new data, dependency or alpha claim. Personal review remains Not yet reviewed.
+
+## Evidence from 30 September
+
+Wednesday C002 is complete: reusable C++ annual compounding with explicit nonnegative input and
+whole-year contracts, zero cases and overflow rejection. All 66 C++ checks and 363 Python tests pass.
+The synthetic demo preserves C001 and shows 1102.50 after two years versus 1100.00 simple interest;
+three-year wealth is 1157.625 without intermediate rounding. Two replays match expected bytes and
+a simple-interest mutation fails. The verified four-page teaching PDF includes numerical limitations.
+C003 is Ready for Wednesday October 7; Q008 remains next on October 1. No research dates moved.
+Q004a still requires lawful access/sample evidence, and Q005b remains a later integration prerequisite.
+No input is needed for the next synthetic task. Personal review remains Not yet reviewed.

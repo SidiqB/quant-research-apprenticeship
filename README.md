@@ -17,6 +17,7 @@ The emphasis is on reproducible experiments, correct information timing and expl
 | 2026-09-27 | First weekly synthesis and backlog replan | Replayed evidence; calendar/access tasks split; verified weekly PDF |
 | 2026-09-28 | Bounded calendar and pre-open decision contract | 292 tests; 33 explicit dates; six rejected corruptions; four-page teaching note |
 | 2026-09-29 | Bounded session and decision validation | 363 tests; 22 valid decisions; 132 boundary checks; four-page teaching note |
+| 2026-09-30 | Reusable C++ annual savings growth | 66 C++ checks; 363 Python tests; compound-versus-simple demo; four-page teaching note |
 | 2026-09-21 | Employer role mapping and research programme | 49 deduplicated postings across eight firms; roadmap through December |
 
 The experiments use synthetic data to demonstrate information-timing errors. They report no alpha.
@@ -60,12 +61,12 @@ See `requirements-lock.txt` for the initial tested environment. The core package
 - [Label-purging experiment](experiments/purging/README.md)
 - [Manifest provenance audit](experiments/manifests/README.md)
 - [Universe and access contract](data/universe-and-access.md) and [admission experiment](experiments/data_access/README.md)
-- [First C++ savings example](cpp/projects/savings_growth/README.md) and [C++ learning plan](CPP_LEARNING_PLAN.md)
+- [C++ savings growth](cpp/projects/savings_growth/README.md) and [C++ learning plan](CPP_LEARNING_PLAN.md)
 - [Clock-change availability experiment](experiments/timezones/README.md)
 - [Strict ingestion experiment](experiments/ingestion/README.md)
 - [Calendar/decision contract](data/calendar-and-decisions.md) and [bounded fixture audit](experiments/calendar/README.md)
-- [Latest learning note](research_log/2026-09-29.md) and [PDF](reports/daily/2026-09-29-learning-note.pdf)
-- [Daily validation evidence](reports/milestone/2026-09-29-validation.md)
+- [Latest learning note](research_log/2026-09-30.md) and [PDF](reports/daily/2026-09-30-learning-note.pdf)
+- [Daily validation evidence](reports/milestone/2026-09-30-validation.md)
 - [Weekly synthesis](reports/weekly/2026-09-27-synthesis.md), [PDF](reports/weekly/2026-09-27-synthesis.pdf) and [validation](reports/weekly/2026-09-27-validation.md)
 - [Daily operating procedure](OPERATIONS.md)
 

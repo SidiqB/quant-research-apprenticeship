@@ -3,3 +3,9 @@ Opening balance (units): 1000.00
 Annual rate (percent): 5.00
 Interest (units): 50.00
 Closing balance (units): 1050.00
+
+Synthetic annual compounding comparison
+Two-year compound balance (units): 1102.50
+Two-year simple balance (units): 1100.00
+Interest-on-interest difference (units): 2.50
+Three-year unrounded balance (units): 1157.625

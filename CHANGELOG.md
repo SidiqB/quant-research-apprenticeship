@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-09-30
+
+- Completed C002: reusable C++ annual compound balance with explicit input validation, zero cases
+  and overflow errors. Separated calculation from display; preserved C001 output and extended demo.
+- Added 66 C++ function checks and hand-authored multi-year output; two exact replays pass and a
+  temporary simple-interest mutation fails. All 363 Python tests and full quality/dependency checks pass.
+- Documented rate units, whole-year caller responsibility, no intermediate rounding and conservative
+  factor-overflow limitation. No dependency, market data, speedup or exact-money guarantee added.
+- Wrote and verified the four-page teaching PDF by exact text and every-page visual checks.
+  C003 is Ready for October 7; Q008 stays next on October 1. Personal review remains Not yet reviewed.
+
 ## 2026-09-29
 
 - Completed Q006b and bounded Q006: immutable session lookup, exact pre-open decision validation,

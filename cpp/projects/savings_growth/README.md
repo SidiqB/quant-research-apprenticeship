@@ -1,76 +1,93 @@
-# Savings growth: first C++ example
+# Savings growth: reusable C++ function
 
-C001, 23 September 2026. Synthetic arithmetic exercise, with no market data or bank product.
-Sidiq review status: Not yet reviewed.
+C001 completed 23 September; C002 completed 30 September 2026. Synthetic arithmetic only;
+no market data, bank product or empirical investment result. Sidiq review: Not yet reviewed.
 
-## Question and predeclared protocol
+## Question and contract
 
-Can a compiled C++ program reproduce one year of interest on an invented 1,000-unit opening balance
-at a fixed 5% effective annual rate? Hypothesis: interest is 50 units and closing wealth is 1,050 units.
-The period is exactly one model year; there are no calendar dates, deposits, withdrawals, fees or taxes.
-The inputs are deliberately fixed, finite, nonnegative literals. There is no external input interface;
-general input validation belongs to C002/C003 when functions and parsing are introduced.
+Can a reusable function reproduce annual compounding and reject invalid inputs? C001 established
+one year's arithmetic; C002 distinguishes compound interest from simple interest over several years.
+The predeclared protocol uses independent hand values, zero cases, invalid inputs, overflow checks,
+a yearwise cross-check and exact executable-output comparison. No parameter fitting or speed claim.
 
-The acceptance test compiles with warnings treated as errors, runs the executable, and compares every
-output line with the independently hand-calculated `expected.txt`. Compiler or process failure fails
-the check. A display mismatch fails the check. No fitted parameters, tuning or empirical evaluation.
+`double compound_balance(double principal, double annual_rate, int years)` returns
+`P * (1 + r)^n`. Principal and rate must be finite and nonnegative; years must be a nonnegative `int`.
+The rate is a fraction: `0.05` means 5%, whereas `5.0` means 500% and is valid under this contract.
+Years are whole model years, with a constant effective annual rate, reinvested interest, no cash flows,
+fees or taxes and no rounding between years. Negative rates are outside this lesson's scope.
 
-## Hand arithmetic
+Invalid values raise `std::invalid_argument`, including when another input is zero. After validation,
+zero principal, zero years or zero rate returns the principal. A nonfinite computed growth factor or
+balance raises `std::overflow_error`. A finite result is an approximation, not exact money accounting.
+There is no input parser yet: callers must supply whole-year integers. C++ implicit conversions can
+truncate a fractional argument before this function sees it; C003 must validate text before conversion.
 
-Five percent means five per hundred: `r = 5 / 100 = 0.05`.
-For one year, `interest = P * r = 1000 * 0.05 = 50`.
-The closing balance is `B = P + interest = 1000 + 50 = 1050`.
-As an independent check, divide the opening amount into 100 equal pieces of 10 units and take five.
-Expected absolute error in each displayed amount is zero units; output precision is two decimal places.
+## Worked synthetic experiment
 
-## Build, run and test
+| Calculation | Hand result (units) |
+|---|---|
+| 1000 at 5%, one year | 1050.00; interest 50.00 |
+| 1000 at 5%, two years compounded | 1102.50 |
+| 1000 at 5%, two years simple interest | 1100.00 |
+| Compound minus simple after two years | 2.50 |
+| 1000 at 5%, three years, no intermediate rounding | 1157.625 |
 
-From the repository root, using a C++17-capable Clang or GCC compiler and Make:
+Year two earns `1050 * 0.05 = 52.50`, including `50 * 0.05 = 2.50` on year one's interest.
+The first five output lines preserve C001's example; the appended comparison distinguishes conventions.
+`expected.txt` contains hand-authored results; it is not generated from the implementation.
+
+## Build, run and check
+
+From the repository root with a C++17 compiler:
 
 ```sh
 make cpp-savings
 make cpp-check
 make check
+make -B cpp-check CXX=clang++
 ```
 
-The first command builds and runs the example. The second compares it with `expected.txt`, and is
-included in `make check`. Build products and captured output stay in ignored `build/`.
-To choose another compiler, use `make -B cpp-check CXX=clang++` (or `CXX=g++`).
+The build links `main.cpp` and `savings.cpp`. `savings.hpp` declares the function for both the demo
+and `test_savings.cpp`. All files are tracked as Make dependencies, including the shared header.
+Products stay in ignored `build/cpp/savings_growth/`. No arguments are parsed by the example.
 
-Equivalent manual build and run:
+`cpp-check` runs 66 function checks and compares the demo with `expected.txt`. The function checks
+include 14 known/zero cases, 19 invalid-input cases, three overflow cases and 30 yearwise comparisons.
+Floating-point comparison requires finite output and absolute error at most
+`1e-12 * max(1, abs(expected))`. Output comparison is exact at the declared display precision.
+The harness uses exceptions and exit status rather than `assert`, so checks survive `NDEBUG` builds.
+A temporary simple-interest mutation fails on the two-year hand value. Two demo runs match expected bytes.
 
-```sh
-mkdir -p build/cpp/savings_growth
-c++ -std=c++17 -Wall -Wextra -Wpedantic -Werror cpp/projects/savings_growth/main.cpp -o build/cpp/savings_growth/savings
-./build/cpp/savings_growth/savings
-```
+## Beginner C++ guide
 
-Do not pass amounts on the command line: this lesson always uses the constants in `main.cpp`.
+A declaration announces a function's name, input types and return type. The definition supplies its
+body. Parameters receive values from the caller; `return balance;` gives one result back. This function
+performs arithmetic without printing, so the same calculation can serve the demo and tests.
+A header shares the declaration; its include guard prevents repeated inclusion. The compiler builds
+source files and the linker joins their references. `if` chooses a branch; `throw` reports an error,
+and the test runner's `catch` handles it and returns a failing exit status when appropriate.
+`std::pow` computes a power and `std::isfinite` rejects infinities and NaN. Display precision affects
+printing only. The 5% third-year result is shown with three decimals to preserve the teaching example.
 
-## Read the syntax
+## Numerical and model limitations
 
-`#include <iostream>` declares stream facilities, and `<iomanip>` supplies `std::setprecision`.
-`int main()` is the program entry point; braces enclose its body and semicolons end statements.
-`const double principal = 1000.0;` creates a named floating-point value that cannot be reassigned.
-`*` multiplies, `+` adds, `std::cout <<` sends values to standard output, and `'\n'` starts a new line.
-`std::fixed` with `std::setprecision(2)` displays two digits after the decimal point.
-`return 0;` reports successful completion to the operating system.
+This is a basic `double` implementation. `1 + r` can round to 1 for tiny rates; rounding error grows
+with the horizon. It has no guaranteed cent-level accuracy over the entire accepted input range.
+A growth factor may overflow even when scaling by a tiny principal would make final wealth finite:
+`compound_balance(numeric_limits<double>::min(), 1.0, 1100)` deliberately raises. Log-domain scaling
+would need a separate precision contract and tests. No numerical extension is claimed here.
 
-Formatting changes the display, not the stored number. Binary floating-point can approximate decimal
-inputs; two displayed decimal places do not provide a general exact-money accounting contract.
+The function does not model negative rates, fractional years, varying rates, deposits, withdrawals,
+day counts, inflation or contractual bank rounding. Whole-year type conversion and textual parsing
+remain the caller's responsibility. C003 introduces validated command-line inputs on October 7.
 
-## Limits and next lesson
+## Primary sources consulted on 30 September 2026
 
-The golden-output check verifies this one fixture at display precision. It cannot establish behaviour
-for other balances, rates, horizons or rounding boundaries. No speedup or investment return is claimed.
-One period does not distinguish simple from compound interest; multi-year use needs a stated convention.
-C002 will introduce a reusable function, annual compounding, zero-rate/zero-year cases and invalid inputs.
+- [Microsoft C++ functions](https://learn.microsoft.com/en-us/cpp/cpp/functions-cpp?view=msvc-170): declarations, parameters and return values.
+- [Microsoft pow reference](https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/pow-powf-powl?view=msvc-170): power evaluation and range errors.
+- [Microsoft isfinite reference](https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/finite-finitef?view=msvc-170): finite-value classification.
 
-## Official sources consulted on 23 September 2026
-
-- [Microsoft C++ built-in types](https://learn.microsoft.com/en-us/cpp/cpp/fundamental-types-cpp?view=msvc-170): floating-point types and precision limits.
-- [Microsoft stream formatting](https://learn.microsoft.com/en-us/cpp/standard-library/ios-functions?view=msvc-170#fixed) and [setprecision](https://learn.microsoft.com/en-us/cpp/standard-library/iomanip-functions?view=msvc-170#setprecision): display convention.
-- [Clang user manual](https://clang.llvm.org/docs/UsersManual.html): language mode and warning flags.
-
-See the [teaching note](../../../research_log/2026-09-23.md) and
-[PDF](../../../reports/daily/2026-09-23-learning-note.pdf) for definitions and exercises.
+These document C++ facilities; financial assumptions are explicitly chosen for this synthetic lesson.
+See the [teaching note](../../../research_log/2026-09-30.md),
+[PDF](../../../reports/daily/2026-09-30-learning-note.pdf) and
+[validation record](../../../reports/milestone/2026-09-30-validation.md).

@@ -31,7 +31,9 @@ Q007's first weekly synthesis is complete. Q006a now specifies the calendar/deci
 33-date prospective NYSE fixture; all 292 tests pass, including six corrupted-fixture controls.
 Q006b now implements bounded lookup, decision/core validation and complete prior-session history.
 All 363 tests pass; 22 valid decisions and 132 boundary checks pass, with nine rejected controls.
-Q006 is complete within its bounded scope; C002 stays ready for Wednesday September 30.
+Q006 is complete within its bounded scope. C002 now implements reusable annual compound savings
+growth: 66 C++ checks and a hand-authored demonstration pass alongside 363 Python tests.
+C003 command-line parsing is Ready for Wednesday October 7.
 Q008 corporate actions moves to October 1, Q009 membership/terminal-event children to October 2/3,
 and Q010 lagged features to October 4. Q014 is the separate October 4 afternoon review.
 Q004a1 permissions and Q004a2 licensed sample audit remain blocked. Q005b provenance/batch integration
