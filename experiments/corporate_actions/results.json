@@ -1,0 +1,113 @@
+{
+  "cases": [
+    {
+      "capital_return": 0.10000000000000009,
+      "case": "no_action_gain",
+      "cash_per_old_share": 0,
+      "end_price": 110,
+      "expected_total_return": 0.1,
+      "income_return": 0.0,
+      "raw_price_return": 0.10000000000000009,
+      "shares_per_old_share": 1,
+      "start_price": 100,
+      "total_return": 0.10000000000000009
+    },
+    {
+      "capital_return": -0.09999999999999998,
+      "case": "no_action_loss",
+      "cash_per_old_share": 0,
+      "end_price": 90,
+      "expected_total_return": -0.1,
+      "income_return": 0.0,
+      "raw_price_return": -0.09999999999999998,
+      "shares_per_old_share": 1,
+      "start_price": 100,
+      "total_return": -0.09999999999999998
+    },
+    {
+      "capital_return": 0.0,
+      "case": "two_for_one_split",
+      "cash_per_old_share": 0,
+      "end_price": 50,
+      "expected_total_return": 0.0,
+      "income_return": 0.0,
+      "raw_price_return": -0.5,
+      "shares_per_old_share": 2,
+      "start_price": 100,
+      "total_return": 0.0
+    },
+    {
+      "capital_return": 0.0,
+      "case": "one_for_five_reverse_split",
+      "cash_per_old_share": 0,
+      "end_price": 100,
+      "expected_total_return": 0.0,
+      "income_return": 0.0,
+      "raw_price_return": 4.0,
+      "shares_per_old_share": 0.2,
+      "start_price": 20,
+      "total_return": 0.0
+    },
+    {
+      "capital_return": -0.020000000000000018,
+      "case": "cash_dividend_offset",
+      "cash_per_old_share": 2,
+      "end_price": 98,
+      "expected_total_return": 0.0,
+      "income_return": 0.02,
+      "raw_price_return": -0.020000000000000018,
+      "shares_per_old_share": 1,
+      "start_price": 100,
+      "total_return": 0.0
+    },
+    {
+      "capital_return": 0.030000000000000027,
+      "case": "dividend_and_gain",
+      "cash_per_old_share": 2,
+      "end_price": 103,
+      "expected_total_return": 0.05,
+      "income_return": 0.02,
+      "raw_price_return": 0.030000000000000027,
+      "shares_per_old_share": 1,
+      "start_price": 100,
+      "total_return": 0.050000000000000044
+    },
+    {
+      "capital_return": -0.020000000000000018,
+      "case": "split_and_dividend",
+      "cash_per_old_share": 2,
+      "end_price": 49,
+      "expected_total_return": 0.0,
+      "income_return": 0.02,
+      "raw_price_return": -0.51,
+      "shares_per_old_share": 2,
+      "start_price": 100,
+      "total_return": 0.0
+    },
+    {
+      "capital_return": 0.08000000000000007,
+      "case": "split_dividend_and_gain",
+      "cash_per_old_share": 2,
+      "end_price": 54,
+      "expected_total_return": 0.1,
+      "income_return": 0.02,
+      "raw_price_return": -0.45999999999999996,
+      "shares_per_old_share": 2,
+      "start_price": 100,
+      "total_return": 0.10000000000000009
+    }
+  ],
+  "cash_convention": "known entitlement per opening share, valued at par; no reinvestment",
+  "data_kind": "synthetic",
+  "hand_cases_passed": 8,
+  "interpretation": "Arithmetic validation only; no vendor admission or alpha claim.",
+  "period": "undated single holding intervals; no empirical sample",
+  "protocol": "Eight hand totals; three wrong controls; tolerance 1e-12.",
+  "question": "Can explicit share/cash units reconcile split and dividend returns?",
+  "wrong_control_returns_expected_zero": {
+    "double_count_dividend_after_split": 0.020000000000000018,
+    "ignore_split": -0.5,
+    "invert_split": -0.75
+  },
+  "wrong_controls_detected": 3
+}

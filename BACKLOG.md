@@ -26,9 +26,9 @@ prerequisites and Wednesday C++ precedence. Reassess them at Q014 without compre
 | Q006a | 2026-09-28 | Shared foundations | After Q005: document calendar source/version, bounded session fixture and provisional 09:00 New York decision policy | Cite official calendar; specify holiday/early-close rules, prior-session inputs and decision versus execution times | Done |
 | Q006b | 2026-09-29 | Shared foundations | After Q006a: implement bounded session lookup and decision validation | Test holiday/weekend rejection, early closes, exact boundaries, out-of-range dates and UTC conversion; preserve valid pre-open decisions | Done |
 | Q007 | 2026-09-27 16:00 | Shared foundations | Review foundation failures and evidence | Weekly synthesis and prioritised corrective backlog | Done |
-| Q008 | 2026-10-01 | Alpha data and baseline | After Q006b: build a synthetic corporate-action return fixture | Hand-check split and dividend total-return examples | Ready |
+| Q008 | 2026-10-01 | Alpha data and baseline | After Q006b: build a synthetic corporate-action return fixture | Hand-check split and dividend total-return examples | Done |
 | Q009 | 2026-10-02/03 | Alpha data and baseline | After Q008: parent membership and terminal-event work; split into Q009a/Q009b | Test entries, exits and inactive securities without present-day filtering | Split: children pending |
-| Q009a | 2026-10-02 | Alpha data and baseline | After Q008: model historical membership intervals using synthetic identities | Test inclusive/exclusive entry-exit boundaries and inactive securities; no present-day list filter | Planned |
+| Q009a | 2026-10-02 | Alpha data and baseline | After Q008: model historical membership intervals using synthetic identities | Test inclusive/exclusive entry-exit boundaries and inactive securities; no present-day list filter | Ready |
 | Q009b | 2026-10-03 | Alpha data and baseline | After Q009a: separate terminal-event evidence from membership exit | Hand-check known proceeds; missing proceeds remain unresolved; exit cannot erase holdings or imply zero recovery | Planned |
 | Q010 | 2026-10-04 | Alpha data and baseline | After Q009b: implement lagged return features | Prove future data cannot change earlier features | Planned |
 | Q011 | 2026-10-05 | Alpha data and baseline | After Q010: implement cross-sectional ranks and ties | Compare hand-ranked examples and missing-value handling | Planned |
@@ -256,3 +256,18 @@ a simple-interest mutation fails. The verified four-page teaching PDF includes n
 C003 is Ready for Wednesday October 7; Q008 remains next on October 1. No research dates moved.
 Q004a still requires lawful access/sample evidence, and Q005b remains a later integration prerequisite.
 No input is needed for the next synthetic task. Personal review remains Not yet reviewed.
+
+## Evidence from 1 October
+
+Q008 is complete: explicit raw-price, share-ratio and dividend-entitlement units reconcile eight
+synthetic split/dividend cases. A 2-for-1 split with 100 to 49 prices and 2 cash per opening share
+has 0% total return despite a -51% raw price change. Three wrong controls expose ignored/inverted
+splits and double-counted cash. Fifty-two new tests bring the total to 415, including 162 exact-ledger
+comparisons across currency scales and two byte-identical experiment replays. Full checks and 66 C++
+checks pass. The four-page PDF passes exact text and every-page visual verification.
+
+The scalar API does not validate event dates, entitlement, price basis or vendor provenance. Cash is
+a known receivable valued at par, not settled trading cash; no reinvestment or empirical alpha claim.
+Q009a is Ready for October 2; Q009b will handle terminal evidence separately. C003 stays October 7.
+Q004a and Q005b remain empirical prerequisites; no input is needed for synthetic continuation.
+Personal review remains Not yet reviewed. No planning dates changed.

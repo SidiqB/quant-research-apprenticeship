@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-10-01
+
+- Completed Q008: single-interval split/dividend returns with explicit share and cash units, required
+  action inputs, immutable results and invalid/range checks. No implicit action defaults.
+- Added eight synthetic hand examples and three deliberately wrong controls; 52 new tests include
+  162 exact-ledger comparisons and two identical subprocess replays. All 415 Python tests,
+  66 C++ checks, quality/dependency checks and four original provenance hashes pass.
+- Documented raw-price obligations, entitlement versus settled cash, no reinvestment, numeric limits
+  and excluded terminal events. No market data, dependency or empirical result added.
+- Wrote and verified the four-page teaching PDF. Q009a is Ready for October 2; personal review
+  remains Not yet reviewed. Empirical access and integration prerequisites remain unresolved.
+
 ## 2026-09-30
 
 - Completed C002: reusable C++ annual compound balance with explicit input validation, zero cases

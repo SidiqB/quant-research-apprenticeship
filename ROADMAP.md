@@ -34,7 +34,9 @@ All 363 tests pass; 22 valid decisions and 132 boundary checks pass, with nine r
 Q006 is complete within its bounded scope. C002 now implements reusable annual compound savings
 growth: 66 C++ checks and a hand-authored demonstration pass alongside 363 Python tests.
 C003 command-line parsing is Ready for Wednesday October 7.
-Q008 corporate actions moves to October 1, Q009 membership/terminal-event children to October 2/3,
+Q008 synthetic corporate-action returns is complete: eight hand cases, 162 exact-ledger comparisons
+and three wrong controls pass; all 415 Python tests and 66 C++ checks pass. The four-page PDF is verified.
+Q009 membership/terminal-event children remain scheduled for October 2/3,
 and Q010 lagged features to October 4. Q014 is the separate October 4 afternoon review.
 Q004a1 permissions and Q004a2 licensed sample audit remain blocked. Q005b provenance/batch integration
 follows Q013 before empirical use. Phase 0's bounded calendar gate is complete; Phase 1 starts with
