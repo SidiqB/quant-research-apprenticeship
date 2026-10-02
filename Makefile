@@ -1,8 +1,8 @@
 PYTHON ?= .venv/bin/python
 CXX = c++
 CXXFLAGS ?= -std=c++17 -Wall -Wextra -Wpedantic -Werror
-NOTE_DATE ?= 2026-10-01
-.PHONY: check test lint types experiment purging-experiment manifest-experiment access-experiment fold-experiment ingestion-experiment calendar-audit calendar-experiment corporate-action-experiment cpp-savings cpp-check note
+NOTE_DATE ?= 2026-10-02
+.PHONY: check test lint types experiment purging-experiment manifest-experiment access-experiment fold-experiment ingestion-experiment calendar-audit calendar-experiment corporate-action-experiment membership-experiment cpp-savings cpp-check note
 check: test lint types cpp-check
 
 test:
@@ -37,6 +37,9 @@ calendar-audit:
 
 corporate-action-experiment:
 	$(PYTHON) scripts/corporate_action_experiment.py
+
+membership-experiment:
+	$(PYTHON) scripts/membership_experiment.py
 
 SAVINGS_SRC = cpp/projects/savings_growth/savings.cpp
 SAVINGS_HEADER = cpp/projects/savings_growth/savings.hpp

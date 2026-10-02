@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-10-02
+
+- Completed Q009a: immutable historical membership intervals, strict date/identity validation,
+  explicit coverage and overlap rejection. Entries are inclusive, exits exclusive; re-entry is valid.
+- Added eight synthetic hand sets and a current-roster error control; 55 new tests include 192
+  independent event-ledger comparisons and two exact replays. All 470 Python tests, 66 C++ checks,
+  quality/dependency checks and four original provenance hashes pass.
+- Distinguished effective dates from as-known-at history, coverage assertions from audited evidence,
+  and membership exit from holdings/terminal accounting. No dependency or empirical data added.
+- Wrote and verified the four-page teaching PDF. Q009b is Ready; Q009 remains incomplete.
+  Personal review remains Not yet reviewed; licensed data and integration gates remain unresolved.
+
 ## 2026-10-01
 
 - Completed Q008: single-interval split/dividend returns with explicit share and cash units, required

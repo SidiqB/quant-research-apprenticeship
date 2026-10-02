@@ -27,9 +27,9 @@ prerequisites and Wednesday C++ precedence. Reassess them at Q014 without compre
 | Q006b | 2026-09-29 | Shared foundations | After Q006a: implement bounded session lookup and decision validation | Test holiday/weekend rejection, early closes, exact boundaries, out-of-range dates and UTC conversion; preserve valid pre-open decisions | Done |
 | Q007 | 2026-09-27 16:00 | Shared foundations | Review foundation failures and evidence | Weekly synthesis and prioritised corrective backlog | Done |
 | Q008 | 2026-10-01 | Alpha data and baseline | After Q006b: build a synthetic corporate-action return fixture | Hand-check split and dividend total-return examples | Done |
-| Q009 | 2026-10-02/03 | Alpha data and baseline | After Q008: parent membership and terminal-event work; split into Q009a/Q009b | Test entries, exits and inactive securities without present-day filtering | Split: children pending |
-| Q009a | 2026-10-02 | Alpha data and baseline | After Q008: model historical membership intervals using synthetic identities | Test inclusive/exclusive entry-exit boundaries and inactive securities; no present-day list filter | Ready |
-| Q009b | 2026-10-03 | Alpha data and baseline | After Q009a: separate terminal-event evidence from membership exit | Hand-check known proceeds; missing proceeds remain unresolved; exit cannot erase holdings or imply zero recovery | Planned |
+| Q009 | 2026-10-02/03 | Alpha data and baseline | After Q008: parent membership and terminal-event work; split into Q009a/Q009b | Test entries, exits and inactive securities without present-day filtering | Partial: Q009a Done; Q009b pending |
+| Q009a | 2026-10-02 | Alpha data and baseline | After Q008: model historical membership intervals using synthetic identities | Test inclusive/exclusive entry-exit boundaries and inactive securities; no present-day list filter | Done |
+| Q009b | 2026-10-03 | Alpha data and baseline | After Q009a: separate terminal-event evidence from membership exit | Hand-check known proceeds; missing proceeds remain unresolved; exit cannot erase holdings or imply zero recovery | Ready |
 | Q010 | 2026-10-04 | Alpha data and baseline | After Q009b: implement lagged return features | Prove future data cannot change earlier features | Planned |
 | Q011 | 2026-10-05 | Alpha data and baseline | After Q010: implement cross-sectional ranks and ties | Compare hand-ranked examples and missing-value handling | Planned |
 | Q012 | 2026-10-06 | Alpha data and baseline | After Q011: implement one-step forward-return targets | Test asset boundaries, missing prices and target end timestamps | Planned |
@@ -271,3 +271,18 @@ a known receivable valued at par, not settled trading cash; no reinvestment or e
 Q009a is Ready for October 2; Q009b will handle terminal evidence separately. C003 stays October 7.
 Q004a and Q005b remain empirical prerequisites; no input is needed for synthetic continuation.
 Personal review remains Not yet reviewed. No planning dates changed.
+
+## Evidence from 2 October
+
+Q009a is complete: immutable effective-date membership intervals with inclusive entry, exclusive exit,
+explicit bounded coverage and stable synthetic security identities. Overlap/duplicates fail; adjacency,
+re-entry and historical inactive members pass without a current-roster filter. All eight hand date sets
+match; the wrong final-date filter removes OLD from a past three-member universe. No return bias is
+estimated. Fifty-five new tests include 192 independent event-ledger comparisons and two exact replays;
+all 470 Python tests, 66 C++ checks and quality/dependency checks pass. Four-page teaching PDF verified.
+
+Q009b terminal-event evidence is Ready; Q009 remains incomplete. Effective histories do not establish
+announcement-time availability or completeness. Include membership identity/coverage/vintage evidence
+in Q005b integration before empirical use. Q004a remains blocked on licensed access and sample audit.
+No input is needed for synthetic continuation; C003 stays Wednesday October 7. Personal review remains
+Not yet reviewed. No new dependency, market data or empirical claim.

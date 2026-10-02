@@ -36,8 +36,10 @@ growth: 66 C++ checks and a hand-authored demonstration pass alongside 363 Pytho
 C003 command-line parsing is Ready for Wednesday October 7.
 Q008 synthetic corporate-action returns is complete: eight hand cases, 162 exact-ledger comparisons
 and three wrong controls pass; all 415 Python tests and 66 C++ checks pass. The four-page PDF is verified.
-Q009 membership/terminal-event children remain scheduled for October 2/3,
-and Q010 lagged features to October 4. Q014 is the separate October 4 afternoon review.
+Q009a historical membership is complete: eight exact date sets, 192 event-ledger comparisons and
+55 new tests pass (470 total). The verified four-page note separates effective dates from knowledge
+at decision time. Q009b terminal evidence is Ready for October 3; Q009 remains incomplete.
+Q010 lagged features remains scheduled for October 4. Q014 is the separate October 4 afternoon review.
 Q004a1 permissions and Q004a2 licensed sample audit remain blocked. Q005b provenance/batch integration
 follows Q013 before empirical use. Phase 0's bounded calendar gate is complete; Phase 1 starts with
 synthetic mechanics only. Original later-phase windows are conditional and will be revisited at Q014.

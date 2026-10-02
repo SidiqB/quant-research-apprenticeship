@@ -19,6 +19,7 @@ The emphasis is on reproducible experiments, correct information timing and expl
 | 2026-09-29 | Bounded session and decision validation | 363 tests; 22 valid decisions; 132 boundary checks; four-page teaching note |
 | 2026-09-30 | Reusable C++ annual savings growth | 66 C++ checks; 363 Python tests; compound-versus-simple demo; four-page teaching note |
 | 2026-10-01 | Synthetic split/dividend returns | 415 Python tests; eight hand cases; 162 exact-ledger comparisons; four-page teaching note |
+| 2026-10-02 | Historical membership intervals | 470 Python tests; eight date sets; 192 event-ledger comparisons; four-page teaching note |
 | 2026-09-21 | Employer role mapping and research programme | 49 deduplicated postings across eight firms; roadmap through December |
 
 The experiments use synthetic data to demonstrate timing errors and validate financial arithmetic. They report no alpha.
@@ -30,6 +31,8 @@ The bounded calendar now validates pre-open decisions separately from core tradi
 complete prior-session windows. Unknown calendar coverage raises an explicit error.
 Corporate-action arithmetic now separates raw price, capital and total returns with explicit share
 and dividend units; missing actions cannot silently default to no action.
+Historical membership now uses stable IDs and effective-date intervals with explicit coverage.
+Inactive members remain in earlier universes; publication vintages and completeness need upstream evidence.
 
 ## Reproduce
 
@@ -48,6 +51,7 @@ make ingestion-experiment
 make calendar-audit
 make calendar-experiment
 make corporate-action-experiment
+make membership-experiment
 make cpp-savings
 make note
 ```
@@ -70,8 +74,9 @@ See `requirements-lock.txt` for the initial tested environment. The core package
 - [Strict ingestion experiment](experiments/ingestion/README.md)
 - [Calendar/decision contract](data/calendar-and-decisions.md) and [bounded fixture audit](experiments/calendar/README.md)
 - [Corporate-action return fixture](experiments/corporate_actions/README.md)
-- [Latest learning note](research_log/2026-10-01.md) and [PDF](reports/daily/2026-10-01-learning-note.pdf)
-- [Daily validation evidence](reports/milestone/2026-10-01-validation.md)
+- [Historical membership fixture](experiments/membership/README.md)
+- [Latest learning note](research_log/2026-10-02.md) and [PDF](reports/daily/2026-10-02-learning-note.pdf)
+- [Daily validation evidence](reports/milestone/2026-10-02-validation.md)
 - [Weekly synthesis](reports/weekly/2026-09-27-synthesis.md), [PDF](reports/weekly/2026-09-27-synthesis.pdf) and [validation](reports/weekly/2026-09-27-validation.md)
 - [Daily operating procedure](OPERATIONS.md)
 
