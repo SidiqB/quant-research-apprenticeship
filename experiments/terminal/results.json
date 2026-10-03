@@ -1,0 +1,124 @@
+{
+  "cases": [
+    {
+      "case": "no_event",
+      "evidence": null,
+      "position": {
+        "asset": "OLD",
+        "priced_on": "2026-01-02",
+        "reference_price": 20.0,
+        "shares": 10.0
+      },
+      "reference_value": 200.0,
+      "status": "missing_event",
+      "terminal_value": null,
+      "total_return": null
+    },
+    {
+      "case": "unknown_proceeds",
+      "evidence": {
+        "asset": "OLD",
+        "cash_per_share": null,
+        "event_date": "2026-01-07",
+        "evidence_ref": "synthetic:unknown_proceeds"
+      },
+      "position": {
+        "asset": "OLD",
+        "priced_on": "2026-01-02",
+        "reference_price": 20.0,
+        "shares": 10.0
+      },
+      "reference_value": 200.0,
+      "status": "missing_proceeds",
+      "terminal_value": null,
+      "total_return": null
+    },
+    {
+      "case": "supported_zero",
+      "evidence": {
+        "asset": "OLD",
+        "cash_per_share": 0.0,
+        "event_date": "2026-01-07",
+        "evidence_ref": "synthetic:supported_zero"
+      },
+      "position": {
+        "asset": "OLD",
+        "priced_on": "2026-01-02",
+        "reference_price": 20.0,
+        "shares": 10.0
+      },
+      "reference_value": 200.0,
+      "status": "resolved",
+      "terminal_value": 0.0,
+      "total_return": -1.0
+    },
+    {
+      "case": "partial_recovery",
+      "evidence": {
+        "asset": "OLD",
+        "cash_per_share": 5.0,
+        "event_date": "2026-01-07",
+        "evidence_ref": "synthetic:partial_recovery"
+      },
+      "position": {
+        "asset": "OLD",
+        "priced_on": "2026-01-02",
+        "reference_price": 20.0,
+        "shares": 10.0
+      },
+      "reference_value": 200.0,
+      "status": "resolved",
+      "terminal_value": 50.0,
+      "total_return": -0.75
+    },
+    {
+      "case": "at_reference",
+      "evidence": {
+        "asset": "OLD",
+        "cash_per_share": 20.0,
+        "event_date": "2026-01-07",
+        "evidence_ref": "synthetic:at_reference"
+      },
+      "position": {
+        "asset": "OLD",
+        "priced_on": "2026-01-02",
+        "reference_price": 20.0,
+        "shares": 10.0
+      },
+      "reference_value": 200.0,
+      "status": "resolved",
+      "terminal_value": 200.0,
+      "total_return": 0.0
+    },
+    {
+      "case": "cash_premium",
+      "evidence": {
+        "asset": "OLD",
+        "cash_per_share": 25.0,
+        "event_date": "2026-01-07",
+        "evidence_ref": "synthetic:cash_premium"
+      },
+      "position": {
+        "asset": "OLD",
+        "priced_on": "2026-01-02",
+        "reference_price": 20.0,
+        "shares": 10.0
+      },
+      "reference_value": 200.0,
+      "status": "resolved",
+      "terminal_value": 250.0,
+      "total_return": 0.25
+    }
+  ],
+  "data_kind": "synthetic",
+  "hand_cases_passed": 6,
+  "interpretation": "Complete cash entitlement at par; no settlement, vintage or alpha claim.",
+  "members_on_exit": [],
+  "period": "2026-01-02 reference; Jan 5 membership exit; Jan 7 event; date labels only",
+  "preserved_held_asset": "OLD",
+  "preserved_shares": 10.0,
+  "protocol": "Six hand cases; exit-filter and zero-imputation wrong controls.",
+  "question": "Can terminal valuation preserve holdings and distinguish missing from zero?",
+  "wrong_exit_filtered_holdings": [],
+  "wrong_unknown_zero_imputed_return": -1.0
+}

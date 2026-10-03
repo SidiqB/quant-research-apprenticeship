@@ -38,8 +38,10 @@ Q008 synthetic corporate-action returns is complete: eight hand cases, 162 exact
 and three wrong controls pass; all 415 Python tests and 66 C++ checks pass. The four-page PDF is verified.
 Q009a historical membership is complete: eight exact date sets, 192 event-ledger comparisons and
 55 new tests pass (470 total). The verified four-page note separates effective dates from knowledge
-at decision time. Q009b terminal evidence is Ready for October 3; Q009 remains incomplete.
-Q010 lagged features remains scheduled for October 4. Q014 is the separate October 4 afternoon review.
+at decision time. Q009b is now complete: six terminal-evidence states, 108 exact-ledger comparisons
+and 70 new tests pass (540 total), with a verified four-page note. Holdings remain explicit after
+membership exit; unknown proceeds do not imply zero. The bounded Q009 parent is complete.
+Q010 lagged features is Ready for October 4. Q014 is the separate October 4 afternoon review.
 Q004a1 permissions and Q004a2 licensed sample audit remain blocked. Q005b provenance/batch integration
 follows Q013 before empirical use. Phase 0's bounded calendar gate is complete; Phase 1 starts with
 synthetic mechanics only. Original later-phase windows are conditional and will be revisited at Q014.

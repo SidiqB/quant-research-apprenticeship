@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-10-03
+
+- Completed Q009b and bounded Q009: cash terminal evidence and valuation retain the held position,
+  preserve unknown values and distinguish explicit zero. Strict identity/date/numeric checks reject
+  unsupported inputs; no membership exit can delete a position in this calculation.
+- Added six synthetic hand states, exit-filter/zero-imputation controls and 70 new tests including
+  108 exact-ledger comparisons and two byte-identical replays. All 540 Python tests, 66 C++ checks,
+  quality/dependency checks and four original provenance hashes pass.
+- Documented complete cash entitlement at par, caller-asserted evidence, date/vintage limitations and
+  absent settlement/aggregation. No market data, dependency or empirical performance claim added.
+- Wrote and verified the four-page teaching PDF. Q010 is Ready; personal review remains Not yet reviewed.
+
 ## 2026-10-02
 
 - Completed Q009a: immutable historical membership intervals, strict date/identity validation,
