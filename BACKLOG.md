@@ -30,8 +30,8 @@ prerequisites and Wednesday C++ precedence. Reassess them at Q014 without compre
 | Q009 | 2026-10-02/03 | Alpha data and baseline | After Q008: parent membership and terminal-event work; split into Q009a/Q009b | Test entries, exits and inactive securities without present-day filtering | Done |
 | Q009a | 2026-10-02 | Alpha data and baseline | After Q008: model historical membership intervals using synthetic identities | Test inclusive/exclusive entry-exit boundaries and inactive securities; no present-day list filter | Done |
 | Q009b | 2026-10-03 | Alpha data and baseline | After Q009a: separate terminal-event evidence from membership exit | Hand-check known proceeds; missing proceeds remain unresolved; exit cannot erase holdings or imply zero recovery | Done |
-| Q010 | 2026-10-04 | Alpha data and baseline | After Q009b: implement lagged return features | Prove future data cannot change earlier features | Ready |
-| Q011 | 2026-10-05 | Alpha data and baseline | After Q010: implement cross-sectional ranks and ties | Compare hand-ranked examples and missing-value handling | Planned |
+| Q010 | 2026-10-04 | Alpha data and baseline | After Q009b: implement lagged return features | Prove future data cannot change earlier features | Done |
+| Q011 | 2026-10-05 | Alpha data and baseline | After Q010: implement cross-sectional ranks and ties | Compare hand-ranked examples and missing-value handling | Ready |
 | Q012 | 2026-10-06 | Alpha data and baseline | After Q011: implement one-step forward-return targets | Test asset boundaries, missing prices and target end timestamps | Planned |
 | Q013 | 2026-10-08 | Alpha data and baseline | After Q012: define benchmark and zero-signal baseline | Reconcile holdings and benchmark return arithmetic | Planned |
 | Q005b | After Q013; before empirical research | Shared integration | After Q003/Q005/Q006b/Q013: retain upstream provenance and check two-batch integration | Preserve source hash, source zone and timezone-rule version; specify cross-batch duplicates; replay to identical snapshots | Planned |
@@ -302,3 +302,21 @@ claim, settlement ledger or new dependency. Evidence authenticity, cash complete
 remain Q004a/Q005b prerequisites before empirical use. Personal review remains Not yet reviewed.
 Q010 is Ready for October 4; Q014 stays the afternoon synthesis; C003 stays October 7. No date changes
 or input needed for synthetic continuation. Existing access/source input is still needed before real data.
+
+## Evidence from 4 October
+
+Q010 is complete within a declared one-session-return contract: exact prior-session windows, explicit
+period/skip/latency settings, per-interval availability selection and retained evidence/missingness.
+Synthetic +10% then -10% links to -1%; later revisions leave earlier results unchanged. Once available,
+a +50% revision changes the same historical window to +65%. Missing intervals remain unresolved.
+
+Sixty-two new tests include 125 exact Fraction wealth paths and 420 independent timing/window cases,
+each with prefix and future-revision invariance. Two experiment subprocess replays match archived bytes.
+All 602 Python tests, 66 C++ checks, quality/dependency checks and original provenance hashes pass.
+The four-page PDF passes exact text and every-page visual verification. No empirical or compliance claim.
+
+Q011 is Ready for October 5; Q014 remains today's separate afternoon synthesis; C003 stays October 7.
+Q005b must retain interval/basis, source and underlying-input availability evidence; field names alone
+cannot authenticate linkable returns. Q008 entitlement does not prove feasible reinvestment. Q004a
+licensed-access/sample gates remain blocked; no input is needed for synthetic continuation. Personal
+review remains Not yet reviewed. No planning dates changed and no dependency was added.

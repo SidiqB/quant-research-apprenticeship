@@ -41,7 +41,10 @@ Q009a historical membership is complete: eight exact date sets, 192 event-ledger
 at decision time. Q009b is now complete: six terminal-evidence states, 108 exact-ledger comparisons
 and 70 new tests pass (540 total), with a verified four-page note. Holdings remain explicit after
 membership exit; unknown proceeds do not imply zero. The bounded Q009 parent is complete.
-Q010 lagged features is Ready for October 4. Q014 is the separate October 4 afternoon review.
+Q010 lagged features is complete: exact prior-session return linking with availability-aware revision
+selection, explicit missingness and retained selected records. All 602 Python tests pass, including 125 exact
+wealth paths and 420 window/timing comparisons; the four-page teaching PDF is verified. Q011 is Ready
+for October 5. Q014 is the separate October 4 afternoon review.
 Q004a1 permissions and Q004a2 licensed sample audit remain blocked. Q005b provenance/batch integration
 follows Q013 before empirical use. Phase 0's bounded calendar gate is complete; Phase 1 starts with
 synthetic mechanics only. Original later-phase windows are conditional and will be revisited at Q014.

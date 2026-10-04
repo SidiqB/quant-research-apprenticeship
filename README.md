@@ -21,6 +21,7 @@ The emphasis is on reproducible experiments, correct information timing and expl
 | 2026-10-01 | Synthetic split/dividend returns | 415 Python tests; eight hand cases; 162 exact-ledger comparisons; four-page teaching note |
 | 2026-10-02 | Historical membership intervals | 470 Python tests; eight date sets; 192 event-ledger comparisons; four-page teaching note |
 | 2026-10-03 | Cash terminal evidence separate from membership | 540 Python tests; six hand states; 108 exact-ledger comparisons; four-page teaching note |
+| 2026-10-04 | Availability-aware lagged return features | 602 Python tests; 125 exact wealth paths; 420 timing/window comparisons; four-page teaching note |
 | 2026-09-21 | Employer role mapping and research programme | 49 deduplicated postings across eight firms; roadmap through December |
 
 The experiments use synthetic data to demonstrate timing errors and validate financial arithmetic. They report no alpha.
@@ -36,6 +37,9 @@ Historical membership now uses stable IDs and effective-date intervals with expl
 Inactive members remain in earlier universes; publication vintages and completeness need upstream evidence.
 Terminal cash valuation now retains holdings and distinguishes missing evidence from explicit zero.
 Complete cash entitlement is valued at par; settlement and information-vintage integration remain separate.
+
+Lagged features now link declared one-session returns over exact prior-session windows and select
+only available revisions. Missing intervals remain explicit; valid future additions preserve earlier results.
 
 ## Reproduce
 
@@ -56,6 +60,7 @@ make calendar-experiment
 make corporate-action-experiment
 make membership-experiment
 make terminal-experiment
+make lagged-return-experiment
 make cpp-savings
 make note
 ```
@@ -80,8 +85,9 @@ See `requirements-lock.txt` for the initial tested environment. The core package
 - [Corporate-action return fixture](experiments/corporate_actions/README.md)
 - [Historical membership fixture](experiments/membership/README.md)
 - [Terminal cash evidence fixture](experiments/terminal/README.md)
-- [Latest learning note](research_log/2026-10-03.md) and [PDF](reports/daily/2026-10-03-learning-note.pdf)
-- [Daily validation evidence](reports/milestone/2026-10-03-validation.md)
+- [Lagged return fixture](experiments/lagged_returns/README.md)
+- [Latest learning note](research_log/2026-10-04.md) and [PDF](reports/daily/2026-10-04-learning-note.pdf)
+- [Daily validation evidence](reports/milestone/2026-10-04-validation.md)
 - [Weekly synthesis](reports/weekly/2026-09-27-synthesis.md), [PDF](reports/weekly/2026-09-27-synthesis.pdf) and [validation](reports/weekly/2026-09-27-validation.md)
 - [Daily operating procedure](OPERATIONS.md)
 

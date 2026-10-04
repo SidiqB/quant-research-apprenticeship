@@ -1,0 +1,164 @@
+{
+  "after_future_extension": {
+    "asset": "SYNTH",
+    "decision_at": "2026-11-04 14:00:00+00:00",
+    "end_at": "2026-11-03 21:00:00+00:00",
+    "gross_return": 0.9900000000000001,
+    "latency": "0:00:00",
+    "observations": [
+      {
+        "asset": "SYNTH",
+        "available_at": "2026-11-02 21:00:00+00:00",
+        "feature": "session_return",
+        "observed_at": "2026-11-02 21:00:00+00:00",
+        "value": 0.1
+      },
+      {
+        "asset": "SYNTH",
+        "available_at": "2026-11-03 21:00:00+00:00",
+        "feature": "session_return",
+        "observed_at": "2026-11-03 21:00:00+00:00",
+        "value": -0.1
+      }
+    ],
+    "periods": 2,
+    "required_ends": [
+      "2026-11-02 21:00:00+00:00",
+      "2026-11-03 21:00:00+00:00"
+    ],
+    "return_feature": "session_return",
+    "skip": 0,
+    "start_at": "2026-10-30 20:00:00+00:00",
+    "value": -0.009999999999999898
+  },
+  "data_kind": "synthetic",
+  "future_extension_unchanged": true,
+  "interpretation": "Synthetic engineering evidence only; no empirical or compliance claim.",
+  "later_same_window": {
+    "asset": "SYNTH",
+    "decision_at": "2026-11-05 14:00:00+00:00",
+    "end_at": "2026-11-03 21:00:00+00:00",
+    "gross_return": 1.6500000000000001,
+    "latency": "0:00:00",
+    "observations": [
+      {
+        "asset": "SYNTH",
+        "available_at": "2026-11-02 21:00:00+00:00",
+        "feature": "session_return",
+        "observed_at": "2026-11-02 21:00:00+00:00",
+        "value": 0.1
+      },
+      {
+        "asset": "SYNTH",
+        "available_at": "2026-11-05 14:00:00+00:00",
+        "feature": "session_return",
+        "observed_at": "2026-11-03 21:00:00+00:00",
+        "value": 0.5
+      }
+    ],
+    "periods": 2,
+    "required_ends": [
+      "2026-11-02 21:00:00+00:00",
+      "2026-11-03 21:00:00+00:00"
+    ],
+    "return_feature": "session_return",
+    "skip": 1,
+    "start_at": "2026-10-30 20:00:00+00:00",
+    "value": 0.6500000000000001
+  },
+  "missing_interval": {
+    "asset": "SYNTH",
+    "decision_at": "2026-11-04 14:00:00+00:00",
+    "end_at": "2026-11-03 21:00:00+00:00",
+    "gross_return": null,
+    "latency": "0:00:00",
+    "observations": [
+      {
+        "asset": "SYNTH",
+        "available_at": "2026-11-02 21:00:00+00:00",
+        "feature": "session_return",
+        "observed_at": "2026-11-02 21:00:00+00:00",
+        "value": 0.1
+      },
+      null
+    ],
+    "periods": 2,
+    "required_ends": [
+      "2026-11-02 21:00:00+00:00",
+      "2026-11-03 21:00:00+00:00"
+    ],
+    "return_feature": "session_return",
+    "skip": 0,
+    "start_at": "2026-10-30 20:00:00+00:00",
+    "value": null
+  },
+  "one_microsecond_latency_same_window": {
+    "asset": "SYNTH",
+    "decision_at": "2026-11-05 14:00:00+00:00",
+    "end_at": "2026-11-03 21:00:00+00:00",
+    "gross_return": 0.9900000000000001,
+    "latency": "0:00:00.000001",
+    "observations": [
+      {
+        "asset": "SYNTH",
+        "available_at": "2026-11-02 21:00:00+00:00",
+        "feature": "session_return",
+        "observed_at": "2026-11-02 21:00:00+00:00",
+        "value": 0.1
+      },
+      {
+        "asset": "SYNTH",
+        "available_at": "2026-11-03 21:00:00+00:00",
+        "feature": "session_return",
+        "observed_at": "2026-11-03 21:00:00+00:00",
+        "value": -0.1
+      }
+    ],
+    "periods": 2,
+    "required_ends": [
+      "2026-11-02 21:00:00+00:00",
+      "2026-11-03 21:00:00+00:00"
+    ],
+    "return_feature": "session_return",
+    "skip": 1,
+    "start_at": "2026-10-30 20:00:00+00:00",
+    "value": -0.009999999999999898
+  },
+  "original": {
+    "asset": "SYNTH",
+    "decision_at": "2026-11-04 14:00:00+00:00",
+    "end_at": "2026-11-03 21:00:00+00:00",
+    "gross_return": 0.9900000000000001,
+    "latency": "0:00:00",
+    "observations": [
+      {
+        "asset": "SYNTH",
+        "available_at": "2026-11-02 21:00:00+00:00",
+        "feature": "session_return",
+        "observed_at": "2026-11-02 21:00:00+00:00",
+        "value": 0.1
+      },
+      {
+        "asset": "SYNTH",
+        "available_at": "2026-11-03 21:00:00+00:00",
+        "feature": "session_return",
+        "observed_at": "2026-11-03 21:00:00+00:00",
+        "value": -0.1
+      }
+    ],
+    "periods": 2,
+    "required_ends": [
+      "2026-11-02 21:00:00+00:00",
+      "2026-11-03 21:00:00+00:00"
+    ],
+    "return_feature": "session_return",
+    "skip": 0,
+    "start_at": "2026-10-30 20:00:00+00:00",
+    "value": -0.009999999999999898
+  },
+  "period": "2026-10-30 to 2026-11-05; prospective calendar labels, invented returns",
+  "protocol": "Exact session windows, hand compounding, revisions, latency and missingness.",
+  "question": "Can valid future additions change an earlier lagged return?",
+  "wrong_latest_vintage_return": 0.6500000000000001,
+  "wrong_sum_return": 0.0
+}

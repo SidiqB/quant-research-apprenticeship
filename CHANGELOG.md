@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-10-04
+
+- Completed Q010: geometric linking of declared session returns with exact calendar windows,
+  per-interval available-revision selection, explicit skips/latency and auditable missingness.
+- Added synthetic timing/leakage controls and 62 tests, including 125 exact wealth paths and 420
+  independent window/timing comparisons. Two replays match; all 602 Python tests, 66 C++ checks,
+  quality/dependency checks and four original provenance hashes pass.
+- Documented upstream interval/basis/availability obligations, reinvestment assumptions, valid-batch
+  invariance and float limits. No market data, dependency, empirical or compliance claim added.
+- Wrote and verified the four-page teaching PDF. Q011 is Ready; personal review remains Not yet reviewed.
+
 ## 2026-10-03
 
 - Completed Q009b and bounded Q009: cash terminal evidence and valuation retain the held position,
