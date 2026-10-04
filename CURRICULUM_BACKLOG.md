@@ -2,17 +2,38 @@
 
 Supersedes unfinished date assignments in BACKLOG.md from 5 October; completed evidence remains unchanged.
 Use QUANT_CURRICULUM.md as scope and pacing authority. Preserve old Q/C IDs as dependencies, not additional daily work.
-First step: C003 parsing; C001/C002 are already complete. Retain Q004a/Q005b before empirical use.
+First step: C003a whole-year text parsing; C001/C002 are already complete. Retain Q004a/Q005b before empirical use.
+
+## October 4 weekly evidence-based refinement
+
+C002 shows that conversion to int can discard a fraction before function validation. Split C003 into
+C003a (years-only parser) and C003b (later principal/rate parsing and complete CLI). C003a is the sole
+October 5-11 slice; C003b remains deferred until its evidence is understood. C004 vectors/returns and
+C005 mean/sample variance remain explicit carryover after prerequisites, not extra lessons this week.
+This narrows the foundation week's examples under the curriculum's repeat-and-simplify rule; no
+strategy-family scope is added. October 12's ledger begins only with adequate function/branch readiness.
+If readiness fails, repeat the prerequisite and defer advanced extensions rather than compress sessions.
+Personal review stays Not yet reviewed until Sidiq confirms otherwise; ordinary work remains authorised.
+
+The shared draw begins October 5. Count actual daily commits before publication, including manual and
+weekly work; the helper persists a draw but does not count history. Zero/exhausted days use ignored
+pending notes, verified PDFs and an integration manifest per COMMIT_CADENCE.md.
+
+Deferred integration Q005b is split in BACKLOG.md into a contract and a two-batch replay. These retain
+licence, identity, knowledge-time, complete-proceeds and reinvestment-basis gates from this week's findings.
+See [weekly synthesis](reports/weekly/2026-10-04-synthesis.md) and [validation](reports/weekly/2026-10-04-validation.md).
+
+## Daily slots
 
 | Date | Focus | Bounded step | Evidence | Status |
 |---|---|---|---|---|
-| 2026-10-05 | C++ foundations | Explain intuition and hand-work one example | Worked example, relevant checks and verified note; Invalid input | Planned |
-| 2026-10-06 | C++ foundations | Derive the minimal model; define inputs and units | Worked example, relevant checks and verified note; Invalid input | Planned |
-| 2026-10-07 | C++ foundations | Implement one small C++ function or extension | Worked example, relevant checks and verified note; Invalid input | Planned |
-| 2026-10-08 | C++ foundations | Test boundary cases and an independent oracle | Worked example, relevant checks and verified note; Invalid input | Planned |
-| 2026-10-09 | C++ foundations | Measure costs or run a deliberate failure scenario | Worked example, relevant checks and verified note; Invalid input | Planned |
-| 2026-10-10 | C++ foundations | Reproduce and teach back; repair unclear parts | Worked example, relevant checks and verified note; Invalid input | Planned |
-| 2026-10-11 | C++ foundations | Consolidate evidence and revise next week | Worked example, relevant checks and verified note; Invalid input | Planned |
+| 2026-10-05 | C++ foundations | Text versus whole-year values; C003a intuition | Classify 2, 2.5, -1, blank and 2x by hand; explain conversion loss; verified note | Planned |
+| 2026-10-06 | C++ foundations | Define years-only parsing grammar and range | Full consumption, nonnegative decimal digits, explicit whitespace policy; verified note | Planned |
+| 2026-10-07 | C++ foundations | Implement one C++ whole-year parser function | Explain branches line by line; valid/invalid examples; preserve C002; verified note | Planned |
+| 2026-10-08 | C++ foundations | Boundary checks with an independent Python oracle | Zero, maximum int, overflow and trailing text; exact accepted values; verified note | Planned |
+| 2026-10-09 | C++ foundations | Deliberately fail on fractional-year truncation | Explain why 2.5 cannot silently become 2; repeat unclear prerequisite; verified note | Planned |
+| 2026-10-10 | C++ foundations | Reproduce C003a and teach back | Same inputs/outputs; exercises, separate answers; no new complexity; verified note | Planned |
+| 2026-10-11 | C++ foundations | Consolidate C003a evidence and weekly synthesis | Decide C003b readiness; incomplete work stays explicit; verified note | Planned |
 | 2026-10-12 | Backtesting and portfolio accounting | Explain intuition and hand-work one example | Worked example, relevant checks and verified note; Cash conservation | Planned |
 | 2026-10-13 | Backtesting and portfolio accounting | Derive the minimal model; define inputs and units | Worked example, relevant checks and verified note; Cash conservation | Planned |
 | 2026-10-14 | Backtesting and portfolio accounting | Implement one small C++ function or extension | Worked example, relevant checks and verified note; Cash conservation | Planned |

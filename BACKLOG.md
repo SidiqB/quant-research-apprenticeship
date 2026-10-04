@@ -11,10 +11,9 @@ On a missed day, continue the oldest eligible dependency; do not backdate or rus
 All tasks require evidence, a learning note/PDF, relevant checks and an updated status.
 Sunday morning tasks collect evidence; the 16:00 synthesis consolidates that evidence without duplicate work.
 
-From 23 September, Wednesday runs select the next eligible step from [the C++ learning backlog](CPP_LEARNING_PLAN.md).
-This replaces that day's research slot; deferred Q-items keep their order for non-C++ days. Weekly reviews revise target dates. The 27 September replan below governs the next week.
-Dates from Q015 onward are original phase markers, not executable daily bookings; dispatch follows
-prerequisites and Wednesday C++ precedence. Reassess them at Q014 without compressing deferred work.
+The table preserves completed evidence and old dependency IDs. Unfinished dates from Q015 onward
+are historical phase markers, not executable bookings. The October 4 curriculum and weekly refinement
+now govern dispatch; the Wednesday-only rule and September 27 forward schedule are superseded.
 
 | ID | Target / actual completion date | Theme | Question / bounded task | Acceptance evidence | Status |
 |---|---|---|---|---|---|
@@ -36,11 +35,13 @@ prerequisites and Wednesday C++ precedence. Reassess them at Q014 without compre
 | Q009a | 2026-10-02 | Alpha data and baseline | After Q008: model historical membership intervals using synthetic identities | Test inclusive/exclusive entry-exit boundaries and inactive securities; no present-day list filter | Done |
 | Q009b | 2026-10-03 | Alpha data and baseline | After Q009a: separate terminal-event evidence from membership exit | Hand-check known proceeds; missing proceeds remain unresolved; exit cannot erase holdings or imply zero recovery | Done |
 | Q010 | 2026-10-04 | Alpha data and baseline | After Q009b: implement lagged return features | Prove future data cannot change earlier features | Done |
-| Q011 | 2026-10-05 | Alpha data and baseline | After Q010: implement cross-sectional ranks and ties | Compare hand-ranked examples and missing-value handling | Ready |
-| Q012 | 2026-10-06 | Alpha data and baseline | After Q011: implement one-step forward-return targets | Test asset boundaries, missing prices and target end timestamps | Planned |
-| Q013 | 2026-10-08 | Alpha data and baseline | After Q012: define benchmark and zero-signal baseline | Reconcile holdings and benchmark return arithmetic | Planned |
-| Q005b | After Q013; before empirical research | Shared integration | After Q003/Q005/Q006b/Q013: retain upstream provenance and check two-batch integration | Preserve source hash, source zone and timezone-rule version; specify cross-batch duplicates; replay to identical snapshots | Planned |
-| Q014 | 2026-10-04 16:00 | Alpha data and baseline | Weekly review: assess readiness without claiming unfinished dependencies complete | Publish coverage limitations and next-week priorities | Planned |
+| Q011 | Deferred: curriculum ranking slice | Alpha data and baseline | After Q010: implement cross-sectional ranks and ties | Compare hand-ranked examples and missing-value handling | Deferred: curriculum |
+| Q012 | Deferred: after Q011 | Alpha data and baseline | After Q011: implement one-step forward-return targets | Test asset boundaries, missing prices and target end timestamps | Planned |
+| Q013 | Deferred: after Q012 / accounting | Alpha data and baseline | After Q012: define benchmark and zero-signal baseline | Reconcile holdings and benchmark return arithmetic | Planned |
+| Q005b | Before empirical research | Shared integration | Parent: source/knowledge contract and two-batch adapter; split into Q005b1/b2 | Children plus Q004a before empirical claims; no current adapter completion | Deferred: children |
+| Q005b1 | Deferred: before Q005b2 | Shared integration | Specify source hash/zone/rules, IDs, effective/publication vintages, complete proceeds, interval basis and entitlement/settlement distinction | Review explicit obligations for membership, terminal and linked-return inputs; no invented missing evidence | Deferred: curriculum integration slot |
+| Q005b2 | After Q005b1/Q003/Q005/Q006b/Q013 | Shared integration | Implement bounded two-batch provenance adapter with duplicate/revision handling | Identical replay snapshots; late action/membership/terminal revisions cannot enter earlier decisions; missingness preserved | Deferred: prerequisites |
+| Q014 | 2026-10-04 16:00 | Alpha data and baseline | Weekly review: assess readiness without claiming unfinished dependencies complete | Publish coverage limitations and next-week priorities | Done |
 | Q015 | 2026-10-05 | Signal evaluation | Specify momentum windows before testing | Record skip-period hypothesis and data eligibility | Planned |
 | Q016 | 2026-10-06 | Signal evaluation | Implement momentum signal | Check rolling windows against explicit manual calculations | Planned |
 | Q017 | 2026-10-07 | Signal evaluation | Implement short-term reversal signal | Compare signed lagged returns and missing observations | Planned |
@@ -325,3 +326,20 @@ Q005b must retain interval/basis, source and underlying-input availability evide
 cannot authenticate linkable returns. Q008 entitlement does not prove feasible reinvestment. Q004a
 licensed-access/sample gates remain blocked; no input is needed for synthetic continuation. Personal
 review remains Not yet reviewed. No planning dates changed and no dependency was added.
+
+## Weekly refinement - 4 October, Q014
+
+Completed the second weekly synthesis without repeating Q010. Current validation is 608 Python tests,
+66 freshly compiled C++ checks, quality/dependency checks and eleven archived JSON artifacts replayed
+twice. No line/branch coverage percentage or empirical strategy result exists. See
+[report](reports/weekly/2026-10-04-synthesis.md) and [validation](reports/weekly/2026-10-04-validation.md).
+
+The October 4 user revision supersedes old next-task statements in historical daily evidence above.
+Q011/Q012/Q013 are deferred curriculum dependencies. Split C003 into a years-only parser and later
+complete CLI, with one concept daily in CURRICULUM_BACKLOG.md. Do not rush C004/C005 to fill a week.
+Q005b1/b2 preserve integration obligations exposed by retrospective membership/terminal records and
+Q010's caller-declared return basis. Q004a1 entitlement and Q004a2 lawful sample audit remain blocked.
+
+Questions for Sidiq: existing licensed access or source/budget preference; whether any narrower vintage
+claim is acceptable if full evidence is unavailable; which prerequisite needs repetition. No scope
+narrowing or personal review is assumed. Synthetic C++ work can continue without these answers.

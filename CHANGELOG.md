@@ -2,6 +2,13 @@
 
 ## 2026-10-04
 
+- Completed Q014 weekly synthesis and verified seven-page PDF from actual commits, daily failures,
+  archived experiments and fresh validation: 608 Python tests, 66 C++ checks, eleven two-run JSON replays.
+- Refined next week to C003a whole-year parsing; deferred full CLI and vectors/statistics behind
+  prerequisites. Reconciled stale dispatch guidance with the authorised C++ curriculum.
+- Split deferred Q005b into source/knowledge contract and adapter replay, retaining data-access gates.
+  No empirical claim, coverage percentage, new lesson implementation or personal review inferred.
+
 - Completed Q010: geometric linking of declared session returns with exact calendar windows,
   per-interval available-revision selection, explicit skips/latency and auditable missingness.
 - Added synthetic timing/leakage controls and 62 tests, including 125 exact wealth paths and 420

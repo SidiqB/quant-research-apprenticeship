@@ -22,6 +22,7 @@ The emphasis is on reproducible experiments, correct information timing and expl
 | 2026-10-02 | Historical membership intervals | 470 Python tests; eight date sets; 192 event-ledger comparisons; four-page teaching note |
 | 2026-10-03 | Cash terminal evidence separate from membership | 540 Python tests; six hand states; 108 exact-ledger comparisons; four-page teaching note |
 | 2026-10-04 | Availability-aware lagged return features | 602 Python tests; 125 exact wealth paths; 420 timing/window comparisons; four-page teaching note |
+| 2026-10-04 | Second weekly synthesis and curriculum refinement | 608 Python tests; 66 fresh C++ checks; eleven exact replays; verified weekly PDF |
 | 2026-09-21 | Employer role mapping and research programme | 49 deduplicated postings across eight firms; roadmap through December |
 
 The experiments use synthetic data to demonstrate timing errors and validate financial arithmetic. They report no alpha.
@@ -99,3 +100,11 @@ Project outputs must be understood and reproduced before being used as personal 
 [C++ strategy curriculum](QUANT_CURRICULUM.md) and [daily learning plan](CURRICULUM_BACKLOG.md)
 now guide new projects through 31 December. Study major families slowly, including two weeks of
 statistical arbitrage. [Commit cadence](COMMIT_CADENCE.md) records the requested daily 0-3 draw.
+
+## Latest weekly synthesis
+
+[October 4 synthesis](reports/weekly/2026-10-04-synthesis.md),
+[verified PDF](reports/weekly/2026-10-04-synthesis.pdf) and
+[validation](reports/weekly/2026-10-04-validation.md) distinguish tested accounting from missing
+source/settlement evidence. The active next step is C003a whole-year parsing, not the superseded
+October 5 ranking date. The shared 0-3 publication draw begins October 5; study pace stays one concept daily.

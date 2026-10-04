@@ -14,11 +14,10 @@ components with C++ still requires profiling, a validated reference and a demons
 
 ## Cadence
 
-Starting Wednesday 23 September, use the Wednesday daily research slot for the next eligible C++ step.
-Use one 45-90 minute step per run; split a step further if needed. Do not add a second daily workload.
-An unfinished Python task keeps its place for the next non-C++ run. Existing dates remain planning targets;
-revise them in the weekly synthesis when work moves. Stop at 31 December under the existing programme scope.
-Do not skip prerequisites to reach a more impressive title. Later projects may remain unfinished in 2026.
+Follow QUANT_CURRICULUM.md and CURRICULUM_BACKLOG.md from October 5. Use one 45-90 minute
+bounded concept per day, with C++ as the default and Python for independent checks. Split prerequisites
+instead of adding lessons to meet a commit draw. The former Wednesday-only rule is superseded.
+Stop after December 31 pending the next scope. Historical evidence sections retain their original dates.
 
 ## Ordered backlog
 
@@ -26,7 +25,9 @@ Do not skip prerequisites to reach a more impressive title. Later projects may r
 |---|---|---|---|---|
 | C001 | Savings growth: fixed-input example | Compile/run, variables, doubles, output | Calculate one year of growth and compare with hand arithmetic | Done |
 | C002 | Savings growth: reusable function | Functions, parameters, return values | Zero rate, zero years, invalid inputs; explain compounding convention | Done |
-| C003 | Savings growth: command-line inputs | Parsing, branches, errors | Reject malformed input; clear units and reproducible examples | Ready |
+| C003 | Savings growth: command-line inputs; parent of C003a/b | Parsing, branches, errors | Both children complete; clear units and reproducible examples | Ready: children pending |
+| C003a | Whole-year text parser; October 5-11 foundation slice | Text versus value, full consumption, branches, range | Reject fractions, negatives, trailing text and overflow; compare Python oracle; verified notes | Ready |
+| C003b | Complete CLI after C003a | Principal/rate parsing, units, error reporting | Reject malformed/nonfinite inputs; connect validated arguments to C002; integration checks | Deferred: C003a |
 | C004 | Return calculator: a small price series | Vectors, loops, indexing | Hand-check simple returns; reject zero/nonpositive prices under stated scope | Planned |
 | C005 | Return calculator: summary statistics | Mean, sample variance, functions | Compare known small samples; handle fewer than two observations | Planned |
 | C006 | Cash-flow present value | Structs, vectors, discounting | Hand-check a zero-coupon example; state rate and period conventions | Planned |

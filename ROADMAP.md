@@ -7,7 +7,7 @@ phase dates below are superseded. Completed work and evidence remain valid. See 
 # Roadmap: 21 September - 31 December 2026
 
 This is a research programme with acceptance gates, not a promise that three production platforms
-will be finished in 102 days. Daily tasks are in BACKLOG.md. Re-plan each Sunday from actual evidence.
+will be finished in 102 days. Daily tasks are in CURRICULUM_BACKLOG.md; BACKLOG.md retains dependency history. Re-plan each Sunday from actual evidence.
 The role study prioritises Python, validation, statistics, data integrity and communication, then
 execution and derivatives depth. Advanced modelling remains conditional. A gradual finance-focused C++ learning track is now scheduled.
 
@@ -39,7 +39,7 @@ Q006b now implements bounded lookup, decision/core validation and complete prior
 All 363 tests pass; 22 valid decisions and 132 boundary checks pass, with nine rejected controls.
 Q006 is complete within its bounded scope. C002 now implements reusable annual compound savings
 growth: 66 C++ checks and a hand-authored demonstration pass alongside 363 Python tests.
-C003 command-line parsing is Ready for Wednesday October 7.
+C003 is split into C003a whole-year parsing and later C003b complete CLI; see the active curriculum.
 Q008 synthetic corporate-action returns is complete: eight hand cases, 162 exact-ledger comparisons
 and three wrong controls pass; all 415 Python tests and 66 C++ checks pass. The four-page PDF is verified.
 Q009a historical membership is complete: eight exact date sets, 192 event-ledger comparisons and
@@ -49,11 +49,12 @@ and 70 new tests pass (540 total), with a verified four-page note. Holdings rema
 membership exit; unknown proceeds do not imply zero. The bounded Q009 parent is complete.
 Q010 lagged features is complete: exact prior-session return linking with availability-aware revision
 selection, explicit missingness and retained selected records. All 602 Python tests pass, including 125 exact
-wealth paths and 420 window/timing comparisons; the four-page teaching PDF is verified. Q011 is Ready
-for October 5. Q014 is the separate October 4 afternoon review.
-Q004a1 permissions and Q004a2 licensed sample audit remain blocked. Q005b provenance/batch integration
-follows Q013 before empirical use. Phase 0's bounded calendar gate is complete; Phase 1 starts with
-synthetic mechanics only. Original later-phase windows are conditional and will be revisited at Q014.
+wealth paths and 420 window/timing comparisons; the four-page teaching PDF is verified. Q011 remains
+a deferred curriculum dependency. Q014 is complete with the October 4 weekly synthesis.
+Q004a1 permissions and Q004a2 licensed sample audit remain blocked. Q005b is split into source/knowledge contract Q005b1 and two-batch adapter Q005b2,
+with Q013 still required before empirical use. Phase 0's bounded calendar gate is complete; Phase 1 starts with
+synthetic mechanics only. Original later-phase dates are superseded by QUANT_CURRICULUM.md. Current checks pass 608 Python
+tests, 66 fresh C++ checks and eleven exact two-run JSON replays; no coverage percentage was measured.
 No empirical alpha result, live order-book calibration or options-market result exists yet.
 
 ## Long-term scope and conditional extensions
@@ -71,7 +72,7 @@ checks. Local volatility and Heston are optional extensions beyond a validated b
 identifiability determine whether implementation is justified within 2026.
 
 C++ learning: follow [CPP_LEARNING_PLAN.md](CPP_LEARNING_PLAN.md), starting with a simple savings calculator.
-Wednesday research slots advance this track from 23 September. Production acceleration still requires a
+C++ is the default under the October 4 curriculum, beginning with one years-only parsing slice. Production acceleration still requires a
 measured hot path and a tested reference; educational projects do not require a speedup justification.
 
 ## Scheduling and recovery

@@ -47,8 +47,9 @@ tick data and execution costs. Reserve a dedicated simulator phase; use accounti
 checks precede hedging studies. Senior risk work cannot be replicated by merely computing a risk metric.
 5. C++ and low-latency engineering appear in technology roles, but Python also spans research and risk.
 For production acceleration, introduce C++ only after profiling demonstrates a bottleneck and a Python
-reference is validated. Sidiq's separately authorised beginner finance C++ learning track uses Wednesday slots
-without a speedup requirement; C001 is complete and C002 is next (clarified 27 September).
+reference is validated. Sidiq's October 4 curriculum makes C++ the default for new educational projects without a speedup
+requirement. C001/C002 are complete; C003a parsing comes next, slowly, with Python verification.
+This user preference does not change the dated posting counts or imply current vacancy status.
 
 ## Personal fit and gaps
 
