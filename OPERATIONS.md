@@ -1,3 +1,10 @@
+# Priority update - 4 October 2026
+
+QUANT_CURRICULUM.md and CURRICULUM_BACKLOG.md govern future task selection. C++ is the default
+for new educational work. COMMIT_CADENCE.md governs scheduled commit counts from October 5,
+including zero-day pending notes/PDFs and the shared Sunday budget. These rules supersede old
+Wednesday-only selection and unconditional same-day commit/report publication below.
+
 # Daily and weekly operating procedure
 
 ## Daily cycle

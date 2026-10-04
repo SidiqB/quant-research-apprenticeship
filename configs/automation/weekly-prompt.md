@@ -10,3 +10,5 @@ main using existing authentication; never force-push, rewrite dates/history, ove
 publish broken work. If no new evidence exists, report that honestly without a token commit. Brief Sidiq on
 lessons, revised priorities and anything needing input. Continue through 31 December 2026, then stop and
 request the next programme scope. This requires the local computer, app and repository to remain available.
+
+Effective 5 October 2026, QUANT_CURRICULUM.md and CURRICULUM_BACKLOG.md supersede old task dates and the Wednesday-only C++ rule. Use C++ by default for new projects, teach slowly, and preserve prior Python evidence. Follow COMMIT_CADENCE.md: one persisted 0-3 draw shared across daily and weekly runs; meaningful validated commits only, no artificial splitting; zero days keep study material and verified reports in ignored work/pending for later truthful publication.

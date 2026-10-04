@@ -93,3 +93,9 @@ See `requirements-lock.txt` for the initial tested environment. The core package
 
 Future milestones cover investable universes, signal validation, execution accounting and hedging experiments.
 Project outputs must be understood and reproduced before being used as personal interview claims.
+
+## October curriculum update
+
+[C++ strategy curriculum](QUANT_CURRICULUM.md) and [daily learning plan](CURRICULUM_BACKLOG.md)
+now guide new projects through 31 December. Study major families slowly, including two weeks of
+statistical arbitrage. [Commit cadence](COMMIT_CADENCE.md) records the requested daily 0-3 draw.

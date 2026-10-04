@@ -1,3 +1,8 @@
+# Scheduling update - 4 October 2026
+
+Future task selection follows CURRICULUM_BACKLOG.md and QUANT_CURRICULUM.md.
+Unfinished Q-items below are deferred dependency references; completed records are preserved.
+
 # Daily research backlog
 
 Planned dates are targets, never fabricated activity dates. Each task is normally 45-90 minutes.

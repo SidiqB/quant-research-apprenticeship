@@ -172,3 +172,9 @@
 - Verified initial GitHub validation and documented daily/weekly schedule prompts and activation dependency.
 - Activated daily 08:00 and Sunday 16:00 research schedules against the saved local main checkout.
 - Added the requested progressive C++ finance learning track, starting with savings arithmetic and using Wednesday research slots.
+
+## 2026-10-04 programme revision
+
+- Made C++ the default for new educational projects, preserving completed Python research.
+- Added a paced strategy-family curriculum and daily steps through 31 December, with explicit limitations.
+- Added a persistent daily 0-3 commit budget and zero-day study/report handling; no artificial commits.

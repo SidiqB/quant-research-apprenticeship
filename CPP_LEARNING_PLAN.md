@@ -1,3 +1,9 @@
+# Updated priority - 4 October 2026
+
+C++ is now the default for new educational projects, not just Wednesday. Follow QUANT_CURRICULUM.md
+and CURRICULUM_BACKLOG.md; reuse completed C001/C002 and start C003 next. The old C-steps below remain
+prerequisite references; their old Wednesday dates are superseded.
+
 # Progressive C++ projects for finance
 
 Requested by Sidiq on 21 September 2026: include finance-related C++ projects, start very simply,

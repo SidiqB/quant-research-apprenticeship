@@ -19,3 +19,5 @@ Keep project naming and documentation free of unwanted branding. After 31 Decemb
 and request the next programme scope. This requires the computer, desktop app and repository to be available.
 
 On Wednesdays from 23 September 2026, use the daily slot for the next eligible step in CPP_LEARNING_PLAN.md. Start very simply and build finance-focused C++ projects gradually. On other days resume the research backlog; preserve deferred tasks.
+
+Effective 5 October 2026, QUANT_CURRICULUM.md and CURRICULUM_BACKLOG.md supersede old task dates and the Wednesday-only C++ rule. Use C++ by default for new projects, teach slowly, and preserve prior Python evidence. Follow COMMIT_CADENCE.md: one persisted 0-3 draw shared across daily and weekly runs; meaningful validated commits only, no artificial splitting; zero days keep study material and verified reports in ignored work/pending for later truthful publication.

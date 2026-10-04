@@ -1,3 +1,9 @@
+# Active revision - 4 October 2026
+
+[QUANT_CURRICULUM.md](QUANT_CURRICULUM.md) and [CURRICULUM_BACKLOG.md](CURRICULUM_BACKLOG.md)
+now govern future work through New Year. C++ is the default; the prior Wednesday-only rule and unfinished
+phase dates below are superseded. Completed work and evidence remain valid. See COMMIT_CADENCE.md.
+
 # Roadmap: 21 September - 31 December 2026
 
 This is a research programme with acceptance gates, not a promise that three production platforms

@@ -12,7 +12,7 @@ Track information availability, label intervals, membership history, corporate a
 Use chronological holdouts, simple baselines, uncertainty estimates and multiple-testing controls.
 Model turnover, spreads, commissions, impact and execution delay before discussing investability.
 Explain assumptions and failure cases alongside metrics. Add complexity only against a tested baseline.
-Use Python for the main research pipeline. Build educational C++ finance projects from simple to advanced
+Use C++ by default for new educational strategy projects; preserve the existing Python pipeline and use it for independent checks. Build educational C++ finance projects from simple to advanced
 under CPP_LEARNING_PLAN.md; profile before using C++ to accelerate existing components.
 Reusable Python logic belongs in the package.
 Never invent qualifications, review status, data, research activity or performance.
