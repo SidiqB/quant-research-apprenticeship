@@ -23,6 +23,7 @@ The emphasis is on reproducible experiments, correct information timing and expl
 | 2026-10-03 | Cash terminal evidence separate from membership | 540 Python tests; six hand states; 108 exact-ledger comparisons; four-page teaching note |
 | 2026-10-04 | Availability-aware lagged return features | 602 Python tests; 125 exact wealth paths; 420 timing/window comparisons; four-page teaching note |
 | 2026-10-04 | Second weekly synthesis and curriculum refinement | 608 Python tests; 66 fresh C++ checks; eleven exact replays; verified weekly PDF |
+| 2026-10-05 | C003a text-versus-value intuition | Five hand cases; compiled conversion demo; independent Decimal check; verified four-page note |
 | 2026-09-21 | Employer role mapping and research programme | 49 deduplicated postings across eight firms; roadmap through December |
 
 The experiments use synthetic data to demonstrate timing errors and validate financial arithmetic. They report no alpha.
@@ -63,6 +64,7 @@ make membership-experiment
 make terminal-experiment
 make lagged-return-experiment
 make cpp-savings
+make cpp-text-years
 make note
 ```
 
@@ -87,8 +89,8 @@ See `requirements-lock.txt` for the initial tested environment. The core package
 - [Historical membership fixture](experiments/membership/README.md)
 - [Terminal cash evidence fixture](experiments/terminal/README.md)
 - [Lagged return fixture](experiments/lagged_returns/README.md)
-- [Latest learning note](research_log/2026-10-04.md) and [PDF](reports/daily/2026-10-04-learning-note.pdf)
-- [Daily validation evidence](reports/milestone/2026-10-04-validation.md)
+- [Latest learning note](research_log/2026-10-05.md) and [PDF](reports/daily/2026-10-05-learning-note.pdf)
+- [Daily validation evidence](reports/milestone/2026-10-05-validation.md)
 - [Weekly synthesis](reports/weekly/2026-09-27-synthesis.md), [PDF](reports/weekly/2026-09-27-synthesis.pdf) and [validation](reports/weekly/2026-09-27-validation.md)
 - [Daily operating procedure](OPERATIONS.md)
 
@@ -108,3 +110,7 @@ statistical arbitrage. [Commit cadence](COMMIT_CADENCE.md) records the requested
 [validation](reports/weekly/2026-10-04-validation.md) distinguish tested accounting from missing
 source/settlement evidence. The active next step is C003a whole-year parsing, not the superseded
 October 5 ranking date. The shared 0-3 publication draw begins October 5; study pace stays one concept daily.
+
+C003a intuition is now complete; the [text-versus-value worksheet](cpp/projects/savings_growth/text_vs_years.md)
+explains the fixed conversion example line by line. The parser remains in progress; the next slot
+defines grammar and range on October 6. Personal review remains Not yet reviewed.

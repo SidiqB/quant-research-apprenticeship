@@ -1,7 +1,7 @@
 PYTHON ?= .venv/bin/python
 CXX = c++
 CXXFLAGS ?= -std=c++17 -Wall -Wextra -Wpedantic -Werror
-NOTE_DATE ?= 2026-10-04
+NOTE_DATE ?= 2026-10-05
 .PHONY: check test lint types experiment purging-experiment manifest-experiment access-experiment fold-experiment ingestion-experiment calendar-audit calendar-experiment corporate-action-experiment membership-experiment terminal-experiment lagged-return-experiment cpp-savings cpp-check note
 check: test lint types cpp-check
 
@@ -57,14 +57,24 @@ build/cpp/savings_growth/savings: cpp/projects/savings_growth/main.cpp $(SAVINGS
 cpp-savings: build/cpp/savings_growth/savings
 	./build/cpp/savings_growth/savings
 
+.PHONY: cpp-text-years
+build/cpp/savings_growth/text_vs_years: cpp/projects/savings_growth/text_vs_years.cpp $(SAVINGS_SRC) $(SAVINGS_HEADER) Makefile
+	mkdir -p build/cpp/savings_growth
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $< $(SAVINGS_SRC) -o $@
+
+cpp-text-years: build/cpp/savings_growth/text_vs_years
+	./build/cpp/savings_growth/text_vs_years
+
 build/cpp/savings_growth/test_savings: cpp/projects/savings_growth/test_savings.cpp $(SAVINGS_SRC) $(SAVINGS_HEADER) Makefile
 	mkdir -p build/cpp/savings_growth
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $< $(SAVINGS_SRC) -o $@
 
-cpp-check: build/cpp/savings_growth/savings build/cpp/savings_growth/test_savings
+cpp-check: build/cpp/savings_growth/savings build/cpp/savings_growth/test_savings build/cpp/savings_growth/text_vs_years
 	./build/cpp/savings_growth/test_savings
 	./build/cpp/savings_growth/savings > build/cpp/savings_growth/actual.txt
 	diff -u cpp/projects/savings_growth/expected.txt build/cpp/savings_growth/actual.txt
+	./build/cpp/savings_growth/text_vs_years > build/cpp/savings_growth/text_vs_years_actual.txt
+	diff -u cpp/projects/savings_growth/text_vs_years_expected.txt build/cpp/savings_growth/text_vs_years_actual.txt
 
 note:
 	$(PYTHON) scripts/render_note.py research_log/$(NOTE_DATE).md reports/daily/$(NOTE_DATE)-learning-note.pdf

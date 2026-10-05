@@ -343,3 +343,11 @@ Q010's caller-declared return basis. Q004a1 entitlement and Q004a2 lawful sample
 Questions for Sidiq: existing licensed access or source/budget preference; whether any narrower vintage
 claim is acceptable if full evidence is unavailable; which prerequisite needs repetition. No scope
 narrowing or personal review is assumed. Synthetic C++ work can continue without these answers.
+
+## Curriculum progress - 5 October
+
+Completed only the C003a intuition slot from CURRICULUM_BACKLOG.md: hand classifications and a
+compiled text-versus-value counterexample, exact output checks and verified four-page teaching PDF.
+C003a parser work remains in progress; tomorrow defines grammar/range. No Q-item is advanced or
+data-access gate waived. Full checks pass 608 Python tests, 66 existing C++ checks and both
+demonstration comparisons. The one-commit draw covers this coherent lesson and evidence.

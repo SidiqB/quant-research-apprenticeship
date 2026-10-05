@@ -91,3 +91,9 @@ These document C++ facilities; financial assumptions are explicitly chosen for t
 See the [teaching note](../../../research_log/2026-09-30.md),
 [PDF](../../../reports/daily/2026-09-30-learning-note.pdf) and
 [validation record](../../../reports/milestone/2026-09-30-validation.md).
+
+## C003a intuition: 5 October
+
+Read the [text-versus-value worksheet](text_vs_years.md) and run `make cpp-text-years` from
+the repository root. This fixed teaching example demonstrates lost fractional evidence and
+reuses C002; it does not parse user input. Grammar and parser implementation remain later steps.

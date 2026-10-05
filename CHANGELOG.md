@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-05
+
+- Completed the C003a intuition slice: five hand classifications and a small compiled C++
+  example showing 2.5 converted to 2 before C002 receives it. Parser implementation remains pending.
+- Added an exact output check to make check. Two replays and an independent Decimal interest
+  ledger agree; all 608 Python tests, 66 C++ checks, quality and dependency checks pass.
+- Wrote and verified the four-page teaching PDF; updated curriculum progress without advancing
+  later lessons or empirical gates. Shared commit draw is 1; personal review remains Not yet reviewed.
+
 ## 2026-10-04
 
 - Completed Q014 weekly synthesis and verified seven-page PDF from actual commits, daily failures,

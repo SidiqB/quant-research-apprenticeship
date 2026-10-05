@@ -25,8 +25,8 @@ Stop after December 31 pending the next scope. Historical evidence sections reta
 |---|---|---|---|---|
 | C001 | Savings growth: fixed-input example | Compile/run, variables, doubles, output | Calculate one year of growth and compare with hand arithmetic | Done |
 | C002 | Savings growth: reusable function | Functions, parameters, return values | Zero rate, zero years, invalid inputs; explain compounding convention | Done |
-| C003 | Savings growth: command-line inputs; parent of C003a/b | Parsing, branches, errors | Both children complete; clear units and reproducible examples | Ready: children pending |
-| C003a | Whole-year text parser; October 5-11 foundation slice | Text versus value, full consumption, branches, range | Reject fractions, negatives, trailing text and overflow; compare Python oracle; verified notes | Ready |
+| C003 | Savings growth: command-line inputs; parent of C003a/b | Parsing, branches, errors | Both children complete; clear units and reproducible examples | In progress: C003a intuition complete |
+| C003a | Whole-year text parser; October 5-11 foundation slice | Text versus value, full consumption, branches, range | Reject fractions, negatives, trailing text and overflow; compare Python oracle; verified notes | In progress: October 5 intuition only |
 | C003b | Complete CLI after C003a | Principal/rate parsing, units, error reporting | Reject malformed/nonfinite inputs; connect validated arguments to C002; integration checks | Deferred: C003a |
 | C004 | Return calculator: a small price series | Vectors, loops, indexing | Hand-check simple returns; reject zero/nonpositive prices under stated scope | Planned |
 | C005 | Return calculator: summary statistics | Mean, sample variance, functions | Compare known small samples; handle fewer than two observations | Planned |
@@ -70,3 +70,13 @@ three years. Two replays match; a simple-interest mutation fails. All 363 Python
 pass. The four-page teaching PDF passes full-text and every-page visual checks. Intermediate-factor
 overflow and implicit integer conversion limitations are explicit; no general exact-money claim.
 C003 is Ready for October 7. Sidiq review remains Not yet reviewed.
+
+## Evidence from 5 October
+
+C003a intuition is complete: five hand classifications distinguish a whole count from fractional,
+negative, missing and trailing text. A fixed C++ example preserves text separately from the number,
+then shows explicit conversion of 2.5 to 2 and the resulting 1102.50 two-year balance. Two exact
+replays, an independent Decimal interest ledger, 608 Python tests and the existing 66 C++ checks
+pass; the new output comparison is part of make check. The four-page teaching PDF is verified.
+The parser is not implemented; October 6 defines grammar/range before October 7 implementation.
+Personal review remains Not yet reviewed. C003b and later prerequisites remain deferred.

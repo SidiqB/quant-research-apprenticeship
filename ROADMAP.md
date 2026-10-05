@@ -57,6 +57,12 @@ synthetic mechanics only. Original later-phase dates are superseded by QUANT_CUR
 tests, 66 fresh C++ checks and eleven exact two-run JSON replays; no coverage percentage was measured.
 No empirical alpha result, live order-book calibration or options-market result exists yet.
 
+C003a's October 5 intuition slot is complete: five hand classifications and a compiled conversion
+example show why an integer argument cannot recover a discarded fraction. Two exact replays and
+an independent Decimal ledger pass with 608 Python tests, 66 C++ checks and both output fixtures.
+The four-page teaching PDF is verified. C003a remains in progress; October 6 defines grammar/range
+and October 7 implements the parser. Personal review remains Not yet reviewed.
+
 ## Long-term scope and conditional extensions
 
 Alpha: add value and quality only after obtaining fundamentals with release vintages; volatility/liquidity signals

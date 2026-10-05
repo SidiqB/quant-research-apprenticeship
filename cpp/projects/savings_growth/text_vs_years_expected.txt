@@ -1,0 +1,5 @@
+Original text: 2.5
+Separate numeric value: 2.5
+After explicit int conversion: 2
+Balance C002 computes for the converted years: 1102.50
+The function received 2 years; it cannot recover the lost fraction.

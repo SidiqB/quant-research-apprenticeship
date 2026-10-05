@@ -27,7 +27,7 @@ See [weekly synthesis](reports/weekly/2026-10-04-synthesis.md) and [validation](
 
 | Date | Focus | Bounded step | Evidence | Status |
 |---|---|---|---|---|
-| 2026-10-05 | C++ foundations | Text versus whole-year values; C003a intuition | Classify 2, 2.5, -1, blank and 2x by hand; explain conversion loss; verified note | Planned |
+| 2026-10-05 | C++ foundations | Text versus whole-year values; C003a intuition | Five hand classifications; compiled conversion example and exact output check; verified four-page note | Done: intuition only |
 | 2026-10-06 | C++ foundations | Define years-only parsing grammar and range | Full consumption, nonnegative decimal digits, explicit whitespace policy; verified note | Planned |
 | 2026-10-07 | C++ foundations | Implement one C++ whole-year parser function | Explain branches line by line; valid/invalid examples; preserve C002; verified note | Planned |
 | 2026-10-08 | C++ foundations | Boundary checks with an independent Python oracle | Zero, maximum int, overflow and trailing text; exact accepted values; verified note | Planned |
