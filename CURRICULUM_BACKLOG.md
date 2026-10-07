@@ -23,13 +23,21 @@ Deferred integration Q005b is split in BACKLOG.md into a contract and a two-batc
 licence, identity, knowledge-time, complete-proceeds and reinvestment-basis gates from this week's findings.
 See [weekly synthesis](reports/weekly/2026-10-04-synthesis.md) and [validation](reports/weekly/2026-10-04-validation.md).
 
+## Recovery recorded 7 October
+
+October 6 ended with a transport error before saving its lesson, PDF or pending manifest. Its zero
+draw remains unchanged. October 7 completes grammar/range with a fixed C++ conversion experiment
+and verified note. The parser is next on October 8; subsequent boundary, failure, reproduction and
+consolidation steps follow in dependency order, displacing later dates if needed. Do not combine
+lessons to catch up. Original slot dates below remain visible; the October 12 ledger is conditional.
+
 ## Daily slots
 
 | Date | Focus | Bounded step | Evidence | Status |
 |---|---|---|---|---|
 | 2026-10-05 | C++ foundations | Text versus whole-year values; C003a intuition | Five hand classifications; compiled conversion example and exact output check; verified four-page note | Done: intuition only |
-| 2026-10-06 | C++ foundations | Define years-only parsing grammar and range | Full consumption, nonnegative decimal digits, explicit whitespace policy; verified note | Planned |
-| 2026-10-07 | C++ foundations | Implement one C++ whole-year parser function | Explain branches line by line; valid/invalid examples; preserve C002; verified note | Planned |
+| 2026-10-06 | C++ foundations | Define years-only parsing grammar and range | Digit-only contract, full consumption, range and library counterexamples; verified October 7 note | Done October 7 after interrupted run |
+| 2026-10-07 | C++ foundations | Implement one C++ whole-year parser function | Explain branches line by line; valid/invalid examples; preserve C002; verified note | Next eligible: October 8; prerequisite completed October 7 |
 | 2026-10-08 | C++ foundations | Boundary checks with an independent Python oracle | Zero, maximum int, overflow and trailing text; exact accepted values; verified note | Planned |
 | 2026-10-09 | C++ foundations | Deliberately fail on fractional-year truncation | Explain why 2.5 cannot silently become 2; repeat unclear prerequisite; verified note | Planned |
 | 2026-10-10 | C++ foundations | Reproduce C003a and teach back | Same inputs/outputs; exercises, separate answers; no new complexity; verified note | Planned |

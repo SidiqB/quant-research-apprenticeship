@@ -80,3 +80,13 @@ replays, an independent Decimal interest ledger, 608 Python tests and the existi
 pass; the new output comparison is part of make check. The four-page teaching PDF is verified.
 The parser is not implemented; October 6 defines grammar/range before October 7 implementation.
 Personal review remains Not yet reviewed. C003b and later prerequisites remain deferred.
+
+## Evidence from 7 October
+
+Completed grammar/range after the interrupted October 6 run. See the years_contract.md worksheet in
+the savings project: whole ASCII decimal digits, full input, explicit sign/whitespace policy and
+nonnegative int range. The fixed conversion_contract.cpp demo observes a successful prefix (2x)
+and successful complete negative (-1); neither meets policy. Two exact replays, 608 Python tests,
+66 existing C++ checks and three output fixtures pass; the four-page PDF is verified. Parser
+implementation remains next on October 8. Continue remaining prerequisites in order without rushing.
+C003a/C003 remain in progress; C003b stays deferred; personal review remains Not yet reviewed.

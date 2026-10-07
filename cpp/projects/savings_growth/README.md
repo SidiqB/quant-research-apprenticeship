@@ -79,7 +79,7 @@ would need a separate precision contract and tests. No numerical extension is cl
 
 The function does not model negative rates, fractional years, varying rates, deposits, withdrawals,
 day counts, inflation or contractual bank rounding. Whole-year type conversion and textual parsing
-remain the caller's responsibility. C003 introduces validated command-line inputs on October 7.
+remain the caller's responsibility. C003a defines years-only parsing first; a complete CLI remains deferred under the active curriculum.
 
 ## Primary sources consulted on 30 September 2026
 
@@ -97,3 +97,10 @@ See the [teaching note](../../../research_log/2026-09-30.md),
 Read the [text-versus-value worksheet](text_vs_years.md) and run `make cpp-text-years` from
 the repository root. This fixed teaching example demonstrates lost fractional evidence and
 reuses C002; it does not parse user input. Grammar and parser implementation remain later steps.
+
+## C003a grammar and range: 7 October
+
+Read the [whole-year text contract](years_contract.md) and run `make cpp-conversion-contract`.
+Two fixed library observations show that numeric-prefix success and complete signed conversion
+are insufficient for our contract. The exact output comparison is part of `make check`. This
+completes the interrupted grammar prerequisite; a reusable parser remains the next lesson.

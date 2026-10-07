@@ -63,6 +63,13 @@ an independent Decimal ledger pass with 608 Python tests, 66 C++ checks and both
 The four-page teaching PDF is verified. C003a remains in progress; October 6 defines grammar/range
 and October 7 implements the parser. Personal review remains Not yet reviewed.
 
+C003a's grammar/range prerequisite is complete on October 7 after the interrupted October 6 run.
+The contract requires complete ASCII decimal digits in the nonnegative int range. A fixed C++
+experiment demonstrates successful prefix conversion and complete negative conversion; neither
+satisfies the contract. Three output fixtures, 66 C++ checks and 608 Python tests pass, and the
+four-page PDF is verified. Parser implementation is next on October 8; remaining steps shift in
+dependency order. The earlier October 6/7 plan above is superseded without backdating progress.
+
 ## Long-term scope and conditional extensions
 
 Alpha: add value and quality only after obtaining fundamentals with release vintages; volatility/liquidity signals

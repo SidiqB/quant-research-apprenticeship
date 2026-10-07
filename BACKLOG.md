@@ -351,3 +351,12 @@ compiled text-versus-value counterexample, exact output checks and verified four
 C003a parser work remains in progress; tomorrow defines grammar/range. No Q-item is advanced or
 data-access gate waived. Full checks pass 608 Python tests, 66 existing C++ checks and both
 demonstration comparisons. The one-commit draw covers this coherent lesson and evidence.
+
+## C003a progress - 7 October
+
+Completed the unfinished October 6 grammar/range prerequisite: digit-only nonnegative decimal text,
+full consumption, no whitespace/signs, leading zeros allowed and target int maximum. Fixed C++
+conversion examples show why library success alone is insufficient. Exact replay, 608 Python tests,
+66 existing C++ checks and three output fixtures pass; four-page teaching PDF verified. C003a remains
+in progress; implement the parser next, then boundaries, failure cases and reproduction in order.
+October 6's interrupted run produced no saved lesson; no completion or personal review is inferred.

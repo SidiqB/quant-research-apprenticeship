@@ -1,0 +1,3 @@
+2x: conversion success = true, complete input = false, value = 2
+-1: conversion success = true, complete input = true, value = -1
+Neither input satisfies the whole-year text contract.

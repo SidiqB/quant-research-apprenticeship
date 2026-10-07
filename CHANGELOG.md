@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-07
+
+- Completed C003a grammar/range after the interrupted October 6 run, with explicit ASCII digits,
+  whitespace/sign policy, full consumption and nonnegative int range. No parser completion claimed.
+- Added fixed C++ library counterexamples and an exact output comparison to make check. Two replays,
+  independent arithmetic, 608 Python tests, 66 C++ checks and three output fixtures pass.
+- Verified four-page teaching PDF; moved parser implementation to the next session and preserved
+  prerequisite order. Draw 2; one coherent lesson prepared. Personal review remains Not yet reviewed.
+
 ## 2026-10-05
 
 - Completed the C003a intuition slice: five hand classifications and a small compiled C++
