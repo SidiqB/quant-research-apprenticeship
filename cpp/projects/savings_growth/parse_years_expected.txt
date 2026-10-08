@@ -1,0 +1,4 @@
+Synthetic whole-year parser example
+Text 002 -> 2 whole years
+1000 at 5% -> 1102.50
+Text 2.5 -> rejected; no year value returned

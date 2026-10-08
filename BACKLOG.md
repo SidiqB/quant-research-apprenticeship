@@ -360,3 +360,13 @@ conversion examples show why library success alone is insufficient. Exact replay
 66 existing C++ checks and three output fixtures pass; four-page teaching PDF verified. C003a remains
 in progress; implement the parser next, then boundaries, failure cases and reproduction in order.
 October 6's interrupted run produced no saved lesson; no completion or personal review is inferred.
+
+## C003a implementation - 8 October
+
+The whole-year parser is implemented with digit-only spelling, checked decimal conversion,
+complete consumption and explicit spelling/range exceptions. Thirty parser checks include
+embedded NUL, long text and a hand-calculated C002 connection. All 608 Python tests, 66 prior
+C++ checks and four output fixtures pass; fresh compilation and the four-page PDF are verified.
+C003a remains in progress: independent boundary oracle next on October 9, then failure,
+reproduction and consolidation. C003b and later projects remain conditional on prerequisites.
+Personal review remains Not yet reviewed; Q004a/Q005b still gate empirical work.

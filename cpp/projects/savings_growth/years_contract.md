@@ -1,7 +1,8 @@
 # C003a whole-year text contract
 
 Defined 7 October 2026, completing the unfinished October 6 prerequisite. Sidiq review: Not yet reviewed.
-This contract specifies a future parser; only the fixed library demonstration is implemented today.
+At definition on October 7, this specified a future parser. The implementation added October 8
+is in years.hpp/cpp; see the project README and October 8 note for its error API and test evidence.
 The existing C002 savings function remains unchanged. All examples are synthetic.
 
 ## Acceptance and rejection

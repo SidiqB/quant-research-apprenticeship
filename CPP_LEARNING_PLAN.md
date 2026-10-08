@@ -25,8 +25,8 @@ Stop after December 31 pending the next scope. Historical evidence sections reta
 |---|---|---|---|---|
 | C001 | Savings growth: fixed-input example | Compile/run, variables, doubles, output | Calculate one year of growth and compare with hand arithmetic | Done |
 | C002 | Savings growth: reusable function | Functions, parameters, return values | Zero rate, zero years, invalid inputs; explain compounding convention | Done |
-| C003 | Savings growth: command-line inputs; parent of C003a/b | Parsing, branches, errors | Both children complete; clear units and reproducible examples | In progress: C003a intuition complete |
-| C003a | Whole-year text parser; October 5-11 foundation slice | Text versus value, full consumption, branches, range | Reject fractions, negatives, trailing text and overflow; compare Python oracle; verified notes | In progress: October 5 intuition only |
+| C003 | Savings growth: command-line inputs; parent of C003a/b | Parsing, branches, errors | Both children complete; clear units and reproducible examples | In progress: C003a parser implemented; verification lessons pending |
+| C003a | Whole-year text parser; October 5-11 foundation slice | Text versus value, full consumption, branches, range | Reject fractions, negatives, trailing text and overflow; compare Python oracle; verified notes | In progress: parser implemented October 8; boundary oracle next |
 | C003b | Complete CLI after C003a | Principal/rate parsing, units, error reporting | Reject malformed/nonfinite inputs; connect validated arguments to C002; integration checks | Deferred: C003a |
 | C004 | Return calculator: a small price series | Vectors, loops, indexing | Hand-check simple returns; reject zero/nonpositive prices under stated scope | Planned |
 | C005 | Return calculator: summary statistics | Mean, sample variance, functions | Compare known small samples; handle fewer than two observations | Planned |
@@ -90,3 +90,13 @@ and successful complete negative (-1); neither meets policy. Two exact replays, 
 66 existing C++ checks and three output fixtures pass; the four-page PDF is verified. Parser
 implementation remains next on October 8. Continue remaining prerequisites in order without rushing.
 C003a/C003 remain in progress; C003b stays deferred; personal review remains Not yet reviewed.
+
+## C003a implementation - 8 October
+
+The whole-year parser is implemented with digit-only spelling, checked decimal conversion,
+complete consumption and explicit spelling/range exceptions. Thirty parser checks include
+embedded NUL, long text and a hand-calculated C002 connection. All 608 Python tests, 66 prior
+C++ checks and four output fixtures pass; fresh compilation and the four-page PDF are verified.
+C003a remains in progress: independent boundary oracle next on October 9, then failure,
+reproduction and consolidation. C003b and later projects remain conditional on prerequisites.
+Personal review remains Not yet reviewed; Q004a/Q005b still gate empirical work.

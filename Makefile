@@ -1,7 +1,7 @@
 PYTHON ?= .venv/bin/python
 CXX = c++
 CXXFLAGS ?= -std=c++17 -Wall -Wextra -Wpedantic -Werror
-NOTE_DATE ?= 2026-10-07
+NOTE_DATE ?= 2026-10-08
 .PHONY: check test lint types experiment purging-experiment manifest-experiment access-experiment fold-experiment ingestion-experiment calendar-audit calendar-experiment corporate-action-experiment membership-experiment terminal-experiment lagged-return-experiment cpp-savings cpp-check note
 check: test lint types cpp-check
 
@@ -77,14 +77,32 @@ build/cpp/savings_growth/conversion_contract: cpp/projects/savings_growth/conver
 cpp-conversion-contract: build/cpp/savings_growth/conversion_contract
 	./build/cpp/savings_growth/conversion_contract
 
-cpp-check: build/cpp/savings_growth/savings build/cpp/savings_growth/test_savings build/cpp/savings_growth/text_vs_years build/cpp/savings_growth/conversion_contract
+YEARS_SRC = cpp/projects/savings_growth/years.cpp
+YEARS_HEADER = cpp/projects/savings_growth/years.hpp
+
+build/cpp/savings_growth/test_years: cpp/projects/savings_growth/test_years.cpp $(YEARS_SRC) $(YEARS_HEADER) $(SAVINGS_SRC) $(SAVINGS_HEADER) Makefile
+	mkdir -p build/cpp/savings_growth
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $< $(YEARS_SRC) $(SAVINGS_SRC) -o $@
+
+build/cpp/savings_growth/parse_years_demo: cpp/projects/savings_growth/parse_years_demo.cpp $(YEARS_SRC) $(YEARS_HEADER) $(SAVINGS_SRC) $(SAVINGS_HEADER) Makefile
+	mkdir -p build/cpp/savings_growth
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $< $(YEARS_SRC) $(SAVINGS_SRC) -o $@
+
+.PHONY: cpp-parse-years
+cpp-parse-years: build/cpp/savings_growth/parse_years_demo
+	./build/cpp/savings_growth/parse_years_demo
+
+cpp-check: build/cpp/savings_growth/savings build/cpp/savings_growth/test_savings build/cpp/savings_growth/text_vs_years build/cpp/savings_growth/conversion_contract build/cpp/savings_growth/test_years build/cpp/savings_growth/parse_years_demo
 	./build/cpp/savings_growth/test_savings
+	./build/cpp/savings_growth/test_years
 	./build/cpp/savings_growth/savings > build/cpp/savings_growth/actual.txt
 	diff -u cpp/projects/savings_growth/expected.txt build/cpp/savings_growth/actual.txt
 	./build/cpp/savings_growth/text_vs_years > build/cpp/savings_growth/text_vs_years_actual.txt
 	diff -u cpp/projects/savings_growth/text_vs_years_expected.txt build/cpp/savings_growth/text_vs_years_actual.txt
 	./build/cpp/savings_growth/conversion_contract > build/cpp/savings_growth/conversion_contract_actual.txt
 	diff -u cpp/projects/savings_growth/conversion_contract_expected.txt build/cpp/savings_growth/conversion_contract_actual.txt
+	./build/cpp/savings_growth/parse_years_demo > build/cpp/savings_growth/parse_years_actual.txt
+	diff -u cpp/projects/savings_growth/parse_years_expected.txt build/cpp/savings_growth/parse_years_actual.txt
 
 note:
 	$(PYTHON) scripts/render_note.py research_log/$(NOTE_DATE).md reports/daily/$(NOTE_DATE)-learning-note.pdf

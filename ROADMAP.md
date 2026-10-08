@@ -94,3 +94,13 @@ Daily research: 08:00 Europe/London. Weekly synthesis: Sunday 16:00 Europe/Londo
 Read OPERATIONS.md. Automation activates only after the first manual cycle passes. Failed or blocked days produce
 an honest status record, not a token contribution. Material direction changes become documented questions while
 independent authorised work continues. Personal review is encouraged but does not gate routine progress.
+
+## C003a implementation - 8 October
+
+The whole-year parser is implemented with digit-only spelling, checked decimal conversion,
+complete consumption and explicit spelling/range exceptions. Thirty parser checks include
+embedded NUL, long text and a hand-calculated C002 connection. All 608 Python tests, 66 prior
+C++ checks and four output fixtures pass; fresh compilation and the four-page PDF are verified.
+C003a remains in progress: independent boundary oracle next on October 9, then failure,
+reproduction and consolidation. C003b and later projects remain conditional on prerequisites.
+Personal review remains Not yet reviewed; Q004a/Q005b still gate empirical work.

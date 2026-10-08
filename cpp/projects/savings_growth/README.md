@@ -19,8 +19,8 @@ fees or taxes and no rounding between years. Negative rates are outside this les
 Invalid values raise `std::invalid_argument`, including when another input is zero. After validation,
 zero principal, zero years or zero rate returns the principal. A nonfinite computed growth factor or
 balance raises `std::overflow_error`. A finite result is an approximation, not exact money accounting.
-There is no input parser yet: callers must supply whole-year integers. C++ implicit conversions can
-truncate a fractional argument before this function sees it; C003 must validate text before conversion.
+C003a now supplies parse_whole_years for text inputs; callers using the numeric function directly
+can still truncate a fractional argument through implicit conversion before the function sees it.
 
 ## Worked synthetic experiment
 
@@ -104,3 +104,25 @@ Read the [whole-year text contract](years_contract.md) and run `make cpp-convers
 Two fixed library observations show that numeric-prefix success and complete signed conversion
 are insufficient for our contract. The exact output comparison is part of `make check`. This
 completes the interrupted grammar prerequisite; a reusable parser remains the next lesson.
+
+## C003a parser implementation: 8 October
+
+`int parse_whole_years(const std::string& text)` in years.hpp/cpp enforces the
+[contract](years_contract.md). It returns an int only on success. Empty/non-digit strings throw
+`std::invalid_argument`; digit-only values above the target int maximum throw `std::out_of_range`.
+Spelling is checked before range, so an enormous number with a suffix is a spelling error.
+Error-message wording is not a stable interface. Resource failures are not remapped to these errors.
+
+The function checks the supplied string's entire length, including NUL bytes. A caller must preserve
+that length: `std::string("2\0x", 3)` retains three bytes, whereas C-string construction would truncate.
+Leading zeros are allowed; there is no extra length cap. ASCII-compatible targets are assumed.
+Parsing does not establish a realistic horizon or guarantee a finite savings balance.
+
+Run `make cpp-parse-years` for fixed synthetic text 002 -> 2 -> 1102.50 at 5% on 1000 units. Text 2.5
+is rejected without returning years. `make cpp-check` includes 30 new checks: eight exact accepted
+values, 21 required rejections and one hand-calculated savings connection. The new demo has a
+hand-authored output comparison. `make check` runs these alongside all existing checks.
+
+Read the [October 8 note](../../../research_log/2026-10-08.md) for each line and branch,
+and the [validation record](../../../reports/milestone/2026-10-08-validation.md) for evidence.
+C003a remains in progress; the independent Python boundary oracle is next. This is not the full CLI.

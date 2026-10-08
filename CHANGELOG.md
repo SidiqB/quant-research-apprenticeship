@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-08
+
+- Implemented C003a whole-year text parsing with explicit spelling/range errors and a fixed C002
+  savings connection. Thirty parser checks and the hand-authored output comparison pass.
+- Full checks pass 608 Python tests, 66 prior C++ checks and four exact output fixtures; six
+  executables freshly compile warning-clean. No existing calculation or data gate changed.
+- Verified four-page teaching PDF with line-by-line explanation, exercises and separate answers.
+  Boundary-oracle lesson is next; C003a stays in progress. Draw 3; one coherent unit prepared.
+
 ## 2026-10-07
 
 - Completed C003a grammar/range after the interrupted October 6 run, with explicit ASCII digits,

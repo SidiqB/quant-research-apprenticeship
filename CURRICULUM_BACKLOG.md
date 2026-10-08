@@ -37,8 +37,8 @@ lessons to catch up. Original slot dates below remain visible; the October 12 le
 |---|---|---|---|---|
 | 2026-10-05 | C++ foundations | Text versus whole-year values; C003a intuition | Five hand classifications; compiled conversion example and exact output check; verified four-page note | Done: intuition only |
 | 2026-10-06 | C++ foundations | Define years-only parsing grammar and range | Digit-only contract, full consumption, range and library counterexamples; verified October 7 note | Done October 7 after interrupted run |
-| 2026-10-07 | C++ foundations | Implement one C++ whole-year parser function | Explain branches line by line; valid/invalid examples; preserve C002; verified note | Next eligible: October 8; prerequisite completed October 7 |
-| 2026-10-08 | C++ foundations | Boundary checks with an independent Python oracle | Zero, maximum int, overflow and trailing text; exact accepted values; verified note | Planned |
+| 2026-10-07 | C++ foundations | Implement one C++ whole-year parser function | Explain branches line by line; valid/invalid examples; preserve C002; verified note | Done October 8: 30 parser checks; verified four-page note |
+| 2026-10-08 | C++ foundations | Boundary checks with an independent Python oracle | Zero, maximum int, overflow and trailing text; exact accepted values; verified note | Next eligible: October 9 |
 | 2026-10-09 | C++ foundations | Deliberately fail on fractional-year truncation | Explain why 2.5 cannot silently become 2; repeat unclear prerequisite; verified note | Planned |
 | 2026-10-10 | C++ foundations | Reproduce C003a and teach back | Same inputs/outputs; exercises, separate answers; no new complexity; verified note | Planned |
 | 2026-10-11 | C++ foundations | Consolidate C003a evidence and weekly synthesis | Decide C003b readiness; incomplete work stays explicit; verified note | Planned |
@@ -123,3 +123,13 @@ lessons to catch up. Original slot dates below remain visible; the October 12 le
 | 2026-12-29 | Consolidation and New Year handover | Compare strategy assumptions and failures | Worked example, relevant checks and verified note; List unfinished work, failed hypotheses, data gaps and proposed 2027 research | Planned |
 | 2026-12-30 | Consolidation and New Year handover | Write year-end synthesis and unfinished items | Worked example, relevant checks and verified note; List unfinished work, failed hypotheses, data gaps and proposed 2027 research | Planned |
 | 2026-12-31 | Consolidation and New Year handover | Validate release and draft 2027 questions | Worked example, relevant checks and verified note; List unfinished work, failed hypotheses, data gaps and proposed 2027 research | Planned |
+
+## Implementation progress - 8 October
+
+C003a now has a reusable whole-year parser with explicit spelling/range exceptions and a fixed
+savings connection. Thirty parser checks, 608 Python tests, 66 prior C++ checks and four exact
+output comparisons pass; the four-page teaching PDF is verified. Only the implementation slot
+is completed. Independent boundary-oracle work is next on October 9, followed by failure,
+reproduction and consolidation in order. C003b and ledger readiness remain conditional.
+Draw 3; one coherent lesson prepared, no pending units or artificial splits. Personal review
+remains Not yet reviewed. Q004a/Q005b empirical gates remain unchanged.

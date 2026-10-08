@@ -25,6 +25,7 @@ The emphasis is on reproducible experiments, correct information timing and expl
 | 2026-10-04 | Second weekly synthesis and curriculum refinement | 608 Python tests; 66 fresh C++ checks; eleven exact replays; verified weekly PDF |
 | 2026-10-05 | C003a text-versus-value intuition | Five hand cases; compiled conversion demo; independent Decimal check; verified four-page note |
 | 2026-10-07 | C003a grammar and range contract | Two compiled conversion counterexamples; exact output check; verified four-page note; parser next |
+| 2026-10-08 | C003a whole-year parser implementation | 30 parser checks; 608 Python tests; four output fixtures; verified four-page note |
 | 2026-09-21 | Employer role mapping and research programme | 49 deduplicated postings across eight firms; roadmap through December |
 
 The experiments use synthetic data to demonstrate timing errors and validate financial arithmetic. They report no alpha.
