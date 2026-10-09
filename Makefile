@@ -1,7 +1,7 @@
 PYTHON ?= .venv/bin/python
 CXX = c++
 CXXFLAGS ?= -std=c++17 -Wall -Wextra -Wpedantic -Werror
-NOTE_DATE ?= 2026-10-08
+NOTE_DATE ?= 2026-10-09
 .PHONY: check test lint types experiment purging-experiment manifest-experiment access-experiment fold-experiment ingestion-experiment calendar-audit calendar-experiment corporate-action-experiment membership-experiment terminal-experiment lagged-return-experiment cpp-savings cpp-check note
 check: test lint types cpp-check
 
@@ -92,7 +92,15 @@ build/cpp/savings_growth/parse_years_demo: cpp/projects/savings_growth/parse_yea
 cpp-parse-years: build/cpp/savings_growth/parse_years_demo
 	./build/cpp/savings_growth/parse_years_demo
 
-cpp-check: build/cpp/savings_growth/savings build/cpp/savings_growth/test_savings build/cpp/savings_growth/text_vs_years build/cpp/savings_growth/conversion_contract build/cpp/savings_growth/test_years build/cpp/savings_growth/parse_years_demo
+build/cpp/savings_growth/years_probe: cpp/projects/savings_growth/years_probe.cpp $(YEARS_SRC) $(YEARS_HEADER) Makefile
+	mkdir -p build/cpp/savings_growth
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $< $(YEARS_SRC) -o $@
+
+.PHONY: cpp-years-oracle
+cpp-years-oracle: build/cpp/savings_growth/years_probe
+	$(PYTHON) scripts/years_boundary_oracle.py
+
+cpp-check: cpp-years-oracle build/cpp/savings_growth/savings build/cpp/savings_growth/test_savings build/cpp/savings_growth/text_vs_years build/cpp/savings_growth/conversion_contract build/cpp/savings_growth/test_years build/cpp/savings_growth/parse_years_demo
 	./build/cpp/savings_growth/test_savings
 	./build/cpp/savings_growth/test_years
 	./build/cpp/savings_growth/savings > build/cpp/savings_growth/actual.txt

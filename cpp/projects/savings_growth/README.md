@@ -126,3 +126,12 @@ hand-authored output comparison. `make check` runs these alongside all existing 
 Read the [October 8 note](../../../research_log/2026-10-08.md) for each line and branch,
 and the [validation record](../../../reports/milestone/2026-10-08-validation.md) for evidence.
 C003a remains in progress; the independent Python boundary oracle is next. This is not the full CLI.
+
+## C003a independent boundaries: 9 October
+
+Run `make cpp-years-oracle`. The [oracle experiment](../../../experiments/years_parser/README.md)
+compares 75 complete byte inputs with a Python reference, including the target int maximum and
+its immediate successor. All agree; two scratch faults are detected. The byte-preserving
+`years_probe.cpp` supports tests only; it does not implement the deferred financial CLI.
+Read the [October 9 note](../../../research_log/2026-10-09.md) for the slow worked explanation.
+C003a remains in progress; the fractional-truncation failure lesson follows on October 10.

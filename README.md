@@ -26,6 +26,7 @@ The emphasis is on reproducible experiments, correct information timing and expl
 | 2026-10-05 | C003a text-versus-value intuition | Five hand cases; compiled conversion demo; independent Decimal check; verified four-page note |
 | 2026-10-07 | C003a grammar and range contract | Two compiled conversion counterexamples; exact output check; verified four-page note; parser next |
 | 2026-10-08 | C003a whole-year parser implementation | 30 parser checks; 608 Python tests; four output fixtures; verified four-page note |
+| 2026-10-09 | C003a independent boundary verification | 75 exact Python/C++ comparisons; two rejected mutations; verified four-page note |
 | 2026-09-21 | Employer role mapping and research programme | 49 deduplicated postings across eight firms; roadmap through December |
 
 The experiments use synthetic data to demonstrate timing errors and validate financial arithmetic. They report no alpha.
@@ -68,6 +69,7 @@ make lagged-return-experiment
 make cpp-savings
 make cpp-text-years
 make cpp-conversion-contract
+make cpp-years-oracle
 make note
 ```
 
@@ -92,8 +94,8 @@ See `requirements-lock.txt` for the initial tested environment. The core package
 - [Historical membership fixture](experiments/membership/README.md)
 - [Terminal cash evidence fixture](experiments/terminal/README.md)
 - [Lagged return fixture](experiments/lagged_returns/README.md)
-- [Latest learning note](research_log/2026-10-05.md) and [PDF](reports/daily/2026-10-05-learning-note.pdf)
-- [Daily validation evidence](reports/milestone/2026-10-05-validation.md)
+- [Latest learning note](research_log/2026-10-09.md) and [PDF](reports/daily/2026-10-09-learning-note.pdf)
+- [Daily validation evidence](reports/milestone/2026-10-09-validation.md)
 - [Weekly synthesis](reports/weekly/2026-09-27-synthesis.md), [PDF](reports/weekly/2026-09-27-synthesis.pdf) and [validation](reports/weekly/2026-09-27-validation.md)
 - [Daily operating procedure](OPERATIONS.md)
 
@@ -114,6 +116,7 @@ statistical arbitrage. [Commit cadence](COMMIT_CADENCE.md) records the requested
 source/settlement evidence. The active next step is C003a whole-year parsing, not the superseded
 October 5 ranking date. The shared 0-3 publication draw begins October 5; study pace stays one concept daily.
 
-C003a intuition is now complete; the [text-versus-value worksheet](cpp/projects/savings_growth/text_vs_years.md)
-explains the fixed conversion example line by line. The parser remains in progress; the next slot
-defines grammar and range on October 6. Personal review remains Not yet reviewed.
+C003a now has a parser and an [independent boundary oracle](experiments/years_parser/README.md).
+Seventy-five exact comparisons and two rejected mutations support the stated contract. The next slot
+on October 10 covers fractional-truncation failure, then reproduction and consolidation. C003a remains
+in progress. Personal review remains Not yet reviewed.

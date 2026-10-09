@@ -38,8 +38,8 @@ lessons to catch up. Original slot dates below remain visible; the October 12 le
 | 2026-10-05 | C++ foundations | Text versus whole-year values; C003a intuition | Five hand classifications; compiled conversion example and exact output check; verified four-page note | Done: intuition only |
 | 2026-10-06 | C++ foundations | Define years-only parsing grammar and range | Digit-only contract, full consumption, range and library counterexamples; verified October 7 note | Done October 7 after interrupted run |
 | 2026-10-07 | C++ foundations | Implement one C++ whole-year parser function | Explain branches line by line; valid/invalid examples; preserve C002; verified note | Done October 8: 30 parser checks; verified four-page note |
-| 2026-10-08 | C++ foundations | Boundary checks with an independent Python oracle | Zero, maximum int, overflow and trailing text; exact accepted values; verified note | Next eligible: October 9 |
-| 2026-10-09 | C++ foundations | Deliberately fail on fractional-year truncation | Explain why 2.5 cannot silently become 2; repeat unclear prerequisite; verified note | Planned |
+| 2026-10-08 | C++ foundations | Boundary checks with an independent Python oracle | Zero, maximum int, overflow and trailing text; exact accepted values; verified note | Done October 9: 75 exact comparisons; two rejected mutations; verified four-page note |
+| 2026-10-09 | C++ foundations | Deliberately fail on fractional-year truncation | Explain why 2.5 cannot silently become 2; repeat unclear prerequisite; verified note | Next eligible: October 10 |
 | 2026-10-10 | C++ foundations | Reproduce C003a and teach back | Same inputs/outputs; exercises, separate answers; no new complexity; verified note | Planned |
 | 2026-10-11 | C++ foundations | Consolidate C003a evidence and weekly synthesis | Decide C003b readiness; incomplete work stays explicit; verified note | Planned |
 | 2026-10-12 | Backtesting and portfolio accounting | Explain intuition and hand-work one example | Worked example, relevant checks and verified note; Cash conservation | Planned |
@@ -133,3 +133,14 @@ is completed. Independent boundary-oracle work is next on October 9, followed by
 reproduction and consolidation in order. C003b and ledger readiness remain conditional.
 Draw 3; one coherent lesson prepared, no pending units or artificial splits. Personal review
 remains Not yet reviewed. Q004a/Q005b empirical gates remain unchanged.
+
+## C003a boundary verification - 9 October
+
+Independent Python integer/byte-pattern checks agree with the unchanged C++ parser on 75 synthetic
+inputs: 47 accepted, 21 spelling errors and seven range errors. The target maximum is accepted;
+its successor is rejected. Two scratch mutations (exclusive upper limit and NUL truncation) fail
+for the intended mismatches. All 608 Python tests, 96 existing C++ checks, four output fixtures
+and quality checks pass. Two oracle replays agree; the four-page teaching PDF is verified.
+Only the boundary slot is complete. Next on October 10: fractional-truncation failure, then
+reproduction and consolidation in dependency order. C003a/C003 remain in progress; C003b and
+later projects remain conditional. Personal review stays Not yet reviewed; empirical gates remain.

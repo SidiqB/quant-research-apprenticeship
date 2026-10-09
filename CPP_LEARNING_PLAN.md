@@ -25,8 +25,8 @@ Stop after December 31 pending the next scope. Historical evidence sections reta
 |---|---|---|---|---|
 | C001 | Savings growth: fixed-input example | Compile/run, variables, doubles, output | Calculate one year of growth and compare with hand arithmetic | Done |
 | C002 | Savings growth: reusable function | Functions, parameters, return values | Zero rate, zero years, invalid inputs; explain compounding convention | Done |
-| C003 | Savings growth: command-line inputs; parent of C003a/b | Parsing, branches, errors | Both children complete; clear units and reproducible examples | In progress: C003a parser implemented; verification lessons pending |
-| C003a | Whole-year text parser; October 5-11 foundation slice | Text versus value, full consumption, branches, range | Reject fractions, negatives, trailing text and overflow; compare Python oracle; verified notes | In progress: parser implemented October 8; boundary oracle next |
+| C003 | Savings growth: command-line inputs; parent of C003a/b | Parsing, branches, errors | Both children complete; clear units and reproducible examples | In progress: C003a boundary verification complete; remaining lessons pending |
+| C003a | Whole-year text parser; October 5-11 foundation slice | Text versus value, full consumption, branches, range | Reject fractions, negatives, trailing text and overflow; compare Python oracle; verified notes | In progress: boundary oracle complete October 9; failure lesson next |
 | C003b | Complete CLI after C003a | Principal/rate parsing, units, error reporting | Reject malformed/nonfinite inputs; connect validated arguments to C002; integration checks | Deferred: C003a |
 | C004 | Return calculator: a small price series | Vectors, loops, indexing | Hand-check simple returns; reject zero/nonpositive prices under stated scope | Planned |
 | C005 | Return calculator: summary statistics | Mean, sample variance, functions | Compare known small samples; handle fewer than two observations | Planned |
@@ -100,3 +100,14 @@ C++ checks and four output fixtures pass; fresh compilation and the four-page PD
 C003a remains in progress: independent boundary oracle next on October 9, then failure,
 reproduction and consolidation. C003b and later projects remain conditional on prerequisites.
 Personal review remains Not yet reviewed; Q004a/Q005b still gate empirical work.
+
+## C003a boundary verification - 9 October
+
+Independent Python integer/byte-pattern checks agree with the unchanged C++ parser on 75 synthetic
+inputs: 47 accepted, 21 spelling errors and seven range errors. The target maximum is accepted;
+its successor is rejected. Two scratch mutations (exclusive upper limit and NUL truncation) fail
+for the intended mismatches. All 608 Python tests, 96 existing C++ checks, four output fixtures
+and quality checks pass. Two oracle replays agree; the four-page teaching PDF is verified.
+Only the boundary slot is complete. Next on October 10: fractional-truncation failure, then
+reproduction and consolidation in dependency order. C003a/C003 remain in progress; C003b and
+later projects remain conditional. Personal review stays Not yet reviewed; empirical gates remain.

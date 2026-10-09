@@ -104,3 +104,14 @@ C++ checks and four output fixtures pass; fresh compilation and the four-page PD
 C003a remains in progress: independent boundary oracle next on October 9, then failure,
 reproduction and consolidation. C003b and later projects remain conditional on prerequisites.
 Personal review remains Not yet reviewed; Q004a/Q005b still gate empirical work.
+
+## C003a boundary verification - 9 October
+
+Independent Python integer/byte-pattern checks agree with the unchanged C++ parser on 75 synthetic
+inputs: 47 accepted, 21 spelling errors and seven range errors. The target maximum is accepted;
+its successor is rejected. Two scratch mutations (exclusive upper limit and NUL truncation) fail
+for the intended mismatches. All 608 Python tests, 96 existing C++ checks, four output fixtures
+and quality checks pass. Two oracle replays agree; the four-page teaching PDF is verified.
+Only the boundary slot is complete. Next on October 10: fractional-truncation failure, then
+reproduction and consolidation in dependency order. C003a/C003 remain in progress; C003b and
+later projects remain conditional. Personal review stays Not yet reviewed; empirical gates remain.

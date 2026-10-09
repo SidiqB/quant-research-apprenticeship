@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-09
+
+Added a byte-preserving C++ parser probe and independent Python boundary oracle to make check.
+All 75 synthetic comparisons agree; two scratch mutations fail. Archived reproducible host results,
+verified the four-page teaching note and advanced only the boundary-verification curriculum slot.
+The parser and savings model are unchanged; personal review and empirical data gates remain open.
+
 ## 2026-10-08
 
 - Implemented C003a whole-year text parsing with explicit spelling/range errors and a fixed C002

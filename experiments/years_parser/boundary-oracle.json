@@ -1,0 +1,18 @@
+{
+  "boundary_values": {
+    "0": "ok 0",
+    "2147483646": "ok 2147483646",
+    "2147483647": "ok 2147483647",
+    "2147483648": "range",
+    "2147483649": "range"
+  },
+  "cases": 75,
+  "data_kind": "synthetic",
+  "int_max": 2147483647,
+  "mismatches": 0,
+  "outcomes": {
+    "invalid": 21,
+    "ok": 47,
+    "range": 7
+  }
+}
