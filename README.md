@@ -70,6 +70,7 @@ make cpp-savings
 make cpp-text-years
 make cpp-conversion-contract
 make cpp-years-oracle
+make cpp-fractional-failure
 make note
 ```
 
@@ -94,8 +95,8 @@ See `requirements-lock.txt` for the initial tested environment. The core package
 - [Historical membership fixture](experiments/membership/README.md)
 - [Terminal cash evidence fixture](experiments/terminal/README.md)
 - [Lagged return fixture](experiments/lagged_returns/README.md)
-- [Latest learning note](research_log/2026-10-09.md) and [PDF](reports/daily/2026-10-09-learning-note.pdf)
-- [Daily validation evidence](reports/milestone/2026-10-09-validation.md)
+- [Latest learning note](research_log/2026-10-10.md) and [PDF](reports/daily/2026-10-10-learning-note.pdf)
+- [Daily validation evidence](reports/milestone/2026-10-10-validation.md)
 - [Weekly synthesis](reports/weekly/2026-09-27-synthesis.md), [PDF](reports/weekly/2026-09-27-synthesis.pdf) and [validation](reports/weekly/2026-09-27-validation.md)
 - [Daily operating procedure](OPERATIONS.md)
 
@@ -116,7 +117,7 @@ statistical arbitrage. [Commit cadence](COMMIT_CADENCE.md) records the requested
 source/settlement evidence. The active next step is C003a whole-year parsing, not the superseded
 October 5 ranking date. The shared 0-3 publication draw begins October 5; study pace stays one concept daily.
 
-C003a now has a parser and an [independent boundary oracle](experiments/years_parser/README.md).
-Seventy-five exact comparisons and two rejected mutations support the stated contract. The next slot
-on October 10 covers fractional-truncation failure, then reproduction and consolidation. C003a remains
-in progress. Personal review remains Not yet reviewed.
+C003a has a parser, independent boundary oracle and [fractional-input failure check](experiments/years_parser/README.md).
+The failure lesson was studied October 10 and integrated October 11 after the zero-budget day.
+The next lesson is reproduction/teach-back, then consolidation; inspect ignored pending manifests
+before dispatch. C003a remains in progress. Personal review remains Not yet reviewed.

@@ -1,0 +1,6 @@
+002	accepted	2	1102.50
+0	accepted	0	1000.00
+2.5	accepted	2	1102.50
+0.5	accepted	0	1000.00
+2.0	accepted	2	1102.50
+contract mismatches: 3

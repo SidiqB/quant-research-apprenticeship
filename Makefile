@@ -1,7 +1,7 @@
 PYTHON ?= .venv/bin/python
 CXX = c++
 CXXFLAGS ?= -std=c++17 -Wall -Wextra -Wpedantic -Werror
-NOTE_DATE ?= 2026-10-09
+NOTE_DATE ?= 2026-10-10
 .PHONY: check test lint types experiment purging-experiment manifest-experiment access-experiment fold-experiment ingestion-experiment calendar-audit calendar-experiment corporate-action-experiment membership-experiment terminal-experiment lagged-return-experiment cpp-savings cpp-check note
 check: test lint types cpp-check
 
@@ -100,7 +100,21 @@ build/cpp/savings_growth/years_probe: cpp/projects/savings_growth/years_probe.cp
 cpp-years-oracle: build/cpp/savings_growth/years_probe
 	$(PYTHON) scripts/years_boundary_oracle.py
 
-cpp-check: cpp-years-oracle build/cpp/savings_growth/savings build/cpp/savings_growth/test_savings build/cpp/savings_growth/text_vs_years build/cpp/savings_growth/conversion_contract build/cpp/savings_growth/test_years build/cpp/savings_growth/parse_years_demo
+FRACTIONAL_SRC = cpp/projects/savings_growth/fractional_failure.cpp
+
+build/cpp/savings_growth/fractional-correct: $(FRACTIONAL_SRC) $(YEARS_SRC) $(YEARS_HEADER) $(SAVINGS_SRC) $(SAVINGS_HEADER) Makefile
+	mkdir -p build/cpp/savings_growth
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $< $(YEARS_SRC) $(SAVINGS_SRC) -o $@
+
+build/cpp/savings_growth/fractional-wrong: $(FRACTIONAL_SRC) $(YEARS_SRC) $(YEARS_HEADER) $(SAVINGS_SRC) $(SAVINGS_HEADER) Makefile
+	mkdir -p build/cpp/savings_growth
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -DWRONG_ADAPTER $< $(YEARS_SRC) $(SAVINGS_SRC) -o $@
+
+.PHONY: cpp-fractional-failure
+cpp-fractional-failure: build/cpp/savings_growth/fractional-correct build/cpp/savings_growth/fractional-wrong
+	$(PYTHON) scripts/verify_fractional_failure.py
+
+cpp-check: cpp-fractional-failure cpp-years-oracle build/cpp/savings_growth/savings build/cpp/savings_growth/test_savings build/cpp/savings_growth/text_vs_years build/cpp/savings_growth/conversion_contract build/cpp/savings_growth/test_years build/cpp/savings_growth/parse_years_demo
 	./build/cpp/savings_growth/test_savings
 	./build/cpp/savings_growth/test_years
 	./build/cpp/savings_growth/savings > build/cpp/savings_growth/actual.txt

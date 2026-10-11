@@ -135,3 +135,11 @@ its immediate successor. All agree; two scratch faults are detected. The byte-pr
 `years_probe.cpp` supports tests only; it does not implement the deferred financial CLI.
 Read the [October 9 note](../../../research_log/2026-10-09.md) for the slow worked explanation.
 C003a remains in progress; the fractional-truncation failure lesson follows on October 10.
+
+## Fractional-input failure check
+
+Run `make cpp-fractional-failure` to compare the correct parser against an isolated, deliberately
+wrong floating-conversion adapter. Five fixed inputs give two valid calculations and three
+rejections; the wrong build must report three mismatches and exit 1. This check is part of
+`make check`. See [experiment and limitations](../../../experiments/years_parser/README.md).
+Studied October 10, integrated October 11; the production parser and savings model are unchanged.

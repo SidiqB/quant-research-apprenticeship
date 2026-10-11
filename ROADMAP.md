@@ -115,3 +115,17 @@ and quality checks pass. Two oracle replays agree; the four-page teaching PDF is
 Only the boundary slot is complete. Next on October 10: fractional-truncation failure, then
 reproduction and consolidation in dependency order. C003a/C003 remain in progress; C003b and
 later projects remain conditional. Personal review stays Not yet reviewed; empirical gates remain.
+
+## C003a failure lesson - studied October 10, integrated October 11
+
+The zero-budget October 10 lesson is now integrated after all seven input and eight artifact hashes
+matched. Five fixed C++ cases verify two acceptances and three rejections before calculation; a
+separate deliberately wrong adapter produces three forbidden acceptances and expected exit 1.
+make check includes this failure check. Two replays match the original archived result; 608 Python
+tests, 96 existing C++ checks, 75 oracle comparisons and four output fixtures pass. All nine C++
+executables freshly compile warning-clean; the revised four-page teaching PDF is verified.
+
+Only the failure slot is complete. Reproduction/teach-back is the next lesson, then consolidation;
+inspect ignored pending manifests before dispatch, since today's draw of 1 is allocated to this
+integration. C003a/C003 remain in progress. C003b, vectors/statistics and the ledger retain their
+prerequisites; Q004a/Q005b still gate empirical work. Personal review remains Not yet reviewed.

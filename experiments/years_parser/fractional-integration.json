@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "original_work_date": "2026-10-10",
+  "baseline_commit": "093b2c4306f468801461d3ad1761079ff74cf8ca",
+  "input_sha256": {
+    "cpp/projects/savings_growth/years.cpp": "441f8cfb01632655c9382ee7e3d57f7ce6d38f6264d73cd6082e5fa814bd7d59",
+    "cpp/projects/savings_growth/years.hpp": "3254d2a9c066be1aa7600d0fa221f5d41ebc7a655db0dfea19600cadccc25e32",
+    "cpp/projects/savings_growth/savings.cpp": "b1568c6899e72cd4e06ac18cb6660fa605d837283282e84a365614ffab3e7e3a",
+    "cpp/projects/savings_growth/savings.hpp": "86e185240d5f30354af9d738d9d9331b498bc24b3c3aab9e9514e501752b1001",
+    "scripts/render_note.py": "c635bd6eba7df1ac731e6734bb0c37e4240a5ae7df0ab4d4d45d339e67cabb2c",
+    "COMMIT_CADENCE.md": "d0e7c4a5652774dc0550c3e45909c765d971ea6cf6037e4b496ebf03ae76db2e",
+    "CURRICULUM_BACKLOG.md": "40318faff832c29b24282deae848dd39945d9b830c14962b0633f568efdddba8"
+  },
+  "artifacts": [
+    {
+      "source": "work/pending/2026-10-10/2026-10-10.md",
+      "intended_destination": "research_log/2026-10-10.md",
+      "sha256": "8acecedfefd2713317a44645c5148ba421c7b93190961f3936f29e1200120979"
+    },
+    {
+      "source": "work/pending/2026-10-10/2026-10-10-learning-note.pdf",
+      "intended_destination": "reports/daily/2026-10-10-learning-note.pdf",
+      "sha256": "e2250da5e77a4ad31cc87fc8d1cc734e8aa7edb32512812932b33451d75ab6ea"
+    },
+    {
+      "source": "work/pending/2026-10-10/validation.md",
+      "intended_destination": "reports/milestone/2026-10-10-validation.md",
+      "sha256": "929c7b9cf26605f63af216cb15bf821d86863da2bbbf23f50b5796424b8f3725"
+    },
+    {
+      "source": "work/pending/2026-10-10/fractional_failure.cpp",
+      "intended_destination": "cpp/projects/savings_growth/fractional_failure.cpp",
+      "sha256": "749ab77acd7a54f011d3f852d57573dc5408a8329b1750c35ca58c405a6c569b"
+    },
+    {
+      "source": "work/pending/2026-10-10/verify_failure.py",
+      "intended_destination": "scripts/verify_fractional_failure.py",
+      "sha256": "8c104e6125f8763830f0c0eb6e35fe7625d84f5c1b3c5a1391942a15fa58de3c"
+    },
+    {
+      "source": "work/pending/2026-10-10/failure-result.json",
+      "intended_destination": "experiments/years_parser/fractional-failure.json",
+      "sha256": "fb7ce3419acda3cec059785791fb157ed5360358e39b6ca8ac4954adc2aa270d"
+    },
+    {
+      "source": "work/pending/2026-10-10/correct-output.txt",
+      "intended_destination": "experiments/years_parser/fractional-correct.txt",
+      "sha256": "bf8b848c37828135314ee0a394e81ccbcd6e416b456e3c0676082ce6d23d6378"
+    },
+    {
+      "source": "work/pending/2026-10-10/wrong-output.txt",
+      "intended_destination": "experiments/years_parser/fractional-negative-control.txt",
+      "sha256": "15f14635157fe5f652414069d651d000a627bef00d07dea5e5061f4de852eb58"
+    }
+  ],
+  "integration_date": "2026-10-11",
+  "purpose": "Original pending provenance; note and verifier adapted at integration, results preserved.",
+  "validation": "reports/milestone/2026-10-10-validation.md"
+}

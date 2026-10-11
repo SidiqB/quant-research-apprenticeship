@@ -25,3 +25,24 @@ is within the tested Python interpreter's conversion limit; no resource protecti
 The probe is test plumbing. It does not implement the deferred principal/rate CLI or establish
 financial realism. Read the [teaching note](../../research_log/2026-10-09.md) and
 [verified PDF](../../reports/daily/2026-10-09-learning-note.pdf).
+
+## Fractional-input failure
+
+Studied October 10; integrated October 11 after a zero-budget day. Run `make cpp-fractional-failure`
+(or `make check`). Two separate builds use the unchanged parser or a deliberately wrong adapter;
+only the latter is compiled with WRONG_ADAPTER. Its narrow finite [0,10] guard keeps the teaching
+cast defined; it is not an alternative production parser. Both are fixed synthetic experiments.
+
+The verifier runs each binary twice, checking exact stdout/stderr bytes and exit status, and
+compares combined output to the archived text fixtures. The correct build accepts 002 and 0,
+rejects 2.5, 0.5 and 2.0 before savings, and exits 0. The wrong build accepts all five and exits 1
+with exactly three mismatches. The verifier succeeds only when both behaviours match expectations.
+It checks Decimal balances independently and writes no tracked output. Build first before running
+`.venv/bin/python scripts/verify_fractional_failure.py` directly. Standard checks use ordinary Python
+without optimization, so the verifier's assertions are active.
+
+`fractional-failure.json`, `fractional-correct.txt` and `fractional-negative-control.txt` preserve
+the October 10 result bytes. See the [note](../../research_log/2026-10-10.md),
+[PDF](../../reports/daily/2026-10-10-learning-note.pdf) and
+[validation](../../reports/milestone/2026-10-10-validation.md). No fractional-year accrual, loss
+estimate, exhaustive correctness, empirical performance or personal mastery is established.

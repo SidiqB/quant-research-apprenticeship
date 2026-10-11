@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-11
+
+Integrated the October 10 fractional-input failure lesson after its zero-budget day. Added the
+fixed C++ experiment, isolated wrong-adapter build, exact-output Python verifier and Make integration.
+Original hashes and results match; full checks pass and the updated four-page PDF is verified.
+Only publication timing changed: the study date remains October 10 and personal review remains open.
+
 ## 2026-10-09
 
 Added a byte-preserving C++ parser probe and independent Python boundary oracle to make check.

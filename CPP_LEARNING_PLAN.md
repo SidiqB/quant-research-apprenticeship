@@ -25,8 +25,8 @@ Stop after December 31 pending the next scope. Historical evidence sections reta
 |---|---|---|---|---|
 | C001 | Savings growth: fixed-input example | Compile/run, variables, doubles, output | Calculate one year of growth and compare with hand arithmetic | Done |
 | C002 | Savings growth: reusable function | Functions, parameters, return values | Zero rate, zero years, invalid inputs; explain compounding convention | Done |
-| C003 | Savings growth: command-line inputs; parent of C003a/b | Parsing, branches, errors | Both children complete; clear units and reproducible examples | In progress: C003a boundary verification complete; remaining lessons pending |
-| C003a | Whole-year text parser; October 5-11 foundation slice | Text versus value, full consumption, branches, range | Reject fractions, negatives, trailing text and overflow; compare Python oracle; verified notes | In progress: boundary oracle complete October 9; failure lesson next |
+| C003 | Savings growth: command-line inputs; parent of C003a/b | Parsing, branches, errors | Both children complete; clear units and reproducible examples | In progress: C003a failure lesson integrated; reproduction/consolidation pending |
+| C003a | Whole-year text parser; October 5-11 foundation slice | Text versus value, full consumption, branches, range | Reject fractions, negatives, trailing text and overflow; compare Python oracle; verified notes | In progress: failure lesson studied October 10, integrated October 11 |
 | C003b | Complete CLI after C003a | Principal/rate parsing, units, error reporting | Reject malformed/nonfinite inputs; connect validated arguments to C002; integration checks | Deferred: C003a |
 | C004 | Return calculator: a small price series | Vectors, loops, indexing | Hand-check simple returns; reject zero/nonpositive prices under stated scope | Planned |
 | C005 | Return calculator: summary statistics | Mean, sample variance, functions | Compare known small samples; handle fewer than two observations | Planned |
@@ -111,3 +111,17 @@ and quality checks pass. Two oracle replays agree; the four-page teaching PDF is
 Only the boundary slot is complete. Next on October 10: fractional-truncation failure, then
 reproduction and consolidation in dependency order. C003a/C003 remain in progress; C003b and
 later projects remain conditional. Personal review stays Not yet reviewed; empirical gates remain.
+
+## C003a failure lesson - studied October 10, integrated October 11
+
+The zero-budget October 10 lesson is now integrated after all seven input and eight artifact hashes
+matched. Five fixed C++ cases verify two acceptances and three rejections before calculation; a
+separate deliberately wrong adapter produces three forbidden acceptances and expected exit 1.
+make check includes this failure check. Two replays match the original archived result; 608 Python
+tests, 96 existing C++ checks, 75 oracle comparisons and four output fixtures pass. All nine C++
+executables freshly compile warning-clean; the revised four-page teaching PDF is verified.
+
+Only the failure slot is complete. Reproduction/teach-back is the next lesson, then consolidation;
+inspect ignored pending manifests before dispatch, since today's draw of 1 is allocated to this
+integration. C003a/C003 remain in progress. C003b, vectors/statistics and the ledger retain their
+prerequisites; Q004a/Q005b still gate empirical work. Personal review remains Not yet reviewed.

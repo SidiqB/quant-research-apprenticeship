@@ -1,0 +1,11 @@
+{
+  "correct_accepted": 2,
+  "correct_cases": 5,
+  "correct_rejected_before_calculation": 3,
+  "data_kind": "synthetic_fixed_strings",
+  "decimal_two_year_balance": "1102.50",
+  "no_fractional_year_balance_defined": true,
+  "runs_per_binary": 2,
+  "wrong_adapter_contract_mismatches": 3,
+  "wrong_adapter_exit_code": 1
+}
