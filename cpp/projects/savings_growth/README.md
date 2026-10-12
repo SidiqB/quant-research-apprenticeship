@@ -143,3 +143,11 @@ wrong floating-conversion adapter. Five fixed inputs give two valid calculations
 rejections; the wrong build must report three mismatches and exit 1. This check is part of
 `make check`. See [experiment and limitations](../../../experiments/years_parser/README.md).
 Studied October 10, integrated October 11; the production parser and savings model are unchanged.
+
+## Fresh reproduction
+
+Run `.venv/bin/python scripts/reproduce_years_evidence.py` from the repository root, without `-O`.
+It compiles six temporary executables and checks each evidence path twice, including exact expected
+wrong-adapter failure. Original October 11 results are preserved in
+`experiments/years_parser/reproduction-2026-10-11.json`; the recipe reports the current Git baseline.
+This uses the installed compiler/environment and does not prove cross-platform or all-input correctness.

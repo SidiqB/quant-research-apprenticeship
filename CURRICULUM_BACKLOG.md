@@ -40,7 +40,7 @@ lessons to catch up. Original slot dates below remain visible; the October 12 le
 | 2026-10-07 | C++ foundations | Implement one C++ whole-year parser function | Explain branches line by line; valid/invalid examples; preserve C002; verified note | Done October 8: 30 parser checks; verified four-page note |
 | 2026-10-08 | C++ foundations | Boundary checks with an independent Python oracle | Zero, maximum int, overflow and trailing text; exact accepted values; verified note | Done October 9: 75 exact comparisons; two rejected mutations; verified four-page note |
 | 2026-10-09 | C++ foundations | Deliberately fail on fractional-year truncation | Explain why 2.5 cannot silently become 2; repeat unclear prerequisite; verified note | Done locally October 10; integrated October 11 |
-| 2026-10-10 | C++ foundations | Reproduce C003a and teach back | Same inputs/outputs; exercises, separate answers; no new complexity; verified note | Next eligible; inspect pending manifests |
+| 2026-10-10 | C++ foundations | Reproduce C003a and teach back | Same inputs/outputs; exercises, separate answers; no new complexity; verified note | Done locally October 11; integrated October 12 |
 | 2026-10-11 | C++ foundations | Consolidate C003a evidence and weekly synthesis | Decide C003b readiness; incomplete work stays explicit; verified note | Planned |
 | 2026-10-12 | Backtesting and portfolio accounting | Explain intuition and hand-work one example | Worked example, relevant checks and verified note; Cash conservation | Planned |
 | 2026-10-13 | Backtesting and portfolio accounting | Derive the minimal model; define inputs and units | Worked example, relevant checks and verified note; Cash conservation | Planned |

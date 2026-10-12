@@ -121,3 +121,12 @@ C003a has a parser, independent boundary oracle and [fractional-input failure ch
 The failure lesson was studied October 10 and integrated October 11 after the zero-budget day.
 The next lesson is reproduction/teach-back, then consolidation; inspect ignored pending manifests
 before dispatch. C003a remains in progress. Personal review remains Not yet reviewed.
+
+## C003a reproduction - studied October 11, integrated October 12
+
+The fresh-build recipe is now scripts/reproduce_years_evidence.py. Six temporary C++17 executables
+reproduce 66 savings and 30 parser checks, the demo, 75 oracle cases and exact correct/wrong fractional
+outputs; each path runs twice. Original evidence and integration provenance are in experiments/years_parser.
+All 17 input and five artifact hashes matched before integration. The three-page teaching note is
+reverified, and full checks pass. Only reproduction is complete; consolidation/readiness is next.
+Personal review remains Not yet reviewed. Later curriculum and empirical gates remain unchanged.

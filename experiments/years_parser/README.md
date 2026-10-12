@@ -46,3 +46,11 @@ the October 10 result bytes. See the [note](../../research_log/2026-10-10.md),
 [PDF](../../reports/daily/2026-10-10-learning-note.pdf) and
 [validation](../../reports/milestone/2026-10-10-validation.md). No fractional-year accrual, loss
 estimate, exhaustive correctness, empirical performance or personal mastery is established.
+
+## Fresh reproduction
+
+Run `.venv/bin/python scripts/reproduce_years_evidence.py` from the repository root, without `-O`.
+It compiles six temporary executables and checks each evidence path twice, including exact expected
+wrong-adapter failure. Original October 11 results are preserved in
+`experiments/years_parser/reproduction-2026-10-11.json`; the recipe reports the current Git baseline.
+This uses the installed compiler/environment and does not prove cross-platform or all-input correctness.

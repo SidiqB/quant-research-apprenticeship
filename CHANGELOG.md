@@ -226,3 +226,8 @@ The parser and savings model are unchanged; personal review and empirical data g
 - Made C++ the default for new educational projects, preserving completed Python research.
 - Added a paced strategy-family curriculum and daily steps through 31 December, with explicit limitations.
 - Added a persistent daily 0-3 commit budget and zero-day study/report handling; no artificial commits.
+
+## 2026-10-12 - integrate October 11 reproduction
+
+Published the fresh temporary-build recipe, original evidence/provenance, teaching note and reverified
+PDF. Preserved original study date; all checks pass. Consolidation remains the next lesson.
