@@ -25,8 +25,8 @@ Stop after December 31 pending the next scope. Historical evidence sections reta
 |---|---|---|---|---|
 | C001 | Savings growth: fixed-input example | Compile/run, variables, doubles, output | Calculate one year of growth and compare with hand arithmetic | Done |
 | C002 | Savings growth: reusable function | Functions, parameters, return values | Zero rate, zero years, invalid inputs; explain compounding convention | Done |
-| C003 | Savings growth: command-line inputs; parent of C003a/b | Parsing, branches, errors | Both children complete; clear units and reproducible examples | In progress: C003a failure lesson integrated; reproduction/consolidation pending |
-| C003a | Whole-year text parser; October 5-11 foundation slice | Text versus value, full consumption, branches, range | Reject fractions, negatives, trailing text and overflow; compare Python oracle; verified notes | In progress: failure lesson studied October 10, integrated October 11 |
+| C003 | Savings growth: command-line inputs; parent of C003a/b | Parsing, branches, errors | Both children complete; clear units and reproducible examples | In progress: C003a reproduction integrated; consolidation pending |
+| C003a | Whole-year text parser; October 5-11 foundation slice | Text versus value, full consumption, branches, range | Reject fractions, negatives, trailing text and overflow; compare Python oracle; verified notes | In progress: reproduction studied October 11, integrated October 12 |
 | C003b | Complete CLI after C003a | Principal/rate parsing, units, error reporting | Reject malformed/nonfinite inputs; connect validated arguments to C002; integration checks | Deferred: C003a |
 | C004 | Return calculator: a small price series | Vectors, loops, indexing | Hand-check simple returns; reject zero/nonpositive prices under stated scope | Planned |
 | C005 | Return calculator: summary statistics | Mean, sample variance, functions | Compare known small samples; handle fewer than two observations | Planned |
@@ -134,3 +134,11 @@ outputs; each path runs twice. Original evidence and integration provenance are 
 All 17 input and five artifact hashes matched before integration. The three-page teaching note is
 reverified, and full checks pass. Only reproduction is complete; consolidation/readiness is next.
 Personal review remains Not yet reviewed. Later curriculum and empirical gates remain unchanged.
+
+## Weekly refinement - written October 11, integrated October 12
+
+The October 5-11 synthesis and verified six-page PDF are in reports/weekly. C003a consolidation
+comes next. Ledger work is narrowed to L001a-f cash/position/fee accounting, followed separately by
+L002 delayed decision/execution and future-price invariance. The October 19 trend slot is conditional.
+C003b CLI, C004 returns and C005 statistics remain explicit carryover; Q004a/Q005b empirical gates
+remain. See CURRICULUM_BACKLOG.md for the merged sequence. No personal mastery or review is inferred.

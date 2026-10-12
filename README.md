@@ -130,3 +130,11 @@ outputs; each path runs twice. Original evidence and integration provenance are 
 All 17 input and five artifact hashes matched before integration. The three-page teaching note is
 reverified, and full checks pass. Only reproduction is complete; consolidation/readiness is next.
 Personal review remains Not yet reviewed. Later curriculum and empirical gates remain unchanged.
+
+## Weekly refinement - written October 11, integrated October 12
+
+The October 5-11 synthesis and verified six-page PDF are in reports/weekly. C003a consolidation
+comes next. Ledger work is narrowed to L001a-f cash/position/fee accounting, followed separately by
+L002 delayed decision/execution and future-price invariance. The October 19 trend slot is conditional.
+C003b CLI, C004 returns and C005 statistics remain explicit carryover; Q004a/Q005b empirical gates
+remain. See CURRICULUM_BACKLOG.md for the merged sequence. No personal mastery or review is inferred.

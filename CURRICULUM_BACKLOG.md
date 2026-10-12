@@ -31,6 +31,36 @@ and verified note. The parser is next on October 8; subsequent boundary, failure
 consolidation steps follow in dependency order, displacing later dates if needed. Do not combine
 lessons to catch up. Original slot dates below remain visible; the October 12 ledger is conditional.
 
+## October 11 weekly refinement - integrated October 12
+
+Original synthesis date: October 11; integrated October 12 after original hashes and checks passed.
+October 11 reproduction is now integrated with its true study date. C003a remains in progress until
+consolidation/readiness is recorded. Inspect pending manifests before dispatch to avoid repetition.
+
+October 6's interruption displaced the sequence. October 12 now consolidates C003a; unclear
+function/branch/error prerequisites repeat rather than compressing later sessions. Keep personal
+review Not yet reviewed unless Sidiq confirms otherwise; it is separate from ordinary work authority.
+
+Split the broad ledger into L001 fixed-event accounting and L002 delayed decision/execution.
+L001a cash/position/wealth intuition precedes L001b one-buy fee equations, L001c a single struct,
+L001d one validated buy function, L001e independent boundary checks, and L001f reproduction.
+The first ledger is synthetic, fixed-input and long-only, with explicit units, known price and fee,
+no borrowing, no shorting, no market calibration and no undefined rounding convention. Define the
+precise representation before implementation. Reject invalid/unaffordable orders without changing
+state; compare cash plus marked holdings against an independent hand/Python reference.
+
+L002 follows L001 and separately teaches decision/execution ordering, delayed trades and future-price
+mutation invariance. A one-buy fixture cannot establish past-decision invariance. October 19 trend
+implementation is conditional on accounting, timing and applicable return prerequisites; shift dates
+and defer advanced extensions to 2027 rather than increasing daily workload. C003b complete CLI,
+C004 vectors/returns and C005 statistics remain carryover, introduced before projects needing them.
+A fixed-input ledger needs no full CLI; this does not mark any C-step complete. Q011/Q012/Q013 retain
+their dependency order. Q004a and Q005b remain required before empirical use.
+
+Questions for Sidiq: which parser prerequisite needs repetition, and would more foundation time help?
+Licensed access/source-budget input is still needed before data acquisition; no narrower historical
+claim is assumed. No answer blocks the next bounded synthetic lesson. Programme stops December 31.
+
 ## Daily slots
 
 | Date | Focus | Bounded step | Evidence | Status |
@@ -41,14 +71,14 @@ lessons to catch up. Original slot dates below remain visible; the October 12 le
 | 2026-10-08 | C++ foundations | Boundary checks with an independent Python oracle | Zero, maximum int, overflow and trailing text; exact accepted values; verified note | Done October 9: 75 exact comparisons; two rejected mutations; verified four-page note |
 | 2026-10-09 | C++ foundations | Deliberately fail on fractional-year truncation | Explain why 2.5 cannot silently become 2; repeat unclear prerequisite; verified note | Done locally October 10; integrated October 11 |
 | 2026-10-10 | C++ foundations | Reproduce C003a and teach back | Same inputs/outputs; exercises, separate answers; no new complexity; verified note | Done locally October 11; integrated October 12 |
-| 2026-10-11 | C++ foundations | Consolidate C003a evidence and weekly synthesis | Decide C003b readiness; incomplete work stays explicit; verified note | Planned |
-| 2026-10-12 | Backtesting and portfolio accounting | Explain intuition and hand-work one example | Worked example, relevant checks and verified note; Cash conservation | Planned |
-| 2026-10-13 | Backtesting and portfolio accounting | Derive the minimal model; define inputs and units | Worked example, relevant checks and verified note; Cash conservation | Planned |
-| 2026-10-14 | Backtesting and portfolio accounting | Implement one small C++ function or extension | Worked example, relevant checks and verified note; Cash conservation | Planned |
-| 2026-10-15 | Backtesting and portfolio accounting | Test boundary cases and an independent oracle | Worked example, relevant checks and verified note; Cash conservation | Planned |
-| 2026-10-16 | Backtesting and portfolio accounting | Measure costs or run a deliberate failure scenario | Worked example, relevant checks and verified note; Cash conservation | Planned |
-| 2026-10-17 | Backtesting and portfolio accounting | Reproduce and teach back; repair unclear parts | Worked example, relevant checks and verified note; Cash conservation | Planned |
-| 2026-10-18 | Backtesting and portfolio accounting | Consolidate evidence and revise next week | Worked example, relevant checks and verified note; Cash conservation | Planned |
+| 2026-10-11 | C++ foundations | Weekly synthesis; C003a consolidation deferred to October 12 | Weekly report/PDF and backlog revision complete locally; morning reproduction separate | Integrated October 12; daily consolidation unfinished |
+| 2026-10-12 | C++ foundations | Consolidate C003a; repeat unclear prerequisites | Trace blank/zero, fraction, suffix and range; readiness record and verified note | Planned; conditional on prior slot |
+| 2026-10-13 | Portfolio accounting L001a | Introduce cash, position and marked wealth | One hand ledger with units and verified note | Planned; conditional on prior slot |
+| 2026-10-14 | Portfolio accounting L001b | Derive one buy and explicit fee | Cash and holdings conservation; no strategy signal; verified note | Planned; conditional on prior slot |
+| 2026-10-15 | Portfolio accounting L001c | Introduce one position struct | Explain each field; fixed initial state/marked value; verified note | Planned; conditional on prior slot |
+| 2026-10-16 | Portfolio accounting L001d | Implement one validated buy function | Known synthetic buy; invalid/unaffordable orders leave state unchanged; verified note | Planned; conditional on prior slot |
+| 2026-10-17 | Portfolio accounting L001e | Check boundaries with independent reference | Hand/Python agreement; zero, invalid and fee cases; verified note | Planned; conditional on prior slot |
+| 2026-10-18 | Portfolio accounting L001f | Reproduce and consolidate accounting | Reconcile cash plus holdings; record limits; verified note; weekly synthesis separate | Planned; conditional on prior slot |
 | 2026-10-19 | Trend and momentum | Explain intuition and hand-work one example | Worked example, relevant checks and verified note; Whipsaw | Planned |
 | 2026-10-20 | Trend and momentum | Derive the minimal model; define inputs and units | Worked example, relevant checks and verified note; Whipsaw | Planned |
 | 2026-10-21 | Trend and momentum | Implement one small C++ function or extension | Worked example, relevant checks and verified note; Whipsaw | Planned |

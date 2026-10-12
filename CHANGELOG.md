@@ -231,3 +231,9 @@ The parser and savings model are unchanged; personal review and empirical data g
 
 Published the fresh temporary-build recipe, original evidence/provenance, teaching note and reverified
 PDF. Preserved original study date; all checks pass. Consolidation remains the next lesson.
+
+## 2026-10-12 - integrate October 11 weekly synthesis
+
+Published the weekly evidence review and reverified PDF; merged the prerequisite-led L001/L002
+accounting/timing split while preserving today's reproduction completion. Original report date
+and personal-review status are unchanged. Later strategy dates remain conditional.
