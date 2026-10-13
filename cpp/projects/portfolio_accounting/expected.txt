@@ -1,0 +1,3 @@
+initial: cash=800; shares=4; mark=50; holdings=200; wealth=1000
+higher mark: cash=800; shares=4; mark=55; holdings=220; wealth=1020
+lower mark: cash=800; shares=4; mark=45; holdings=180; wealth=980

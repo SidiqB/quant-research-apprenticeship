@@ -1,0 +1,29 @@
+{
+  "cash": "800",
+  "costs": "omitted; no execution model",
+  "data_kind": "synthetic_fixed_snapshots",
+  "holdings": [
+    "200",
+    "220",
+    "180"
+  ],
+  "marks": [
+    "50",
+    "55",
+    "45"
+  ],
+  "money_unit": "whole arbitrary money unit",
+  "personal_review": "Not yet reviewed",
+  "reference": "Decimal addition of four separately marked shares",
+  "runs": 2,
+  "shares": 4,
+  "snapshot_comparisons_per_run": 3,
+  "study_date": "2026-10-13",
+  "task": "L001a",
+  "trades": 0,
+  "wealth": [
+    "1000",
+    "1020",
+    "980"
+  ]
+}

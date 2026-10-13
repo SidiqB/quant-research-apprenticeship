@@ -132,3 +132,13 @@ note:
 .PHONY: cpp-years-readiness
 cpp-years-readiness:
 	$(PYTHON) scripts/verify_years_readiness.py
+
+build/cpp/portfolio_accounting/marked_wealth: cpp/projects/portfolio_accounting/marked_wealth.cpp Makefile
+	mkdir -p build/cpp/portfolio_accounting
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $< -o $@
+
+.PHONY: cpp-marked-wealth
+cpp-marked-wealth: build/cpp/portfolio_accounting/marked_wealth
+	$(PYTHON) scripts/verify_marked_wealth.py
+
+cpp-check: cpp-marked-wealth

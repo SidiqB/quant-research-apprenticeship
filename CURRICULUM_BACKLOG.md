@@ -73,7 +73,7 @@ claim is assumed. No answer blocks the next bounded synthetic lesson. Programme 
 | 2026-10-10 | C++ foundations | Reproduce C003a and teach back | Same inputs/outputs; exercises, separate answers; no new complexity; verified note | Done locally October 11; integrated October 12 |
 | 2026-10-11 | C++ foundations | Weekly synthesis; C003a consolidation deferred to October 12 | Weekly report/PDF and backlog revision complete locally; morning reproduction separate | Integrated October 12; daily consolidation completed October 12, integrated October 13 |
 | 2026-10-12 | C++ foundations | Consolidate C003a; repeat unclear prerequisites | Eight fixed traces; finite-result distinction; verified four-page note | Done October 12; integrated October 13 |
-| 2026-10-13 | Portfolio accounting L001a | Introduce cash, position and marked wealth | One hand ledger with units and verified note | Planned; conditional on prior slot |
+| 2026-10-13 | Portfolio accounting L001a | Introduce cash, position and marked wealth | Three fixed marks; hand/Decimal agreement; rejected unit mutation; verified four-page note | Done: L001a only |
 | 2026-10-14 | Portfolio accounting L001b | Derive one buy and explicit fee | Cash and holdings conservation; no strategy signal; verified note | Planned; conditional on prior slot |
 | 2026-10-15 | Portfolio accounting L001c | Introduce one position struct | Explain each field; fixed initial state/marked value; verified note | Planned; conditional on prior slot |
 | 2026-10-16 | Portfolio accounting L001d | Implement one validated buy function | Known synthetic buy; invalid/unaffordable orders leave state unchanged; verified note | Planned; conditional on prior slot |
@@ -198,3 +198,14 @@ Original pending inputs/artifacts all match their hashes; original result JSON i
 four-page teaching PDF is reverified. Next learning: L001a cash, position and marked wealth.
 C003 remains in progress because C003b is unfinished; C004/C005 and L002 timing retain prerequisites.
 Q004a/Q005b gates remain; personal review stays Not yet reviewed. No empirical result is claimed.
+
+## L001a cash and marked wealth - 13 October
+
+One fixed C++ position now has three synthetic valuation snapshots: cash 800 and four shares
+marked at 50/55/45 give wealth 1000/1020/980. Independent Decimal addition agrees; two exact runs
+and two JSON replays match. A scratch share-plus-price mutation is rejected. make cpp-marked-wealth
+is part of make check. The four-page note explains units, unchanged cash and valuation limits.
+L001a only is complete; next is L001b one-buy/fee equations. L001's reusable state changes, L002
+delayed decisions and C003b/C004/C005 remain unfinished. Q004a/Q005b empirical gates are unchanged;
+no market result or personal-review transition is claimed. Shared draw 3; two coherent units ready,
+including October 12 consolidation. No extra lesson or artificial third commit is created.

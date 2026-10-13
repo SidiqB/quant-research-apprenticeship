@@ -1,0 +1,20 @@
+{
+  "baseline_commit": "3b26d4303ef2063d155904d76873ec7c33699bdb",
+  "checks": {
+    "json_replays": 2,
+    "negative_control": "scratch C++ shares-plus-mark instead of multiplication; warning-clean compile; verifier exit 1 with intended mismatch",
+    "optimized_verifier": "actual -O invocation exit 1 with guard and empty stdout",
+    "runs_per_invocation": 2
+  },
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "data_kind": "synthetic_fixed_snapshots",
+  "input_sha256": {
+    "cpp/projects/portfolio_accounting/expected.txt": "7e1c436a0031c23ffb994b63304e794fdab798408bb0a9bca660da2dcf539060",
+    "cpp/projects/portfolio_accounting/marked_wealth.cpp": "cc04be106900377fb14675026043038482ad20932e67106f409066284dd11463",
+    "experiments/portfolio_accounting/marked-wealth.json": "35210d1e8f5bff557d833e747fe29d4d3da82f25fb5db0344065a511d49d97e3",
+    "scripts/verify_marked_wealth.py": "2819ba8286a3b7de6c7c60544c7a4f8da117b0317e2000bc6c089c92db4ef3f4"
+  },
+  "personal_review": "Not yet reviewed",
+  "scope": "L001a valuation only; no buy, cash flow, fee model or external input",
+  "study_date": "2026-10-13"
+}
