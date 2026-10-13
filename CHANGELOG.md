@@ -237,3 +237,13 @@ PDF. Preserved original study date; all checks pass. Consolidation remains the n
 Published the weekly evidence review and reverified PDF; merged the prerequisite-led L001/L002
 accounting/timing split while preserving today's reproduction completion. Original report date
 and personal-review status are unchanged. Later strategy dates remain conditional.
+
+## C003a consolidation - studied October 12, integrated October 13
+
+C003a's repository teaching slice is complete. Eight fixed traces distinguish four parser rejections,
+three finite balances and one accepted horizon whose calculation overflows. The unchanged production
+functions are freshly compiled and run twice by make cpp-years-readiness, now part of make check.
+Original pending inputs/artifacts all match their hashes; original result JSON is preserved. The
+four-page teaching PDF is reverified. Next learning: L001a cash, position and marked wealth.
+C003 remains in progress because C003b is unfinished; C004/C005 and L002 timing retain prerequisites.
+Q004a/Q005b gates remain; personal review stays Not yet reviewed. No empirical result is claimed.

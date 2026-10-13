@@ -114,7 +114,7 @@ build/cpp/savings_growth/fractional-wrong: $(FRACTIONAL_SRC) $(YEARS_SRC) $(YEAR
 cpp-fractional-failure: build/cpp/savings_growth/fractional-correct build/cpp/savings_growth/fractional-wrong
 	$(PYTHON) scripts/verify_fractional_failure.py
 
-cpp-check: cpp-fractional-failure cpp-years-oracle build/cpp/savings_growth/savings build/cpp/savings_growth/test_savings build/cpp/savings_growth/text_vs_years build/cpp/savings_growth/conversion_contract build/cpp/savings_growth/test_years build/cpp/savings_growth/parse_years_demo
+cpp-check: cpp-years-readiness cpp-fractional-failure cpp-years-oracle build/cpp/savings_growth/savings build/cpp/savings_growth/test_savings build/cpp/savings_growth/text_vs_years build/cpp/savings_growth/conversion_contract build/cpp/savings_growth/test_years build/cpp/savings_growth/parse_years_demo
 	./build/cpp/savings_growth/test_savings
 	./build/cpp/savings_growth/test_years
 	./build/cpp/savings_growth/savings > build/cpp/savings_growth/actual.txt
@@ -128,3 +128,7 @@ cpp-check: cpp-fractional-failure cpp-years-oracle build/cpp/savings_growth/savi
 
 note:
 	$(PYTHON) scripts/render_note.py research_log/$(NOTE_DATE).md reports/daily/$(NOTE_DATE)-learning-note.pdf
+
+.PHONY: cpp-years-readiness
+cpp-years-readiness:
+	$(PYTHON) scripts/verify_years_readiness.py

@@ -71,8 +71,8 @@ claim is assumed. No answer blocks the next bounded synthetic lesson. Programme 
 | 2026-10-08 | C++ foundations | Boundary checks with an independent Python oracle | Zero, maximum int, overflow and trailing text; exact accepted values; verified note | Done October 9: 75 exact comparisons; two rejected mutations; verified four-page note |
 | 2026-10-09 | C++ foundations | Deliberately fail on fractional-year truncation | Explain why 2.5 cannot silently become 2; repeat unclear prerequisite; verified note | Done locally October 10; integrated October 11 |
 | 2026-10-10 | C++ foundations | Reproduce C003a and teach back | Same inputs/outputs; exercises, separate answers; no new complexity; verified note | Done locally October 11; integrated October 12 |
-| 2026-10-11 | C++ foundations | Weekly synthesis; C003a consolidation deferred to October 12 | Weekly report/PDF and backlog revision complete locally; morning reproduction separate | Integrated October 12; daily consolidation unfinished |
-| 2026-10-12 | C++ foundations | Consolidate C003a; repeat unclear prerequisites | Trace blank/zero, fraction, suffix and range; readiness record and verified note | Planned; conditional on prior slot |
+| 2026-10-11 | C++ foundations | Weekly synthesis; C003a consolidation deferred to October 12 | Weekly report/PDF and backlog revision complete locally; morning reproduction separate | Integrated October 12; daily consolidation completed October 12, integrated October 13 |
+| 2026-10-12 | C++ foundations | Consolidate C003a; repeat unclear prerequisites | Eight fixed traces; finite-result distinction; verified four-page note | Done October 12; integrated October 13 |
 | 2026-10-13 | Portfolio accounting L001a | Introduce cash, position and marked wealth | One hand ledger with units and verified note | Planned; conditional on prior slot |
 | 2026-10-14 | Portfolio accounting L001b | Derive one buy and explicit fee | Cash and holdings conservation; no strategy signal; verified note | Planned; conditional on prior slot |
 | 2026-10-15 | Portfolio accounting L001c | Introduce one position struct | Explain each field; fixed initial state/marked value; verified note | Planned; conditional on prior slot |
@@ -188,3 +188,13 @@ Only the failure slot is complete. Reproduction/teach-back is the next lesson, t
 inspect ignored pending manifests before dispatch, since today's draw of 1 is allocated to this
 integration. C003a/C003 remain in progress. C003b, vectors/statistics and the ledger retain their
 prerequisites; Q004a/Q005b still gate empirical work. Personal review remains Not yet reviewed.
+
+## C003a consolidation - studied October 12, integrated October 13
+
+C003a's repository teaching slice is complete. Eight fixed traces distinguish four parser rejections,
+three finite balances and one accepted horizon whose calculation overflows. The unchanged production
+functions are freshly compiled and run twice by make cpp-years-readiness, now part of make check.
+Original pending inputs/artifacts all match their hashes; original result JSON is preserved. The
+four-page teaching PDF is reverified. Next learning: L001a cash, position and marked wealth.
+C003 remains in progress because C003b is unfinished; C004/C005 and L002 timing retain prerequisites.
+Q004a/Q005b gates remain; personal review stays Not yet reviewed. No empirical result is claimed.

@@ -412,3 +412,13 @@ comes next. Ledger work is narrowed to L001a-f cash/position/fee accounting, fol
 L002 delayed decision/execution and future-price invariance. The October 19 trend slot is conditional.
 C003b CLI, C004 returns and C005 statistics remain explicit carryover; Q004a/Q005b empirical gates
 remain. See CURRICULUM_BACKLOG.md for the merged sequence. No personal mastery or review is inferred.
+
+## C003a consolidation - studied October 12, integrated October 13
+
+C003a's repository teaching slice is complete. Eight fixed traces distinguish four parser rejections,
+three finite balances and one accepted horizon whose calculation overflows. The unchanged production
+functions are freshly compiled and run twice by make cpp-years-readiness, now part of make check.
+Original pending inputs/artifacts all match their hashes; original result JSON is preserved. The
+four-page teaching PDF is reverified. Next learning: L001a cash, position and marked wealth.
+C003 remains in progress because C003b is unfinished; C004/C005 and L002 timing retain prerequisites.
+Q004a/Q005b gates remain; personal review stays Not yet reviewed. No empirical result is claimed.

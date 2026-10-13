@@ -151,3 +151,9 @@ It compiles six temporary executables and checks each evidence path twice, inclu
 wrong-adapter failure. Original October 11 results are preserved in
 `experiments/years_parser/reproduction-2026-10-11.json`; the recipe reports the current Git baseline.
 This uses the installed compiler/environment and does not prove cross-platform or all-input correctness.
+
+## Consolidation trace
+
+Run `make cpp-years-readiness` to freshly compile and replay eight fixed cases twice.
+Accepted spelling/range does not guarantee finite savings. See
+[October 12 note](../../../research_log/2026-10-12.md). C003a is complete; the full CLI remains unfinished.

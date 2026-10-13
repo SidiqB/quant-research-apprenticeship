@@ -25,9 +25,9 @@ Stop after December 31 pending the next scope. Historical evidence sections reta
 |---|---|---|---|---|
 | C001 | Savings growth: fixed-input example | Compile/run, variables, doubles, output | Calculate one year of growth and compare with hand arithmetic | Done |
 | C002 | Savings growth: reusable function | Functions, parameters, return values | Zero rate, zero years, invalid inputs; explain compounding convention | Done |
-| C003 | Savings growth: command-line inputs; parent of C003a/b | Parsing, branches, errors | Both children complete; clear units and reproducible examples | In progress: C003a reproduction integrated; consolidation pending |
-| C003a | Whole-year text parser; October 5-11 foundation slice | Text versus value, full consumption, branches, range | Reject fractions, negatives, trailing text and overflow; compare Python oracle; verified notes | In progress: reproduction studied October 11, integrated October 12 |
-| C003b | Complete CLI after C003a | Principal/rate parsing, units, error reporting | Reject malformed/nonfinite inputs; connect validated arguments to C002; integration checks | Deferred: C003a |
+| C003 | Savings growth: command-line inputs; parent of C003a/b | Parsing, branches, errors | Both children complete; clear units and reproducible examples | In progress: C003a complete; C003b unfinished |
+| C003a | Whole-year text parser; October 5-11 foundation slice | Text versus value, full consumption, branches, range | Reject fractions, negatives, trailing text and overflow; compare Python oracle; verified notes | Done: consolidation studied October 12, integrated October 13 |
+| C003b | Complete CLI after C003a | Principal/rate parsing, units, error reporting | Reject malformed/nonfinite inputs; connect validated arguments to C002; integration checks | Deferred: separate CLI lessons |
 | C004 | Return calculator: a small price series | Vectors, loops, indexing | Hand-check simple returns; reject zero/nonpositive prices under stated scope | Planned |
 | C005 | Return calculator: summary statistics | Mean, sample variance, functions | Compare known small samples; handle fewer than two observations | Planned |
 | C006 | Cash-flow present value | Structs, vectors, discounting | Hand-check a zero-coupon example; state rate and period conventions | Planned |
@@ -142,3 +142,13 @@ comes next. Ledger work is narrowed to L001a-f cash/position/fee accounting, fol
 L002 delayed decision/execution and future-price invariance. The October 19 trend slot is conditional.
 C003b CLI, C004 returns and C005 statistics remain explicit carryover; Q004a/Q005b empirical gates
 remain. See CURRICULUM_BACKLOG.md for the merged sequence. No personal mastery or review is inferred.
+
+## C003a consolidation - studied October 12, integrated October 13
+
+C003a's repository teaching slice is complete. Eight fixed traces distinguish four parser rejections,
+three finite balances and one accepted horizon whose calculation overflows. The unchanged production
+functions are freshly compiled and run twice by make cpp-years-readiness, now part of make check.
+Original pending inputs/artifacts all match their hashes; original result JSON is preserved. The
+four-page teaching PDF is reverified. Next learning: L001a cash, position and marked wealth.
+C003 remains in progress because C003b is unfinished; C004/C005 and L002 timing retain prerequisites.
+Q004a/Q005b gates remain; personal review stays Not yet reviewed. No empirical result is claimed.
