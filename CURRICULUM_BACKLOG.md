@@ -74,7 +74,7 @@ claim is assumed. No answer blocks the next bounded synthetic lesson. Programme 
 | 2026-10-11 | C++ foundations | Weekly synthesis; C003a consolidation deferred to October 12 | Weekly report/PDF and backlog revision complete locally; morning reproduction separate | Integrated October 12; daily consolidation completed October 12, integrated October 13 |
 | 2026-10-12 | C++ foundations | Consolidate C003a; repeat unclear prerequisites | Eight fixed traces; finite-result distinction; verified four-page note | Done October 12; integrated October 13 |
 | 2026-10-13 | Portfolio accounting L001a | Introduce cash, position and marked wealth | Three fixed marks; hand/Decimal agreement; rejected unit mutation; verified four-page note | Done: L001a only |
-| 2026-10-14 | Portfolio accounting L001b | Derive one buy and explicit fee | Cash and holdings conservation; no strategy signal; verified note | Planned; conditional on prior slot |
+| 2026-10-14 | Portfolio accounting L001b | Derive one buy and explicit fee | Exact cash/holdings/fee reconciliation; two rejected mutations; verified four-page note | Done: L001b only |
 | 2026-10-15 | Portfolio accounting L001c | Introduce one position struct | Explain each field; fixed initial state/marked value; verified note | Planned; conditional on prior slot |
 | 2026-10-16 | Portfolio accounting L001d | Implement one validated buy function | Known synthetic buy; invalid/unaffordable orders leave state unchanged; verified note | Planned; conditional on prior slot |
 | 2026-10-17 | Portfolio accounting L001e | Check boundaries with independent reference | Hand/Python agreement; zero, invalid and fee cases; verified note | Planned; conditional on prior slot |
@@ -209,3 +209,15 @@ L001a only is complete; next is L001b one-buy/fee equations. L001's reusable sta
 delayed decisions and C003b/C004/C005 remain unfinished. Q004a/Q005b empirical gates are unchanged;
 no market result or personal-review transition is claimed. Shared draw 3; two coherent units ready,
 including October 12 consolidation. No extra lesson or artificial third commit is created.
+
+## L001b one-buy equations - 14 October
+
+The fixed C++ buy demonstration reconciles cash 800 to 697, shares 4 to 6 and wealth 1000
+to 997 after buying two shares at 50 with a separate fee of 3. Fill equals the unchanged mark.
+Independent Decimal per-share accounting, two exact runs and two JSON replays agree; scratch
+omitted-fee and missing-share controls fail as intended. make cpp-buy-equations is part of
+make check; all 608 Python tests and existing C++ checks pass. The four-page teaching PDF
+is verified. Only L001b is complete; next is L001c's single position struct, followed by the
+validated buy, boundary and reproduction lessons. L002 timing, C003b/C004/C005 and empirical
+Q004a/Q005b gates remain. Personal review stays Not yet reviewed. Draw 3; one coherent unit,
+with no pending packages to integrate or artificial extra commits.

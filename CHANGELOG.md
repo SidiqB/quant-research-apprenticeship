@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-14
+
+Added L001b's fixed C++ one-buy/fee equations, hand-authored output fixture and independent
+Decimal verifier to make check. Cash 697 plus holdings 300 reconciles to wealth 997, a fee
+loss of 3 at equal fill/mark. Two wrong-code controls are rejected; full checks pass. Added
+archived results, source hashes, validation and a verified four-page teaching note. Advanced
+only L001b; struct, validated state updates and timing remain later lessons. Draw 3, one unit.
+
 ## 2026-10-11
 
 Integrated the October 10 fractional-input failure lesson after its zero-budget day. Added the

@@ -433,3 +433,15 @@ L001a only is complete; next is L001b one-buy/fee equations. L001's reusable sta
 delayed decisions and C003b/C004/C005 remain unfinished. Q004a/Q005b empirical gates are unchanged;
 no market result or personal-review transition is claimed. Shared draw 3; two coherent units ready,
 including October 12 consolidation. No extra lesson or artificial third commit is created.
+
+## L001b one-buy equations - 14 October
+
+The fixed C++ buy demonstration reconciles cash 800 to 697, shares 4 to 6 and wealth 1000
+to 997 after buying two shares at 50 with a separate fee of 3. Fill equals the unchanged mark.
+Independent Decimal per-share accounting, two exact runs and two JSON replays agree; scratch
+omitted-fee and missing-share controls fail as intended. make cpp-buy-equations is part of
+make check; all 608 Python tests and existing C++ checks pass. The four-page teaching PDF
+is verified. Only L001b is complete; next is L001c's single position struct, followed by the
+validated buy, boundary and reproduction lessons. L002 timing, C003b/C004/C005 and empirical
+Q004a/Q005b gates remain. Personal review stays Not yet reviewed. Draw 3; one coherent unit,
+with no pending packages to integrate or artificial extra commits.

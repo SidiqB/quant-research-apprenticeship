@@ -1,0 +1,4 @@
+before: cash=800; shares=4; mark=50; wealth=1000
+buy: shares=2; fill=50; notional=100; fee=3
+after: cash=697; shares=6; holdings=300; wealth=997
+reconcile: cash_debit=103; holdings_increase=100; wealth_change=-3

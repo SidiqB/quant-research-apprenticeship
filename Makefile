@@ -142,3 +142,13 @@ cpp-marked-wealth: build/cpp/portfolio_accounting/marked_wealth
 	$(PYTHON) scripts/verify_marked_wealth.py
 
 cpp-check: cpp-marked-wealth
+
+build/cpp/portfolio_accounting/buy_equations: cpp/projects/portfolio_accounting/buy_equations.cpp Makefile
+	mkdir -p build/cpp/portfolio_accounting
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $< -o $@
+
+.PHONY: cpp-buy-equations
+cpp-buy-equations: build/cpp/portfolio_accounting/buy_equations
+	$(PYTHON) scripts/verify_buy_equations.py
+
+cpp-check: cpp-buy-equations

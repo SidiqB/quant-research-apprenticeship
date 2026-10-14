@@ -1,0 +1,41 @@
+{
+  "baseline_commit": "fc260415e65774baf7c4c04ec502e91fdbbd878b",
+  "checks": {
+    "full_make_check": "passed; 608 Python tests and all C++ checks",
+    "json_replays": 2,
+    "negative_controls": {
+      "missing-shares": {
+        "compilation": "warning-clean",
+        "intended_mismatch": true,
+        "verifier_exit": 1
+      },
+      "omitted-fee": {
+        "compilation": "warning-clean",
+        "intended_mismatch": true,
+        "verifier_exit": 1
+      },
+      "optimized-verifier": {
+        "exit": 1,
+        "guard_verified": true
+      }
+    },
+    "pdf": {
+      "all_pages_visually_inspected": true,
+      "full_text_match": true,
+      "normalized_characters": 9588,
+      "pages": 4
+    },
+    "runs_per_invocation": 2
+  },
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "data_kind": "synthetic_fixed_buy",
+  "input_sha256": {
+    "cpp/projects/portfolio_accounting/buy_equations.cpp": "f444c376440ba3bd7a88bdb1706f70fda9851a351c463951e35bf2a15c3243e6",
+    "cpp/projects/portfolio_accounting/buy_expected.txt": "dcef5d01d7d84ac303359e6fb2e1cb9be50f1d5c942c167cc1f6d53c4dde479e",
+    "experiments/portfolio_accounting/buy-equations.json": "d06471352b039461a85be4e076e94f77559483ecc05153353e7b14ba21346052",
+    "scripts/verify_buy_equations.py": "b4fde4177dd0748559679f37cc30c9a6f831adcd0600de8a4e99105353faec4a"
+  },
+  "personal_review": "Not yet reviewed",
+  "scope": "L001b fixed one-buy equations; no arbitrary input, state API or timing model",
+  "study_date": "2026-10-14"
+}
