@@ -158,7 +158,6 @@ Q004a/Q005b gates remain; personal review stays Not yet reviewed. No empirical r
 One fixed C++ position now has three synthetic valuation snapshots: cash 800 and four shares
 marked at 50/55/45 give wealth 1000/1020/980. Independent Decimal addition agrees; two exact runs
 and two JSON replays match. A scratch share-plus-price mutation is rejected. make cpp-marked-wealth
-make cpp-buy-equations
 is part of make check. The four-page note explains units, unchanged cash and valuation limits.
 L001a only is complete; next is L001b one-buy/fee equations. L001's reusable state changes, L002
 delayed decisions and C003b/C004/C005 remain unfinished. Q004a/Q005b empirical gates are unchanged;

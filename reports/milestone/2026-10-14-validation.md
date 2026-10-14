@@ -73,3 +73,9 @@ The staged task files are reviewed for whitespace, local links, sizes, sensitive
 unwanted branding and unsupported claims before commit. Actual commit/push and exact remote/CI
 outcomes are recorded in the briefing and automation memory after publication; they cannot be
 asserted prospectively inside this commit. Standing publication authority is separate from review.
+
+Post-commit review caught an overbroad README command insertion in yesterday's historical paragraph.
+The new command belongs in the command list only. A separate documentation correction removes
+the stray line without rewriting history. Actual planned publication is therefore two commits:
+one lesson and one correction, within draw 3. No extra lesson or independent research unit is claimed.
+The source, executable checks, results and verified PDF are unchanged by this correction.
