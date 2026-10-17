@@ -152,3 +152,9 @@ cpp-buy-equations: build/cpp/portfolio_accounting/buy_equations
 	$(PYTHON) scripts/verify_buy_equations.py
 
 cpp-check: cpp-buy-equations
+
+.PHONY: cpp-account-state
+cpp-account-state:
+	$(PYTHON) scripts/verify_account_state.py
+
+cpp-check: cpp-account-state

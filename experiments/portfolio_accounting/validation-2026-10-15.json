@@ -1,0 +1,18 @@
+{
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "files": {
+    "account_state.cpp": "6f742dd8330e162d09c109344494031713dc9df2384ec56e47770f502ecf6cb4",
+    "account_state_expected.txt": "cef3d63eb643edffb17800f16751a9e6afc7330fb0639f0506e8120fb77bdc45",
+    "result.json": "791fcf290dc557276d05f8133456c6ef876597dfa292ebb06d8a74698594da56",
+    "verify_account_state.py": "c95d3be2cbff826c2b1d158d2ceca1a2f8e330355c7c052e5e36b1f71bcaa39e"
+  },
+  "optimized_python": {
+    "exit": 1,
+    "guard_observed": true
+  },
+  "swapped_initializer": {
+    "compiled_without_diagnostics": true,
+    "intended_mismatch": true,
+    "verifier_exit": 1
+  }
+}

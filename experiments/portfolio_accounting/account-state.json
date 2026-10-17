@@ -1,0 +1,19 @@
+{
+  "data_kind": "synthetic_fixed_snapshot",
+  "empty_cash": 0,
+  "empty_shares": 0,
+  "empty_wealth": 0,
+  "fresh_build": true,
+  "holdings": "200",
+  "initial_cash": "800",
+  "initial_shares": 4,
+  "mark": "50",
+  "money_unit": "whole arbitrary money unit",
+  "personal_review": "Not yet reviewed",
+  "reference": "Decimal repeated per-share addition",
+  "runs": 2,
+  "scope": "initialized single-asset account struct; no trading or validation API",
+  "study_date": "2026-10-15",
+  "task": "L001c",
+  "wealth": "1000"
+}

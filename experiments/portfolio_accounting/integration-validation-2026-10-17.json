@@ -1,0 +1,22 @@
+{
+  "task": "L001c",
+  "validation_date": "2026-10-17",
+  "source_sha256": "6f742dd8330e162d09c109344494031713dc9df2384ec56e47770f502ecf6cb4",
+  "verifier_sha256": "73ae3d0c30c596db8cce7e12e077b5d73ca6226dbe72586af3c986c7d3fee678",
+  "compiler": "Apple Clang 21.0.0 arm64",
+  "controls": [
+    {
+      "name": "struct_swap",
+      "expected_verifier_exit": 1,
+      "observed_exit": 1,
+      "intended_mismatch": true
+    },
+    {
+      "name": "scripts/verify_account_state.py optimization guard",
+      "observed_exit": 1
+    }
+  ],
+  "two_fresh_correct_builds_match": true,
+  "runs_per_build": 2,
+  "full_checks": "608 Python tests and all C++/quality checks passed"
+}

@@ -1,0 +1,2 @@
+initial: cash=800; shares=4; mark=50; holdings=200; wealth=1000
+empty: cash=0; shares=0; wealth=0

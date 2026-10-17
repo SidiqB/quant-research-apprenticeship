@@ -37,3 +37,12 @@ Read [the October 14 note](../../../research_log/2026-10-14.md),
 example are complete. L001c introduces a struct next; L001d/e add validated state updates and
 boundaries. No unaffordable-order rejection, general overflow handling or execution timing is
 implemented here. Different fill/mark prices invalidate the fee-only wealth-loss conclusion.
+
+## Account struct: L001c
+
+Studied October 15; integrated October 17. Run `make cpp-account-state` from the root.
+The verifier freshly compiles account_state.cpp and compares two executions with a hand-authored
+fixture and independent Decimal addition. AccountState groups cash and one share count; mark
+and wealth stay external/derived. Initial wealth is 1000; a separate empty snapshot is zero.
+This snapshot example has no validated trade API or arbitrary-input arithmetic guarantee.
+See [teaching note](../../../research_log/2026-10-15.md) and its separate validation evidence.

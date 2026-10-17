@@ -7,6 +7,7 @@ The emphasis is on reproducible experiments, correct information timing and expl
 
 | Date | Completed work | Evidence |
 |---|---|---|
+| 2026-10-15; integrated October 17 | L001c account struct | Original hashes verified; exact fresh builds; swapped-field control; verified four-page note |
 | 2026-10-14 | L001b fixed buy and fee equations | Independent cash ledger; two rejected mutations; verified four-page teaching note |
 | 2026-09-21 | Point-in-time observation and revision selection | Tested implementation; deterministic leakage counterexample |
 | 2026-09-22 | Chronological holdout with forward-label purging | 49 tests; two synthetic overlaps removed; five-page teaching note |
@@ -75,6 +76,7 @@ make cpp-fractional-failure
 make cpp-years-readiness
 make cpp-marked-wealth
 make cpp-buy-equations
+make cpp-account-state
 make note
 ```
 
@@ -175,3 +177,17 @@ is verified. Only L001b is complete; next is L001c's single position struct, fol
 validated buy, boundary and reproduction lessons. L002 timing, C003b/C004/C005 and empirical
 Q004a/Q005b gates remain. Personal review stays Not yet reviewed. Draw 3; one coherent unit,
 with no pending packages to integrate or artificial extra commits.
+
+## L001c struct - studied October 15, integrated October 17
+
+The account struct lesson is integrated after all 11 original inputs and nine artifacts matched
+the pending manifest. Cash 800 and four shares at mark 50 still give wealth 1000; a separate
+empty-brace object is zero initialized. Two fresh builds reproduce the original result; a
+swapped initializer is rejected. make cpp-account-state now joins make check. Full checks and
+the revised four-page teaching PDF pass. Original study evidence and dates are preserved.
+
+Only L001c is integrated here. No October 16 lesson artifact was found; no completion is inferred.
+The next lesson is L001d's validated buy; inspect pending manifests before dispatch because the
+October 17 draw of one is allocated to this integration. L001e/f, L002 timing, C003b/C004/C005
+and Q004a/Q005b gates remain. October 19 trend work stays conditional. Personal review remains
+Not yet reviewed. No input blocks synthetic continuation.

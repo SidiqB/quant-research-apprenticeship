@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-17
+
+Integrated October 15's L001c account struct, golden fixture and independent Decimal verifier
+with a Make check. Original inputs/artifacts match, two fresh builds reproduce the saved result,
+and the swapped-initializer control fails as intended. Full checks and the revised four-page
+teaching PDF pass. Shared draw one funds this coherent integration; later study stays pending.
+Personal review and empirical gates remain unchanged.
+
 ## 2026-10-14
 
 Added L001b's fixed C++ one-buy/fee equations, hand-authored output fixture and independent

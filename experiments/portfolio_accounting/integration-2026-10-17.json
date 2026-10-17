@@ -1,0 +1,149 @@
+{
+  "study_date": "2026-10-15",
+  "integration_date": "2026-10-17",
+  "task": "L001c",
+  "original_manifest": {
+    "schema_version": 1,
+    "original_work_date": "2026-10-15",
+    "created_at": "2026-10-15T09:15:47.097053+00:00",
+    "task": "L001c",
+    "purpose": "Introduce one initialized account struct without changing marked-wealth mechanics",
+    "publication": "pending_zero_commit_budget",
+    "baseline_commit": "73fa0f599d288391224d82fb983246d0cffec9d7",
+    "budget": 0,
+    "actual_commits_today": 0,
+    "inputs": [
+      {
+        "path": "QUANT_CURRICULUM.md",
+        "sha256": "3f507b1d8fde3b04b92e2c2d69b157625ea58ff2c370773de7f0d6efef0d825f",
+        "bytes": 10854
+      },
+      {
+        "path": "CURRICULUM_BACKLOG.md",
+        "sha256": "6eb77ae16bdbff5cfa120168dd3af687dd437df61165cdc8cdc96285c6f2b592",
+        "bytes": 27066
+      },
+      {
+        "path": "OPERATIONS.md",
+        "sha256": "8b23eb301eb464407848a3e1d8d54699f5770ae2f73b038d2318a24db5454e0f",
+        "bytes": 5093
+      },
+      {
+        "path": "COMMIT_CADENCE.md",
+        "sha256": "d0e7c4a5652774dc0550c3e45909c765d971ea6cf6037e4b496ebf03ae76db2e",
+        "bytes": 2462
+      },
+      {
+        "path": "cpp/projects/portfolio_accounting/marked_wealth.cpp",
+        "sha256": "cc04be106900377fb14675026043038482ad20932e67106f409066284dd11463",
+        "bytes": 1133
+      },
+      {
+        "path": "cpp/projects/portfolio_accounting/buy_equations.cpp",
+        "sha256": "f444c376440ba3bd7a88bdb1706f70fda9851a351c463951e35bf2a15c3243e6",
+        "bytes": 1298
+      },
+      {
+        "path": "scripts/verify_buy_equations.py",
+        "sha256": "b4fde4177dd0748559679f37cc30c9a6f831adcd0600de8a4e99105353faec4a",
+        "bytes": 3635
+      },
+      {
+        "path": "scripts/render_note.py",
+        "sha256": "c635bd6eba7df1ac731e6734bb0c37e4240a5ae7df0ab4d4d45d339e67cabb2c",
+        "bytes": 6239
+      },
+      {
+        "path": "requirements-lock.txt",
+        "sha256": "767df194abce2c07fbb9d0ed82e495c76db73bfc617bcf5d595742be667330fa",
+        "bytes": 274
+      },
+      {
+        "path": "Makefile",
+        "sha256": "4c2eb3814b9d9a93e54894e630b60c3a9a94ef55ab10cdd2898b0230b071bd28",
+        "bytes": 6623
+      },
+      {
+        "path": "research_log/2026-10-14.md",
+        "sha256": "6cea84da3e14e4e25a6bfad34186f66891c88650680b3e281924af5d474c8b76",
+        "bytes": 11612
+      }
+    ],
+    "artifacts": [
+      {
+        "path": "work/pending/2026-10-15/account_state.cpp",
+        "sha256": "6f742dd8330e162d09c109344494031713dc9df2384ec56e47770f502ecf6cb4",
+        "bytes": 831,
+        "intended_destination": "cpp/projects/portfolio_accounting/account_state.cpp"
+      },
+      {
+        "path": "work/pending/2026-10-15/account_state_expected.txt",
+        "sha256": "cef3d63eb643edffb17800f16751a9e6afc7330fb0639f0506e8120fb77bdc45",
+        "bytes": 98,
+        "intended_destination": "cpp/projects/portfolio_accounting/account_state_expected.txt"
+      },
+      {
+        "path": "work/pending/2026-10-15/verify_account_state.py",
+        "sha256": "c95d3be2cbff826c2b1d158d2ceca1a2f8e330355c7c052e5e36b1f71bcaa39e",
+        "bytes": 2661,
+        "intended_destination": "scripts/verify_account_state.py"
+      },
+      {
+        "path": "work/pending/2026-10-15/result.json",
+        "sha256": "791fcf290dc557276d05f8133456c6ef876597dfa292ebb06d8a74698594da56",
+        "bytes": 522,
+        "intended_destination": "experiments/portfolio_accounting/account-state.json"
+      },
+      {
+        "path": "work/pending/2026-10-15/experiment-validation.json",
+        "sha256": "70c1d7e688f6eb7d3ce7cb7b44d5fa384331b6c3f801ac81879df1506b89bcde",
+        "bytes": 665,
+        "intended_destination": "experiments/portfolio_accounting/validation-2026-10-15.json"
+      },
+      {
+        "path": "work/pending/2026-10-15/2026-10-15-learning-note.md",
+        "sha256": "f190f6d94b438827c4ad62ce223dc65828ddc1f789936b8c286338c7d56cd5fb",
+        "bytes": 12091,
+        "intended_destination": "research_log/2026-10-15.md"
+      },
+      {
+        "path": "work/pending/2026-10-15/2026-10-15-learning-note.pdf",
+        "sha256": "ecb211aebef0284da8e8db9662c11902df0a363e65fff0b22d42e60958f805e8",
+        "bytes": 12812,
+        "intended_destination": "reports/daily/2026-10-15-learning-note.pdf"
+      },
+      {
+        "path": "work/pending/2026-10-15/2026-10-15-validation.md",
+        "sha256": "e2f59e125390e4d1280f6bf2886cdbb7a0d11f02f7662b975b07c829156807a5",
+        "bytes": 5045,
+        "intended_destination": "reports/milestone/2026-10-15-validation.md"
+      },
+      {
+        "path": "work/pending/2026-10-15/progress.json",
+        "sha256": "9ae4701c469586b46b17c8bd2f3c08f529ebec92e67d98044885d3efa11b430c",
+        "bytes": 796,
+        "intended_destination": "merge_into_documentation"
+      }
+    ],
+    "checks": [
+      "Two fresh warning-clean C++17 builds, each run twice with exact stdout/empty stderr/exit 0",
+      "Two identical JSON replays",
+      "Swapped-initializer negative control compiled then rejected",
+      "Actual -O guard refused disabled assertions",
+      "make check: 608 Python tests and prior C++/quality checks passed",
+      "pip check passed; pending Ruff lint/format passed",
+      "Four-page PDF: exact 10121-character normalized text, heading/origin and every-page visual checks"
+    ],
+    "integration_instructions": [
+      "Verify every original hash before copying; review dependency changes",
+      "Adapt verifier source/fixture paths and add meaningful Make target/check",
+      "Revalidate current baseline and controls; preserve study date and original result",
+      "Revise note paths/publication status, rerender and visually reverify PDF",
+      "Merge progress into listed docs; do not mark Sidiq reviewed",
+      "Commit only with available shared budget; push and verify remote; write integration receipt"
+    ]
+  },
+  "verified_original_inputs": 11,
+  "verified_original_artifacts": 9,
+  "changes": "Verifier paths, Make check, note publication paths/status and progress; original result preserved"
+}

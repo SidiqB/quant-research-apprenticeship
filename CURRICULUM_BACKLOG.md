@@ -75,7 +75,7 @@ claim is assumed. No answer blocks the next bounded synthetic lesson. Programme 
 | 2026-10-12 | C++ foundations | Consolidate C003a; repeat unclear prerequisites | Eight fixed traces; finite-result distinction; verified four-page note | Done October 12; integrated October 13 |
 | 2026-10-13 | Portfolio accounting L001a | Introduce cash, position and marked wealth | Three fixed marks; hand/Decimal agreement; rejected unit mutation; verified four-page note | Done: L001a only |
 | 2026-10-14 | Portfolio accounting L001b | Derive one buy and explicit fee | Exact cash/holdings/fee reconciliation; two rejected mutations; verified four-page note | Done: L001b only |
-| 2026-10-15 | Portfolio accounting L001c | Introduce one position struct | Explain each field; fixed initial state/marked value; verified note | Planned; conditional on prior slot |
+| 2026-10-15 | Portfolio accounting L001c | Introduce one position struct | Initialized account, hand/Decimal match, swapped-field control; verified four-page note | Studied October 15; integrated October 17 |
 | 2026-10-16 | Portfolio accounting L001d | Implement one validated buy function | Known synthetic buy; invalid/unaffordable orders leave state unchanged; verified note | Planned; conditional on prior slot |
 | 2026-10-17 | Portfolio accounting L001e | Check boundaries with independent reference | Hand/Python agreement; zero, invalid and fee cases; verified note | Planned; conditional on prior slot |
 | 2026-10-18 | Portfolio accounting L001f | Reproduce and consolidate accounting | Reconcile cash plus holdings; record limits; verified note; weekly synthesis separate | Planned; conditional on prior slot |
@@ -221,3 +221,17 @@ is verified. Only L001b is complete; next is L001c's single position struct, fol
 validated buy, boundary and reproduction lessons. L002 timing, C003b/C004/C005 and empirical
 Q004a/Q005b gates remain. Personal review stays Not yet reviewed. Draw 3; one coherent unit,
 with no pending packages to integrate or artificial extra commits.
+
+## L001c struct - studied October 15, integrated October 17
+
+The account struct lesson is integrated after all 11 original inputs and nine artifacts matched
+the pending manifest. Cash 800 and four shares at mark 50 still give wealth 1000; a separate
+empty-brace object is zero initialized. Two fresh builds reproduce the original result; a
+swapped initializer is rejected. make cpp-account-state now joins make check. Full checks and
+the revised four-page teaching PDF pass. Original study evidence and dates are preserved.
+
+Only L001c is integrated here. No October 16 lesson artifact was found; no completion is inferred.
+The next lesson is L001d's validated buy; inspect pending manifests before dispatch because the
+October 17 draw of one is allocated to this integration. L001e/f, L002 timing, C003b/C004/C005
+and Q004a/Q005b gates remain. October 19 trend work stays conditional. Personal review remains
+Not yet reviewed. No input blocks synthetic continuation.
