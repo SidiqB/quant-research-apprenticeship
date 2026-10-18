@@ -158,3 +158,9 @@ cpp-account-state:
 	$(PYTHON) scripts/verify_account_state.py
 
 cpp-check: cpp-account-state
+
+.PHONY: cpp-validated-buy
+cpp-validated-buy:
+	$(PYTHON) scripts/verify_validated_buy.py
+
+cpp-check: cpp-validated-buy

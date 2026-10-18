@@ -1,0 +1,29 @@
+{
+  "accepted": 3,
+  "cases": 14,
+  "data_kind": "synthetic_fixed_cases",
+  "fresh_build": true,
+  "outputs": [
+    "buy 1 697 6",
+    "exact_cash 1 0 6",
+    "fee_unaffordable 0 102 4",
+    "fee_exceeds_cash 0 2 4",
+    "zero_quantity 0 800 4",
+    "negative_quantity 0 800 4",
+    "zero_price 0 800 4",
+    "negative_fee 0 800 4",
+    "invalid_cash 0 -1 4",
+    "invalid_shares 0 800 -1",
+    "outside_domain 0 10001 4",
+    "position_cap 0 800 10000",
+    "zero_fee 1 0 2",
+    "large_product_rejected 0 10000 0"
+  ],
+  "personal_review": "Not yet reviewed",
+  "rejected_unchanged": 11,
+  "runs": 2,
+  "scope": "bounded whole-unit buy; no execution timing or market claim",
+  "study_date": "2026-10-17",
+  "task": "L001d",
+  "undefined_behavior_sanitizer": true
+}

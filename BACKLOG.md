@@ -459,3 +459,18 @@ The next lesson is L001d's validated buy; inspect pending manifests before dispa
 October 17 draw of one is allocated to this integration. L001e/f, L002 timing, C003b/C004/C005
 and Q004a/Q005b gates remain. October 19 trend work stays conditional. Personal review remains
 Not yet reviewed. No input blocks synthetic continuation.
+
+## L001d validated buy - studied October 17, integrated October 18
+
+The bounded whole-unit try_buy operation is integrated after all 11 original input and eight
+artifact hashes/sizes matched. Three hand-authored accepted transitions and eleven rejected
+unchanged states reproduce the original results in two fresh sanitizer builds, each run twice.
+Omitted-fee and fee-on-rejection controls fail as intended. make cpp-validated-buy now joins
+make check; 608 Python tests, quality checks and all existing C++ checks pass. The revised
+four-page teaching PDF is verified; original study date and evidence are preserved.
+
+Only L001d is integrated here. Next learning is L001e's independent boundaries; inspect ignored
+pending manifests before dispatch because October 18's one-commit allowance is allocated to
+this integration. L001f reproduction, L002 timing/future-price invariance, C003b/C004/C005 and
+Q004a/Q005b empirical gates remain. Trend implementation stays conditional. Personal review
+remains Not yet reviewed, and no input blocks the next synthetic lesson.

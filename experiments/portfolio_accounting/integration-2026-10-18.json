@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-10-18T07:57:15.789821+00:00",
+  "compiler": "Apple Clang 21.0.0 arm64",
+  "fresh_correct_builds": 2,
+  "runs_per_build": 2,
+  "exact_replay": true,
+  "task": "L001d",
+  "original_work_date": "2026-10-17",
+  "integration_date": "2026-10-18",
+  "original_manifest_verified": {
+    "inputs": 11,
+    "artifacts": 8
+  },
+  "controls": [
+    {
+      "name": "omitted_fee",
+      "observed_exit": 1,
+      "intended_mismatch": true,
+      "diagnostic": "AssertionError: ('Buy transition differs from hand reference', b'buy 1 700 6\\nexact_cash 1 3 6\\nfee_unaffordable 0 102 4\\nfee_exceeds_cash 0 2 4\\nzero_quantity 0 800 4\\nnegative_quantity 0 800 4\\nzero_price 0 800 4\\nnegative_fee 0 800 4\\ninvalid_cash 0 -1 4\\ninvalid_shares 0 800 -1\\noutside_domain 0 10001 4\\nposition_cap 0 800 10000\\nzero_fee 1 0 2\\nlarge_product_rejected 0 10000 0\\n', b'')"
+    },
+    {
+      "name": "fee_on_rejection",
+      "observed_exit": 1,
+      "intended_mismatch": true,
+      "diagnostic": "AssertionError: ('Buy transition differs from hand reference', b'buy 1 697 6\\nexact_cash 1 0 6\\nfee_unaffordable 0 99 4\\nfee_exceeds_cash 0 2 4\\nzero_quantity 0 800 4\\nnegative_quantity 0 800 4\\nzero_price 0 800 4\\nnegative_fee 0 800 4\\ninvalid_cash 0 -1 4\\ninvalid_shares 0 800 -1\\noutside_domain 0 10001 4\\nposition_cap 0 797 10000\\nzero_fee 1 0 2\\nlarge_product_rejected 0 10000 0\\n', b'')"
+    },
+    {
+      "name": "scripts/verify_validated_buy.py optimization guard",
+      "observed_exit": 1
+    }
+  ],
+  "files": [
+    {
+      "path": "cpp/projects/portfolio_accounting/validated_buy.cpp",
+      "sha256": "ee61bc337db0f2277acb484be8ab94b24461018943068b3cbe37c183b32950c9",
+      "bytes": 1008
+    },
+    {
+      "path": "scripts/verify_validated_buy.py",
+      "sha256": "15b34eeee506865adfbb8327d539d1a2e23b723278142d00664b38d6543c9968",
+      "bytes": 3986
+    },
+    {
+      "path": "experiments/portfolio_accounting/validated-buy.json",
+      "sha256": "2a5c3e1e6772d64c0debb6ea0ae699f781af655a689727fe8b848981b20b0919",
+      "bytes": 767
+    }
+  ]
+}

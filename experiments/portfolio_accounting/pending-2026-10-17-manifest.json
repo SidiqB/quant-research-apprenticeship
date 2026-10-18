@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "original_work_date": "2026-10-17",
+  "created_at": "2026-10-17T20:57:47.447547+00:00",
+  "task": "L001d",
+  "purpose": "Validate a whole-unit buy before mutating either account field",
+  "publication": "pending_exhausted_commit_budget",
+  "baseline_commit": "ce2ce13358b19cd730c64a9c38412c72c067c8e8",
+  "budget": 1,
+  "actual_commits_today": 1,
+  "inputs": [
+    {
+      "path": "QUANT_CURRICULUM.md",
+      "sha256": "3f507b1d8fde3b04b92e2c2d69b157625ea58ff2c370773de7f0d6efef0d825f",
+      "bytes": 10854
+    },
+    {
+      "path": "CURRICULUM_BACKLOG.md",
+      "sha256": "9f890b2fe387f23acbfb87f89f2d412e9fcf85bab12d92a3308da0692fce48d4",
+      "bytes": 28062
+    },
+    {
+      "path": "OPERATIONS.md",
+      "sha256": "8b23eb301eb464407848a3e1d8d54699f5770ae2f73b038d2318a24db5454e0f",
+      "bytes": 5093
+    },
+    {
+      "path": "COMMIT_CADENCE.md",
+      "sha256": "d0e7c4a5652774dc0550c3e45909c765d971ea6cf6037e4b496ebf03ae76db2e",
+      "bytes": 2462
+    },
+    {
+      "path": "Makefile",
+      "sha256": "4b3fed8480a7dd64406409fb5a29e96e646b4b6257b665becd683cfdc145a52e",
+      "bytes": 6742
+    },
+    {
+      "path": "cpp/projects/portfolio_accounting/account_state.cpp",
+      "sha256": "6f742dd8330e162d09c109344494031713dc9df2384ec56e47770f502ecf6cb4",
+      "bytes": 831
+    },
+    {
+      "path": "cpp/projects/portfolio_accounting/buy_equations.cpp",
+      "sha256": "f444c376440ba3bd7a88bdb1706f70fda9851a351c463951e35bf2a15c3243e6",
+      "bytes": 1298
+    },
+    {
+      "path": "scripts/verify_account_state.py",
+      "sha256": "73ae3d0c30c596db8cce7e12e077b5d73ca6226dbe72586af3c986c7d3fee678",
+      "bytes": 2703
+    },
+    {
+      "path": "scripts/render_note.py",
+      "sha256": "c635bd6eba7df1ac731e6734bb0c37e4240a5ae7df0ab4d4d45d339e67cabb2c",
+      "bytes": 6239
+    },
+    {
+      "path": "requirements-lock.txt",
+      "sha256": "767df194abce2c07fbb9d0ed82e495c76db73bfc617bcf5d595742be667330fa",
+      "bytes": 274
+    },
+    {
+      "path": "research_log/2026-10-15.md",
+      "sha256": "b7ff631e9af609da197eefbb9f764617ae5eced7325c892d81e0928302183099",
+      "bytes": 12191
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "work/pending/2026-10-17/validated_buy.cpp",
+      "sha256": "ee61bc337db0f2277acb484be8ab94b24461018943068b3cbe37c183b32950c9",
+      "bytes": 1008,
+      "intended_destination": "cpp/projects/portfolio_accounting/validated_buy.cpp"
+    },
+    {
+      "path": "work/pending/2026-10-17/verify_validated_buy.py",
+      "sha256": "7d1272a4e5a94cbc1162202ebae80acbd590178a4242914a23ad5f7eabfa3388",
+      "bytes": 3942,
+      "intended_destination": "scripts/verify_validated_buy.py"
+    },
+    {
+      "path": "work/pending/2026-10-17/result.json",
+      "sha256": "2a5c3e1e6772d64c0debb6ea0ae699f781af655a689727fe8b848981b20b0919",
+      "bytes": 767,
+      "intended_destination": "experiments/portfolio_accounting/validated-buy.json"
+    },
+    {
+      "path": "work/pending/2026-10-17/experiment-validation.json",
+      "sha256": "af3c773673b9c0a1156e4986b8e0fcb9a9bd83a82f22f644be074da3c7914ccc",
+      "bytes": 837,
+      "intended_destination": "experiments/portfolio_accounting/validation-2026-10-17.json"
+    },
+    {
+      "path": "work/pending/2026-10-17/2026-10-17-learning-note.md",
+      "sha256": "5f3ccd25ade5ff152fc2ad866615b29445fcca84e9de2a1686b40a39b1d2ccc3",
+      "bytes": 12781,
+      "intended_destination": "research_log/2026-10-17.md"
+    },
+    {
+      "path": "work/pending/2026-10-17/2026-10-17-learning-note.pdf",
+      "sha256": "e16716127939207f299a9419ed179836680e2bb9c4bbc4377d3ecbe20f21c304",
+      "bytes": 13495,
+      "intended_destination": "reports/daily/2026-10-17-learning-note.pdf"
+    },
+    {
+      "path": "work/pending/2026-10-17/2026-10-17-validation.md",
+      "sha256": "9257d02c73c5af6137d462f1b2d7a6e804b0c45121f2e8a14438bc2d565ba3a7",
+      "bytes": 2981,
+      "intended_destination": "reports/milestone/2026-10-17-validation.md"
+    },
+    {
+      "path": "work/pending/2026-10-17/progress.json",
+      "sha256": "b6e2338094b7e62b8b51e968e3c1dee54751aeeeb23dd1474d0aec14b802329c",
+      "bytes": 775,
+      "intended_destination": "merge_into_documentation"
+    }
+  ],
+  "checks": [
+    "14 fixed hand-authored outcomes: 3 accepted, 11 rejected unchanged",
+    "Two fresh warning-clean C++17 UBSan builds, each executed twice exactly; identical JSON",
+    "Omitted-fee and fee-on-rejection scratch mutations fail intended output comparison",
+    "Actual -O guard refuses disabled assertions",
+    "Full make check 608 Python tests and all C++/quality checks; separate pending Ruff check",
+    "Four-page PDF: exact 10695 normalized characters; every final page visually inspected"
+  ],
+  "integration_instructions": [
+    "Verify original hashes/sizes before copying; review changes since baseline",
+    "Adapt source paths; add meaningful Make check; decide whether shared header is warranted without expanding lesson",
+    "Retain 10000 policy cap, positive quantity/price, nonnegative fee and unchanged rejected state; do not silently broaden domain",
+    "Revalidate fixed cases, controls and full checks; preserve study date/result",
+    "Revise note paths/publication status; regenerate and visually reverify PDF",
+    "Merge honest progress; do not mark personal review complete; L001e/f and L002 remain separate",
+    "Commit only within shared budget; push, independently verify remote and write integration receipt"
+  ]
+}

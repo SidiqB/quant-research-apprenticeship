@@ -76,7 +76,7 @@ claim is assumed. No answer blocks the next bounded synthetic lesson. Programme 
 | 2026-10-13 | Portfolio accounting L001a | Introduce cash, position and marked wealth | Three fixed marks; hand/Decimal agreement; rejected unit mutation; verified four-page note | Done: L001a only |
 | 2026-10-14 | Portfolio accounting L001b | Derive one buy and explicit fee | Exact cash/holdings/fee reconciliation; two rejected mutations; verified four-page note | Done: L001b only |
 | 2026-10-15 | Portfolio accounting L001c | Introduce one position struct | Initialized account, hand/Decimal match, swapped-field control; verified four-page note | Studied October 15; integrated October 17 |
-| 2026-10-16 | Portfolio accounting L001d | Implement one validated buy function | Known synthetic buy; invalid/unaffordable orders leave state unchanged; verified note | Planned; conditional on prior slot |
+| 2026-10-16 | Portfolio accounting L001d | Implement one validated buy function | Three accepted and eleven rejected unchanged; two mutation controls; verified four-page note | Studied October 17; integrated October 18 |
 | 2026-10-17 | Portfolio accounting L001e | Check boundaries with independent reference | Hand/Python agreement; zero, invalid and fee cases; verified note | Planned; conditional on prior slot |
 | 2026-10-18 | Portfolio accounting L001f | Reproduce and consolidate accounting | Reconcile cash plus holdings; record limits; verified note; weekly synthesis separate | Planned; conditional on prior slot |
 | 2026-10-19 | Trend and momentum | Explain intuition and hand-work one example | Worked example, relevant checks and verified note; Whipsaw | Planned |
@@ -235,3 +235,18 @@ The next lesson is L001d's validated buy; inspect pending manifests before dispa
 October 17 draw of one is allocated to this integration. L001e/f, L002 timing, C003b/C004/C005
 and Q004a/Q005b gates remain. October 19 trend work stays conditional. Personal review remains
 Not yet reviewed. No input blocks synthetic continuation.
+
+## L001d validated buy - studied October 17, integrated October 18
+
+The bounded whole-unit try_buy operation is integrated after all 11 original input and eight
+artifact hashes/sizes matched. Three hand-authored accepted transitions and eleven rejected
+unchanged states reproduce the original results in two fresh sanitizer builds, each run twice.
+Omitted-fee and fee-on-rejection controls fail as intended. make cpp-validated-buy now joins
+make check; 608 Python tests, quality checks and all existing C++ checks pass. The revised
+four-page teaching PDF is verified; original study date and evidence are preserved.
+
+Only L001d is integrated here. Next learning is L001e's independent boundaries; inspect ignored
+pending manifests before dispatch because October 18's one-commit allowance is allocated to
+this integration. L001f reproduction, L002 timing/future-price invariance, C003b/C004/C005 and
+Q004a/Q005b empirical gates remain. Trend implementation stays conditional. Personal review
+remains Not yet reviewed, and no input blocks the next synthetic lesson.

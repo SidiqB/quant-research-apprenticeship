@@ -1,0 +1,28 @@
+{
+  "task": "L001d",
+  "validation_date": "2026-10-17",
+  "source_sha256": "ee61bc337db0f2277acb484be8ab94b24461018943068b3cbe37c183b32950c9",
+  "verifier_sha256": "7d1272a4e5a94cbc1162202ebae80acbd590178a4242914a23ad5f7eabfa3388",
+  "compiler": "Apple Clang 21.0.0 arm64",
+  "controls": [
+    {
+      "name": "buy_missing_fee",
+      "expected_verifier_exit": 1,
+      "observed_exit": 1,
+      "intended_mismatch": true
+    },
+    {
+      "name": "buy_partial_rejection",
+      "expected_verifier_exit": 1,
+      "observed_exit": 1,
+      "intended_mismatch": true
+    },
+    {
+      "name": "work/pending/2026-10-17/verify_validated_buy.py optimization guard",
+      "observed_exit": 1
+    }
+  ],
+  "two_fresh_correct_builds_match": true,
+  "runs_per_build": 2,
+  "full_checks": "608 Python tests and all C++/quality checks passed"
+}

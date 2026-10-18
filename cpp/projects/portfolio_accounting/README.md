@@ -46,3 +46,19 @@ fixture and independent Decimal addition. AccountState groups cash and one share
 and wealth stay external/derived. Initial wealth is 1000; a separate empty snapshot is zero.
 This snapshot example has no validated trade API or arbitrary-input arithmetic guarantee.
 See [teaching note](../../../research_log/2026-10-15.md) and its separate validation evidence.
+
+## Validated buy: L001d
+
+Studied October 17; integrated October 18. Run `make cpp-validated-buy` from the root.
+validated_buy.cpp defines the two-field AccountState and try_buy as a self-contained teaching
+slice. It rejects invalid state, nonpositive quantity/price, invalid fees, insufficient cash
+and position-cap violations before changing either field. Whole-unit values are capped at
+10000, with no debt or short selling. A false result preserves both original fields.
+
+The Python verifier freshly compiles a temporary C++17 driver with the undefined-behavior
+sanitizer, then checks 14 hand-authored outcomes twice. It refuses disabled assertions.
+See [October 17 note](../../../research_log/2026-10-17.md),
+[original result](../../../experiments/portfolio_accounting/validated-buy.json) and
+[validation](../../../reports/milestone/2026-10-17-validation.md).
+This does not add shared headers, execution timing, fractional units or market realism.
+Independent boundaries and reproduction remain separate lessons; personal review is unchanged.
