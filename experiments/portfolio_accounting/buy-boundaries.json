@@ -1,0 +1,18 @@
+{
+  "accepted": 250,
+  "additional_unique_cases": 575,
+  "cases": 8351,
+  "data_kind": "synthetic_generated_boundaries",
+  "edge_grid_cases": 7776,
+  "expected_output_sha256": "2cef2629cf04dbced7570a0d663e36f0f0a7a8c27722d4660e11d74a2d6475fd",
+  "fresh_build": true,
+  "input_sha256": "706172b674de59d2e151994c722a86d894a1ababa7c740237379c2a4c94192ba",
+  "personal_review": "Not yet reviewed",
+  "rejected_unchanged": 8101,
+  "runs": 2,
+  "scope": "selected grid and threshold neighbors; not exhaustive domain proof",
+  "source_sha256": "ee61bc337db0f2277acb484be8ab94b24461018943068b3cbe37c183b32950c9",
+  "study_date": "2026-10-18",
+  "task": "L001e",
+  "undefined_behavior_sanitizer": true
+}

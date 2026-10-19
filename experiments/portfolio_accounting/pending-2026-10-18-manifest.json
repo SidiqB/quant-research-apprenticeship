@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "original_work_date": "2026-10-18",
+  "created_at": "2026-10-18T08:04:18.730335+00:00",
+  "task": "L001e",
+  "purpose": "Independently check selected buy boundaries and unchanged rejection",
+  "publication": "pending_exhausted_commit_budget",
+  "baseline_commit": "0cbaa0246cc4ffa17fc5f7072d156d5b384af40d",
+  "budget": 1,
+  "actual_commits_today": 1,
+  "inputs": [
+    {
+      "path": "QUANT_CURRICULUM.md",
+      "sha256": "3f507b1d8fde3b04b92e2c2d69b157625ea58ff2c370773de7f0d6efef0d825f",
+      "bytes": 10854
+    },
+    {
+      "path": "CURRICULUM_BACKLOG.md",
+      "sha256": "24d58a7b67f97e91e7ecfeca6801a1ed35c4bf6f3bff3b7d531cb2c080b38c5c",
+      "bytes": 29142
+    },
+    {
+      "path": "OPERATIONS.md",
+      "sha256": "8b23eb301eb464407848a3e1d8d54699f5770ae2f73b038d2318a24db5454e0f",
+      "bytes": 5093
+    },
+    {
+      "path": "COMMIT_CADENCE.md",
+      "sha256": "d0e7c4a5652774dc0550c3e45909c765d971ea6cf6037e4b496ebf03ae76db2e",
+      "bytes": 2462
+    },
+    {
+      "path": "Makefile",
+      "sha256": "62e0a5a3ec4592cacc55180c2b6cbf9d123d68f0c9ae7d559e4468b5c37ddb8d",
+      "bytes": 6861
+    },
+    {
+      "path": "cpp/projects/portfolio_accounting/validated_buy.cpp",
+      "sha256": "ee61bc337db0f2277acb484be8ab94b24461018943068b3cbe37c183b32950c9",
+      "bytes": 1008
+    },
+    {
+      "path": "scripts/verify_validated_buy.py",
+      "sha256": "15b34eeee506865adfbb8327d539d1a2e23b723278142d00664b38d6543c9968",
+      "bytes": 3986
+    },
+    {
+      "path": "scripts/render_note.py",
+      "sha256": "c635bd6eba7df1ac731e6734bb0c37e4240a5ae7df0ab4d4d45d339e67cabb2c",
+      "bytes": 6239
+    },
+    {
+      "path": "requirements-lock.txt",
+      "sha256": "767df194abce2c07fbb9d0ed82e495c76db73bfc617bcf5d595742be667330fa",
+      "bytes": 274
+    },
+    {
+      "path": "research_log/2026-10-17.md",
+      "sha256": "964312ae4e1c3af67d307a468f93130b98592deb4443563cdf8f2228b9cb5be4",
+      "bytes": 12815
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "work/pending/2026-10-18/verify_buy_boundaries.py",
+      "sha256": "ec0b2404fd611077feab82da148d229856e3c491dc4ea3a7493a8c4965a2ed47",
+      "bytes": 5254,
+      "intended_destination": "scripts/verify_buy_boundaries.py"
+    },
+    {
+      "path": "work/pending/2026-10-18/result.json",
+      "sha256": "4fb852cb9b3ac28d5b9123f5fedfbd124b22741b62ed25b0fcebb74571874d80",
+      "bytes": 695,
+      "intended_destination": "experiments/portfolio_accounting/buy-boundaries.json"
+    },
+    {
+      "path": "work/pending/2026-10-18/experiment-validation.json",
+      "sha256": "bdcc0206bc9de8a1bd9b0e520ef7b7478a55a0a71a4ba7301ea7b48a80bc5ca7",
+      "bytes": 1801,
+      "intended_destination": "experiments/portfolio_accounting/validation-2026-10-18.json"
+    },
+    {
+      "path": "work/pending/2026-10-18/2026-10-18-learning-note.md",
+      "sha256": "f0773927804e1627768e5b23a6ef2d43fc4c9389ecdc7968b76f8e73fce16cce",
+      "bytes": 12402,
+      "intended_destination": "research_log/2026-10-18.md"
+    },
+    {
+      "path": "work/pending/2026-10-18/2026-10-18-learning-note.pdf",
+      "sha256": "d63b804d3a3c30bef7c1a33d2410432b39562dff10d3c54fb59a27d5dfe74768",
+      "bytes": 13031,
+      "intended_destination": "reports/daily/2026-10-18-learning-note.pdf"
+    },
+    {
+      "path": "work/pending/2026-10-18/2026-10-18-validation.md",
+      "sha256": "d99d5ece3f5e75185cc21fa3008d5f4ca9ef7ac317d5925435e23aeced9b6188",
+      "bytes": 3540,
+      "intended_destination": "reports/milestone/2026-10-18-validation.md"
+    },
+    {
+      "path": "work/pending/2026-10-18/progress.json",
+      "sha256": "f0720b0909ca896677c4ee3cac7410656e803a70dc7eb4d20ffac3619c8218c6",
+      "bytes": 649,
+      "intended_destination": "merge_into_documentation"
+    }
+  ],
+  "checks": [
+    "Two fresh warning-clean C++17 UBSan builds, each executes 8351 tuples twice exactly",
+    "250 accepted; 8101 rejected unchanged; six hand anchors",
+    "Cash/position exclusive-equality mutants detected; negative-price guard mutant survives due to later rejection; failed initial expectation preserved",
+    "Actual -O invocation refused; independent pending Ruff lint/format pass",
+    "Full make check: 608 Python tests and all C++/quality checks; pip consistency passes",
+    "Four-page PDF exact 10416 normalized characters; every final page visually inspected"
+  ],
+  "integration_instructions": [
+    "Verify original hashes/sizes and review changes since baseline before copying",
+    "Adapt ROOT from parents[3] to parents[1] when moving verifier into scripts",
+    "Add meaningful cpp-buy-boundaries Make target to cpp-check without widening the lesson",
+    "Reproduce original deterministic result; rerun both detected mutations, survivor and -O guard; keep survivor history honest",
+    "Preserve original work date/result; revise paths/publication prose and regenerate/reverify PDF",
+    "Merge actual progress and keep personal review Not yet reviewed; L001f/L002 remain separate",
+    "Commit only within shared allowance; push and independently verify remote; write receipt"
+  ]
+}

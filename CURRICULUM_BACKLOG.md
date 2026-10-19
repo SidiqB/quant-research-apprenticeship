@@ -77,7 +77,7 @@ claim is assumed. No answer blocks the next bounded synthetic lesson. Programme 
 | 2026-10-14 | Portfolio accounting L001b | Derive one buy and explicit fee | Exact cash/holdings/fee reconciliation; two rejected mutations; verified four-page note | Done: L001b only |
 | 2026-10-15 | Portfolio accounting L001c | Introduce one position struct | Initialized account, hand/Decimal match, swapped-field control; verified four-page note | Studied October 15; integrated October 17 |
 | 2026-10-16 | Portfolio accounting L001d | Implement one validated buy function | Three accepted and eleven rejected unchanged; two mutation controls; verified four-page note | Studied October 17; integrated October 18 |
-| 2026-10-17 | Portfolio accounting L001e | Check boundaries with independent reference | Hand/Python agreement; zero, invalid and fee cases; verified note | Planned; conditional on prior slot |
+| 2026-10-17 | Portfolio accounting L001e | Check boundaries with independent reference | 8351 oracle comparisons; two detected mutations and one explained survivor; verified note | Studied October 18; integrated October 19 |
 | 2026-10-18 | Portfolio accounting L001f | Reproduce and consolidate accounting | Reconcile cash plus holdings; record limits; verified note; weekly synthesis separate | Planned; conditional on prior slot |
 | 2026-10-19 | Trend and momentum | Explain intuition and hand-work one example | Worked example, relevant checks and verified note; Whipsaw | Planned |
 | 2026-10-20 | Trend and momentum | Derive the minimal model; define inputs and units | Worked example, relevant checks and verified note; Whipsaw | Planned |
@@ -250,3 +250,19 @@ pending manifests before dispatch because October 18's one-commit allowance is a
 this integration. L001f reproduction, L002 timing/future-price invariance, C003b/C004/C005 and
 Q004a/Q005b empirical gates remain. Trend implementation stays conditional. Personal review
 remains Not yet reviewed, and no input blocks the next synthetic lesson.
+
+## L001e boundaries - studied October 18, integrated October 19
+
+The unchanged buy function agrees with a direct integer-ledger oracle on 8351 selected tuples:
+250 accepted and 8101 rejected with unchanged state. Ten original inputs and seven artifacts
+match the pending manifest. Two current fresh sanitizer builds reproduce the original result,
+each running twice. Exclusive cash/position mutations are detected; the negative-price guard
+mutation still survives because the later affordability guard rejects. Preserve this limitation.
+make cpp-buy-boundaries now joins make check. Full checks pass 608 Python tests and existing
+C++/quality checks; the revised four-page teaching PDF is verified. No empirical claim is made.
+
+Only L001e is integrated here. Next learning is L001f reproduction/consolidation; inspect pending
+packages before dispatch because the October 19 draw of one is allocated to this integration.
+The October 18 weekly synthesis remains queued separately. L002 timing/future-price invariance,
+C003b/C004/C005 and Q004a/Q005b gates remain; trend implementation stays conditional. Personal
+review remains Not yet reviewed. No input blocks synthetic continuation.

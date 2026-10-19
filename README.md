@@ -207,3 +207,19 @@ pending manifests before dispatch because October 18's one-commit allowance is a
 this integration. L001f reproduction, L002 timing/future-price invariance, C003b/C004/C005 and
 Q004a/Q005b empirical gates remain. Trend implementation stays conditional. Personal review
 remains Not yet reviewed, and no input blocks the next synthetic lesson.
+
+## L001e boundaries - studied October 18, integrated October 19
+
+The unchanged buy function agrees with a direct integer-ledger oracle on 8351 selected tuples:
+250 accepted and 8101 rejected with unchanged state. Ten original inputs and seven artifacts
+match the pending manifest. Two current fresh sanitizer builds reproduce the original result,
+each running twice. Exclusive cash/position mutations are detected; the negative-price guard
+mutation still survives because the later affordability guard rejects. Preserve this limitation.
+make cpp-buy-boundaries now joins make check. Full checks pass 608 Python tests and existing
+C++/quality checks; the revised four-page teaching PDF is verified. No empirical claim is made.
+
+Only L001e is integrated here. Next learning is L001f reproduction/consolidation; inspect pending
+packages before dispatch because the October 19 draw of one is allocated to this integration.
+The October 18 weekly synthesis remains queued separately. L002 timing/future-price invariance,
+C003b/C004/C005 and Q004a/Q005b gates remain; trend implementation stays conditional. Personal
+review remains Not yet reviewed. No input blocks synthetic continuation.

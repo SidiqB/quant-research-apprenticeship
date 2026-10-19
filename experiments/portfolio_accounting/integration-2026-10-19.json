@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-19T10:02:55.732833+00:00",
+  "original_inputs_verified": 10,
+  "original_artifacts_verified": 7,
+  "fresh_builds": 2,
+  "runs_per_build": 2,
+  "original_result_exact": true,
+  "controls": [
+    {
+      "name": "exclusive_cash",
+      "exit": 1,
+      "survived": false,
+      "diagnostic": "AssertionError: ('Boundary mismatch', (1, 0, 1, 1, 0), b'1 0 1', b'0 1 0')"
+    },
+    {
+      "name": "exclusive_position",
+      "exit": 1,
+      "survived": false,
+      "diagnostic": "AssertionError: ('Boundary mismatch', (1, 9999, 1, 1, 0), b'1 0 10000', b'0 1 9999')"
+    },
+    {
+      "name": "negative_price",
+      "exit": 0,
+      "survived": true,
+      "diagnostic": "Later affordability guard still rejects negative price"
+    }
+  ],
+  "optimization_guard_refused": true,
+  "source_sha256": "ee61bc337db0f2277acb484be8ab94b24461018943068b3cbe37c183b32950c9"
+}

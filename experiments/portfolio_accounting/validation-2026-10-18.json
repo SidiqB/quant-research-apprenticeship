@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-10-18T07:57:15.789821+00:00",
+  "compiler": "Apple Clang 21.0.0 arm64",
+  "fresh_correct_builds": 2,
+  "runs_per_build": 2,
+  "exact_replay": true,
+  "task": "L001e",
+  "study_date": "2026-10-18",
+  "controls": [
+    {
+      "name": "exclusive_cash",
+      "observed_exit": 1,
+      "intended_mismatch": true,
+      "diagnostic": "AssertionError: ('Boundary mismatch', (1, 0, 1, 1, 0), b'1 0 1', b'0 1 0')"
+    },
+    {
+      "name": "exclusive_position",
+      "observed_exit": 1,
+      "intended_mismatch": true,
+      "diagnostic": "AssertionError: ('Boundary mismatch', (1, 9999, 1, 1, 0), b'1 0 10000', b'0 1 9999')"
+    },
+    {
+      "name": "negative_price",
+      "observed_exit": 0,
+      "survived": true,
+      "explanation": "Negative price still gives a nonpositive quotient; positive quantity rejects at affordability guard. Initial expectation of detection was wrong."
+    },
+    {
+      "name": "work/pending/2026-10-18/verify_buy_boundaries.py optimization guard",
+      "observed_exit": 1
+    }
+  ],
+  "failures": [
+    "Initial overlong-string lint failure corrected before execution",
+    "Initial negative-price mutant detection expectation failed; redundant later rejection explains survivor"
+  ],
+  "files": [
+    {
+      "path": "cpp/projects/portfolio_accounting/validated_buy.cpp",
+      "sha256": "ee61bc337db0f2277acb484be8ab94b24461018943068b3cbe37c183b32950c9",
+      "bytes": 1008
+    },
+    {
+      "path": "work/pending/2026-10-18/verify_buy_boundaries.py",
+      "sha256": "ec0b2404fd611077feab82da148d229856e3c491dc4ea3a7493a8c4965a2ed47",
+      "bytes": 5254
+    },
+    {
+      "path": "work/pending/2026-10-18/result.json",
+      "sha256": "4fb852cb9b3ac28d5b9123f5fedfbd124b22741b62ed25b0fcebb74571874d80",
+      "bytes": 695
+    }
+  ]
+}

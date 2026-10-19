@@ -289,3 +289,10 @@ pending manifests before dispatch because October 18's one-commit allowance is a
 this integration. L001f reproduction, L002 timing/future-price invariance, C003b/C004/C005 and
 Q004a/Q005b empirical gates remain. Trend implementation stays conditional. Personal review
 remains Not yet reviewed, and no input blocks the next synthetic lesson.
+
+## 2026-10-19 - integrate October 18 boundary evidence
+
+- Add the independent 8351-case buy oracle to make check without changing the C++ operation.
+- Preserve original result, mutation survivor and pending manifest; record current revalidation.
+- Publish the original-date note with a reverified PDF and advance L001e only.
+- Shared draw one; weekly synthesis and new learning remain in ignored pending storage.

@@ -62,3 +62,15 @@ See [October 17 note](../../../research_log/2026-10-17.md),
 [validation](../../../reports/milestone/2026-10-17-validation.md).
 This does not add shared headers, execution timing, fractional units or market realism.
 Independent boundaries and reproduction remain separate lessons; personal review is unchanged.
+
+## Independent boundaries: L001e
+
+Studied October 18; integrated October 19. Run `make cpp-buy-boundaries`, now part of `make check`.
+A Python direct-product ledger compares 8351 selected integer tuples with the unchanged C++ buy:
+250 accepted, 8101 rejected unchanged. Each fresh sanitizer build executes the whole set twice.
+Two exclusive-equality mutations fail; relaxing the negative-price guard survives because the
+later affordability check still rejects. These selected inputs do not exhaust the domain.
+See [teaching note](../../../research_log/2026-10-18.md),
+[result](../../../experiments/portfolio_accounting/buy-boundaries.json) and
+[validation](../../../reports/milestone/2026-10-18-validation.md).
+Reproduction and L002 decision/execution timing remain separate; no market claim is established.

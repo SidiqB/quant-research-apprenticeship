@@ -164,3 +164,9 @@ cpp-validated-buy:
 	$(PYTHON) scripts/verify_validated_buy.py
 
 cpp-check: cpp-validated-buy
+
+.PHONY: cpp-buy-boundaries
+cpp-buy-boundaries:
+	$(PYTHON) scripts/verify_buy_boundaries.py
+
+cpp-check: cpp-buy-boundaries
