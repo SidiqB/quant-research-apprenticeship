@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-19T11:38:47.649505+00:00",
+  "full_reproductions": 2,
+  "fresh_builds_per_reproduction": 5,
+  "executions_per_build": 2,
+  "two_result_files_identical": true,
+  "controls": [
+    {
+      "name": "changed_archived_cash",
+      "exit": 1,
+      "diagnostic": "AssertionError: ('Archived evidence mismatch', 'marked-wealth')"
+    },
+    {
+      "name": "optimization_guard",
+      "exit": 1
+    }
+  ],
+  "failures": [],
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)"
+}

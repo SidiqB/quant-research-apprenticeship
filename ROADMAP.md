@@ -224,3 +224,20 @@ packages before dispatch because the October 19 draw of one is allocated to this
 The October 18 weekly synthesis remains queued separately. L002 timing/future-price invariance,
 C003b/C004/C005 and Q004a/Q005b gates remain; trend implementation stays conditional. Personal
 review remains Not yet reviewed. No input blocks synthetic continuation.
+
+## L001f reproduction - studied October 19, integrated October 20
+
+The fresh accounting recipe rebuilds five existing C++ programs in temporary storage and
+reproduces all five archived JSON sets exactly. Two full recipes, each with two executions
+per build, agree with the original evidence. All 24 original inputs and seven pending artifacts
+match their hashes/sizes. The changed-cash archive is rejected and actual -O execution refused.
+make cpp-accounting-reproduce now joins make check. Full checks and the four-page teaching PDF
+pass. This proves current-toolchain output reproduction, not identical binaries across platforms,
+sequence correctness or decision timing. The known negative-price mutation survivor is retained.
+
+L001's bounded repository teaching slice is complete; personal review stays Not yet reviewed.
+Next learning is L002a's hand decision/execution timeline, then the event/fee/missing-fill contract
+before a bounded C++ component. Inspect pending manifests before dispatch. October 18's weekly
+synthesis remains queued; preserve newer progress when integrating its plan. L002 timing and
+future-price invariance, C003b/C004/C005 and Q004a/Q005b remain gates. Trend and later strategy
+windows are conditional; no catch-up lessons or empirical claim. No input blocks synthetic work.

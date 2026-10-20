@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-10-20T17:27:25.290205+00:00",
+  "original_inputs_verified": 24,
+  "original_artifacts_verified": 7,
+  "full_reproductions": 2,
+  "fresh_builds_per_reproduction": 5,
+  "executions_per_build": 2,
+  "original_result_exact": true,
+  "changed_archive_rejected": true,
+  "optimization_guard_refused": true,
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)"
+}

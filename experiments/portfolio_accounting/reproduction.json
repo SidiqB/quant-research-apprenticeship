@@ -1,0 +1,32 @@
+{
+  "archived_results_exact": [
+    {
+      "name": "marked-wealth",
+      "result_sha256": "35210d1e8f5bff557d833e747fe29d4d3da82f25fb5db0344065a511d49d97e3"
+    },
+    {
+      "name": "buy-equations",
+      "result_sha256": "d06471352b039461a85be4e076e94f77559483ecc05153353e7b14ba21346052"
+    },
+    {
+      "name": "account-state",
+      "result_sha256": "791fcf290dc557276d05f8133456c6ef876597dfa292ebb06d8a74698594da56"
+    },
+    {
+      "name": "validated-buy",
+      "result_sha256": "2a5c3e1e6772d64c0debb6ea0ae699f781af655a689727fe8b848981b20b0919"
+    },
+    {
+      "name": "buy-boundaries",
+      "result_sha256": "4fb852cb9b3ac28d5b9123f5fedfbd124b22741b62ed25b0fcebb74571874d80"
+    }
+  ],
+  "data_kind": "synthetic_reproduction",
+  "executions_per_build": 2,
+  "existing_build_directory_used": false,
+  "fresh_cpp_builds": 5,
+  "personal_review": "Not yet reviewed",
+  "scope": "reproduction of isolated snapshots and buys; no sequence or timing proof",
+  "study_date": "2026-10-19",
+  "task": "L001f"
+}

@@ -170,3 +170,9 @@ cpp-buy-boundaries:
 	$(PYTHON) scripts/verify_buy_boundaries.py
 
 cpp-check: cpp-buy-boundaries
+
+.PHONY: cpp-accounting-reproduce
+cpp-accounting-reproduce:
+	$(PYTHON) scripts/reproduce_accounting.py
+
+cpp-check: cpp-accounting-reproduce

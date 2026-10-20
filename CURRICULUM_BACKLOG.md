@@ -61,6 +61,15 @@ Questions for Sidiq: which parser prerequisite needs repetition, and would more 
 Licensed access/source-budget input is still needed before data acquisition; no narrower historical
 claim is assumed. No answer blocks the next bounded synthetic lesson. Programme stops December 31.
 
+## Current dispatch - October 20
+
+L001f is published with its October 19 study date. The next learning is L002a, a hand timeline,
+then L002b's event/fee/missing-fill contract, L002c's bounded C++ delayed-order component,
+L002d's future-price invariance, L002e's adverse fill and L002f's reproduction. These are
+separate conditional lessons. The historical trend dates below do not override these prerequisites.
+October 18's pending weekly plan must be merged against this newer progress, never copied over it.
+Inspect local pending manifests before choosing a lesson; publication can lag completed study.
+
 ## Daily slots
 
 | Date | Focus | Bounded step | Evidence | Status |
@@ -78,7 +87,7 @@ claim is assumed. No answer blocks the next bounded synthetic lesson. Programme 
 | 2026-10-15 | Portfolio accounting L001c | Introduce one position struct | Initialized account, hand/Decimal match, swapped-field control; verified four-page note | Studied October 15; integrated October 17 |
 | 2026-10-16 | Portfolio accounting L001d | Implement one validated buy function | Three accepted and eleven rejected unchanged; two mutation controls; verified four-page note | Studied October 17; integrated October 18 |
 | 2026-10-17 | Portfolio accounting L001e | Check boundaries with independent reference | 8351 oracle comparisons; two detected mutations and one explained survivor; verified note | Studied October 18; integrated October 19 |
-| 2026-10-18 | Portfolio accounting L001f | Reproduce and consolidate accounting | Reconcile cash plus holdings; record limits; verified note; weekly synthesis separate | Planned; conditional on prior slot |
+| 2026-10-18 | Portfolio accounting L001f | Reproduce and consolidate accounting | Five fresh builds; exact archived results; changed-archive control; verified note | Studied October 19; integrated October 20 |
 | 2026-10-19 | Trend and momentum | Explain intuition and hand-work one example | Worked example, relevant checks and verified note; Whipsaw | Planned |
 | 2026-10-20 | Trend and momentum | Derive the minimal model; define inputs and units | Worked example, relevant checks and verified note; Whipsaw | Planned |
 | 2026-10-21 | Trend and momentum | Implement one small C++ function or extension | Worked example, relevant checks and verified note; Whipsaw | Planned |
@@ -266,3 +275,20 @@ packages before dispatch because the October 19 draw of one is allocated to this
 The October 18 weekly synthesis remains queued separately. L002 timing/future-price invariance,
 C003b/C004/C005 and Q004a/Q005b gates remain; trend implementation stays conditional. Personal
 review remains Not yet reviewed. No input blocks synthetic continuation.
+
+## L001f reproduction - studied October 19, integrated October 20
+
+The fresh accounting recipe rebuilds five existing C++ programs in temporary storage and
+reproduces all five archived JSON sets exactly. Two full recipes, each with two executions
+per build, agree with the original evidence. All 24 original inputs and seven pending artifacts
+match their hashes/sizes. The changed-cash archive is rejected and actual -O execution refused.
+make cpp-accounting-reproduce now joins make check. Full checks and the four-page teaching PDF
+pass. This proves current-toolchain output reproduction, not identical binaries across platforms,
+sequence correctness or decision timing. The known negative-price mutation survivor is retained.
+
+L001's bounded repository teaching slice is complete; personal review stays Not yet reviewed.
+Next learning is L002a's hand decision/execution timeline, then the event/fee/missing-fill contract
+before a bounded C++ component. Inspect pending manifests before dispatch. October 18's weekly
+synthesis remains queued; preserve newer progress when integrating its plan. L002 timing and
+future-price invariance, C003b/C004/C005 and Q004a/Q005b remain gates. Trend and later strategy
+windows are conditional; no catch-up lessons or empirical claim. No input blocks synthetic work.

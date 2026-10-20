@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-20
+
+Integrated the October 19 L001f fresh accounting reproduction after original input/artifact
+hashes matched. Added the unchanged recipe, Make target, original result and validation, current
+integration evidence, verified teaching note/PDF and progress. Five fresh programs reproduce
+archived outputs; changed-archive and -O controls pass. Full checks pass. One coherent integration
+uses the shared draw of one; new timeline study stays pending. No personal review or timing
+completion is inferred. The October 18 weekly synthesis remains queued.
+
 ## 2026-10-17
 
 Integrated October 15's L001c account struct, golden fixture and independent Decimal verifier

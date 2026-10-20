@@ -74,3 +74,16 @@ See [teaching note](../../../research_log/2026-10-18.md),
 [result](../../../experiments/portfolio_accounting/buy-boundaries.json) and
 [validation](../../../reports/milestone/2026-10-18-validation.md).
 Reproduction and L002 decision/execution timing remain separate; no market claim is established.
+
+## Fresh reproduction: L001f
+
+Studied October 19; integrated October 20. Run `make cpp-accounting-reproduce`, part of `make check`.
+The recipe compiles five existing C++ programs in temporary directories, runs each twice through
+its independent verifier and matches five archived JSON files exactly. Existing build executables
+are not used. The two buy drivers additionally use UBSan. A changed-cash scratch archive fails
+comparison; disabled assertions are refused. Source and original evidence bytes are preserved.
+See [teaching note](../../../research_log/2026-10-19.md),
+[result](../../../experiments/portfolio_accounting/reproduction.json) and
+[validation](../../../reports/milestone/2026-10-19-validation.md).
+L001's bounded teaching slice is complete. This is current-toolchain output reproduction, not
+bit-identical binary reproduction, an event-sequence proof or personal mastery. L002 timing follows.
