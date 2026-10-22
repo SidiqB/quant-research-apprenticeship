@@ -305,3 +305,10 @@ remains Not yet reviewed, and no input blocks the next synthetic lesson.
 - Preserve original result, mutation survivor and pending manifest; record current revalidation.
 - Publish the original-date note with a reverified PDF and advance L001e only.
 - Shared draw one; weekly synthesis and new learning remain in ignored pending storage.
+
+## 22 October 2026 - integrate October 18 weekly synthesis
+
+- Preserve the original weekly evidence, manifest and validation; verify all 77 provenance entries.
+- Merge paced L002a-f prerequisites with newer L001e/f progress; retain data-access gates.
+- Regenerate and verify the weekly PDF; current full checks pass without production changes.
+- Keep October 20 L002a and today's new lesson separate under the shared one-commit allowance.

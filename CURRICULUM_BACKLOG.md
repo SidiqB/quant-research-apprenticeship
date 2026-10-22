@@ -61,14 +61,30 @@ Questions for Sidiq: which parser prerequisite needs repetition, and would more 
 Licensed access/source-budget input is still needed before data acquisition; no narrower historical
 claim is assumed. No answer blocks the next bounded synthetic lesson. Programme stops December 31.
 
-## Current dispatch - October 20
+## October 18 weekly refinement - integrated October 22
 
-L001f is published with its October 19 study date. The next learning is L002a, a hand timeline,
-then L002b's event/fee/missing-fill contract, L002c's bounded C++ delayed-order component,
-L002d's future-price invariance, L002e's adverse fill and L002f's reproduction. These are
-separate conditional lessons. The historical trend dates below do not override these prerequisites.
-October 18's pending weekly plan must be merged against this newer progress, never copied over it.
-Inspect local pending manifests before choosing a lesson; publication can lag completed study.
+The October 12-18 synthesis is integrated with its original observation date. Its proposed
+prerequisite week is merged with current L001e/f completion, rather than overwriting newer
+progress. L001f was studied October 19 and integrated October 20; L002a was studied October 20
+and is complete locally, pending integration. No October 21 lesson package was located; no
+completion or reason is inferred. Inspect ignored pending manifests before daily dispatch.
+
+Next learning is L002b: event ordering, fee timing and missing-fill policy. Then L002c implements
+one fixed delayed order in C++; L002d tests future-price invariance with a leaking control;
+L002e explains an adverse fill; L002f reproduces and consolidates. Each is a separate lesson.
+Do not introduce a generic event engine, headers, enums and vectors together. Repeat or split
+prerequisites when needed; no catch-up workload or extra lesson to fill a commit draw.
+
+The former October 19-25 trend window is deferred. Original dates below are earliest planning
+slots and may be displaced; they are not completion dates. October 26 pairs and subsequent
+families stay conditional. C004 returns/vectors precedes rolling trend; C005 statistics precedes
+volatility scaling. C003b remains a separate CLI slice. Q011/Q012/Q013 and Q004a/Q005b empirical
+gates remain. No date permits skipping a prerequisite. Stop new work after December 31.
+
+The report and its current integration validation are in reports/weekly. October 20 L002a remains
+an independent integration unit. Today's draw of one funds this weekly integration; any new
+lesson stays under ignored work/pending/2026-10-22/. Personal review stays Not yet reviewed.
+No input blocks synthetic continuation; lawful access/source evidence is needed before real data.
 
 ## Daily slots
 
@@ -88,13 +104,13 @@ Inspect local pending manifests before choosing a lesson; publication can lag co
 | 2026-10-16 | Portfolio accounting L001d | Implement one validated buy function | Three accepted and eleven rejected unchanged; two mutation controls; verified four-page note | Studied October 17; integrated October 18 |
 | 2026-10-17 | Portfolio accounting L001e | Check boundaries with independent reference | 8351 oracle comparisons; two detected mutations and one explained survivor; verified note | Studied October 18; integrated October 19 |
 | 2026-10-18 | Portfolio accounting L001f | Reproduce and consolidate accounting | Five fresh builds; exact archived results; changed-archive control; verified note | Studied October 19; integrated October 20 |
-| 2026-10-19 | Trend and momentum | Explain intuition and hand-work one example | Worked example, relevant checks and verified note; Whipsaw | Planned |
-| 2026-10-20 | Trend and momentum | Derive the minimal model; define inputs and units | Worked example, relevant checks and verified note; Whipsaw | Planned |
-| 2026-10-21 | Trend and momentum | Implement one small C++ function or extension | Worked example, relevant checks and verified note; Whipsaw | Planned |
-| 2026-10-22 | Trend and momentum | Test boundary cases and an independent oracle | Worked example, relevant checks and verified note; Whipsaw | Planned |
-| 2026-10-23 | Trend and momentum | Measure costs or run a deliberate failure scenario | Worked example, relevant checks and verified note; Whipsaw | Planned |
-| 2026-10-24 | Trend and momentum | Reproduce and teach back; repair unclear parts | Worked example, relevant checks and verified note; Whipsaw | Planned |
-| 2026-10-25 | Trend and momentum | Consolidate evidence and revise next week | Worked example, relevant checks and verified note; Whipsaw | Planned |
+| 2026-10-19 | L001f accounting | Reproduce and consolidate existing accounting | Fresh reproduction; fee/wealth/rejection reconciliation; verified note | Studied October 19; integrated October 20; same L001f evidence as original October 18 slot |
+| 2026-10-20 | L002a timing intuition | Separate decision information from later execution | Hand timeline; known fields; no look-ahead; verified note | Studied October 20; complete locally, pending integration |
+| 2026-10-21 | L002b delayed-event contract | Define one order and event ordering | Known inputs, fee and missing-fill policy before implementation; verified note | Next learning October 22; inspect pending evidence before dispatch |
+| 2026-10-22 | L002c fixed delayed order | Implement one bounded C++ event trace | Hand-known output; only necessary new syntax explained; verified note | Planned; conditional on previous prerequisite |
+| 2026-10-23 | L002d future-price invariance | Mutate later prices independently | Earlier decision unchanged; later fill can change; detect leaking control; verified note | Planned; conditional on previous prerequisite |
+| 2026-10-24 | L002e adverse fill | Explain one timing/cost failure scenario | Hand reconciliation; no assumed execution at decision mark; verified note | Planned; conditional on previous prerequisite |
+| 2026-10-25 | L002f timing readiness | Reproduce and consolidate; weekly synthesis separate | Repeat bounded trace; record gaps; no trend completion inferred; verified note | Planned; conditional on previous prerequisite |
 | 2026-10-26 | Statistical arbitrage I | Explain intuition and hand-work one example | Worked example, relevant checks and verified note; Correlation is not cointegration | Planned |
 | 2026-10-27 | Statistical arbitrage I | Derive the minimal model; define inputs and units | Worked example, relevant checks and verified note; Correlation is not cointegration | Planned |
 | 2026-10-28 | Statistical arbitrage I | Implement one small C++ function or extension | Worked example, relevant checks and verified note; Correlation is not cointegration | Planned |

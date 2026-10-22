@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "original_work_date": "2026-10-18",
+  "created_at": "2026-10-18T15:18:43.575148+00:00",
+  "task": "Weekly quantitative research synthesis October 12-18",
+  "purpose": "Weekly evidence synthesis and prerequisite backlog refinement; no duplicate morning study",
+  "status": "pending_exhausted_shared_commit_budget",
+  "baseline_commit": "0cbaa0246cc4ffa17fc5f7072d156d5b384af40d",
+  "budget": 1,
+  "actual_commits_today": [
+    "0cbaa0246cc4ffa17fc5f7072d156d5b384af40d"
+  ],
+  "weekly_new_commits": 0,
+  "personal_review": "Not yet reviewed",
+  "inputs": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "9c6357edfd2e3a738a57f2fb8e1d530efa483a9701e728f35f6d457e436428f5",
+      "bytes": 648
+    },
+    {
+      "path": "BACKLOG.md",
+      "sha256": "a01f0f6d1cbe33f454aca96f023643feb827cc4fe9a566a2cd6cf19bcbaae139",
+      "bytes": 45509
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "a1e8178fce560333b16cee71b5bb4cfe857bfe210a7f0a4e53089bec5387ecac",
+      "bytes": 20410
+    },
+    {
+      "path": "COMMIT_CADENCE.md",
+      "sha256": "d0e7c4a5652774dc0550c3e45909c765d971ea6cf6037e4b496ebf03ae76db2e",
+      "bytes": 2462
+    },
+    {
+      "path": "CPP_LEARNING_PLAN.md",
+      "sha256": "c805c6405c5f8bd812ceef218f60caa0f2b5a587cd1b0c221545b4a738956998",
+      "bytes": 15952
+    },
+    {
+      "path": "CURRICULUM_BACKLOG.md",
+      "sha256": "24d58a7b67f97e91e7ecfeca6801a1ed35c4bf6f3bff3b7d531cb2c080b38c5c",
+      "bytes": 29142
+    },
+    {
+      "path": "Makefile",
+      "sha256": "62e0a5a3ec4592cacc55180c2b6cbf9d123d68f0c9ae7d559e4468b5c37ddb8d",
+      "bytes": 6861
+    },
+    {
+      "path": "OPERATIONS.md",
+      "sha256": "8b23eb301eb464407848a3e1d8d54699f5770ae2f73b038d2318a24db5454e0f",
+      "bytes": 5093
+    },
+    {
+      "path": "QUANT_CURRICULUM.md",
+      "sha256": "3f507b1d8fde3b04b92e2c2d69b157625ea58ff2c370773de7f0d6efef0d825f",
+      "bytes": 10854
+    },
+    {
+      "path": "README.md",
+      "sha256": "455ae57e041d7e860f74b3329abbb0b3ae3db89962dd5d0df5a75e68720a854a",
+      "bytes": 14704
+    },
+    {
+      "path": "ROADMAP.md",
+      "sha256": "51b7a006b1d161ca2650b281d232cbb1b46c4b04bb96aac23e064be3e4321be6",
+      "bytes": 16537
+    },
+    {
+      "path": "career_research/role_skill_analysis.md",
+      "sha256": "db10ea0abce0e2fca35aad349afa816161b210d177dc699c34ea2ac0ccc60aee",
+      "bytes": 4212
+    },
+    {
+      "path": "configs/automation/weekly-prompt.md",
+      "sha256": "57c4927cd07a52045f1419baa0b613e1ec7ea65434487873069fa0135cbe3e82",
+      "bytes": 1742
+    },
+    {
+      "path": "cpp/projects/portfolio_accounting/README.md",
+      "sha256": "b76ffa6c8d361407947e1526be287d30fd37978c46d38741165b92614ede7b01",
+      "bytes": 4350
+    },
+    {
+      "path": "cpp/projects/portfolio_accounting/account_state.cpp",
+      "sha256": "6f742dd8330e162d09c109344494031713dc9df2384ec56e47770f502ecf6cb4",
+      "bytes": 831
+    },
+    {
+      "path": "cpp/projects/portfolio_accounting/account_state_expected.txt",
+      "sha256": "cef3d63eb643edffb17800f16751a9e6afc7330fb0639f0506e8120fb77bdc45",
+      "bytes": 98
+    },
+    {
+      "path": "cpp/projects/portfolio_accounting/buy_equations.cpp",
+      "sha256": "f444c376440ba3bd7a88bdb1706f70fda9851a351c463951e35bf2a15c3243e6",
+      "bytes": 1298
+    },
+    {
+      "path": "cpp/projects/portfolio_accounting/buy_expected.txt",
+      "sha256": "dcef5d01d7d84ac303359e6fb2e1cb9be50f1d5c942c167cc1f6d53c4dde479e",
+      "bytes": 212
+    },
+    {
+      "path": "cpp/projects/portfolio_accounting/expected.txt",
+      "sha256": "7e1c436a0031c23ffb994b63304e794fdab798408bb0a9bca660da2dcf539060",
+      "bytes": 198
+    },
+    {
+      "path": "cpp/projects/portfolio_accounting/marked_wealth.cpp",
+      "sha256": "cc04be106900377fb14675026043038482ad20932e67106f409066284dd11463",
+      "bytes": 1133
+    },
+    {
+      "path": "cpp/projects/portfolio_accounting/validated_buy.cpp",
+      "sha256": "ee61bc337db0f2277acb484be8ab94b24461018943068b3cbe37c183b32950c9",
+      "bytes": 1008
+    },
+    {
+      "path": "experiments/portfolio_accounting/account-state.json",
+      "sha256": "791fcf290dc557276d05f8133456c6ef876597dfa292ebb06d8a74698594da56",
+      "bytes": 522
+    },
+    {
+      "path": "experiments/portfolio_accounting/buy-equations.json",
+      "sha256": "d06471352b039461a85be4e076e94f77559483ecc05153353e7b14ba21346052",
+      "bytes": 702
+    },
+    {
+      "path": "experiments/portfolio_accounting/integration-2026-10-17.json",
+      "sha256": "227b852c3092a78885153000e46e1f88ec879dc9612d3a6ed494e9c8a13adb8b",
+      "bytes": 6114
+    },
+    {
+      "path": "experiments/portfolio_accounting/integration-2026-10-18.json",
+      "sha256": "73f114d2c7d47ea33938cbce9f3c153b52420886be9623bbb35709c1469993db",
+      "bytes": 2088
+    },
+    {
+      "path": "experiments/portfolio_accounting/integration-validation-2026-10-17.json",
+      "sha256": "63f2a870ea4b27b35daecb699fb5ce88d01593e2c977dd1f99daa54416efb604",
+      "bytes": 672
+    },
+    {
+      "path": "experiments/portfolio_accounting/marked-wealth.json",
+      "sha256": "35210d1e8f5bff557d833e747fe29d4d3da82f25fb5db0344065a511d49d97e3",
+      "bytes": 543
+    },
+    {
+      "path": "experiments/portfolio_accounting/pending-2026-10-17-manifest.json",
+      "sha256": "b2bfaccac0ed0161cee65ea520dba8d490255b3132c7ffbd238b4910cb8f338a",
+      "bytes": 5480
+    },
+    {
+      "path": "experiments/portfolio_accounting/validated-buy.json",
+      "sha256": "2a5c3e1e6772d64c0debb6ea0ae699f781af655a689727fe8b848981b20b0919",
+      "bytes": 767
+    },
+    {
+      "path": "experiments/portfolio_accounting/validation-2026-10-13.json",
+      "sha256": "dbdf451b4abd74b50debeaa5f78667e35331b7baca4c3f6b9e764f21e49064e5",
+      "bytes": 1139
+    },
+    {
+      "path": "experiments/portfolio_accounting/validation-2026-10-14.json",
+      "sha256": "46afa44a178c8cb366828c4cf4d04264beb8e24c36204e0cedc93c2df83d17b1",
+      "bytes": 1527
+    },
+    {
+      "path": "experiments/portfolio_accounting/validation-2026-10-15.json",
+      "sha256": "70c1d7e688f6eb7d3ce7cb7b44d5fa384331b6c3f801ac81879df1506b89bcde",
+      "bytes": 665
+    },
+    {
+      "path": "experiments/portfolio_accounting/validation-2026-10-17.json",
+      "sha256": "af3c773673b9c0a1156e4986b8e0fcb9a9bd83a82f22f644be074da3c7914ccc",
+      "bytes": 837
+    },
+    {
+      "path": "experiments/years_parser/readiness-2026-10-12.json",
+      "sha256": "167cedab82187aad57ea0fd98b51d9d2756d11a699728425cd0dc9e5ccc0c618",
+      "bytes": 1544
+    },
+    {
+      "path": "reports/milestone/2026-10-10-validation.md",
+      "sha256": "5a28474fd40fbd2765d880c069a147d6e0c134bd5bbcc0b743bf9f59c8495556",
+      "bytes": 7778
+    },
+    {
+      "path": "reports/milestone/2026-10-11-validation.md",
+      "sha256": "6bcef960c6ff86a58223154f578f38979f60b6a9bf194671d3e7f9d31f6f5dbb",
+      "bytes": 5452
+    },
+    {
+      "path": "reports/milestone/2026-10-12-validation.md",
+      "sha256": "e796f3ab4851d3a87c87f62e4dd8fa890745fd18e7798a4b397c119691fba684",
+      "bytes": 5763
+    },
+    {
+      "path": "reports/milestone/2026-10-13-validation.md",
+      "sha256": "5cc3f037efa08bd7981e1322afacb05c0bbef841fbc5de3063be279431337991",
+      "bytes": 5097
+    },
+    {
+      "path": "reports/milestone/2026-10-14-validation.md",
+      "sha256": "3d03f23fa93247394d557b0a8a99237f3d96b67f0cb11068c1cfa38fcccc6821",
+      "bytes": 6031
+    },
+    {
+      "path": "reports/milestone/2026-10-15-validation.md",
+      "sha256": "bce632c17021fed9ec2e8760a82c845da8e16a1ff812d2ef2856387cbacce894",
+      "bytes": 7212
+    },
+    {
+      "path": "reports/milestone/2026-10-17-validation.md",
+      "sha256": "a052b402a2d9e551f3adda68b7c845a206100b8af30dcac4664b23778c77a3f7",
+      "bytes": 5666
+    },
+    {
+      "path": "reports/weekly/2026-10-11-integration.json",
+      "sha256": "491406297c98945d164a7917b95c75d9b83c5130be078c9c8199735870485d1e",
+      "bytes": 10588
+    },
+    {
+      "path": "reports/weekly/2026-10-11-synthesis.md",
+      "sha256": "f12148ba4887feb6ce8567c902fbd931b2d01e3af1ae5720ea16b0b31309453a",
+      "bytes": 17703
+    },
+    {
+      "path": "reports/weekly/2026-10-11-validation.md",
+      "sha256": "046a39b31582535d4f2d9582d8e284e8b63977f68f753553a2e11109cff02541",
+      "bytes": 7598
+    },
+    {
+      "path": "requirements-lock.txt",
+      "sha256": "767df194abce2c07fbb9d0ed82e495c76db73bfc617bcf5d595742be667330fa",
+      "bytes": 274
+    },
+    {
+      "path": "research_log/2026-10-10.md",
+      "sha256": "253fe7da167989262a9ce0f0549c92d96d614e7c1a5ccb6c07b7063fa58208a9",
+      "bytes": 9844
+    },
+    {
+      "path": "research_log/2026-10-11.md",
+      "sha256": "4a61f1d79e3cd561a385894d83e737dd87f66d62cff03bf88f66b56686757ae6",
+      "bytes": 9753
+    },
+    {
+      "path": "research_log/2026-10-12.md",
+      "sha256": "7a48a8f554478d367e4f24b65407d770df7fb46a9c98467a9a14c7da732e7ba7",
+      "bytes": 10807
+    },
+    {
+      "path": "research_log/2026-10-13.md",
+      "sha256": "3acf943f13c31307e2f7beaa364265611466bfc423c10900b6dd096930359824",
+      "bytes": 9982
+    },
+    {
+      "path": "research_log/2026-10-14.md",
+      "sha256": "6cea84da3e14e4e25a6bfad34186f66891c88650680b3e281924af5d474c8b76",
+      "bytes": 11612
+    },
+    {
+      "path": "research_log/2026-10-15.md",
+      "sha256": "b7ff631e9af609da197eefbb9f764617ae5eced7325c892d81e0928302183099",
+      "bytes": 12191
+    },
+    {
+      "path": "research_log/2026-10-17.md",
+      "sha256": "964312ae4e1c3af67d307a468f93130b98592deb4443563cdf8f2228b9cb5be4",
+      "bytes": 12815
+    },
+    {
+      "path": "scripts/render_note.py",
+      "sha256": "c635bd6eba7df1ac731e6734bb0c37e4240a5ae7df0ab4d4d45d339e67cabb2c",
+      "bytes": 6239
+    },
+    {
+      "path": "scripts/verify_account_state.py",
+      "sha256": "73ae3d0c30c596db8cce7e12e077b5d73ca6226dbe72586af3c986c7d3fee678",
+      "bytes": 2703
+    },
+    {
+      "path": "scripts/verify_buy_equations.py",
+      "sha256": "b4fde4177dd0748559679f37cc30c9a6f831adcd0600de8a4e99105353faec4a",
+      "bytes": 3635
+    },
+    {
+      "path": "scripts/verify_fractional_failure.py",
+      "sha256": "53f7785b5896287a9da082d5b2c524ba38561d415628a714d83cfc1824b5f53d",
+      "bytes": 2059
+    },
+    {
+      "path": "scripts/verify_marked_wealth.py",
+      "sha256": "2819ba8286a3b7de6c7c60544c7a4f8da117b0317e2000bc6c089c92db4ef3f4",
+      "bytes": 2405
+    },
+    {
+      "path": "scripts/verify_validated_buy.py",
+      "sha256": "15b34eeee506865adfbb8327d539d1a2e23b723278142d00664b38d6543c9968",
+      "bytes": 3986
+    },
+    {
+      "path": "scripts/verify_years_readiness.py",
+      "sha256": "4abcf5ebdc957bbdcf9e7a8cc692e766e1de8772045d6575aab527cf1e08091e",
+      "bytes": 2972
+    },
+    {
+      "path": "work/pending/2026-10-18/2026-10-18-learning-note.md",
+      "sha256": "f0773927804e1627768e5b23a6ef2d43fc4c9389ecdc7968b76f8e73fce16cce",
+      "bytes": 12402
+    },
+    {
+      "path": "work/pending/2026-10-18/2026-10-18-learning-note.pdf",
+      "sha256": "d63b804d3a3c30bef7c1a33d2410432b39562dff10d3c54fb59a27d5dfe74768",
+      "bytes": 13031
+    },
+    {
+      "path": "work/pending/2026-10-18/2026-10-18-validation.md",
+      "sha256": "d99d5ece3f5e75185cc21fa3008d5f4ca9ef7ac317d5925435e23aeced9b6188",
+      "bytes": 3540
+    },
+    {
+      "path": "work/pending/2026-10-18/experiment-validation.json",
+      "sha256": "bdcc0206bc9de8a1bd9b0e520ef7b7478a55a0a71a4ba7301ea7b48a80bc5ca7",
+      "bytes": 1801
+    },
+    {
+      "path": "work/pending/2026-10-18/integration-manifest.json",
+      "sha256": "ee669f2e071701ef9a27d58f6f041f2079919a8b5232ac651e31a3a005d0dbc5",
+      "bytes": 5097
+    },
+    {
+      "path": "work/pending/2026-10-18/progress.json",
+      "sha256": "f0720b0909ca896677c4ee3cac7410656e803a70dc7eb4d20ffac3619c8218c6",
+      "bytes": 649
+    },
+    {
+      "path": "work/pending/2026-10-18/result.json",
+      "sha256": "4fb852cb9b3ac28d5b9123f5fedfbd124b22741b62ed25b0fcebb74571874d80",
+      "bytes": 695
+    },
+    {
+      "path": "work/pending/2026-10-18/verify_buy_boundaries.py",
+      "sha256": "ec0b2404fd611077feab82da148d229856e3c491dc4ea3a7493a8c4965a2ed47",
+      "bytes": 5254
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "work/pending/2026-10-18/weekly/2026-10-18-synthesis.md",
+      "sha256": "7686affa7289c04ccf40d0f337793c017ff4e21232f51e5f5e87f3be710854f0",
+      "bytes": 17572,
+      "intended_destination": "reports/weekly/2026-10-18-synthesis.md"
+    },
+    {
+      "path": "work/pending/2026-10-18/weekly/2026-10-18-synthesis.pdf",
+      "sha256": "d220aa1c97f0ab6d595d6ace15e47a09ac904831798fc198dfe6957c5d24e44c",
+      "bytes": 19366,
+      "intended_destination": "reports/weekly/2026-10-18-synthesis.pdf"
+    },
+    {
+      "path": "work/pending/2026-10-18/weekly/2026-10-18-validation.md",
+      "sha256": "f6519eae509ddce462570788aaaa24b163cf41a71868971e184caab1de49db8f",
+      "bytes": 5791,
+      "intended_destination": "reports/weekly/2026-10-18-validation.md"
+    },
+    {
+      "path": "work/pending/2026-10-18/weekly/CURRICULUM_BACKLOG.md",
+      "sha256": "cdc76a4d47b4aaf4c04f058ac48bfe862079baab1313d80c5947235a9745b395",
+      "bytes": 32397,
+      "intended_destination": "merge_into_CURRICULUM_BACKLOG.md"
+    },
+    {
+      "path": "work/pending/2026-10-18/weekly/curriculum-backlog.patch",
+      "sha256": "ee90da987d35bca6928601588f3c2a7fd5c10d42ef5ebbd9d0fe13ada515678e",
+      "bytes": 7897,
+      "intended_destination": "merge_into_CURRICULUM_BACKLOG.md"
+    }
+  ],
+  "qa_evidence": [
+    {
+      "path": "work/pending/2026-10-18/weekly/qa/make-check.log",
+      "sha256": "042677624e59522a378828ff13dddce057ddc127a9717263b58b25a6dd8569f3",
+      "bytes": 7018
+    },
+    {
+      "path": "work/pending/2026-10-18/weekly/qa/evidence-audit.json",
+      "sha256": "9029c90d0ece9a7e34510bc5a426f7f7a6bc915b07ff2f8dfb8fce7537c43854",
+      "bytes": 2468
+    },
+    {
+      "path": "work/pending/2026-10-18/weekly/qa/audit_pdf.py",
+      "sha256": "d3d0615e8a2036bf51a807964b24a55e9133dbdc444c8078ea8fdee76d3a3663",
+      "bytes": 1334
+    },
+    {
+      "path": "work/pending/2026-10-18/weekly/qa/pdf-text.txt",
+      "sha256": "6325624c1aec6245a5783685185a3b50fb0b98244e695be461bafaf64d3bce26",
+      "bytes": 17089
+    },
+    {
+      "path": "work/pending/2026-10-18/weekly/qa/render.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "checks": [
+    "make check: 608 Python tests; Ruff/57 files; mypy/21 files; existing C++/accounting checks pass",
+    "pip --no-cache-dir check passed",
+    "Morning 10 input and 7 artifact hashes/sizes verified unchanged",
+    "Six-page PDF exact 14641 normalized characters; all final pages visually inspected",
+    "Backlog patch passes strict application/whitespace check; tracked checkout unchanged",
+    "Remote main matches; exact-head CI success; zero open issues"
+  ],
+  "integration_instructions": [
+    "Hold shared lock, persist date draw and count actual committer-date commits; no retrospective draw",
+    "Inspect both October 18 manifests and changed inputs; L001e first, weekly unit if allowance remains",
+    "Preserve work dates and original evidence; update publication/path text and regenerate/reverify PDFs",
+    "Merge backlog patch with current progress, never overwrite newer completed work; keep new daily dispatch L001f then L002 prerequisites",
+    "Reconcile README, roadmap, C++ plan and changelog only for actual integrated progress",
+    "Validate current code and QA, scan intended files, commit coherent units, push normally under standing authority and verify remote; save receipt",
+    "No personal-review approval is required; keep Not yet reviewed until confirmed; Q004a/Q005b gates and December 31 stop remain"
+  ]
+}

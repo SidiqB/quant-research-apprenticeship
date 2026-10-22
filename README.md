@@ -243,3 +243,13 @@ before a bounded C++ component. Inspect pending manifests before dispatch. Octob
 synthesis remains queued; preserve newer progress when integrating its plan. L002 timing and
 future-price invariance, C003b/C004/C005 and Q004a/Q005b remain gates. Trend and later strategy
 windows are conditional; no catch-up lessons or empirical claim. No input blocks synthetic work.
+
+## Weekly evidence integrated October 22
+
+The [October 12-18 synthesis](reports/weekly/2026-10-18-synthesis.md) and
+[verified PDF](reports/weekly/2026-10-18-synthesis.pdf) preserve the original study period;
+[current validation](reports/weekly/2026-10-22-integration-validation.md) records revalidation.
+L001 accounting is complete within its bounded teaching scope. L002a's October 20 timeline
+is locally complete pending integration; L002b's event/fee/missing-fill contract comes next.
+The curriculum now explicitly defers trend for timing prerequisites; later windows are conditional.
+Inspect pending manifests before dispatch. Personal review remains Not yet reviewed.

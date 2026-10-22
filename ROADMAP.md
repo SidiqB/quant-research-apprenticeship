@@ -241,3 +241,17 @@ before a bounded C++ component. Inspect pending manifests before dispatch. Octob
 synthesis remains queued; preserve newer progress when integrating its plan. L002 timing and
 future-price invariance, C003b/C004/C005 and Q004a/Q005b remain gates. Trend and later strategy
 windows are conditional; no catch-up lessons or empirical claim. No input blocks synthetic work.
+
+## Weekly refinement - written October 18, integrated October 22
+
+The October 12-18 synthesis and regenerated verified PDF are in reports/weekly. Original evidence
+and current integration validation are kept separate. All 67 original inputs, five artifacts and
+five QA records verify, including eight changed inputs checked at their original Git baseline.
+The saved plan is merged against completed L001e/f progress. L002a was studied October 20 and
+is complete locally pending publication; L002b's event/fee/missing-fill contract is next.
+No October 21 package was found; no completion or reason is inferred. Inspect pending manifests.
+
+Trend's October 19-25 window is deferred for L002a-f prerequisites; later strategy windows remain
+conditional. C004 returns/vectors, C005 statistics, C003b CLI, Q011/Q012/Q013 and Q004a/Q005b gates
+are preserved. No extra lesson is added to fill today's draw of one. Full checks pass 608 Python
+tests and existing C++/quality checks. Personal review stays Not yet reviewed; no empirical claim.
