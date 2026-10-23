@@ -1,0 +1,21 @@
+{
+  "task": "L002a",
+  "data_kind": "synthetic_hand_timeline",
+  "study_date": "2026-10-20",
+  "time_unit": "ordered teaching events, not wall-clock seconds",
+  "initial_cash": 800,
+  "initial_shares": 4,
+  "decision_event": 1,
+  "decision_input": {"price": 50, "available_event": 0},
+  "rule": "request two shares when the available mark is at most 50",
+  "order_quantity": 2,
+  "fill_event": 2,
+  "fill_price": 52,
+  "fee": 3,
+  "rows": [
+    {"event": 0, "kind": "observation", "mark": 50, "cash": 800, "shares": 4, "wealth": 1000},
+    {"event": 1, "kind": "decision", "mark": 50, "cash": 800, "shares": 4, "wealth": 1000},
+    {"event": 2, "kind": "assumed_fill", "mark": 52, "cash": 693, "shares": 6, "wealth": 1005},
+    {"event": 3, "kind": "later_mark", "mark": 49, "cash": 693, "shares": 6, "wealth": 987}
+  ]
+}

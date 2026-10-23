@@ -105,7 +105,7 @@ No input blocks synthetic continuation; lawful access/source evidence is needed 
 | 2026-10-17 | Portfolio accounting L001e | Check boundaries with independent reference | 8351 oracle comparisons; two detected mutations and one explained survivor; verified note | Studied October 18; integrated October 19 |
 | 2026-10-18 | Portfolio accounting L001f | Reproduce and consolidate accounting | Five fresh builds; exact archived results; changed-archive control; verified note | Studied October 19; integrated October 20 |
 | 2026-10-19 | L001f accounting | Reproduce and consolidate existing accounting | Fresh reproduction; fee/wealth/rejection reconciliation; verified note | Studied October 19; integrated October 20; same L001f evidence as original October 18 slot |
-| 2026-10-20 | L002a timing intuition | Separate decision information from later execution | Hand timeline; known fields; no look-ahead; verified note | Studied October 20; complete locally, pending integration |
+| 2026-10-20 | L002a timing intuition | Separate decision information from later execution | Hand timeline; known fields; no look-ahead; verified note | Studied October 20; integrated October 23 |
 | 2026-10-21 | L002b delayed-event contract | Define one order and event ordering | Known inputs, fee and missing-fill policy before implementation; verified note | Next learning October 22; inspect pending evidence before dispatch |
 | 2026-10-22 | L002c fixed delayed order | Implement one bounded C++ event trace | Hand-known output; only necessary new syntax explained; verified note | Planned; conditional on previous prerequisite |
 | 2026-10-23 | L002d future-price invariance | Mutate later prices independently | Earlier decision unchanged; later fill can change; detect leaking control; verified note | Planned; conditional on previous prerequisite |
@@ -308,3 +308,14 @@ before a bounded C++ component. Inspect pending manifests before dispatch. Octob
 synthesis remains queued; preserve newer progress when integrating its plan. L002 timing and
 future-price invariance, C003b/C004/C005 and Q004a/Q005b remain gates. Trend and later strategy
 windows are conditional; no catch-up lessons or empirical claim. No input blocks synthetic work.
+
+## L002a timeline - studied 2026-10-20, integrated 23 October
+
+Four hand rows match per-share Decimal accounting; three corrupt fixtures are rejected.
+Original pending provenance and results are preserved in experiments/portfolio_accounting.
+The fixture verifier now joins make check; current checks and regenerated teaching PDF are
+validated before publication. Original work date is retained; personal review stays Not yet reviewed.
+L002a is integrated. L002b was studied October 22 and remains separately pending;
+next new learning is L002c, one bounded C++ delayed order. L002d-f timing/invariance and
+C003b/C004/C005/Q011-13/Q004a/Q005b remain gates. Trend/later windows remain conditional.
+No empirical result or personal mastery is claimed. No input blocks synthetic continuation.

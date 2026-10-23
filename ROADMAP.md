@@ -255,3 +255,14 @@ Trend's October 19-25 window is deferred for L002a-f prerequisites; later strate
 conditional. C004 returns/vectors, C005 statistics, C003b CLI, Q011/Q012/Q013 and Q004a/Q005b gates
 are preserved. No extra lesson is added to fill today's draw of one. Full checks pass 608 Python
 tests and existing C++/quality checks. Personal review stays Not yet reviewed; no empirical claim.
+
+## L002a timeline - studied 2026-10-20, integrated 23 October
+
+Four hand rows match per-share Decimal accounting; three corrupt fixtures are rejected.
+Original pending provenance and results are preserved in experiments/portfolio_accounting.
+The fixture verifier now joins make check; current checks and regenerated teaching PDF are
+validated before publication. Original work date is retained; personal review stays Not yet reviewed.
+L002a is integrated. L002b was studied October 22 and remains separately pending;
+next new learning is L002c, one bounded C++ delayed order. L002d-f timing/invariance and
+C003b/C004/C005/Q011-13/Q004a/Q005b remain gates. Trend/later windows remain conditional.
+No empirical result or personal mastery is claimed. No input blocks synthetic continuation.

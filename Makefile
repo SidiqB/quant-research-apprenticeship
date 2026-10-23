@@ -176,3 +176,9 @@ cpp-accounting-reproduce:
 	$(PYTHON) scripts/reproduce_accounting.py
 
 cpp-check: cpp-accounting-reproduce
+
+.PHONY: decision-timeline
+decision-timeline:
+	$(PYTHON) scripts/verify_decision_timeline.py
+
+check: decision-timeline

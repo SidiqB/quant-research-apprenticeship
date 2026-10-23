@@ -312,3 +312,14 @@ remains Not yet reviewed, and no input blocks the next synthetic lesson.
 - Merge paced L002a-f prerequisites with newer L001e/f progress; retain data-access gates.
 - Regenerate and verify the weekly PDF; current full checks pass without production changes.
 - Keep October 20 L002a and today's new lesson separate under the shared one-commit allowance.
+
+## L002a timeline - studied 2026-10-20, integrated 23 October
+
+Four hand rows match per-share Decimal accounting; three corrupt fixtures are rejected.
+Original pending provenance and results are preserved in experiments/portfolio_accounting.
+The fixture verifier now joins make check; current checks and regenerated teaching PDF are
+validated before publication. Original work date is retained; personal review stays Not yet reviewed.
+L002a is integrated. L002b was studied October 22 and remains separately pending;
+next new learning is L002c, one bounded C++ delayed order. L002d-f timing/invariance and
+C003b/C004/C005/Q011-13/Q004a/Q005b remain gates. Trend/later windows remain conditional.
+No empirical result or personal mastery is claimed. No input blocks synthetic continuation.

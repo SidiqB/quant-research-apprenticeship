@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-10-20T19:34:23.384808+00:00",
+  "exact_replays": 2,
+  "hand_timeline_rows": 4,
+  "corrupt_fixture_controls": 3,
+  "optimization_guard_refused": true,
+  "ruff_lint_format_passed": true,
+  "initial_lint_failure": "one long line; corrected",
+  "pdf_pages": 4,
+  "pdf_exact_normalized_characters": 9505,
+  "all_final_pages_visually_inspected": true,
+  "final_poppler_log_bytes": 0,
+  "shared_make_check_python_tests": 608,
+  "no_new_cpp_component": true,
+  "scope": "hand timeline consistency only, no reusable event engine or invariance proof"
+}

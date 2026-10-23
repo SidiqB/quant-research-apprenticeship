@@ -87,3 +87,10 @@ See [teaching note](../../../research_log/2026-10-19.md),
 [validation](../../../reports/milestone/2026-10-19-validation.md).
 L001's bounded teaching slice is complete. This is current-toolchain output reproduction, not
 bit-identical binary reproduction, an event-sequence proof or personal mastery. L002 timing follows.
+
+## L002a timeline integrated October 23
+
+Four hand rows match per-share Decimal accounting; three corrupt fixtures are rejected.
+Run `make decision-timeline` from the repository root. Study date: 2026-10-20.
+Only this bounded teaching slice is complete; L002c implementation and L002d-f remain.
+Personal review: Not yet reviewed. Real-data access/provenance gates remain.

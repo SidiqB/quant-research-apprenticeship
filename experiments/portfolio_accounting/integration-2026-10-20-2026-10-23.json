@@ -1,0 +1,22 @@
+{
+  "study_date": "2026-10-20",
+  "integration_date": "2026-10-23",
+  "replays": 2,
+  "original_result_exact_match": true,
+  "optimization_refused": true,
+  "result_sha256": "5fb4035c19dc25e5094a5b5e3bbbe1e5bfd5c3832094937576b43024a6b6ca82",
+  "controls": [
+    {
+      "diagnostic": "unavailable decision input",
+      "name": "future_input"
+    },
+    {
+      "diagnostic": "state timing mismatch",
+      "name": "trade_at_decision"
+    },
+    {
+      "diagnostic": "state timing mismatch",
+      "name": "fill_at_old_price"
+    }
+  ]
+}

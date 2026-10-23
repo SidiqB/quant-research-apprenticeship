@@ -1,0 +1,32 @@
+{
+  "corrupt_fixtures_rejected": [
+    {
+      "diagnostic": "unavailable decision input",
+      "name": "future_input"
+    },
+    {
+      "diagnostic": "state timing mismatch",
+      "name": "trade_at_decision"
+    },
+    {
+      "diagnostic": "state timing mismatch",
+      "name": "fill_at_old_price"
+    }
+  ],
+  "data_kind": "synthetic_hand_timeline",
+  "decision_state": {
+    "cash": 800,
+    "shares": 4
+  },
+  "final_wealth": 987,
+  "fixture_sha256": "193a097191eb025a04030b750e5850454fe994d9b63146203da8237510b97392",
+  "post_fill_state": {
+    "cash": 693,
+    "shares": 6,
+    "wealth": 1005
+  },
+  "rows_verified": 4,
+  "scope": "hand-timeline consistency only; no execution engine or general invariance proof",
+  "study_date": "2026-10-20",
+  "task": "L002a"
+}

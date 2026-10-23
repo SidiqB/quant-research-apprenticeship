@@ -1,0 +1,78 @@
+[
+  {
+    "path": "QUANT_CURRICULUM.md",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "CURRICULUM_BACKLOG.md",
+    "verified_against": "original Git blob at b50d8a700e73f33915fd695db959c14d6da97e94"
+  },
+  {
+    "path": "OPERATIONS.md",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "COMMIT_CADENCE.md",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "requirements-lock.txt",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "scripts/render_note.py",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "scripts/reproduce_accounting.py",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "cpp/projects/portfolio_accounting/validated_buy.cpp",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "research_log/2026-10-19.md",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "experiments/portfolio_accounting/reproduction.json",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "Makefile",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-20/timeline.json",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-20/verify_timeline.py",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-20/result.json",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-20/experiment-validation.json",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-20/2026-10-20-learning-note.md",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-20/2026-10-20-learning-note.pdf",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-20/2026-10-20-validation.md",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-20/progress.json",
+    "verified_against": "current bytes"
+  }
+]

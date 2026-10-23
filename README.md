@@ -253,3 +253,10 @@ L001 accounting is complete within its bounded teaching scope. L002a's October 2
 is locally complete pending integration; L002b's event/fee/missing-fill contract comes next.
 The curriculum now explicitly defers trend for timing prerequisites; later windows are conditional.
 Inspect pending manifests before dispatch. Personal review remains Not yet reviewed.
+
+## L002a timeline integrated October 23
+
+Four hand rows match per-share Decimal accounting; three corrupt fixtures are rejected.
+Run `make decision-timeline` from the repository root. Study date: 2026-10-20.
+Only this bounded teaching slice is complete; L002c implementation and L002d-f remain.
+Personal review: Not yet reviewed. Real-data access/provenance gates remain.

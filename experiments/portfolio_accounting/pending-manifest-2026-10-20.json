@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "original_work_date": "2026-10-20",
+  "created_at": "2026-10-20T19:34:23.384808+00:00",
+  "task": "L002a",
+  "purpose": "Hand decision/execution timeline and independent per-share consistency check",
+  "publication": "pending_exhausted_commit_budget",
+  "baseline_commit": "b50d8a700e73f33915fd695db959c14d6da97e94",
+  "baseline_remote_status": "push blocked by automatic approval review; remote remains 2b6bc10d2568829487013fa8ab98642ce3f166ec",
+  "budget": 1,
+  "actual_commits_today": 1,
+  "inputs": [
+    {
+      "path": "QUANT_CURRICULUM.md",
+      "sha256": "3f507b1d8fde3b04b92e2c2d69b157625ea58ff2c370773de7f0d6efef0d825f",
+      "bytes": 10854
+    },
+    {
+      "path": "CURRICULUM_BACKLOG.md",
+      "sha256": "9e40f199b395947c2ab10f80e67e8500ed60d9b54c1e71ca9429788112a22490",
+      "bytes": 32272
+    },
+    {
+      "path": "OPERATIONS.md",
+      "sha256": "8b23eb301eb464407848a3e1d8d54699f5770ae2f73b038d2318a24db5454e0f",
+      "bytes": 5093
+    },
+    {
+      "path": "COMMIT_CADENCE.md",
+      "sha256": "d0e7c4a5652774dc0550c3e45909c765d971ea6cf6037e4b496ebf03ae76db2e",
+      "bytes": 2462
+    },
+    {
+      "path": "requirements-lock.txt",
+      "sha256": "767df194abce2c07fbb9d0ed82e495c76db73bfc617bcf5d595742be667330fa",
+      "bytes": 274
+    },
+    {
+      "path": "scripts/render_note.py",
+      "sha256": "c635bd6eba7df1ac731e6734bb0c37e4240a5ae7df0ab4d4d45d339e67cabb2c",
+      "bytes": 6239
+    },
+    {
+      "path": "scripts/reproduce_accounting.py",
+      "sha256": "5f727386718c964bce607c30e8f904019fc4984c6d66d31287cb5b5a692bd128",
+      "bytes": 2984
+    },
+    {
+      "path": "cpp/projects/portfolio_accounting/validated_buy.cpp",
+      "sha256": "ee61bc337db0f2277acb484be8ab94b24461018943068b3cbe37c183b32950c9",
+      "bytes": 1008
+    },
+    {
+      "path": "research_log/2026-10-19.md",
+      "sha256": "ce449e98ecc651447601737b90828c9779f318a3fdea90473fb1a77c3609ae9e",
+      "bytes": 11148
+    },
+    {
+      "path": "experiments/portfolio_accounting/reproduction.json",
+      "sha256": "5bd510dde9d3ae93f13a09a2b267e605d0f7a5ca87bd7fbf83658c7c316cf415",
+      "bytes": 1022
+    },
+    {
+      "path": "Makefile",
+      "sha256": "63bad0ba2df9e962b50c9e6a86dbaae529de2ddb0c71aa7c00f812eaee681e87",
+      "bytes": 7124
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "work/pending/2026-10-20/timeline.json",
+      "sha256": "193a097191eb025a04030b750e5850454fe994d9b63146203da8237510b97392",
+      "bytes": 822,
+      "intended_destination": "experiments/portfolio_accounting/decision-timeline.json"
+    },
+    {
+      "path": "work/pending/2026-10-20/verify_timeline.py",
+      "sha256": "bbc9ff1f5dd086b5e0cdea5d5614639a014a8ccc537c62311dc700eef07697c3",
+      "bytes": 3266,
+      "intended_destination": "scripts/verify_decision_timeline.py"
+    },
+    {
+      "path": "work/pending/2026-10-20/result.json",
+      "sha256": "5fb4035c19dc25e5094a5b5e3bbbe1e5bfd5c3832094937576b43024a6b6ca82",
+      "bytes": 775,
+      "intended_destination": "experiments/portfolio_accounting/decision-timeline-result.json"
+    },
+    {
+      "path": "work/pending/2026-10-20/experiment-validation.json",
+      "sha256": "7dacc1a00e7986d14ba9b315b4db0f1a3d3eb94d7f491755fdc3924fc7ea8c30",
+      "bytes": 567,
+      "intended_destination": "experiments/portfolio_accounting/validation-2026-10-20.json"
+    },
+    {
+      "path": "work/pending/2026-10-20/2026-10-20-learning-note.md",
+      "sha256": "3905c2b404145a6670a44a8718ef1fc796d9da02fcc691cae81466f901f572d4",
+      "bytes": 11513,
+      "intended_destination": "research_log/2026-10-20.md"
+    },
+    {
+      "path": "work/pending/2026-10-20/2026-10-20-learning-note.pdf",
+      "sha256": "27b57fd6bf3b571ea758b97f580874999d6ae5da81886efc9327973654b7aabb",
+      "bytes": 12632,
+      "intended_destination": "reports/daily/2026-10-20-learning-note.pdf"
+    },
+    {
+      "path": "work/pending/2026-10-20/2026-10-20-validation.md",
+      "sha256": "51a284e049699e24a3634d82a551136bc8275df777d5a70831d0942ef41c030f",
+      "bytes": 2289,
+      "intended_destination": "reports/milestone/2026-10-20-validation.md"
+    },
+    {
+      "path": "work/pending/2026-10-20/progress.json",
+      "sha256": "91b8d2285dcf84733aee1da5096aafb39c30ae3e0d44d5171785d0403024a0b4",
+      "bytes": 598,
+      "intended_destination": "merge_into_documentation"
+    }
+  ],
+  "checks": [
+    "Four exact hand rows; two identical Decimal-verifier replays",
+    "Three inconsistent copied fixtures rejected with intended diagnostics",
+    "Actual -O guard refused; lint/format pass",
+    "Shared make check: 608 Python tests and all C++/quality checks; pip consistency pass",
+    "Four-page PDF exact 9505-character match; headings/origins and every final page visually checked"
+  ],
+  "integration_instructions": [
+    "Verify original hashes and review changed inputs before integration; preserve work date and original evidence",
+    "Check publication status of b50d8a7; platform rejected its push; do not bypass the rejection",
+    "Weekly October18 synthesis is older pending unit; merge plan against newer progress, never replace whole backlog",
+    "Adapt verifier fixture location when moving to scripts; currently HERE/timeline.json is intentional for pending package",
+    "Add a meaningful fixture-check Make target; revalidate exact outputs, corrupt copies and -O guard",
+    "Adapt note commands/publication prose, regenerate PDF and repeat text and visual checks",
+    "Mark only L002a complete; next learning L002b, not repeated timeline; retain all timing and data gates",
+    "Use shared remaining allowance, authorised normal push with exact remote verification and receipt"
+  ]
+}
