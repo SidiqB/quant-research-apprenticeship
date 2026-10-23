@@ -1,0 +1,103 @@
+{
+  "corrupt_tables_rejected": [
+    {
+      "diagnostic": "filled: decision_cash mismatch",
+      "name": "debit_at_decision"
+    },
+    {
+      "diagnostic": "missing_fill: cash mismatch",
+      "name": "fee_on_missing_fill"
+    },
+    {
+      "diagnostic": "missing_fill: status mismatch",
+      "name": "invent_fill_at_observed_price"
+    },
+    {
+      "diagnostic": "insufficient_cash: cash mismatch",
+      "name": "fee_on_rejection"
+    },
+    {
+      "diagnostic": "no_request: status mismatch",
+      "name": "trade_without_request"
+    }
+  ],
+  "data_kind": "synthetic_contract_examples",
+  "examples": [
+    {
+      "cash": 693,
+      "decision_cash": 800,
+      "decision_shares": 4,
+      "fee_charged": 3,
+      "name": "filled",
+      "request": 2,
+      "shares": 6,
+      "status": "filled"
+    },
+    {
+      "cash": 800,
+      "decision_cash": 800,
+      "decision_shares": 4,
+      "fee_charged": 0,
+      "name": "missing_fill",
+      "request": 2,
+      "shares": 4,
+      "status": "unresolved"
+    },
+    {
+      "cash": 0,
+      "decision_cash": 107,
+      "decision_shares": 4,
+      "fee_charged": 3,
+      "name": "exact_cash",
+      "request": 2,
+      "shares": 6,
+      "status": "filled"
+    },
+    {
+      "cash": 106,
+      "decision_cash": 106,
+      "decision_shares": 4,
+      "fee_charged": 0,
+      "name": "insufficient_cash",
+      "request": 2,
+      "shares": 4,
+      "status": "rejected_by_model"
+    },
+    {
+      "cash": 800,
+      "decision_cash": 800,
+      "decision_shares": 4,
+      "fee_charged": 0,
+      "name": "no_request",
+      "request": 0,
+      "shares": 4,
+      "status": "no_order"
+    },
+    {
+      "cash": 800,
+      "decision_cash": 800,
+      "decision_shares": 9999,
+      "fee_charged": 0,
+      "name": "position_cap",
+      "request": 2,
+      "shares": 9999,
+      "status": "rejected_by_model"
+    }
+  ],
+  "fixture_sha256": "7b0493876752c3958376ffd3c4fd9b58d9bef84bd60a13e98b81cf9f8c7a8b61",
+  "invalid_traces_rejected": [
+    "same_event_observation",
+    "future_observation",
+    "same_event_resolution",
+    "early_resolution",
+    "negative_event",
+    "zero_fill",
+    "negative_fill",
+    "boolean_fill",
+    "fractional_cash",
+    "negative_cash"
+  ],
+  "scope": "hand contract/reference only; C++ timing and invariance remain unimplemented",
+  "study_date": "2026-10-22",
+  "task": "L002b"
+}

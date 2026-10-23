@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "task": "L002b",
+  "purpose": "Bounded delayed-order event, fee and missing-fill contract with hand/reference verification",
+  "original_work_date": "2026-10-22",
+  "created_at": "2026-10-22T09:43:56.969929+00:00",
+  "baseline_commit": "051f9a129c72f8981a71b9fb2b2455cee9ac2ee4",
+  "status": "pending_exhausted_shared_commit_budget",
+  "budget": 1,
+  "actual_commits_today": [
+    "051f9a129c72f8981a71b9fb2b2455cee9ac2ee4"
+  ],
+  "personal_review": "Not yet reviewed",
+  "inputs": [
+    {
+      "path": "CHARTER.md",
+      "sha256": "144d77d523c2e544ca6cfc87de7994a62731e5ed94ba11fe79110d5d0afdcd55",
+      "bytes": 1710
+    },
+    {
+      "path": "OPERATIONS.md",
+      "sha256": "8b23eb301eb464407848a3e1d8d54699f5770ae2f73b038d2318a24db5454e0f",
+      "bytes": 5093
+    },
+    {
+      "path": "COMMIT_CADENCE.md",
+      "sha256": "d0e7c4a5652774dc0550c3e45909c765d971ea6cf6037e4b496ebf03ae76db2e",
+      "bytes": 2462
+    },
+    {
+      "path": "QUANT_CURRICULUM.md",
+      "sha256": "3f507b1d8fde3b04b92e2c2d69b157625ea58ff2c370773de7f0d6efef0d825f",
+      "bytes": 10854
+    },
+    {
+      "path": "CURRICULUM_BACKLOG.md",
+      "sha256": "f07fb9a1e38ddf8d1f4b92900f88f958005a5b7b5a59a47f03a78bf6525eeb7d",
+      "bytes": 33957
+    },
+    {
+      "path": "Makefile",
+      "sha256": "63bad0ba2df9e962b50c9e6a86dbaae529de2ddb0c71aa7c00f812eaee681e87",
+      "bytes": 7124
+    },
+    {
+      "path": "cpp/projects/portfolio_accounting/validated_buy.cpp",
+      "sha256": "ee61bc337db0f2277acb484be8ab94b24461018943068b3cbe37c183b32950c9",
+      "bytes": 1008
+    },
+    {
+      "path": "cpp/projects/portfolio_accounting/account_state.cpp",
+      "sha256": "6f742dd8330e162d09c109344494031713dc9df2384ec56e47770f502ecf6cb4",
+      "bytes": 831
+    },
+    {
+      "path": "scripts/render_note.py",
+      "sha256": "c635bd6eba7df1ac731e6734bb0c37e4240a5ae7df0ab4d4d45d339e67cabb2c",
+      "bytes": 6239
+    },
+    {
+      "path": "work/pending/2026-10-20/2026-10-20-learning-note.md",
+      "sha256": "3905c2b404145a6670a44a8718ef1fc796d9da02fcc691cae81466f901f572d4",
+      "bytes": 11513
+    },
+    {
+      "path": "work/pending/2026-10-20/timeline.json",
+      "sha256": "193a097191eb025a04030b750e5850454fe994d9b63146203da8237510b97392",
+      "bytes": 822
+    },
+    {
+      "path": "work/pending/2026-10-20/verify_timeline.py",
+      "sha256": "bbc9ff1f5dd086b5e0cdea5d5614639a014a8ccc537c62311dc700eef07697c3",
+      "bytes": 3266
+    },
+    {
+      "path": "work/pending/2026-10-20/result.json",
+      "sha256": "5fb4035c19dc25e5094a5b5e3bbbe1e5bfd5c3832094937576b43024a6b6ca82",
+      "bytes": 775
+    },
+    {
+      "path": "work/pending/2026-10-20/integration-manifest.json",
+      "sha256": "621d95777939cbc96bfec55e4003f1738220e1a0b78f3bcb60a937cb8e129532",
+      "bytes": 5694
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "work/pending/2026-10-22/event_contract.md",
+      "sha256": "034aac6ce8a0574295eec0d6eb2e4e7e7bae0b1fb5293a42f2e6cef157ef49b3",
+      "bytes": 3780,
+      "intended_destination": "cpp/projects/portfolio_accounting/delayed_order_contract.md"
+    },
+    {
+      "path": "work/pending/2026-10-22/contract_cases.json",
+      "sha256": "7b0493876752c3958376ffd3c4fd9b58d9bef84bd60a13e98b81cf9f8c7a8b61",
+      "bytes": 2552,
+      "intended_destination": "experiments/portfolio_accounting/delayed_order_contract_cases.json"
+    },
+    {
+      "path": "work/pending/2026-10-22/verify_event_contract.py",
+      "sha256": "7584425acdbaf6f5893d12345bc8fab97311a3203c7034e89e598b9032f585f5",
+      "bytes": 4871,
+      "intended_destination": "scripts/verify_event_contract.py"
+    },
+    {
+      "path": "work/pending/2026-10-22/result.json",
+      "sha256": "422caaa2d417e0f2ffb835e556cf7b5c321c6079a35d51bc5ccc2c477e1617fb",
+      "bytes": 2380,
+      "intended_destination": "experiments/portfolio_accounting/delayed_order_contract_results.json"
+    },
+    {
+      "path": "work/pending/2026-10-22/2026-10-22-learning-note.md",
+      "sha256": "02a533e331f00a4a02075b61018bbf5c8cbdc472d3666332748537a3f2804f52",
+      "bytes": 12494,
+      "intended_destination": "research_log/2026-10-22.md"
+    },
+    {
+      "path": "work/pending/2026-10-22/2026-10-22-learning-note.pdf",
+      "sha256": "142d7e85738b076e14c509f5d29ebd737b62970fe147dd443189fe9ac7286fee",
+      "bytes": 13388,
+      "intended_destination": "reports/daily/2026-10-22-learning-note.pdf"
+    },
+    {
+      "path": "work/pending/2026-10-22/2026-10-22-validation.md",
+      "sha256": "713250e2ea0c30c0cbe1db153fc76338db1c00b18eb9b992f35afa999f33327b",
+      "bytes": 2362,
+      "intended_destination": "reports/milestone/2026-10-22-validation.md"
+    },
+    {
+      "path": "work/pending/2026-10-22/progress.json",
+      "sha256": "7f6d2788d6cf4a97e52267c118d5129512acda099b76ca0d91bf1e520cffce59",
+      "bytes": 663,
+      "intended_destination": "merge progress into current backlog/README/roadmap/changelog"
+    }
+  ],
+  "qa_evidence": [
+    {
+      "path": "work/run-2026-10-22/make-check.log",
+      "sha256": "1751d1b3b0d99138adcf6dde5302148ac53288f28bab26d903f9fa742e14e72b",
+      "bytes": 8834
+    },
+    {
+      "path": "work/run-2026-10-22/pdf-audit.json",
+      "sha256": "6b7a40d1e5ae6f5f4fc6d7196b8e9ebb3aa77776f20ec53026930dcd6d094647",
+      "bytes": 256
+    },
+    {
+      "path": "work/run-2026-10-22/daily-text.txt",
+      "sha256": "e72bbe826646c6ba19e0fb422b76070bf90836d0942032cdf833036beefcb5e6",
+      "bytes": 12202
+    },
+    {
+      "path": "work/run-2026-10-22/daily-render.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "checks": [
+    "Six hand examples match per-share Decimal reference; two byte-identical result replays",
+    "Ten invalid traces rejected with intended diagnostics; five corrupt tables rejected",
+    "Actual -O refused; final pending Ruff lint/format pass",
+    "make check passes 608 Python tests and all current C++/quality checks; pip consistency passes",
+    "Four-page PDF exact 10372 normalized characters; renderer bounds/headings and every-page visual inspection pass; empty render log",
+    "New weekly integration 051f9a1 and prior b50d8a7 pushed; independent remote main hash identical; exact-head CI success run39749164702"
+  ],
+  "integration_instructions": [
+    "Verify original hashes/sizes and inspect changed inputs while holding shared lock; honour persisted draw and actual count",
+    "Integrate October20 L002a independently first when budget permits; do not repeat L002b because tracked next-learning text lags study",
+    "Move fixture path from HERE to published experiments path; add a meaningful Make contract check; no new strategy required",
+    "Rerun correct cases twice, invalid/corrupt controls and actual -O refusal; full current checks",
+    "Preserve original study date/results; adapt paths/publication prose and regenerate/reverify PDF",
+    "Merge truthful progress; next learning L002c then L002d-f; C003b/C004/C005/Q011-13/Q004a/Q005b remain",
+    "Scan, commit and normally push only within shared allowance; verify remote; no backdating or inferred personal review"
+  ]
+}

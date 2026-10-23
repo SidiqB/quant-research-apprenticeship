@@ -182,3 +182,9 @@ decision-timeline:
 	$(PYTHON) scripts/verify_decision_timeline.py
 
 check: decision-timeline
+
+.PHONY: event-contract
+event-contract:
+	$(PYTHON) scripts/verify_event_contract.py
+
+check: event-contract

@@ -1,0 +1,30 @@
+{
+  "study_date": "2026-10-22",
+  "integration_date": "2026-10-23",
+  "replays": 2,
+  "original_result_exact_match": true,
+  "optimization_refused": true,
+  "result_sha256": "422caaa2d417e0f2ffb835e556cf7b5c321c6079a35d51bc5ccc2c477e1617fb",
+  "controls": [
+    {
+      "diagnostic": "filled: decision_cash mismatch",
+      "name": "debit_at_decision"
+    },
+    {
+      "diagnostic": "missing_fill: cash mismatch",
+      "name": "fee_on_missing_fill"
+    },
+    {
+      "diagnostic": "missing_fill: status mismatch",
+      "name": "invent_fill_at_observed_price"
+    },
+    {
+      "diagnostic": "insufficient_cash: cash mismatch",
+      "name": "fee_on_rejection"
+    },
+    {
+      "diagnostic": "no_request: status mismatch",
+      "name": "trade_without_request"
+    }
+  ]
+}

@@ -94,3 +94,10 @@ Four hand rows match per-share Decimal accounting; three corrupt fixtures are re
 Run `make decision-timeline` from the repository root. Study date: 2026-10-20.
 Only this bounded teaching slice is complete; L002c implementation and L002d-f remain.
 Personal review: Not yet reviewed. Real-data access/provenance gates remain.
+
+## L002b event contract integrated October 23
+
+Six hand/reference outcomes agree; ten invalid traces and five corrupt tables are rejected.
+Run `make event-contract` from the repository root. Study date: 2026-10-22.
+Only this bounded teaching slice is complete; L002c implementation and L002d-f remain.
+Personal review: Not yet reviewed. Real-data access/provenance gates remain.

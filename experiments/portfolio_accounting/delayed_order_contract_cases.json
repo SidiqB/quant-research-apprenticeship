@@ -1,0 +1,120 @@
+{
+  "data_kind": "synthetic_contract_examples",
+  "study_date": "2026-10-22",
+  "cases": [
+    {
+      "name": "filled",
+      "cash": 800,
+      "shares": 4,
+      "observed_price": 50,
+      "available": 0,
+      "decision": 1,
+      "resolution": 2,
+      "fill_price": 52,
+      "expected": {
+        "request": 2,
+        "decision_cash": 800,
+        "decision_shares": 4,
+        "status": "filled",
+        "cash": 693,
+        "shares": 6,
+        "fee_charged": 3
+      }
+    },
+    {
+      "name": "missing_fill",
+      "cash": 800,
+      "shares": 4,
+      "observed_price": 50,
+      "available": 0,
+      "decision": 1,
+      "resolution": 2,
+      "fill_price": null,
+      "expected": {
+        "request": 2,
+        "decision_cash": 800,
+        "decision_shares": 4,
+        "status": "unresolved",
+        "cash": 800,
+        "shares": 4,
+        "fee_charged": 0
+      }
+    },
+    {
+      "name": "exact_cash",
+      "cash": 107,
+      "shares": 4,
+      "observed_price": 50,
+      "available": 0,
+      "decision": 1,
+      "resolution": 2,
+      "fill_price": 52,
+      "expected": {
+        "request": 2,
+        "decision_cash": 107,
+        "decision_shares": 4,
+        "status": "filled",
+        "cash": 0,
+        "shares": 6,
+        "fee_charged": 3
+      }
+    },
+    {
+      "name": "insufficient_cash",
+      "cash": 106,
+      "shares": 4,
+      "observed_price": 50,
+      "available": 0,
+      "decision": 1,
+      "resolution": 2,
+      "fill_price": 52,
+      "expected": {
+        "request": 2,
+        "decision_cash": 106,
+        "decision_shares": 4,
+        "status": "rejected_by_model",
+        "cash": 106,
+        "shares": 4,
+        "fee_charged": 0
+      }
+    },
+    {
+      "name": "no_request",
+      "cash": 800,
+      "shares": 4,
+      "observed_price": 51,
+      "available": 0,
+      "decision": 1,
+      "resolution": 2,
+      "fill_price": 52,
+      "expected": {
+        "request": 0,
+        "decision_cash": 800,
+        "decision_shares": 4,
+        "status": "no_order",
+        "cash": 800,
+        "shares": 4,
+        "fee_charged": 0
+      }
+    },
+    {
+      "name": "position_cap",
+      "cash": 800,
+      "shares": 9999,
+      "observed_price": 50,
+      "available": 0,
+      "decision": 1,
+      "resolution": 2,
+      "fill_price": 52,
+      "expected": {
+        "request": 2,
+        "decision_cash": 800,
+        "decision_shares": 9999,
+        "status": "rejected_by_model",
+        "cash": 800,
+        "shares": 9999,
+        "fee_charged": 0
+      }
+    }
+  ]
+}

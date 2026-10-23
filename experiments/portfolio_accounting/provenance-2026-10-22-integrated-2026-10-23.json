@@ -1,0 +1,106 @@
+[
+  {
+    "path": "CHARTER.md",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "OPERATIONS.md",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "COMMIT_CADENCE.md",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "QUANT_CURRICULUM.md",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "CURRICULUM_BACKLOG.md",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "Makefile",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "cpp/projects/portfolio_accounting/validated_buy.cpp",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "cpp/projects/portfolio_accounting/account_state.cpp",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "scripts/render_note.py",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-20/2026-10-20-learning-note.md",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-20/timeline.json",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-20/verify_timeline.py",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-20/result.json",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-20/integration-manifest.json",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-22/event_contract.md",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-22/contract_cases.json",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-22/verify_event_contract.py",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-22/result.json",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-22/2026-10-22-learning-note.md",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-22/2026-10-22-learning-note.pdf",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-22/2026-10-22-validation.md",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/pending/2026-10-22/progress.json",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/run-2026-10-22/make-check.log",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/run-2026-10-22/pdf-audit.json",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/run-2026-10-22/daily-text.txt",
+    "verified_against": "current bytes"
+  },
+  {
+    "path": "work/run-2026-10-22/daily-render.log",
+    "verified_against": "current bytes"
+  }
+]

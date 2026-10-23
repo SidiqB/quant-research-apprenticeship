@@ -266,3 +266,14 @@ L002a is integrated. L002b was studied October 22 and remains separately pending
 next new learning is L002c, one bounded C++ delayed order. L002d-f timing/invariance and
 C003b/C004/C005/Q011-13/Q004a/Q005b remain gates. Trend/later windows remain conditional.
 No empirical result or personal mastery is claimed. No input blocks synthetic continuation.
+
+## L002b event contract - studied 2026-10-22, integrated 23 October
+
+Six hand/reference outcomes agree; ten invalid traces and five corrupt tables are rejected.
+Original pending provenance and results are preserved in experiments/portfolio_accounting.
+The fixture verifier now joins make check; current checks and regenerated teaching PDF are
+validated before publication. Original work date is retained; personal review stays Not yet reviewed.
+L002a/b is integrated. L002b was studied October 22 and integrated here;
+next new learning is L002c, one bounded C++ delayed order. L002d-f timing/invariance and
+C003b/C004/C005/Q011-13/Q004a/Q005b remain gates. Trend/later windows remain conditional.
+No empirical result or personal mastery is claimed. No input blocks synthetic continuation.
