@@ -273,3 +273,10 @@ Personal review: Not yet reviewed. Real-data access/provenance gates remain.
 Run `make cpp-delayed-order`: eight hand/reference traces and fifteen invalid traces,
 with unchanged decision/caller snapshots and later checked accounting. Studied October 23.
 L002c only is complete; L002d-f and empirical gates remain. Personal review: Not yet reviewed.
+
+## Future-price invariance checked October 24
+
+Run `make cpp-future-invariance`: 340 paired decision comparisons and 360 Decimal outcomes
+pass across selected valid futures. Three leaking controls and one constant-rule control
+are detected. Production C++ remains unchanged; arbitrary histories are outside this test.
+L002a-d are complete; L002e adverse-fill costs is next. Personal review: Not yet reviewed.

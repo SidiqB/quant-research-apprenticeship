@@ -345,3 +345,19 @@ PDF are verified before publication. No general future-price invariance claim is
 Next learning is L002d: paired valid future-price mutations and a leaking control. L002e/f,
 C003b/C004/C005/Q011-13/Q004a/Q005b remain gates; later strategy windows are conditional.
 Personal review stays Not yet reviewed. No input blocks synthetic continuation.
+
+## L002d future-price invariance - 24 October
+
+The unchanged delayed C++ order passes 340 paired comparisons across 20 fixed prefixes and
+18 valid suffixes each. All 360 resolutions match the Decimal reference; six hand anchors
+agree. Counts: 66 filled, 126 model-rejected, 24 unresolved and 144 no-order. Three leaking
+mutants fail past-projection equality; constant no-order passes equality but fails the rule
+anchor. Two full fresh-build replays agree; actual -O is refused. make cpp-future-invariance
+joins make check. Full checks and the four-page teaching PDF pass. This selected grid does
+not prove arbitrary-history causality; malformed futures remain a separate contract check.
+
+L002c was integrated separately with its October 23 study date. L002d is complete within
+this bounded scope; next is L002e adverse-fill costs, then L002f reproduction. No new strategy
+family or production C++ syntax was added. C003b/C004/C005/Q011-13/Q004a/Q005b remain gates;
+trend/later windows stay conditional. Personal review: Not yet reviewed. No input blocks
+synthetic work. Shared draw two funds two independent units; no extra lesson to fill it.

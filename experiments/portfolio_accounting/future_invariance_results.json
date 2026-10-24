@@ -1,0 +1,198 @@
+{
+  "buy_sha256": "ee61bc337db0f2277acb484be8ab94b24461018943068b3cbe37c183b32950c9",
+  "control_fresh_builds": 4,
+  "controls": [
+    {
+      "compiled": true,
+      "detected": "Past projection changed: trace 6",
+      "mutation": "future_price_signal"
+    },
+    {
+      "compiled": true,
+      "detected": "Past projection changed: trace 12",
+      "mutation": "future_affordability"
+    },
+    {
+      "compiled": true,
+      "detected": "Past projection changed: trace 2",
+      "mutation": "overwrite_past_snapshot"
+    },
+    {
+      "compiled": true,
+      "detected": "Decision anchor differs",
+      "mutation": "constant_no_order"
+    }
+  ],
+  "correct_fresh_builds": 1,
+  "data_kind": "synthetic_selected_suffix_grid",
+  "decimal_resolution_comparisons": 360,
+  "fixture_sha256": "26c50241392bc42b2dd40d7398435c789a6a072ef159f678c4a3da707d13055f",
+  "hand_anchors": [
+    {
+      "input": {
+        "available": 0,
+        "cash": 800,
+        "decision": 1,
+        "fill_price": 49,
+        "observed_price": 50,
+        "resolution": 2,
+        "shares": 4
+      },
+      "name": "lower_fill",
+      "output": [
+        146,
+        1,
+        2,
+        800,
+        4,
+        "filled",
+        699,
+        6,
+        3,
+        800,
+        4
+      ]
+    },
+    {
+      "input": {
+        "available": 0,
+        "cash": 800,
+        "decision": 1,
+        "fill_price": 52,
+        "observed_price": 50,
+        "resolution": 2,
+        "shares": 4
+      },
+      "name": "higher_fill",
+      "output": [
+        152,
+        1,
+        2,
+        800,
+        4,
+        "filled",
+        693,
+        6,
+        3,
+        800,
+        4
+      ]
+    },
+    {
+      "input": {
+        "available": 0,
+        "cash": 800,
+        "decision": 1,
+        "fill_price": 399,
+        "observed_price": 50,
+        "resolution": 2,
+        "shares": 4
+      },
+      "name": "unaffordable_future",
+      "output": [
+        156,
+        1,
+        2,
+        800,
+        4,
+        "rejected_by_model",
+        800,
+        4,
+        0,
+        800,
+        4
+      ]
+    },
+    {
+      "input": {
+        "available": 0,
+        "cash": 800,
+        "decision": 1,
+        "fill_price": null,
+        "observed_price": 50,
+        "resolution": 2,
+        "shares": 4
+      },
+      "name": "missing_fill",
+      "output": [
+        160,
+        1,
+        2,
+        800,
+        4,
+        "unresolved",
+        800,
+        4,
+        0,
+        800,
+        4
+      ]
+    },
+    {
+      "input": {
+        "available": 0,
+        "cash": 800,
+        "decision": 1,
+        "fill_price": 49,
+        "observed_price": 51,
+        "resolution": 2,
+        "shares": 4
+      },
+      "name": "no_order",
+      "output": [
+        218,
+        1,
+        0,
+        800,
+        4,
+        "no_order",
+        800,
+        4,
+        0,
+        800,
+        4
+      ]
+    },
+    {
+      "input": {
+        "available": 0,
+        "cash": 107,
+        "decision": 1,
+        "fill_price": 52,
+        "observed_price": 50,
+        "resolution": 2,
+        "shares": 4
+      },
+      "name": "exact_cash",
+      "output": [
+        170,
+        1,
+        2,
+        107,
+        4,
+        "filled",
+        0,
+        6,
+        3,
+        107,
+        4
+      ]
+    }
+  ],
+  "output_sha256": "0a65a02be4b759ab1f1b8f82fac7358f414e96b98c233bf496825fbf68a9e1bd",
+  "past_projection_comparisons": 340,
+  "prefixes": 20,
+  "runs_per_build": 2,
+  "scope": "Selected valid traces only; not arbitrary histories or malformed futures",
+  "source_sha256": "ac1eefd2b07556146f7580971238c425d2d41eb308aba894abb37c45df67afb1",
+  "status_counts": {
+    "filled": 66,
+    "no_order": 144,
+    "rejected_by_model": 126,
+    "unresolved": 24
+  },
+  "study_date": "2026-10-24",
+  "suffixes_per_prefix": 18,
+  "task": "L002d",
+  "traces": 360
+}

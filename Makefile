@@ -194,3 +194,9 @@ cpp-delayed-order:
 	$(PYTHON) scripts/verify_delayed_order.py
 
 cpp-check: cpp-delayed-order
+
+.PHONY: cpp-future-invariance
+cpp-future-invariance:
+	$(PYTHON) scripts/verify_future_invariance.py
+
+cpp-check: cpp-future-invariance

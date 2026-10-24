@@ -1,0 +1,172 @@
+{
+  "data_kind": "synthetic",
+  "protocol": "Hold valid observation/account prefix fixed; vary valid later evidence only.",
+  "observed_prices": [
+    1,
+    49,
+    50,
+    51,
+    10000
+  ],
+  "accounts": [
+    [
+      800,
+      4
+    ],
+    [
+      107,
+      4
+    ],
+    [
+      800,
+      9999
+    ],
+    [
+      0,
+      4
+    ]
+  ],
+  "fill_prices": [
+    1,
+    49,
+    50,
+    51,
+    52,
+    398,
+    399,
+    10000,
+    null
+  ],
+  "resolution_events": [
+    2,
+    9
+  ],
+  "hand_anchors": [
+    {
+      "name": "lower_fill",
+      "input": {
+        "cash": 800,
+        "shares": 4,
+        "observed_price": 50,
+        "available": 0,
+        "decision": 1,
+        "resolution": 2,
+        "fill_price": 49
+      },
+      "expected": {
+        "request": 2,
+        "decision_cash": 800,
+        "decision_shares": 4,
+        "status": "filled",
+        "cash": 699,
+        "shares": 6,
+        "fee_charged": 3
+      }
+    },
+    {
+      "name": "higher_fill",
+      "input": {
+        "cash": 800,
+        "shares": 4,
+        "observed_price": 50,
+        "available": 0,
+        "decision": 1,
+        "resolution": 2,
+        "fill_price": 52
+      },
+      "expected": {
+        "request": 2,
+        "decision_cash": 800,
+        "decision_shares": 4,
+        "status": "filled",
+        "cash": 693,
+        "shares": 6,
+        "fee_charged": 3
+      }
+    },
+    {
+      "name": "unaffordable_future",
+      "input": {
+        "cash": 800,
+        "shares": 4,
+        "observed_price": 50,
+        "available": 0,
+        "decision": 1,
+        "resolution": 2,
+        "fill_price": 399
+      },
+      "expected": {
+        "request": 2,
+        "decision_cash": 800,
+        "decision_shares": 4,
+        "status": "rejected_by_model",
+        "cash": 800,
+        "shares": 4,
+        "fee_charged": 0
+      }
+    },
+    {
+      "name": "missing_fill",
+      "input": {
+        "cash": 800,
+        "shares": 4,
+        "observed_price": 50,
+        "available": 0,
+        "decision": 1,
+        "resolution": 2,
+        "fill_price": null
+      },
+      "expected": {
+        "request": 2,
+        "decision_cash": 800,
+        "decision_shares": 4,
+        "status": "unresolved",
+        "cash": 800,
+        "shares": 4,
+        "fee_charged": 0
+      }
+    },
+    {
+      "name": "no_order",
+      "input": {
+        "cash": 800,
+        "shares": 4,
+        "observed_price": 51,
+        "available": 0,
+        "decision": 1,
+        "resolution": 2,
+        "fill_price": 49
+      },
+      "expected": {
+        "request": 0,
+        "decision_cash": 800,
+        "decision_shares": 4,
+        "status": "no_order",
+        "cash": 800,
+        "shares": 4,
+        "fee_charged": 0
+      }
+    },
+    {
+      "name": "exact_cash",
+      "input": {
+        "cash": 107,
+        "shares": 4,
+        "observed_price": 50,
+        "available": 0,
+        "decision": 1,
+        "resolution": 2,
+        "fill_price": 52
+      },
+      "expected": {
+        "request": 2,
+        "decision_cash": 107,
+        "decision_shares": 4,
+        "status": "filled",
+        "cash": 0,
+        "shares": 6,
+        "fee_charged": 3
+      }
+    }
+  ]
+}

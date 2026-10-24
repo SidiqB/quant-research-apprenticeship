@@ -1,0 +1,46 @@
+{
+  "task": "L002d",
+  "study_date": "2026-10-24",
+  "validated_at": "2026-10-24T10:43:38.237270+00:00",
+  "baseline": "18af1dfefed857c498328c6cbb3cd5a7b5214892",
+  "independent_full_invocations": 2,
+  "correct_builds_in_these_invocations": 2,
+  "control_builds_in_these_invocations": 8,
+  "runs_per_build": 2,
+  "exact_json_replay": true,
+  "actual_optimization_refused": true,
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "scope": "Selected valid traces only; not arbitrary histories or malformed futures",
+  "records": [
+    {
+      "path": "scripts/verify_future_invariance.py",
+      "bytes": 8450,
+      "sha256": "737f8df152432c7e1c7e6f76dfc48d7f87db153a2ca9dca699efdec19aba7cd8"
+    },
+    {
+      "path": "scripts/verify_event_contract.py",
+      "bytes": 4940,
+      "sha256": "30be26bcfb8bfbd38ad447cbd0ebb407c88eea99fb6f7f76e4ae820c94b2d27d"
+    },
+    {
+      "path": "cpp/projects/portfolio_accounting/delayed_order.cpp",
+      "bytes": 1805,
+      "sha256": "ac1eefd2b07556146f7580971238c425d2d41eb308aba894abb37c45df67afb1"
+    },
+    {
+      "path": "cpp/projects/portfolio_accounting/validated_buy.cpp",
+      "bytes": 1008,
+      "sha256": "ee61bc337db0f2277acb484be8ab94b24461018943068b3cbe37c183b32950c9"
+    },
+    {
+      "path": "experiments/portfolio_accounting/future_invariance_cases.json",
+      "bytes": 3185,
+      "sha256": "26c50241392bc42b2dd40d7398435c789a6a072ef159f678c4a3da707d13055f"
+    },
+    {
+      "path": "experiments/portfolio_accounting/future_invariance_results.json",
+      "bytes": 3847,
+      "sha256": "fca6fcf6011767812f8d778318bb8783457c7c10838eaea35864809014b53fe9"
+    }
+  ]
+}

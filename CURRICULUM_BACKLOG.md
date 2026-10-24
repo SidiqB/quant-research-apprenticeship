@@ -4,6 +4,12 @@ Supersedes unfinished date assignments in BACKLOG.md from 5 October; completed e
 Use QUANT_CURRICULUM.md as scope and pacing authority. Preserve old Q/C IDs as dependencies, not additional daily work.
 First step: C003a whole-year text parsing; C001/C002 are already complete. Retain Q004a/Q005b before empirical use.
 
+## Current dispatch - October 24
+
+L002a-d are integrated; next new lesson is L002e adverse-fill costs, followed by L002f
+reproduction. Earlier dated dispatch paragraphs are historical. No pending lesson remains
+from October 23. Keep foundation and empirical gates; do not skip ahead to trend or pairs.
+
 ## October 4 weekly evidence-based refinement
 
 C002 shows that conversion to int can discard a fraction before function validation. Split C003 into
@@ -107,9 +113,9 @@ No input blocks synthetic continuation; lawful access/source evidence is needed 
 | 2026-10-19 | L001f accounting | Reproduce and consolidate existing accounting | Fresh reproduction; fee/wealth/rejection reconciliation; verified note | Studied October 19; integrated October 20; same L001f evidence as original October 18 slot |
 | 2026-10-20 | L002a timing intuition | Separate decision information from later execution | Hand timeline; known fields; no look-ahead; verified note | Studied October 20; integrated October 23 |
 | 2026-10-21 | L002b delayed-event contract | Define one order and event ordering | Known inputs, fee and missing-fill policy before implementation; verified note | Studied October 22; integrated October 23 |
-| 2026-10-22 | L002c fixed delayed order | Implement one bounded C++ event trace | Hand-known output; only necessary new syntax explained; verified note | Planned; conditional on previous prerequisite |
-| 2026-10-23 | L002d future-price invariance | Mutate later prices independently | Earlier decision unchanged; later fill can change; detect leaking control; verified note | Planned; conditional on previous prerequisite |
-| 2026-10-24 | L002e adverse fill | Explain one timing/cost failure scenario | Hand reconciliation; no assumed execution at decision mark; verified note | Planned; conditional on previous prerequisite |
+| 2026-10-22 | L002c fixed delayed order | Implement one bounded C++ event trace | Hand-known output; only necessary new syntax explained; verified note | Studied October 23; integrated October 24 |
+| 2026-10-23 | L002d future-price invariance | Mutate later prices independently | Earlier decision unchanged; later fill can change; detect leaking control; verified note | Done October 24: selected grid and four detected controls |
+| 2026-10-24 | L002e adverse fill | Explain one timing/cost failure scenario | Hand reconciliation; no assumed execution at decision mark; verified note | Next learning October 25; dependent on completed L002d |
 | 2026-10-25 | L002f timing readiness | Reproduce and consolidate; weekly synthesis separate | Repeat bounded trace; record gaps; no trend completion inferred; verified note | Planned; conditional on previous prerequisite |
 | 2026-10-26 | Statistical arbitrage I | Explain intuition and hand-work one example | Worked example, relevant checks and verified note; Correlation is not cointegration | Planned |
 | 2026-10-27 | Statistical arbitrage I | Derive the minimal model; define inputs and units | Worked example, relevant checks and verified note; Correlation is not cointegration | Planned |
@@ -341,3 +347,19 @@ PDF are verified before publication. No general future-price invariance claim is
 Next learning is L002d: paired valid future-price mutations and a leaking control. L002e/f,
 C003b/C004/C005/Q011-13/Q004a/Q005b remain gates; later strategy windows are conditional.
 Personal review stays Not yet reviewed. No input blocks synthetic continuation.
+
+## L002d future-price invariance - 24 October
+
+The unchanged delayed C++ order passes 340 paired comparisons across 20 fixed prefixes and
+18 valid suffixes each. All 360 resolutions match the Decimal reference; six hand anchors
+agree. Counts: 66 filled, 126 model-rejected, 24 unresolved and 144 no-order. Three leaking
+mutants fail past-projection equality; constant no-order passes equality but fails the rule
+anchor. Two full fresh-build replays agree; actual -O is refused. make cpp-future-invariance
+joins make check. Full checks and the four-page teaching PDF pass. This selected grid does
+not prove arbitrary-history causality; malformed futures remain a separate contract check.
+
+L002c was integrated separately with its October 23 study date. L002d is complete within
+this bounded scope; next is L002e adverse-fill costs, then L002f reproduction. No new strategy
+family or production C++ syntax was added. C003b/C004/C005/Q011-13/Q004a/Q005b remain gates;
+trend/later windows stay conditional. Personal review: Not yet reviewed. No input blocks
+synthetic work. Shared draw two funds two independent units; no extra lesson to fill it.
