@@ -1,0 +1,28 @@
+{
+  "correct_fresh_builds": 2,
+  "executions_per_correct_build": 2,
+  "exact_result_replays": 2,
+  "hand_cases": 8,
+  "invalid_integer_traces": 15,
+  "controls": [
+    {
+      "mutation": "old_price_debit",
+      "compiled": true,
+      "detected": "Delayed trace differs from hand/reference"
+    },
+    {
+      "mutation": "fee_on_missing",
+      "compiled": true,
+      "detected": "Delayed trace differs from hand/reference"
+    },
+    {
+      "mutation": "equal_resolution",
+      "compiled": true,
+      "detected": "Delayed trace differs from hand/reference"
+    }
+  ],
+  "optimization_refused": true,
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "source_sha256": "ac1eefd2b07556146f7580971238c425d2d41eb308aba894abb37c45df67afb1",
+  "limitations": "Fixed typed integer traces only; no raw-input validation or general future-price invariance proof."
+}

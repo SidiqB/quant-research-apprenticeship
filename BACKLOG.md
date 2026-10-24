@@ -543,3 +543,14 @@ L002a/b is integrated. L002b was studied October 22 and integrated here;
 next new learning is L002c, one bounded C++ delayed order. L002d-f timing/invariance and
 C003b/C004/C005/Q011-13/Q004a/Q005b remain gates. Trend/later windows remain conditional.
 No empirical result or personal mastery is claimed. No input blocks synthetic continuation.
+
+## L002c delayed C++ order - studied October 23, integrated October 24
+
+Eight hand/reference traces and fifteen invalid integer traces pass in two fresh UBSan builds,
+each executed twice. Three compiled mutants are detected and actual -O is refused. All 27
+original provenance records verify; original source/results/study evidence are preserved.
+make cpp-delayed-order now joins make check. Current full checks and the revised teaching
+PDF are verified before publication. No general future-price invariance claim is made here.
+Next learning is L002d: paired valid future-price mutations and a leaking control. L002e/f,
+C003b/C004/C005/Q011-13/Q004a/Q005b remain gates; later strategy windows are conditional.
+Personal review stays Not yet reviewed. No input blocks synthetic continuation.

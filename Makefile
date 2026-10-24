@@ -188,3 +188,9 @@ event-contract:
 	$(PYTHON) scripts/verify_event_contract.py
 
 check: event-contract
+
+.PHONY: cpp-delayed-order
+cpp-delayed-order:
+	$(PYTHON) scripts/verify_delayed_order.py
+
+cpp-check: cpp-delayed-order

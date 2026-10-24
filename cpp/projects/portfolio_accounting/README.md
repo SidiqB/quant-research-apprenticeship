@@ -101,3 +101,9 @@ Six hand/reference outcomes agree; ten invalid traces and five corrupt tables ar
 Run `make event-contract` from the repository root. Study date: 2026-10-22.
 Only this bounded teaching slice is complete; L002c implementation and L002d-f remain.
 Personal review: Not yet reviewed. Real-data access/provenance gates remain.
+
+## Delayed C++ order integrated October 24
+
+Run `make cpp-delayed-order`: eight hand/reference traces and fifteen invalid traces,
+with unchanged decision/caller snapshots and later checked accounting. Studied October 23.
+L002c only is complete; L002d-f and empirical gates remain. Personal review: Not yet reviewed.

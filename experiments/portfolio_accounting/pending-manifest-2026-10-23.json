@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "task": "L002c",
+  "original_work_date": "2026-10-23",
+  "created_at": "2026-10-23T09:38:53.345555+00:00",
+  "purpose": "One bounded C++ delayed-order trace with unchanged decision snapshot and later checked resolution",
+  "baseline_commit": "c84d7435a176037e60e89b5016060b3663e1428d",
+  "status": "pending_exhausted_shared_commit_budget",
+  "budget": 2,
+  "actual_commits_today": [
+    "c84d7435a176037e60e89b5016060b3663e1428d",
+    "4a30e713f5e6db412bde6bf3af23b3ab4275b448"
+  ],
+  "inputs": [
+    {
+      "path": "CHARTER.md",
+      "sha256": "144d77d523c2e544ca6cfc87de7994a62731e5ed94ba11fe79110d5d0afdcd55",
+      "bytes": 1710
+    },
+    {
+      "path": "OPERATIONS.md",
+      "sha256": "8b23eb301eb464407848a3e1d8d54699f5770ae2f73b038d2318a24db5454e0f",
+      "bytes": 5093
+    },
+    {
+      "path": "COMMIT_CADENCE.md",
+      "sha256": "d0e7c4a5652774dc0550c3e45909c765d971ea6cf6037e4b496ebf03ae76db2e",
+      "bytes": 2462
+    },
+    {
+      "path": "QUANT_CURRICULUM.md",
+      "sha256": "3f507b1d8fde3b04b92e2c2d69b157625ea58ff2c370773de7f0d6efef0d825f",
+      "bytes": 10854
+    },
+    {
+      "path": "CURRICULUM_BACKLOG.md",
+      "sha256": "b50026e5f346b9665e1c62bcff925acb78360ee0a206f87ae012d68ee20e527f",
+      "bytes": 35495
+    },
+    {
+      "path": "Makefile",
+      "sha256": "0192b7a13c9c020fc50a2de3f5a65d7710ceaef1a44ea6e39f35e022e8f25918",
+      "bytes": 7350
+    },
+    {
+      "path": "requirements-lock.txt",
+      "sha256": "767df194abce2c07fbb9d0ed82e495c76db73bfc617bcf5d595742be667330fa",
+      "bytes": 274
+    },
+    {
+      "path": "cpp/projects/portfolio_accounting/validated_buy.cpp",
+      "sha256": "ee61bc337db0f2277acb484be8ab94b24461018943068b3cbe37c183b32950c9",
+      "bytes": 1008
+    },
+    {
+      "path": "cpp/projects/portfolio_accounting/delayed_order_contract.md",
+      "sha256": "034aac6ce8a0574295eec0d6eb2e4e7e7bae0b1fb5293a42f2e6cef157ef49b3",
+      "bytes": 3780
+    },
+    {
+      "path": "experiments/portfolio_accounting/delayed_order_contract_cases.json",
+      "sha256": "7b0493876752c3958376ffd3c4fd9b58d9bef84bd60a13e98b81cf9f8c7a8b61",
+      "bytes": 2552
+    },
+    {
+      "path": "scripts/verify_event_contract.py",
+      "sha256": "30be26bcfb8bfbd38ad447cbd0ebb407c88eea99fb6f7f76e4ae820c94b2d27d",
+      "bytes": 4940
+    },
+    {
+      "path": "scripts/render_note.py",
+      "sha256": "c635bd6eba7df1ac731e6734bb0c37e4240a5ae7df0ab4d4d45d339e67cabb2c",
+      "bytes": 6239
+    },
+    {
+      "path": "research_log/2026-10-20.md",
+      "sha256": "fde0c694025a8c99b920612add58865864396ffd87dc7c94a4d948a18d2b2223",
+      "bytes": 11634
+    },
+    {
+      "path": "research_log/2026-10-22.md",
+      "sha256": "efc0eb939ac1c71f856670daf655f0d3cb5b48ab8e3eb61a9e4039e2cd5d5b50",
+      "bytes": 12595
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "work/pending/2026-10-23/delayed_order.cpp",
+      "sha256": "ac1eefd2b07556146f7580971238c425d2d41eb308aba894abb37c45df67afb1",
+      "bytes": 1805,
+      "intended_destination": "cpp/projects/portfolio_accounting/delayed_order.cpp"
+    },
+    {
+      "path": "work/pending/2026-10-23/verify_delayed_order.py",
+      "sha256": "39d292a20504ad6af01f36349a15acefca58aafc07bc08110e2e68176b833a91",
+      "bytes": 7325,
+      "intended_destination": "scripts/verify_delayed_order.py"
+    },
+    {
+      "path": "work/pending/2026-10-23/result.json",
+      "sha256": "bbca8fda1d469144b9f55b8a5d209ead0bde265ffc71157db4f99a6e694c0ca0",
+      "bytes": 2015,
+      "intended_destination": "experiments/portfolio_accounting/delayed_order_results.json"
+    },
+    {
+      "path": "work/pending/2026-10-23/experiment-validation.json",
+      "sha256": "891aa0ece809e4bb9c0cd788828f685c3cb34e36ddd0b172b4ec2a3f4c131278",
+      "bytes": 880,
+      "intended_destination": "experiments/portfolio_accounting/validation-2026-10-23.json"
+    },
+    {
+      "path": "work/pending/2026-10-23/2026-10-23-learning-note.md",
+      "sha256": "a645827d678282f6bc38889d00e210b2723e077720cfc1b398b6149811066832",
+      "bytes": 13962,
+      "intended_destination": "research_log/2026-10-23.md"
+    },
+    {
+      "path": "work/pending/2026-10-23/2026-10-23-learning-note.pdf",
+      "sha256": "16d2460cc76c7d8af9505abd99edf4cb57c322a2e982af3c0ecfe0d40e7e3b02",
+      "bytes": 14034,
+      "intended_destination": "reports/daily/2026-10-23-learning-note.pdf"
+    },
+    {
+      "path": "work/pending/2026-10-23/2026-10-23-validation.md",
+      "sha256": "07d6117c6b1a7076300c77be32c58f85022c6d248572634048cf27e37d804d07",
+      "bytes": 3832,
+      "intended_destination": "reports/milestone/2026-10-23-validation.md"
+    },
+    {
+      "path": "work/pending/2026-10-23/progress.json",
+      "sha256": "57880d738e8efa95bd7e931736d9f6dcac5693c1fa6d1a7bae19424a4f6f1205",
+      "bytes": 559,
+      "intended_destination": "merge current progress documentation"
+    }
+  ],
+  "qa_evidence": [
+    {
+      "path": "work/run-2026-10-23/check-b.log",
+      "sha256": "a889e8a60450460f551861e7f68bb3ba2ea506077e82bb1e160060d2d2d9f38f",
+      "bytes": 14504
+    },
+    {
+      "path": "work/run-2026-10-23/c-pdf-audit.json",
+      "sha256": "40c82d2396c00c8f78cac7a3dbefd0d715cc91132d22ba54f0777e31fa87ada6",
+      "bytes": 122
+    },
+    {
+      "path": "work/run-2026-10-23/c-text.txt",
+      "sha256": "c089c9542154d645102b0a58c8b7e0bc361bd282ff37d27b0b940f9691a5b496",
+      "bytes": 13679
+    },
+    {
+      "path": "work/run-2026-10-23/c-render.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "work/run-2026-10-23/check_cpp.py",
+      "sha256": "a690ff357872280ccf2f5e1dc8050ecb25b2015ff8719431eed5dfa8b46863cb",
+      "bytes": 1858
+    }
+  ],
+  "checks": [
+    "Eight hand/reference cases and fifteen invalid typed integer traces",
+    "Two fresh UBSan builds, each twice; two identical JSON replays",
+    "Three compiled source mutants rejected by intended comparison; real -O refused",
+    "Pending lint/format pass; tracked full checks pass 608 Python tests and all C++ checks",
+    "Final four-page PDF exact11648 normalized characters; all pages visually inspected; empty render log"
+  ],
+  "integration_instructions": [
+    "Hold shared lock and honour persisted daily allowance; verify all original hashes and changed inputs against recorded baseline",
+    "Keep original C++/results and study date; next learning is L002d, not repeating this pending lesson",
+    "Adapt verifier ROOT parents[3] to parents[1] and default source to published cpp location; it imports published contract reference",
+    "Preserve temporary source assembly: unchanged validated_buy.cpp before delayed_order.cpp; source fragment is not a standalone library unit",
+    "Add meaningful Make target; rerun two fresh builds/two runs each, three mutants, real -O refusal and full checks",
+    "Revise paths/publication prose; regenerate PDF and repeat exact-text and every-page visual checks",
+    "Merge progress and keep empirical/foundation gates; scan and push normally within allowance, verifying remote"
+  ]
+}
